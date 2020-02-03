@@ -1,0 +1,4 @@
+- [ ] figure out if i can use the LC331632M-12 (32k words * 16 bits) sram left over from the x'eye project
+- [ ] figure out what the _other_ RAM was from the x'eye project
+- [ ] figure out if I can use any of the ROMs i already have
+- [ ] how does the original decode logic work with so few chips?
