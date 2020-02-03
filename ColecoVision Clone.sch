@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -286,4 +286,10 @@ Wire Wire Line
 	5725 2050 5725 1300
 Wire Wire Line
 	5725 1300 5525 1300
+$Sheet
+S 1175 6750 800  650 
+U 5E388268
+F0 "Video" 50
+F1 "Video.sch" 50
+$EndSheet
 $EndSCHEMATC
