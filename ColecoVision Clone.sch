@@ -143,4 +143,113 @@ Text GLabel 9550 3900 0    50   Input ~ 0
 D1
 Text GLabel 9550 4000 0    50   Input ~ 0
 D0
+$Comp
+L power:+5V #PWR?
+U 1 1 5E380BD4
+P 975 1000
+F 0 "#PWR?" H 975 850 50  0001 C CNN
+F 1 "+5V" H 990 1173 50  0000 C CNN
+F 2 "" H 975 1000 50  0001 C CNN
+F 3 "" H 975 1000 50  0001 C CNN
+	1    975  1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E380ECF
+P 2575 4725
+F 0 "#PWR?" H 2575 4475 50  0001 C CNN
+F 1 "GND" H 2580 4552 50  0000 C CNN
+F 2 "" H 2575 4725 50  0001 C CNN
+F 3 "" H 2575 4725 50  0001 C CNN
+	1    2575 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	975  1000 1100 1000
+Wire Wire Line
+	2575 1000 2575 1575
+Wire Wire Line
+	2575 4575 2575 4725
+$Comp
+L Device:R_Small_US R15
+U 1 1 5E381B79
+P 975 1325
+F 0 "R15" H 1043 1371 50  0000 L CNN
+F 1 "1k" H 1043 1280 50  0000 L CNN
+F 2 "" H 975 1325 50  0001 C CNN
+F 3 "~" H 975 1325 50  0001 C CNN
+	1    975  1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1875 3075 975  3075
+Wire Wire Line
+	975  3075 975  1425
+Wire Wire Line
+	975  1225 975  1000
+Connection ~ 975  1000
+Text GLabel 975  3075 0    50   Input ~ 0
+WAIT
+$Comp
+L Device:R_Small_US R12
+U 1 1 5E38275A
+P 1100 1575
+F 0 "R12" H 1168 1621 50  0000 L CNN
+F 1 "3.3k" H 1168 1530 50  0000 L CNN
+F 2 "" H 1100 1575 50  0001 C CNN
+F 3 "~" H 1100 1575 50  0001 C CNN
+	1    1100 1575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1875 4175 1100 4175
+Wire Wire Line
+	1100 4175 1100 1675
+Wire Wire Line
+	1100 4175 975  4175
+Connection ~ 1100 4175
+Text GLabel 975  4175 0    50   Input ~ 0
+BUSRQ
+$Comp
+L Device:R_Small_US R37
+U 1 1 5E3833F1
+P 1225 1850
+F 0 "R37" H 1293 1896 50  0000 L CNN
+F 1 "3.3k" H 1293 1805 50  0000 L CNN
+F 2 "" H 1225 1850 50  0001 C CNN
+F 3 "~" H 1225 1850 50  0001 C CNN
+	1    1225 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1875 2575 1225 2575
+Wire Wire Line
+	1225 2575 1225 1950
+Wire Wire Line
+	1225 2575 925  2575
+Connection ~ 1225 2575
+Text GLabel 925  2575 0    50   Input ~ 0
+INT
+Wire Wire Line
+	1225 1750 1225 1000
+Connection ~ 1225 1000
+Wire Wire Line
+	1225 1000 2575 1000
+Wire Wire Line
+	1100 1475 1100 1000
+Connection ~ 1100 1000
+Wire Wire Line
+	1100 1000 1225 1000
+$Comp
+L LeakoChips:LC331632M-12 U2
+U 1 1 5E388AFC
+P 6325 3000
+F 0 "U2" H 6450 4215 50  0000 C CNN
+F 1 "LC331632M-12" H 6450 4124 50  0000 C CNN
+F 2 "" H 6325 3550 50  0001 C CNN
+F 3 "https://html.alldatasheet.com/html-pdf/40652/SANYO/LC331632M-12/267/2/LC331632M-12.html" H 6325 3550 50  0001 C CNN
+	1    6325 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
