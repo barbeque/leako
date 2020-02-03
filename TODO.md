@@ -2,3 +2,5 @@
 - [ ] figure out what the _other_ RAM was from the x'eye project
 - [ ] figure out if I can use any of the ROMs i already have
 - [ ] how does the original decode logic work with so few chips?
+- [ ] can i use one sanyo 16-bit ram for both the vdp and z80 since it has individual byte enables?
+- [ ] check the footprint against a real TMS9918 (print it out sooner rather than later)
