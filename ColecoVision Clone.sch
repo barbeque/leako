@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:ColecoVision Clone-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -243,7 +244,7 @@ U 1 1 5E388AFC
 P 6325 3000
 F 0 "U2" H 6450 4215 50  0000 C CNN
 F 1 "LC331632M-12" H 6450 4124 50  0000 C CNN
-F 2 "" H 6325 3550 50  0001 C CNN
+F 2 "LeakyChips:SOIC-40" H 6325 3550 50  0001 C CNN
 F 3 "https://html.alldatasheet.com/html-pdf/40652/SANYO/LC331632M-12/267/2/LC331632M-12.html" H 6325 3550 50  0001 C CNN
 	1    6325 3000
 	1    0    0    -1  
