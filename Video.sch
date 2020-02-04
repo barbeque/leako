@@ -277,4 +277,122 @@ F 5 "Manufacturer recommendations" H 3775 2525 50  0001 L BNN "Field5"
 	1    3775 2525
 	-1   0    0    1   
 $EndComp
+Text GLabel 6700 4825 0    50   BiDi ~ 0
+D[0..7]
+Wire Bus Line
+	6700 4825 6700 4700
+Wire Bus Line
+	6700 4225 5200 4225
+Wire Bus Line
+	6700 4700 6975 4700
+Wire Bus Line
+	6975 4700 6975 4225
+Connection ~ 6700 4700
+Wire Bus Line
+	6700 4700 6700 4225
+Wire Wire Line
+	7425 3175 7225 3175
+Wire Wire Line
+	7425 3275 7225 3275
+Wire Wire Line
+	7425 3375 7225 3375
+Wire Wire Line
+	7425 3475 7225 3475
+Wire Wire Line
+	7425 3575 7225 3575
+Wire Wire Line
+	7425 3675 7225 3675
+Wire Wire Line
+	7425 3775 7225 3775
+Wire Wire Line
+	7425 3875 7225 3875
+Entry Wire Line
+	7125 3075 7225 3175
+Entry Wire Line
+	7125 3175 7225 3275
+Entry Wire Line
+	7125 3275 7225 3375
+Entry Wire Line
+	7125 3375 7225 3475
+Entry Wire Line
+	7125 3475 7225 3575
+Entry Wire Line
+	7125 3575 7225 3675
+Entry Wire Line
+	7125 3675 7225 3775
+Entry Wire Line
+	7125 3775 7225 3875
+Wire Bus Line
+	6975 4225 7125 4225
+Text Label 7425 3175 2    50   ~ 0
+D0
+Text Label 7425 3275 2    50   ~ 0
+D1
+Text Label 7425 3375 2    50   ~ 0
+D2
+Text Label 7425 3475 2    50   ~ 0
+D3
+Text Label 7425 3575 2    50   ~ 0
+D4
+Text Label 7425 3675 2    50   ~ 0
+D5
+Text Label 7425 3775 2    50   ~ 0
+D6
+Text Label 7425 3875 2    50   ~ 0
+D7
+Text Label 6400 3700 0    50   ~ 0
+D0
+Text Label 6400 3800 0    50   ~ 0
+D1
+Text Label 6400 3900 0    50   ~ 0
+D2
+Text Label 6400 4000 0    50   ~ 0
+D3
+Text Label 5400 4000 2    50   ~ 0
+D4
+Text Label 5400 3900 2    50   ~ 0
+D5
+Text Label 5400 3800 2    50   ~ 0
+D6
+Text Label 5400 3700 2    50   ~ 0
+D7
+Entry Wire Line
+	6600 3700 6700 3800
+Entry Wire Line
+	6600 3800 6700 3900
+Entry Wire Line
+	6600 3900 6700 4000
+Entry Wire Line
+	6600 4000 6700 4100
+Wire Wire Line
+	6400 3700 6600 3700
+Wire Wire Line
+	6400 3800 6600 3800
+Wire Wire Line
+	6400 3900 6600 3900
+Wire Wire Line
+	6400 4000 6600 4000
+Connection ~ 6700 4225
+Wire Wire Line
+	5400 4000 5300 4000
+Wire Wire Line
+	5400 3900 5300 3900
+Wire Wire Line
+	5400 3800 5300 3800
+Wire Wire Line
+	5400 3700 5300 3700
+Entry Wire Line
+	5200 3600 5300 3700
+Entry Wire Line
+	5200 3700 5300 3800
+Entry Wire Line
+	5200 3800 5300 3900
+Entry Wire Line
+	5200 3900 5300 4000
+Wire Bus Line
+	6700 3800 6700 4225
+Wire Bus Line
+	5200 3600 5200 4225
+Wire Bus Line
+	7125 3075 7125 4225
 $EndSCHEMATC
