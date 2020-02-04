@@ -282,8 +282,6 @@ U 5E3BF976
 F0 "Power" 50
 F1 "Power.sch" 50
 $EndSheet
-Wire Bus Line
-	3475 5000 4450 5000
 Wire Wire Line
 	3275 3575 3375 3575
 Entry Wire Line
@@ -316,8 +314,6 @@ Entry Wire Line
 	3375 4175 3475 4275
 Entry Wire Line
 	3375 4275 3475 4375
-Wire Bus Line
-	3475 1550 4550 1550
 Wire Wire Line
 	3275 1875 3375 1875
 Entry Wire Line
@@ -352,10 +348,6 @@ Wire Wire Line
 	3275 3275 3375 3275
 Wire Wire Line
 	3275 3375 3375 3375
-Wire Bus Line
-	3475 1550 3475 3475
-Wire Bus Line
-	3475 3675 3475 5000
 Entry Wire Line
 	3375 1975 3475 2075
 Entry Wire Line
@@ -387,9 +379,83 @@ Entry Wire Line
 Entry Wire Line
 	3375 3375 3475 3475
 Text GLabel 3475 4575 0    50   BiDi ~ 0
-d[0..7]
+D[0..7]
 Text GLabel 3475 1625 0    50   BiDi ~ 0
-a[0..15]
+A[0..15]
 Text Notes 3575 2000 0    50   ~ 0
 TODO: probably don't need\nto export all 16 pins here... most\nof the MSB pins will just go to\ndecoder peripherals
+Wire Bus Line
+	3475 1550 4550 1550
+Wire Wire Line
+	5725 3150 5575 3150
+Wire Wire Line
+	5725 3250 5575 3250
+Wire Wire Line
+	5725 3350 5575 3350
+Wire Wire Line
+	5725 3450 5575 3450
+Wire Wire Line
+	5725 3550 5575 3550
+Wire Wire Line
+	5725 3650 5575 3650
+Wire Wire Line
+	5725 3750 5575 3750
+Wire Wire Line
+	5725 3850 5575 3850
+Text Label 5725 3150 2    50   ~ 0
+D0
+Text Label 5725 3250 2    50   ~ 0
+D1
+Text Label 5725 3350 2    50   ~ 0
+D2
+Text Label 5725 3450 2    50   ~ 0
+D3
+Text Label 5725 3550 2    50   ~ 0
+D4
+Text Label 5725 3650 2    50   ~ 0
+D5
+Text Label 5725 3750 2    50   ~ 0
+D6
+Text Label 5725 3850 2    50   ~ 0
+D7
+Entry Wire Line
+	5475 3050 5575 3150
+Entry Wire Line
+	5475 3150 5575 3250
+Entry Wire Line
+	5475 3250 5575 3350
+Entry Wire Line
+	5475 3350 5575 3450
+Entry Wire Line
+	5475 3450 5575 3550
+Entry Wire Line
+	5475 3550 5575 3650
+Entry Wire Line
+	5475 3650 5575 3750
+Entry Wire Line
+	5475 3750 5575 3850
+Wire Bus Line
+	3475 5000 5475 5000
+Wire Bus Line
+	3475 3675 3475 5000
+Wire Bus Line
+	5475 3050 5475 5000
+Wire Bus Line
+	3475 1550 3475 3475
+Text Label 3275 3575 0    50   ~ 0
+D0
+Text Label 3275 3675 0    50   ~ 0
+D1
+Text Label 3275 3775 0    50   ~ 0
+D2
+Text Label 3275 3875 0    50   ~ 0
+D3
+Text Label 3275 3975 0    50   ~ 0
+D4
+Text Label 3275 4075 0    50   ~ 0
+D5
+Text Label 3275 4175 0    50   ~ 0
+D6
+Text Label 3275 4275 0    50   ~ 0
+D7
 $EndSCHEMATC
