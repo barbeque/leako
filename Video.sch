@@ -280,16 +280,7 @@ $EndComp
 Text GLabel 6700 4825 0    50   BiDi ~ 0
 D[0..7]
 Wire Bus Line
-	6700 4825 6700 4700
-Wire Bus Line
 	6700 4225 5200 4225
-Wire Bus Line
-	6700 4700 6975 4700
-Wire Bus Line
-	6975 4700 6975 4225
-Connection ~ 6700 4700
-Wire Bus Line
-	6700 4700 6700 4225
 Wire Wire Line
 	7425 3175 7225 3175
 Wire Wire Line
@@ -306,40 +297,22 @@ Wire Wire Line
 	7425 3775 7225 3775
 Wire Wire Line
 	7425 3875 7225 3875
-Entry Wire Line
-	7125 3075 7225 3175
-Entry Wire Line
-	7125 3175 7225 3275
-Entry Wire Line
-	7125 3275 7225 3375
-Entry Wire Line
-	7125 3375 7225 3475
-Entry Wire Line
-	7125 3475 7225 3575
-Entry Wire Line
-	7125 3575 7225 3675
-Entry Wire Line
-	7125 3675 7225 3775
-Entry Wire Line
-	7125 3775 7225 3875
-Wire Bus Line
-	6975 4225 7125 4225
 Text Label 7425 3175 2    50   ~ 0
-D0
+VD0
 Text Label 7425 3275 2    50   ~ 0
-D1
+VD1
 Text Label 7425 3375 2    50   ~ 0
-D2
+VD2
 Text Label 7425 3475 2    50   ~ 0
-D3
+VD3
 Text Label 7425 3575 2    50   ~ 0
-D4
+VD4
 Text Label 7425 3675 2    50   ~ 0
-D5
+VD5
 Text Label 7425 3775 2    50   ~ 0
-D6
+VD6
 Text Label 7425 3875 2    50   ~ 0
-D7
+VD7
 Text Label 6400 3700 0    50   ~ 0
 D0
 Text Label 6400 3800 0    50   ~ 0
@@ -390,9 +363,85 @@ Entry Wire Line
 Entry Wire Line
 	5200 3900 5300 4000
 Wire Bus Line
+	6700 4225 6700 4825
+Entry Wire Line
+	7125 3775 7225 3875
+Entry Wire Line
+	7125 3675 7225 3775
+Entry Wire Line
+	7125 3575 7225 3675
+Entry Wire Line
+	7125 3475 7225 3575
+Entry Wire Line
+	7125 3375 7225 3475
+Entry Wire Line
+	7125 3275 7225 3375
+Entry Wire Line
+	7125 3175 7225 3275
+Entry Wire Line
+	7125 3075 7225 3175
+Wire Wire Line
+	6400 3600 6600 3600
+Wire Wire Line
+	6400 3500 6600 3500
+Wire Wire Line
+	6400 3400 6600 3400
+Wire Wire Line
+	6400 3300 6600 3300
+Wire Wire Line
+	6400 3200 6600 3200
+Wire Wire Line
+	6400 3100 6600 3100
+Wire Wire Line
+	6400 3000 6600 3000
+Wire Wire Line
+	6400 2900 6600 2900
+Entry Wire Line
+	6600 3600 6700 3700
+Entry Wire Line
+	6600 3500 6700 3600
+Entry Wire Line
+	6600 3400 6700 3500
+Entry Wire Line
+	6600 3300 6700 3400
+Entry Wire Line
+	6600 3200 6700 3300
+Entry Wire Line
+	6600 3100 6700 3200
+Entry Wire Line
+	6600 3000 6700 3100
+Entry Wire Line
+	6600 2900 6700 3000
+Wire Bus Line
+	6700 3000 7125 3000
+Wire Bus Line
 	6700 3800 6700 4225
 Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
-	7125 3075 7125 4225
+	6700 3000 6700 3700
+Wire Bus Line
+	7125 3000 7125 3775
+Text Label 7125 3025 0    50   ~ 0
+VD[0..7]
+Text Label 6800 3000 3    50   ~ 0
+RD[0..7]
+Text Label 6400 3600 0    50   ~ 0
+VD7
+Text Label 6400 3500 0    50   ~ 0
+VD6
+Text Label 6400 3400 0    50   ~ 0
+VD5
+Text Label 6400 3300 0    50   ~ 0
+VD4
+Text Label 6400 3200 0    50   ~ 0
+VD3
+Text Label 6400 3100 0    50   ~ 0
+VD2
+Text Label 6400 3000 0    50   ~ 0
+VD1
+Text Label 6400 2900 0    50   ~ 0
+VD0
+Text GLabel 6400 2700 2    50   Input ~ 0
+Reset
 $EndSCHEMATC

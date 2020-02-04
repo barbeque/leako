@@ -7,3 +7,6 @@
 - [ ] can I use a knockoff U2413 as an AY-3-8910 to save some board room? are they that deeply compatible? i guess i already own an AY-3-8910.
 - [ ] video amp? did a darlington pair with two transistors, kinda stolen from the coco board
 - [ ] audio amp?
+- [ ] reset circuit
+- [ ] cpu clock circuit
+- [ ] how is the TMS clocked?

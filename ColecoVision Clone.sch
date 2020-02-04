@@ -436,12 +436,6 @@ Entry Wire Line
 	5475 3750 5575 3850
 Wire Bus Line
 	3475 5000 5475 5000
-Wire Bus Line
-	3475 3675 3475 5000
-Wire Bus Line
-	5475 3050 5475 5000
-Wire Bus Line
-	3475 1550 3475 3475
 Text Label 3275 3575 0    50   ~ 0
 D0
 Text Label 3275 3675 0    50   ~ 0
@@ -458,4 +452,16 @@ Text Label 3275 4175 0    50   ~ 0
 D6
 Text Label 3275 4275 0    50   ~ 0
 D7
+Text Label 3475 4950 2    50   ~ 0
+D[0..7]
+Text Label 4475 1550 1    50   ~ 0
+A[0..15]
+Wire Bus Line
+	3475 3675 3475 5000
+Wire Bus Line
+	5475 3050 5475 5000
+Wire Bus Line
+	3475 1550 3475 3475
+Text GLabel 1875 1875 0    50   Input ~ 0
+Reset
 $EndSCHEMATC
