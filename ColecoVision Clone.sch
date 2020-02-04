@@ -386,4 +386,10 @@ Entry Wire Line
 	3375 3275 3475 3375
 Entry Wire Line
 	3375 3375 3475 3475
+Text GLabel 3475 4575 0    50   BiDi ~ 0
+d[0..7]
+Text GLabel 3475 1625 0    50   BiDi ~ 0
+a[0..15]
+Text Notes 3575 2000 0    50   ~ 0
+TODO: probably don't need\nto export all 16 pins here... most\nof the MSB pins will just go to\ndecoder peripherals
 $EndSCHEMATC
