@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name LeakoChips)(type Legacy)(uri ${KIPRJMOD}/LeakoChips.lib)(options "")(descr ""))
+  (lib (name RCJ-017)(type Legacy)(uri ${KIPRJMOD}/Jacks.pretty/RCJ-017.lib)(options "")(descr ""))
+  (lib (name PJ-102A)(type Legacy)(uri ${KIPRJMOD}/Jacks.pretty/PJ-102A.lib)(options "")(descr ""))
 )
