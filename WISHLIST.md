@@ -1,2 +1,3 @@
 - [ ] Super Game Module support (32kB RAM, AY-3-8910A)
 - [ ] ADAM support (64kB RAM, ???)
+- Built-in flashcart BIOS with menu
