@@ -167,92 +167,10 @@ Connection ~ 7425 4425
 Wire Wire Line
 	8675 4425 8950 4425
 Connection ~ 8675 4425
-$Comp
-L Device:Q_NPN_BCE Q1
-U 1 1 5E39E220
-P 3000 1675
-F 0 "Q1" H 3191 1721 50  0000 L CNN
-F 1 "2n2222" H 3191 1630 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 3200 1775 50  0001 C CNN
-F 3 "~" H 3000 1675 50  0001 C CNN
-	1    3000 1675
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NPN_BCE Q2
-U 1 1 5E39E78C
-P 3375 2025
-F 0 "Q2" H 3566 2071 50  0000 L CNN
-F 1 "2n2222" H 3566 1980 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 3575 2125 50  0001 C CNN
-F 3 "~" H 3375 2025 50  0001 C CNN
-	1    3375 2025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3175 2025 3100 2025
-Wire Wire Line
-	3100 2025 3100 1875
-$Comp
-L power:VCC #PWR0109
-U 1 1 5E39F48C
-P 3325 1050
-F 0 "#PWR0109" H 3325 900 50  0001 C CNN
-F 1 "VCC" H 3342 1223 50  0000 C CNN
-F 2 "" H 3325 1050 50  0001 C CNN
-F 3 "" H 3325 1050 50  0001 C CNN
-	1    3325 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3325 1050 3100 1050
-Wire Wire Line
-	3100 1050 3100 1475
-Wire Wire Line
-	3325 1050 3475 1050
-Wire Wire Line
-	3475 1050 3475 1825
-Connection ~ 3325 1050
 Text GLabel 6400 2500 2    50   Input ~ 0
 Composite
-Text GLabel 2800 1675 0    50   Input ~ 0
+Text GLabel 2300 1675 0    50   Input ~ 0
 Composite
-$Comp
-L Device:CP C5
-U 1 1 5E3A12C1
-P 3725 1200
-F 0 "C5" H 3843 1246 50  0000 L CNN
-F 1 "0.1µF" H 3843 1155 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D4.0mm_P1.50mm" H 3763 1050 50  0001 C CNN
-F 3 "~" H 3725 1200 50  0001 C CNN
-	1    3725 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 5E3A219C
-P 3725 1350
-F 0 "#PWR0110" H 3725 1100 50  0001 C CNN
-F 1 "GND" H 3730 1177 50  0000 C CNN
-F 2 "" H 3725 1350 50  0001 C CNN
-F 3 "" H 3725 1350 50  0001 C CNN
-	1    3725 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3725 1050 3475 1050
-Connection ~ 3475 1050
-$Comp
-L Device:R_Small_US R1
-U 1 1 5E3A332F
-P 3475 2325
-F 0 "R1" H 3543 2371 50  0000 L CNN
-F 1 "22Ω" H 3543 2280 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 3475 2325 50  0001 C CNN
-F 3 "~" H 3475 2325 50  0001 C CNN
-	1    3475 2325
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0111
 U 1 1 5E3A60DD
@@ -414,16 +332,6 @@ Entry Wire Line
 	6600 2900 6700 3000
 Wire Bus Line
 	6700 3000 7125 3000
-Wire Bus Line
-	6700 3800 6700 4225
-Wire Bus Line
-	5200 3600 5200 4225
-Wire Bus Line
-	6700 3000 6700 3700
-Wire Bus Line
-	7125 3000 7125 3775
-Text Label 7125 3025 0    50   ~ 0
-VD[0..7]
 Text Label 6800 3000 3    50   ~ 0
 RD[0..7]
 Text Label 6400 3600 0    50   ~ 0
@@ -444,4 +352,81 @@ Text Label 6400 2900 0    50   ~ 0
 VD0
 Text GLabel 6400 2700 2    50   Input ~ 0
 Reset
+Wire Notes Line
+	4650 800  4650 2950
+Wire Notes Line
+	4650 2950 1775 2950
+Wire Notes Line
+	1775 2950 1775 800 
+Wire Notes Line
+	1775 800  4650 800 
+Text Notes 1825 2900 0    50   ~ 0
+Composite video jack
+Wire Wire Line
+	3475 1675 3475 2425
+$Comp
+L Device:R_Small_US R1
+U 1 1 5E424465
+P 2800 2000
+F 0 "R1" H 2868 2046 50  0000 L CNN
+F 1 "470Ω" H 2868 1955 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2800 2000 50  0001 C CNN
+F 3 "~" H 2800 2000 50  0001 C CNN
+	1    2800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3475 2625 2800 2625
+Wire Wire Line
+	2800 2625 2800 2100
+Connection ~ 3475 2625
+Wire Wire Line
+	2300 1675 2800 1675
+Wire Wire Line
+	2800 1900 2800 1675
+Connection ~ 2800 1675
+Wire Wire Line
+	2800 1675 3475 1675
+Text Notes 3900 4500 0    50   ~ 0
+"Bit order numbering is backwards. 0 is the MSB and 7 is the LSB."\nTODO: invert CPU bus?
+Wire Wire Line
+	5400 3300 4650 3300
+Wire Bus Line
+	4350 3200 4350 4075
+Entry Wire Line
+	4550 3200 4650 3300
+Text Label 5400 3300 2    50   ~ 0
+A0
+Text GLabel 4350 4075 0    50   Input ~ 0
+A[0..7]
+Wire Wire Line
+	5400 3100 5325 3100
+Wire Wire Line
+	5400 3000 5325 3000
+Wire Wire Line
+	5400 2900 5325 2900
+Wire Wire Line
+	5400 2800 5325 2800
+Wire Wire Line
+	5400 2700 5325 2700
+Wire Wire Line
+	5400 2600 5325 2600
+Wire Wire Line
+	5400 2500 5325 2500
+Wire Wire Line
+	5400 2400 5325 2400
+Wire Wire Line
+	5400 2300 5325 2300
+Text Label 7125 3025 0    50   ~ 0
+VD[0..7]
+Wire Bus Line
+	4350 3200 4700 3200
+Wire Bus Line
+	6700 3000 6700 3700
+Wire Bus Line
+	7125 3000 7125 3775
+Wire Bus Line
+	5200 3600 5200 4225
+Wire Bus Line
+	6700 3800 6700 4225
 $EndSCHEMATC
