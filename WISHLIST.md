@@ -1,0 +1,2 @@
+- [ ] Super Game Module support (32kB RAM, AY-3-8910A)
+- [ ] ADAM support (64kB RAM, ???)
