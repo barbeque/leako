@@ -5,7 +5,7 @@
 - [x] can i use one sanyo 16-bit ram for both the vdp and z80 since it has individual byte enables? NO
 - [ ] check the footprint against a real TMS9918 (print it out sooner rather than later)
 - [ ] can I use a knockoff U2413 as an AY-3-8910 to save some board room? are they that deeply compatible? i guess i already own an AY-3-8910.
-- [ ] video amp? did a darlington pair with two transistors, kinda stolen from the coco board
+- [ ] video amp? did a darlington pair with two transistors, kinda stolen from the coco board - BUT IT NEEDS A BASE RESISTOR
 - [ ] audio amp?
 - [ ] reset circuit
 - [ ] cpu clock circuit
