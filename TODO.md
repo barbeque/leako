@@ -12,3 +12,6 @@
 - [ ] cpu clock circuit
 - [ ] how is the TMS clocked?
 - [ ] do i need to reverse a7..a0 for the TMS, or is that for data, or not at all?
+- [ ] figure out memory decode
+- [ ] figure out IO decode
+- [ ] figure out cart decode (a subset of memory decode)
