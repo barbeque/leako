@@ -1,5 +1,5 @@
 - [ ] figure out if i can use the LC331632M-12 (32k words * 16 bits) sram left over from the x'eye project
-- [ ] figure out what the _other_ RAM was from the x'eye project
+- [ ] figure out what the _other_ RAM was from the x'eye project - was it DRAM?
 - [ ] figure out if I can use any of the ROMs i already have
 - [ ] how does the original decode logic work with so few chips?
 - [x] can i use one sanyo 16-bit ram for both the vdp and z80 since it has individual byte enables? NO
