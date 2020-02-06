@@ -1,17 +1,19 @@
 - [ ] figure out if i can use the LC331632M-12 (32k words * 16 bits) sram left over from the x'eye project
 - [ ] figure out what the _other_ RAM was from the x'eye project - was it DRAM?
-- [ ] set up the SRAM-adapter for the TMS-9918 from the PDF - it's simple
+- [x] set up the SRAM-adapter for the TMS-9918 from the PDF - it's simple
 - [ ] figure out if I can use any of the ROMs i already have
 - [ ] how does the original decode logic work with so few chips?
 - [x] can i use one sanyo 16-bit ram for both the vdp and z80 since it has individual byte enables? NO
 - [ ] check the footprint against a real TMS9918 (print it out sooner rather than later)
 - [x] can I use a knockoff U2413 as an AY-3-8910 to save some board room? are they that deeply compatible? i guess i already own an AY-3-8910. NEVER MIND IT'S AN SN76489 - already on order
-- [ ] video amp? did a darlington pair with two transistors, kinda stolen from the coco board - BUT IT NEEDS A BASE RESISTOR - use the one from the PDF
+- [x] video amp? used the one from the PDF
 - [ ] audio amp?
 - [ ] reset circuit
 - [ ] cpu clock circuit
-- [ ] how is the TMS clocked?
-- [ ] do i need to reverse a7..a0 for the TMS, or is that for data, or not at all?
+- [x] how is the TMS clocked?
+- [x] do i need to reverse a7..a0 for the TMS, or is that for data, or not at all?
 - [ ] figure out memory decode
 - [ ] figure out IO decode
-- [ ] figure out cart decode (a subset of memory decode)
+- [ ] figure out cart decode (a subset of memory decode - bank switching)
+- [ ] what even are controllers?
+- [ ] add a bios rom
