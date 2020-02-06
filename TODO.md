@@ -18,6 +18,6 @@
 - [ ] figure out cart decode (a subset of memory decode - bank switching)
 - [ ] what even are controllers?
 - [x] add a bios rom
-- [ ] put in the keep-out zone for the cartridge slot (81mm x 21mm? check notes)
+- [ ] put in the keep-out zone for the cartridge slot (81mm x 40mm)
 - [x] ram wraparound?
 - [ ] (BIOS) what is up with the separate CE and OE in the original schematic (CE from A11?)
