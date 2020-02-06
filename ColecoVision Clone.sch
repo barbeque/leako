@@ -129,17 +129,6 @@ D1
 Text GLabel 9150 4750 0    50   Input ~ 0
 D0
 $Comp
-L power:+5V #PWR01
-U 1 1 5E380BD4
-P 975 1000
-F 0 "#PWR01" H 975 850 50  0001 C CNN
-F 1 "+5V" H 990 1173 50  0000 C CNN
-F 2 "" H 975 1000 50  0001 C CNN
-F 3 "" H 975 1000 50  0001 C CNN
-	1    975  1000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR02
 U 1 1 5E380ECF
 P 2575 4725
@@ -171,7 +160,6 @@ Wire Wire Line
 	975  3075 975  1425
 Wire Wire Line
 	975  1225 975  1000
-Connection ~ 975  1000
 Text GLabel 975  3075 0    50   Input ~ 0
 !WAIT
 $Comp
@@ -213,7 +201,7 @@ Wire Wire Line
 	1225 2575 925  2575
 Connection ~ 1225 2575
 Text GLabel 925  2575 0    50   Input ~ 0
-INT
+!INT
 Wire Wire Line
 	1225 1750 1225 1000
 Connection ~ 1225 1000
@@ -451,7 +439,7 @@ D[0..7]
 Text Label 4475 1550 1    50   ~ 0
 A[0..15]
 Text GLabel 1875 1875 0    50   Input ~ 0
-Reset
+!RESET
 Wire Wire Line
 	6975 2350 7075 2350
 Wire Wire Line
@@ -1121,4 +1109,68 @@ F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/74HCT02D653/1727-
 	1    7850 4200
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:VCC #PWR0108
+U 1 1 5E471501
+P 975 1000
+F 0 "#PWR0108" H 975 850 50  0001 C CNN
+F 1 "VCC" H 992 1173 50  0000 C CNN
+F 2 "" H 975 1000 50  0001 C CNN
+F 3 "" H 975 1000 50  0001 C CNN
+	1    975  1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 975  1000
+Text Label 5725 2150 2    50   ~ 0
+A9
+Text Label 5725 2250 2    50   ~ 0
+A8
+Text Label 5725 2350 2    50   ~ 0
+A7
+Text Label 5725 2450 2    50   ~ 0
+A6
+Text Label 5725 2550 2    50   ~ 0
+A5
+Text Label 5725 2650 2    50   ~ 0
+A4
+Text Label 5725 2750 2    50   ~ 0
+A3
+Text Label 5725 2850 2    50   ~ 0
+A2
+Text Label 5725 2950 2    50   ~ 0
+A1
+Text Label 5725 3050 2    50   ~ 0
+A0
+Text Label 3300 3375 0    50   ~ 0
+A15
+Text Label 3300 3275 0    50   ~ 0
+A14
+Text Label 3300 3175 0    50   ~ 0
+A13
+Text Label 3300 3075 0    50   ~ 0
+A12
+Text Label 3300 2975 0    50   ~ 0
+A11
+Text Label 3300 2875 0    50   ~ 0
+A10
+Text Label 3300 2775 0    50   ~ 0
+A9
+Text Label 3300 2675 0    50   ~ 0
+A8
+Text Label 3300 2575 0    50   ~ 0
+A7
+Text Label 3300 2475 0    50   ~ 0
+A6
+Text Label 3300 2375 0    50   ~ 0
+A5
+Text Label 3300 2275 0    50   ~ 0
+A4
+Text Label 3300 2175 0    50   ~ 0
+A3
+Text Label 3300 2075 0    50   ~ 0
+A2
+Text Label 3300 1975 0    50   ~ 0
+A1
+Text Label 3300 1875 0    50   ~ 0
+A0
 $EndSCHEMATC

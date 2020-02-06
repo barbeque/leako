@@ -183,7 +183,7 @@ Entry Wire Line
 Wire Bus Line
 	6700 4225 6700 4825
 Text GLabel 6400 2700 2    50   Input ~ 0
-Reset
+!RESET
 Wire Notes Line
 	4650 800  4650 2950
 Wire Notes Line
