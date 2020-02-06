@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -492,12 +492,18 @@ F 3 "" H 7275 2550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7275 2550 7075 2550
+Text Notes 7100 2525 0    50   ~ 0
+Disable all\nbut first 1K
+$Sheet
+S 3150 6775 725  650 
+U 5E3C7714
+F0 "Sound" 50
+F1 "Sound.sch" 50
+$EndSheet
 Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	5475 3050 5475 5000
 Wire Bus Line
 	3475 1550 3475 3475
-Text Notes 7100 2525 0    50   ~ 0
-Disable all\nbut first 1K
 $EndSCHEMATC
