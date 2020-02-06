@@ -234,7 +234,7 @@ F 3 "https://html.alldatasheet.com/html-pdf/40652/SANYO/LC331632M-12/267/2/LC331
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6975 1000 6975 2050
+	6975 1000 6975 1625
 Wire Wire Line
 	1225 1000 2575 1000
 Connection ~ 2575 1000
@@ -253,8 +253,6 @@ F 3 "" H 5725 4725 50  0001 C CNN
 	1    5725 4725
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5725 4725 5725 3950
 $Comp
 L power:GND #PWR03
 U 1 1 5E39D7F7
@@ -567,12 +565,70 @@ Connection ~ 9275 2725
 Wire Wire Line
 	9275 2725 9150 2725
 NoConn ~ 9350 2925
-Wire Bus Line
-	3475 3675 3475 5000
+Text Notes 10600 3475 2    50   ~ 0
+TODO: might change this to a 27sf256 for SMD
+$Comp
+L Device:C C?
+U 1 1 5E3CFA07
+P 5975 4425
+F 0 "C?" V 5723 4425 50  0000 C CNN
+F 1 "0.1µF" V 5814 4425 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6013 4275 50  0001 C CNN
+F 3 "~" H 5975 4425 50  0001 C CNN
+	1    5975 4425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6975 2150 7425 2150
+Wire Wire Line
+	7425 2150 7425 1625
+Wire Wire Line
+	7425 1625 6975 1625
+Connection ~ 6975 1625
+Wire Wire Line
+	6975 1625 6975 2050
+Wire Wire Line
+	6975 2850 7675 2850
+Wire Wire Line
+	7675 2850 7675 1625
+Wire Wire Line
+	7675 1625 7425 1625
+Connection ~ 7425 1625
+$Comp
+L power:VCC #PWR?
+U 1 1 5E3D5CF8
+P 6225 4275
+F 0 "#PWR?" H 6225 4125 50  0001 C CNN
+F 1 "VCC" H 6242 4448 50  0000 C CNN
+F 2 "" H 6225 4275 50  0001 C CNN
+F 3 "" H 6225 4275 50  0001 C CNN
+	1    6225 4275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6225 4275 6225 4425
+Wire Wire Line
+	6225 4725 6975 4725
+Wire Wire Line
+	6975 4725 6975 3950
+Wire Wire Line
+	6125 4425 6225 4425
+Wire Wire Line
+	5725 3950 5725 4425
+Connection ~ 6225 4425
+Wire Wire Line
+	6225 4425 6225 4725
+Wire Wire Line
+	5825 4425 5725 4425
 Wire Bus Line
 	5475 3050 5475 5000
 Wire Bus Line
+	3475 3675 3475 5000
+Wire Bus Line
 	3475 1550 3475 3475
-Text Notes 10600 3475 2    50   ~ 0
-TODO: might change this to a 27sf256 for SMD
+Connection ~ 5725 4425
+Wire Wire Line
+	5725 4425 5725 4725
+Text Notes 7050 1550 0    50   ~ 0
+Disable upper write,\nupper enable\n(16-bit RAM in 8-bit mode)
 $EndSCHEMATC
