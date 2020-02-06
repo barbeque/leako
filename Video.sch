@@ -1114,12 +1114,6 @@ Wire Wire Line
 	4250 7150 4250 7500
 Wire Wire Line
 	4250 7500 4375 7500
-Wire Bus Line
-	4350 3200 4700 3200
-Wire Bus Line
-	5200 3600 5200 4225
-Wire Bus Line
-	6700 3800 6700 4225
 Connection ~ 5375 7500
 Connection ~ 4375 7500
 $Comp
@@ -1135,4 +1129,12 @@ F 3 "~" H 4900 7000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4750 7000 4675 7000
+Wire Bus Line
+	4350 3200 4700 3200
+Wire Bus Line
+	5200 3600 5200 4225
+Wire Bus Line
+	6700 3800 6700 4225
+Text Notes 4325 6300 0    50   ~ 0
+TODO: Does RD\nactually go anywhere?
 $EndSCHEMATC
