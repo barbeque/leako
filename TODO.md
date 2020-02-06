@@ -1,7 +1,7 @@
-- [ ] figure out if i can use the LC331632M-12 (32k words * 16 bits) sram left over from the x'eye project
+- [x] figure out if i can use the LC331632M-12 (32k words * 16 bits) sram left over from the x'eye project - should work
 - [ ] figure out what the _other_ RAM was from the x'eye project - was it DRAM?
 - [x] set up the SRAM-adapter for the TMS-9918 from the PDF - it's simple
-- [ ] figure out if I can use any of the ROMs i already have
+- [x] figure out if I can use any of the ROMs i already have - yes, a 27c256 is more than enough
 - [ ] how does the original decode logic work with so few chips?
 - [x] can i use one sanyo 16-bit ram for both the vdp and z80 since it has individual byte enables? NO
 - [ ] check the footprint against a real TMS9918 (print it out sooner rather than later)
@@ -17,4 +17,5 @@
 - [ ] figure out IO decode
 - [ ] figure out cart decode (a subset of memory decode - bank switching)
 - [ ] what even are controllers?
-- [ ] add a bios rom
+- [x] add a bios rom
+- [ ] put in the keep-out zone for the cartridge slot (81mm x 21mm? check notes)
