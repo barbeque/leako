@@ -12,6 +12,7 @@
 - [ ] cpu clock circuit
 - [x] how is the TMS clocked?
 - [x] do i need to reverse a7..a0 for the TMS, or is that for data, or not at all?
+- [ ] what does RD in the schematic do? they wouldn't have an extra inverter stage for nothing.
 - [ ] figure out memory decode
 - [ ] figure out IO decode
 - [ ] figure out cart decode (a subset of memory decode - bank switching)
