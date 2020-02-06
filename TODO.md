@@ -20,3 +20,4 @@
 - [x] add a bios rom
 - [ ] put in the keep-out zone for the cartridge slot (81mm x 21mm? check notes)
 - [x] ram wraparound?
+- [ ] (BIOS) what is up with the separate CE and OE in the original schematic (CE from A11?)
