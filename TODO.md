@@ -13,11 +13,12 @@
 - [x] how is the TMS clocked?
 - [x] do i need to reverse a7..a0 for the TMS, or is that for data, or not at all?
 - [ ] what does RD in the schematic do? they wouldn't have an extra inverter stage for nothing.
-- [ ] figure out memory decode
-- [ ] figure out IO decode
-- [ ] figure out cart decode (a subset of memory decode - bank switching)
+- [x] figure out memory decode
+- [x] figure out IO decode
+- [x] figure out cart decode (a subset of memory decode - bank switching)
 - [ ] what even are controllers?
 - [x] add a bios rom
 - [ ] put in the keep-out zone for the cartridge slot (81mm x 40mm)
 - [x] ram wraparound?
-- [ ] (BIOS) what is up with the separate CE and OE in the original schematic (CE from A11?)
+- [ ] BIOS: what is up with the separate CE and OE in the original schematic (CE from A11?) Figure it out!!!
+- [ ] Expansion stubs (EXT_DEC_STUB, EXT_IO_STUB) need pullups or they'll fuck up

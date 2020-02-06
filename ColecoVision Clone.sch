@@ -173,7 +173,7 @@ Wire Wire Line
 	975  1225 975  1000
 Connection ~ 975  1000
 Text GLabel 975  3075 0    50   Input ~ 0
-WAIT
+!WAIT
 $Comp
 L Device:R_Small_US R2
 U 1 1 5E38275A
@@ -816,11 +816,11 @@ A8
 Text Notes 8725 5250 2    50   ~ 0
 NOTE: I think this\nGND is actually\nRF SHIELD GROUND
 Text GLabel 10475 5350 2    50   Input ~ 0
-!CART_0x8000
+!CART_0x80
 Text GLabel 10475 5550 2    50   Input ~ 0
-!CART_0xA000
+!CART_0xA0
 Text GLabel 8725 5850 0    50   Input ~ 0
-!CART_0xE000
+!CART_0xE0
 Wire Wire Line
 	9500 5850 8725 5850
 Wire Wire Line
@@ -828,17 +828,9 @@ Wire Wire Line
 Wire Wire Line
 	10000 5350 10475 5350
 Text GLabel 10475 4550 2    50   Input ~ 0
-!CART_0xC000
+!CART_0xC0
 Wire Wire Line
 	10475 4550 10000 4550
-Wire Bus Line
-	5475 1550 5475 2950
-Wire Bus Line
-	5475 3050 5475 5000
-Wire Bus Line
-	3475 3675 3475 5000
-Wire Bus Line
-	3475 1550 3475 3475
 Text GLabel 9350 3025 0    50   Input ~ 0
 !BIOS_CE
 Text GLabel 9350 3125 0    50   Input ~ 0
@@ -847,4 +839,227 @@ Text GLabel 6975 2950 2    50   Input ~ 0
 !RAM_OE
 Text GLabel 6975 3050 2    50   Input ~ 0
 !RAM_CE
+$Comp
+L 74xx:74LS138 U13
+U 1 1 5E5302E5
+P 4475 4150
+F 0 "U13" H 4475 4931 50  0000 C CNN
+F 1 "74LS138 (I/O)" H 4475 4840 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 4475 4150 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/texas-instruments/SN74LS138DR/296-14883-2-ND/562882" H 4475 4150 50  0001 C CNN
+	1    4475 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 3975 2125 0    50   Input ~ 0
+A13
+Text GLabel 3975 2225 0    50   Input ~ 0
+A14
+Text GLabel 3975 2325 0    50   Input ~ 0
+A15
+$Comp
+L 74xx:74LS04 U11
+U 1 1 5E53CEC2
+P 3250 1375
+F 0 "U11" H 3250 1692 50  0000 C CNN
+F 1 "74LS04" H 3250 1601 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 3250 1375 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/texas-instruments/SN74LS04DR/562927" H 3250 1375 50  0001 C CNN
+	1    3250 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1375 1425 1375
+Wire Wire Line
+	1425 1375 1425 2975
+Wire Wire Line
+	1425 2975 1875 2975
+Wire Wire Line
+	3550 1375 3650 1375
+Wire Wire Line
+	3650 1375 3650 2725
+Wire Wire Line
+	3650 2725 3975 2725
+Text GLabel 1875 3775 0    50   Input ~ 0
+!MREQ
+Text GLabel 3975 2825 0    50   Input ~ 0
+!MREQ
+Text Label 3725 2725 0    50   ~ 0
+RFSH
+$Comp
+L 74xx:74LS138 U12
+U 1 1 5E52F80A
+P 4475 2425
+F 0 "U12" H 4475 3206 50  0000 C CNN
+F 1 "74LS138 (Mem. Mapped)" H 4475 3115 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 4475 2425 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/texas-instruments/SN74LS138DR/296-14883-2-ND/562882" H 4475 2425 50  0001 C CNN
+	1    4475 2425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 2625 3725 2625
+Wire Wire Line
+	3725 2625 3725 2000
+Text GLabel 3725 2000 1    50   Input ~ 0
+EXT_DEC_STUB
+Wire Wire Line
+	3975 4450 3725 4450
+Wire Wire Line
+	3725 4450 3725 3625
+Text GLabel 3725 3625 1    50   Input ~ 0
+EXT_IO_STUB
+Text GLabel 1875 3875 0    50   Input ~ 0
+!IOREQ
+Text GLabel 3975 4550 0    50   Input ~ 0
+!IOREQ
+Text GLabel 3975 4350 0    50   Input ~ 0
+A7
+Text GLabel 3975 4050 0    50   Input ~ 0
+A6
+Text GLabel 3975 3950 0    50   Input ~ 0
+A5
+Text GLabel 3975 3850 0    50   Input ~ 0
+!WR
+Text GLabel 1875 3675 0    50   Input ~ 0
+!WR
+Text GLabel 1875 3575 0    50   Input ~ 0
+!RD
+Text GLabel 4975 2425 2    50   Input ~ 0
+!RAM_CE
+Text GLabel 4975 2825 2    50   Input ~ 0
+!CART_0xE0
+Text GLabel 4975 2725 2    50   Input ~ 0
+!CART_0xC0
+Text GLabel 4975 2625 2    50   Input ~ 0
+!CART_0xA0
+Text GLabel 4975 2525 2    50   Input ~ 0
+!CART_0x80
+Text GLabel 4975 2225 2    50   Input ~ 0
+EX_20_3F
+Text GLabel 4975 2325 2    50   Input ~ 0
+EX_40_5F
+Text GLabel 4975 2125 2    50   Input ~ 0
+!BIOS_OE
+Text Notes 10375 3575 2    50   ~ 0
+TODO: BIOS CE is really weird on original
+NoConn ~ 4975 3950
+NoConn ~ 4975 4350
+Text GLabel 4975 4550 2    50   Input ~ 0
+CTRL_R
+Text GLabel 4975 4450 2    50   Input ~ 0
+Audio_WR
+Text GLabel 4975 4250 2    50   Input ~ 0
+CTRL_EN_1
+Text GLabel 4975 4150 2    50   Input ~ 0
+VDC_R
+Text GLabel 4975 4050 2    50   Input ~ 0
+VDC_W
+Text GLabel 4975 3850 2    50   Input ~ 0
+CTRL_EN_2
+$Comp
+L power:VCC #PWR0104
+U 1 1 5E5A0EA4
+P 4850 3550
+F 0 "#PWR0104" H 4850 3400 50  0001 C CNN
+F 1 "VCC" H 4867 3723 50  0000 C CNN
+F 2 "" H 4850 3550 50  0001 C CNN
+F 3 "" H 4850 3550 50  0001 C CNN
+	1    4850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E5A1563
+P 4850 4775
+F 0 "#PWR0105" H 4850 4525 50  0001 C CNN
+F 1 "GND" H 4855 4602 50  0000 C CNN
+F 2 "" H 4850 4775 50  0001 C CNN
+F 3 "" H 4850 4775 50  0001 C CNN
+	1    4850 4775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4475 4850 4700 4850
+Wire Wire Line
+	4700 4850 4700 4775
+Wire Wire Line
+	4700 4775 4850 4775
+Wire Wire Line
+	4850 4775 5450 4775
+Wire Wire Line
+	5450 4775 5450 3550
+Wire Wire Line
+	5450 3550 5350 3550
+Connection ~ 4850 4775
+Wire Wire Line
+	4850 3550 4475 3550
+Connection ~ 4850 3550
+$Comp
+L Device:C C16
+U 1 1 5E5B79FD
+P 5200 3550
+F 0 "C16" V 4948 3550 50  0000 C CNN
+F 1 "0.1µF" V 5039 3550 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5238 3400 50  0001 C CNN
+F 3 "~" H 5200 3550 50  0001 C CNN
+	1    5200 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 3550 4850 3550
+$Comp
+L power:GND #PWR0106
+U 1 1 5E5B977E
+P 4850 3125
+F 0 "#PWR0106" H 4850 2875 50  0001 C CNN
+F 1 "GND" H 4855 2952 50  0000 C CNN
+F 2 "" H 4850 3125 50  0001 C CNN
+F 3 "" H 4850 3125 50  0001 C CNN
+	1    4850 3125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0107
+U 1 1 5E5BA0F5
+P 5000 1825
+F 0 "#PWR0107" H 5000 1675 50  0001 C CNN
+F 1 "VCC" H 5017 1998 50  0000 C CNN
+F 2 "" H 5000 1825 50  0001 C CNN
+F 3 "" H 5000 1825 50  0001 C CNN
+	1    5000 1825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1825 4475 1825
+Wire Wire Line
+	5000 1825 5100 1825
+Wire Wire Line
+	5450 1825 5450 3125
+Wire Wire Line
+	5450 3125 4850 3125
+Connection ~ 5000 1825
+Wire Wire Line
+	4850 3125 4475 3125
+Wire Bus Line
+	5475 1550 5475 2950
+Wire Bus Line
+	5475 3050 5475 5000
+Wire Bus Line
+	3475 3675 3475 5000
+Wire Bus Line
+	3475 1550 3475 3475
+Connection ~ 4850 3125
+$Comp
+L Device:C C17
+U 1 1 5E5D22B1
+P 5250 1825
+F 0 "C17" V 5502 1825 50  0000 C CNN
+F 1 "0.1µF" V 5411 1825 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5288 1675 50  0001 C CNN
+F 3 "~" H 5250 1825 50  0001 C CNN
+	1    5250 1825
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 1825 5450 1825
 $EndSCHEMATC

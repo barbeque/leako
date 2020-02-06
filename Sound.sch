@@ -118,7 +118,7 @@ Wire Wire Line
 	3900 3975 3200 3975
 Connection ~ 3900 3975
 Text GLabel 3200 3975 0    50   Input ~ 0
-Wait
+!WAIT
 Text Notes 2425 4575 0    50   ~ 0
 "Ready" (active high)\nmeans that the data\nhas been read off the\nline. When low, the CPU\nshould enter a wait state\nuntil the sound chip is free.
 Wire Wire Line
