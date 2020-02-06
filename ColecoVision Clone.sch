@@ -63,7 +63,7 @@ A6
 Text Label 9500 5750 2    50   ~ 0
 A7
 Text Label 9500 5850 2    50   ~ 0
-CS_0xE000
+!CS_0xE000
 Text Label 9500 5950 2    50   ~ 0
 GND
 Text Label 10000 5950 0    50   ~ 0
@@ -75,11 +75,11 @@ A9
 Text Label 10000 5650 0    50   ~ 0
 A12
 Text Label 10000 5550 0    50   ~ 0
-CS_0xA000
+!CS_0xA000
 Text Label 10000 5450 0    50   ~ 0
 A14
 Text Label 10000 5350 0    50   ~ 0
-CS_0x8000
+!CS_0x8000
 Text Label 10000 5250 0    50   ~ 0
 A10
 Text Label 10000 5150 0    50   ~ 0
@@ -95,7 +95,7 @@ D4
 Text Label 10000 4650 0    50   ~ 0
 D3
 Text Label 10000 4550 0    50   ~ 0
-CS_0xC000
+!CS_0xC000
 Wire Wire Line
 	10000 4650 10475 4650
 Wire Wire Line
@@ -801,14 +801,6 @@ Wire Wire Line
 	10000 5750 10475 5750
 Wire Wire Line
 	10000 5850 10475 5850
-Wire Bus Line
-	5475 1550 5475 2950
-Wire Bus Line
-	5475 3050 5475 5000
-Wire Bus Line
-	3475 3675 3475 5000
-Wire Bus Line
-	3475 1550 3475 3475
 Text GLabel 10475 5150 2    50   Input ~ 0
 A11
 Text GLabel 10475 5250 2    50   Input ~ 0
@@ -823,4 +815,32 @@ Text GLabel 10475 5850 2    50   Input ~ 0
 A8
 Text Notes 8725 5250 2    50   ~ 0
 NOTE: I think this\nGND is actually\nRF SHIELD GROUND
+Text GLabel 10475 5350 2    50   Input ~ 0
+!CART_0x8000
+Text GLabel 10475 5550 2    50   Input ~ 0
+!CART_0xA000
+Text GLabel 8725 5850 0    50   Input ~ 0
+!CART_0xE000
+Wire Wire Line
+	9500 5850 8725 5850
+Wire Wire Line
+	10475 5550 10000 5550
+Wire Wire Line
+	10000 5350 10475 5350
+Text GLabel 10475 4550 2    50   Input ~ 0
+!CART_0xC000
+Wire Wire Line
+	10475 4550 10000 4550
+Wire Bus Line
+	5475 1550 5475 2950
+Wire Bus Line
+	5475 3050 5475 5000
+Wire Bus Line
+	3475 3675 3475 5000
+Wire Bus Line
+	3475 1550 3475 3475
+Text GLabel 9350 3025 0    50   Input ~ 0
+!BIOS_CE
+Text GLabel 9350 3125 0    50   Input ~ 0
+!BIOS_OE
 $EndSCHEMATC
