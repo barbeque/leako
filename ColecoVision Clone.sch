@@ -1102,4 +1102,6 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
+Text GLabel 6975 2250 2    50   Input ~ 0
+!WR
 $EndSCHEMATC
