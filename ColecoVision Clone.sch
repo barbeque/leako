@@ -193,7 +193,7 @@ Wire Wire Line
 	1100 4175 975  4175
 Connection ~ 1100 4175
 Text GLabel 975  4175 0    50   Input ~ 0
-BUSRQ
+!BUSRQ
 $Comp
 L Device:R_Small_US R3
 U 1 1 5E3833F1
@@ -1104,4 +1104,21 @@ Wire Bus Line
 	3475 1550 3475 3475
 Text GLabel 6975 2250 2    50   Input ~ 0
 !WR
+Text GLabel 7550 4100 0    50   Input ~ 0
+!RAM_CE
+Text GLabel 7550 4300 0    50   Input ~ 0
+!RD
+Text GLabel 8150 4200 2    50   Input ~ 0
+!RAM_OE
+$Comp
+L 74xx:74LS02 U14
+U 1 1 5E44D26C
+P 7850 4200
+F 0 "U14" H 7850 4525 50  0000 C CNN
+F 1 "74LS02" H 7850 4434 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 7850 4200 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/74HCT02D653/1727-2829-2-ND/763104" H 7850 4200 50  0001 C CNN
+	1    7850 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

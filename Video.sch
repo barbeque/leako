@@ -788,9 +788,9 @@ Wire Wire Line
 Wire Wire Line
 	5125 3450 4800 3450
 Text GLabel 4800 3450 0    50   Input ~ 0
-VDP_RD
+VDC_R
 Text GLabel 5400 3400 0    50   Input ~ 0
-VDP_WR
+VDC_W
 Text GLabel 5325 3000 0    50   Input ~ 0
 AD0
 Text GLabel 5325 2900 0    50   Input ~ 0
@@ -961,8 +961,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3775 585
 $EndComp
 Text GLabel 3475 5850 0    50   Input ~ 0
 RW
-Text GLabel 4650 5850 2    50   Input ~ 0
-WR
 Wire Wire Line
 	4075 5850 4325 5850
 $Comp
@@ -987,8 +985,6 @@ Wire Wire Line
 Connection ~ 4325 5850
 Wire Wire Line
 	4325 5850 4650 5850
-Text GLabel 4675 6400 2    50   Input ~ 0
-RD
 Wire Wire Line
 	4075 6400 4675 6400
 $Comp
@@ -1129,12 +1125,16 @@ F 3 "~" H 4900 7000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4750 7000 4675 7000
+Text Notes 4325 6300 0    50   ~ 0
+TODO: Does RD\nactually go anywhere?
 Wire Bus Line
 	4350 3200 4700 3200
 Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
-Text Notes 4325 6300 0    50   ~ 0
-TODO: Does RD\nactually go anywhere?
+Text Label 4650 5850 2    50   ~ 0
+WR
+Text Label 4675 6400 2    50   ~ 0
+RD
 $EndSCHEMATC
