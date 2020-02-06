@@ -843,4 +843,8 @@ Text GLabel 9350 3025 0    50   Input ~ 0
 !BIOS_CE
 Text GLabel 9350 3125 0    50   Input ~ 0
 !BIOS_OE
+Text GLabel 6975 2950 2    50   Input ~ 0
+!RAM_OE
+Text GLabel 6975 3050 2    50   Input ~ 0
+!RAM_CE
 $EndSCHEMATC
