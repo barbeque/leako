@@ -940,8 +940,8 @@ Text GLabel 4975 2325 2    50   Input ~ 0
 EX_40_5F
 Text GLabel 4975 2125 2    50   Input ~ 0
 !BIOS_OE
-Text Notes 10375 3575 2    50   ~ 0
-TODO: BIOS CE is really weird on original
+Text Notes 6900 6700 2    50   ~ 0
+BIOS CE is really weird on original,\nlooks like it is for some kind of BIOS ROM\nexpansion?\nhttp://www.arcadecomponents.com/f/Colecovision_Dual_BIOS_Installation.pdf
 NoConn ~ 4975 3950
 NoConn ~ 4975 4350
 Text GLabel 4975 4550 2    50   Input ~ 0
@@ -1040,14 +1040,6 @@ Wire Wire Line
 Connection ~ 5000 1825
 Wire Wire Line
 	4850 3125 4475 3125
-Wire Bus Line
-	5475 1550 5475 2950
-Wire Bus Line
-	5475 3050 5475 5000
-Wire Bus Line
-	3475 3675 3475 5000
-Wire Bus Line
-	3475 1550 3475 3475
 Connection ~ 4850 3125
 $Comp
 L Device:C C17
@@ -1062,4 +1054,52 @@ F 3 "~" H 5250 1825 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 1825 5450 1825
+$Comp
+L Device:Jumper WJ4
+U 1 1 5E3D3F9E
+P 5700 7075
+F 0 "WJ4" H 5700 7339 50  0000 C CNN
+F 1 "(normally open)" H 5700 7248 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5700 7075 50  0001 C CNN
+F 3 "~" H 5700 7075 50  0001 C CNN
+	1    5700 7075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper WJ5
+U 1 1 5E3DC9DE
+P 5700 7450
+F 0 "WJ5" H 5700 7714 50  0000 C CNN
+F 1 "(normally open)" H 5700 7623 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5700 7450 50  0001 C CNN
+F 3 "~" H 5700 7450 50  0001 C CNN
+	1    5700 7450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 7075 0    50   Input ~ 0
+!BIOS_OE
+Text GLabel 5400 7450 0    50   Input ~ 0
+A12
+Wire Wire Line
+	6000 7075 6000 7450
+Wire Wire Line
+	6000 7675 6450 7675
+Connection ~ 6000 7450
+Wire Wire Line
+	6000 7450 6000 7675
+Text GLabel 5400 7675 0    50   Input ~ 0
+A11
+Wire Wire Line
+	6000 7675 5400 7675
+Connection ~ 6000 7675
+Text GLabel 6450 7675 2    50   Input ~ 0
+!BIOS_CE
+Wire Bus Line
+	5475 1550 5475 2950
+Wire Bus Line
+	5475 3050 5475 5000
+Wire Bus Line
+	3475 3675 3475 5000
+Wire Bus Line
+	3475 1550 3475 3475
 $EndSCHEMATC
