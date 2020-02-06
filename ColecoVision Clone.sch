@@ -380,10 +380,6 @@ Text GLabel 3475 4575 0    50   BiDi ~ 0
 D[0..7]
 Text GLabel 3475 1625 0    50   BiDi ~ 0
 A[0..15]
-Text Notes 3575 2000 0    50   ~ 0
-TODO: probably don't need\nto export all 16 pins here... most\nof the MSB pins will just go to\ndecoder peripherals
-Wire Bus Line
-	3475 1550 4550 1550
 Wire Wire Line
 	5725 3150 5575 3150
 Wire Wire Line
@@ -568,10 +564,10 @@ NoConn ~ 9350 2925
 Text Notes 10600 3475 2    50   ~ 0
 TODO: might change this to a 27sf256 for SMD
 $Comp
-L Device:C C?
+L Device:C C14
 U 1 1 5E3CFA07
 P 5975 4425
-F 0 "C?" V 5723 4425 50  0000 C CNN
+F 0 "C14" V 5723 4425 50  0000 C CNN
 F 1 "0.1µF" V 5814 4425 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6013 4275 50  0001 C CNN
 F 3 "~" H 5975 4425 50  0001 C CNN
@@ -595,10 +591,10 @@ Wire Wire Line
 	7675 1625 7425 1625
 Connection ~ 7425 1625
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0101
 U 1 1 5E3D5CF8
 P 6225 4275
-F 0 "#PWR?" H 6225 4125 50  0001 C CNN
+F 0 "#PWR0101" H 6225 4125 50  0001 C CNN
 F 1 "VCC" H 6242 4448 50  0000 C CNN
 F 2 "" H 6225 4275 50  0001 C CNN
 F 3 "" H 6225 4275 50  0001 C CNN
@@ -620,15 +616,211 @@ Wire Wire Line
 	6225 4425 6225 4725
 Wire Wire Line
 	5825 4425 5725 4425
+Connection ~ 5725 4425
+Wire Wire Line
+	5725 4425 5725 4725
+Text Notes 7050 1550 0    50   ~ 0
+Disable upper write,\nupper enable\n(16-bit RAM in 8-bit mode)
+NoConn ~ 6975 3150
+NoConn ~ 6975 3250
+NoConn ~ 6975 3350
+NoConn ~ 6975 3450
+NoConn ~ 6975 3550
+NoConn ~ 6975 3650
+NoConn ~ 6975 3750
+NoConn ~ 6975 3850
+Text Notes 7075 3550 0    50   ~ 0
+TODO: is it safer to tie these\npins to ground?
+Wire Bus Line
+	3475 1550 5475 1550
+Wire Wire Line
+	5575 3050 5725 3050
+Wire Wire Line
+	5725 2950 5575 2950
+Wire Wire Line
+	5725 2850 5575 2850
+Wire Wire Line
+	5725 2750 5575 2750
+Wire Wire Line
+	5725 2650 5575 2650
+Wire Wire Line
+	5725 2550 5575 2550
+Wire Wire Line
+	5725 2450 5575 2450
+Wire Wire Line
+	5725 2350 5575 2350
+Wire Wire Line
+	5725 2250 5575 2250
+Wire Wire Line
+	5725 2150 5575 2150
+Entry Wire Line
+	5475 2050 5575 2150
+Entry Wire Line
+	5475 2150 5575 2250
+Entry Wire Line
+	5475 2250 5575 2350
+Entry Wire Line
+	5475 2350 5575 2450
+Entry Wire Line
+	5475 2450 5575 2550
+Entry Wire Line
+	5475 2550 5575 2650
+Entry Wire Line
+	5475 2650 5575 2750
+Entry Wire Line
+	5475 2750 5575 2850
+Entry Wire Line
+	5475 2850 5575 2950
+Entry Wire Line
+	5475 2950 5575 3050
+Text GLabel 9350 1325 0    50   Input ~ 0
+A0
+Text GLabel 9350 1425 0    50   Input ~ 0
+A1
+Text GLabel 9350 1525 0    50   Input ~ 0
+A2
+Text GLabel 9350 1625 0    50   Input ~ 0
+A3
+Text GLabel 9350 1725 0    50   Input ~ 0
+A4
+Text GLabel 9350 1825 0    50   Input ~ 0
+A5
+Text GLabel 9350 1925 0    50   Input ~ 0
+A6
+Text GLabel 9350 2025 0    50   Input ~ 0
+A7
+Text GLabel 9350 2125 0    50   Input ~ 0
+A8
+Text GLabel 9350 2225 0    50   Input ~ 0
+A9
+Text GLabel 9350 2325 0    50   Input ~ 0
+A10
+Text GLabel 9350 2425 0    50   Input ~ 0
+A11
+Text GLabel 9350 2525 0    50   Input ~ 0
+A12
+Text GLabel 9150 4850 0    50   Input ~ 0
+A0
+Text GLabel 9150 4950 0    50   Input ~ 0
+A1
+Text GLabel 9150 5050 0    50   Input ~ 0
+A2
+Wire Wire Line
+	9500 5050 9150 5050
+Wire Wire Line
+	9150 4950 9500 4950
+Wire Wire Line
+	9150 4850 9500 4850
+$Comp
+L power:VCC #PWR0102
+U 1 1 5E48A2FE
+P 10825 5950
+F 0 "#PWR0102" H 10825 5800 50  0001 C CNN
+F 1 "VCC" H 10842 6123 50  0000 C CNN
+F 2 "" H 10825 5950 50  0001 C CNN
+F 3 "" H 10825 5950 50  0001 C CNN
+	1    10825 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E48AE8B
+P 8775 6150
+F 0 "#PWR0103" H 8775 5900 50  0001 C CNN
+F 1 "GND" H 8780 5977 50  0000 C CNN
+F 2 "" H 8775 6150 50  0001 C CNN
+F 3 "" H 8775 6150 50  0001 C CNN
+	1    8775 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5150 8775 5150
+Wire Wire Line
+	8775 5150 8775 6150
+Wire Wire Line
+	10000 5950 10825 5950
+Wire Wire Line
+	10825 5950 10825 6150
+Wire Wire Line
+	10825 6150 9900 6150
+Connection ~ 10825 5950
+Connection ~ 8775 6150
+$Comp
+L Device:C C15
+U 1 1 5E499EC1
+P 9750 6150
+F 0 "C15" V 9900 6150 50  0000 C CNN
+F 1 "0.1µF" V 9975 6150 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9788 6000 50  0001 C CNN
+F 3 "~" H 9750 6150 50  0001 C CNN
+	1    9750 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9600 6150 9400 6150
+Wire Wire Line
+	9500 5950 9400 5950
+Wire Wire Line
+	9400 5950 9400 6150
+Connection ~ 9400 6150
+Wire Wire Line
+	9400 6150 8775 6150
+Wire Wire Line
+	9500 5250 9150 5250
+Wire Wire Line
+	9500 5350 9150 5350
+Wire Wire Line
+	9500 5450 9150 5450
+Wire Wire Line
+	9500 5550 9150 5550
+Wire Wire Line
+	9500 5650 9150 5650
+Wire Wire Line
+	9500 5750 9150 5750
+Text GLabel 9150 5250 0    50   Input ~ 0
+A3
+Text GLabel 9150 5350 0    50   Input ~ 0
+A4
+Text GLabel 9150 5450 0    50   Input ~ 0
+A13
+Text GLabel 9150 5550 0    50   Input ~ 0
+A5
+Text GLabel 9150 5650 0    50   Input ~ 0
+A6
+Text GLabel 9150 5750 0    50   Input ~ 0
+A7
+Wire Wire Line
+	10000 5150 10475 5150
+Wire Wire Line
+	10000 5250 10475 5250
+Wire Wire Line
+	10000 5450 10475 5450
+Wire Wire Line
+	10000 5650 10475 5650
+Wire Wire Line
+	10000 5750 10475 5750
+Wire Wire Line
+	10000 5850 10475 5850
+Wire Bus Line
+	5475 1550 5475 2950
 Wire Bus Line
 	5475 3050 5475 5000
 Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
-Connection ~ 5725 4425
-Wire Wire Line
-	5725 4425 5725 4725
-Text Notes 7050 1550 0    50   ~ 0
-Disable upper write,\nupper enable\n(16-bit RAM in 8-bit mode)
+Text GLabel 10475 5150 2    50   Input ~ 0
+A11
+Text GLabel 10475 5250 2    50   Input ~ 0
+A10
+Text GLabel 10475 5450 2    50   Input ~ 0
+A14
+Text GLabel 10475 5650 2    50   Input ~ 0
+A12
+Text GLabel 10475 5750 2    50   Input ~ 0
+A9
+Text GLabel 10475 5850 2    50   Input ~ 0
+A8
+Text Notes 8725 5250 2    50   ~ 0
+NOTE: I think this\nGND is actually\nRF SHIELD GROUND
 $EndSCHEMATC

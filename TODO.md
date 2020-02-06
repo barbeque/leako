@@ -19,3 +19,4 @@
 - [ ] what even are controllers?
 - [x] add a bios rom
 - [ ] put in the keep-out zone for the cartridge slot (81mm x 21mm? check notes)
+- [x] ram wraparound?
