@@ -458,10 +458,46 @@ Text Label 4475 1550 1    50   ~ 0
 A[0..15]
 Text GLabel 1875 1875 0    50   Input ~ 0
 Reset
+Wire Wire Line
+	6975 2350 7075 2350
+Wire Wire Line
+	7075 2350 7075 2450
+Wire Wire Line
+	7075 2750 6975 2750
+Wire Wire Line
+	6975 2650 7075 2650
+Connection ~ 7075 2650
+Wire Wire Line
+	7075 2650 7075 2750
+Wire Wire Line
+	6975 2550 7075 2550
+Connection ~ 7075 2550
+Wire Wire Line
+	7075 2550 7075 2650
+Wire Wire Line
+	6975 2450 7075 2450
+Connection ~ 7075 2450
+Wire Wire Line
+	7075 2450 7075 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5E3C2DB1
+P 7275 2550
+F 0 "#PWR?" H 7275 2300 50  0001 C CNN
+F 1 "GND" H 7280 2377 50  0000 C CNN
+F 2 "" H 7275 2550 50  0001 C CNN
+F 3 "" H 7275 2550 50  0001 C CNN
+	1    7275 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7275 2550 7075 2550
 Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	5475 3050 5475 5000
 Wire Bus Line
 	3475 1550 3475 3475
+Text Notes 7100 2525 0    50   ~ 0
+Disable all\nbut first 1K
 $EndSCHEMATC
