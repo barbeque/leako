@@ -22,3 +22,4 @@
 - [x] ram wraparound?
 - [x] BIOS: what is up with the separate CE and OE in the original schematic (CE from A11?) Figure it out!!!
 - [ ] Expansion stubs (EXT_DEC_STUB, EXT_IO_STUB) need pullups or they'll fuck up
+- [ ] what is up with the -5V on the controller schematic?
