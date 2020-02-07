@@ -141,8 +141,6 @@ F 3 "" H 2575 4725 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	975  1000 1100 1000
-Wire Wire Line
-	2575 1000 2575 1575
 $Comp
 L Device:R_Small_US R1
 U 1 1 5E381B79
@@ -223,11 +221,6 @@ F 3 "https://html.alldatasheet.com/html-pdf/40652/SANYO/LC331632M-12/267/2/LC331
 $EndComp
 Wire Wire Line
 	6975 1000 6975 1625
-Wire Wire Line
-	1225 1000 2575 1000
-Connection ~ 2575 1000
-Wire Wire Line
-	2575 1000 6975 1000
 Wire Wire Line
 	2575 4575 2575 4725
 $Comp
@@ -505,13 +498,13 @@ F 3 "~" H 10775 3075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9750 1125 10775 1125
+	9750 1125 10450 1125
 Wire Wire Line
 	10775 1125 10775 2925
 Wire Wire Line
 	10775 3225 10775 3325
 Wire Wire Line
-	10775 3325 9750 3325
+	10775 3325 10700 3325
 Text GLabel 10150 1325 2    50   Input ~ 0
 D0
 Text GLabel 10150 1425 2    50   Input ~ 0
@@ -1082,14 +1075,6 @@ Wire Wire Line
 Connection ~ 6000 7675
 Text GLabel 6450 7675 2    50   Input ~ 0
 !BIOS_CE
-Wire Bus Line
-	5475 1550 5475 2950
-Wire Bus Line
-	5475 3050 5475 5000
-Wire Bus Line
-	3475 3675 3475 5000
-Wire Bus Line
-	3475 1550 3475 3475
 Text GLabel 6975 2250 2    50   Input ~ 0
 !WR
 Text GLabel 7550 4100 0    50   Input ~ 0
@@ -1173,4 +1158,76 @@ Text Label 3300 1975 0    50   ~ 0
 A1
 Text Label 3300 1875 0    50   ~ 0
 A0
+Wire Wire Line
+	1225 1000 6975 1000
+Wire Wire Line
+	2575 1575 2375 1575
+Wire Wire Line
+	1550 1575 1550 4575
+Wire Wire Line
+	1550 4575 2575 4575
+Connection ~ 2575 4575
+$Comp
+L power:VCC #PWR0109
+U 1 1 5E48DC05
+P 2375 1575
+F 0 "#PWR0109" H 2375 1425 50  0001 C CNN
+F 1 "VCC" H 2392 1748 50  0000 C CNN
+F 2 "" H 2375 1575 50  0001 C CNN
+F 3 "" H 2375 1575 50  0001 C CNN
+	1    2375 1575
+	1    0    0    -1  
+$EndComp
+Connection ~ 2375 1575
+Wire Wire Line
+	2375 1575 2150 1575
+$Comp
+L Device:C C18
+U 1 1 5E48E2C8
+P 2000 1575
+F 0 "C18" V 1748 1575 50  0000 C CNN
+F 1 "0.1µF" V 1839 1575 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2038 1425 50  0001 C CNN
+F 3 "~" H 2000 1575 50  0001 C CNN
+	1    2000 1575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 1575 1550 1575
+Wire Bus Line
+	5475 1550 5475 2950
+Wire Bus Line
+	5475 3050 5475 5000
+Wire Bus Line
+	3475 3675 3475 5000
+Wire Bus Line
+	3475 1550 3475 3475
+$Comp
+L power:VCC #PWR?
+U 1 1 5E4B6753
+P 10450 1125
+F 0 "#PWR?" H 10450 975 50  0001 C CNN
+F 1 "VCC" H 10467 1298 50  0000 C CNN
+F 2 "" H 10450 1125 50  0001 C CNN
+F 3 "" H 10450 1125 50  0001 C CNN
+	1    10450 1125
+	1    0    0    -1  
+$EndComp
+Connection ~ 10450 1125
+Wire Wire Line
+	10450 1125 10775 1125
+$Comp
+L power:GND #PWR?
+U 1 1 5E4B6D07
+P 10700 3325
+F 0 "#PWR?" H 10700 3075 50  0001 C CNN
+F 1 "GND" H 10705 3152 50  0000 C CNN
+F 2 "" H 10700 3325 50  0001 C CNN
+F 3 "" H 10700 3325 50  0001 C CNN
+	1    10700 3325
+	1    0    0    -1  
+$EndComp
+Connection ~ 10700 3325
+Wire Wire Line
+	10700 3325 9750 3325
 $EndSCHEMATC

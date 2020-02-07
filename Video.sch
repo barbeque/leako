@@ -1127,14 +1127,14 @@ Wire Wire Line
 	4750 7000 4675 7000
 Text Notes 4325 6300 0    50   ~ 0
 TODO: Does RD\nactually go anywhere?
+Text Label 4650 5850 2    50   ~ 0
+WR
+Text Label 4675 6400 2    50   ~ 0
+RD
 Wire Bus Line
 	4350 3200 4700 3200
 Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
-Text Label 4650 5850 2    50   ~ 0
-WR
-Text Label 4675 6400 2    50   ~ 0
-RD
 $EndSCHEMATC

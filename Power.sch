@@ -26,7 +26,7 @@ F 3 "" H 3750 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 1800 3350 1800
+	3750 1800 3675 1800
 $Comp
 L Device:CP C12
 U 1 1 5E3C1062
@@ -73,7 +73,7 @@ $EndComp
 Wire Wire Line
 	4550 2675 4550 2700
 Wire Wire Line
-	4550 2700 4350 2700
+	4550 2700 4450 2700
 Text Notes 2875 3075 0    50   ~ 0
 TODO: reset
 $Comp
@@ -129,7 +129,39 @@ Wire Wire Line
 	5075 2200 5200 2200
 Wire Wire Line
 	5200 2200 5200 1800
+Connection ~ 3750 1800
+Text Label 2925 2000 0    50   ~ 0
+RAW_5V
+Text Notes 4000 2925 0    50   ~ 0
+maybe put a regulator in here too?
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E493C9A
+P 4450 2700
+F 0 "#FLG0101" H 4450 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 4450 2873 50  0000 C CNN
+F 2 "" H 4450 2700 50  0001 C CNN
+F 3 "~" H 4450 2700 50  0001 C CNN
+	1    4450 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4450 2700
+Wire Wire Line
+	4450 2700 4350 2700
 Wire Wire Line
 	5200 1800 3750 1800
-Connection ~ 3750 1800
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E4B4B7A
+P 3675 1800
+F 0 "#FLG0102" H 3675 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 3675 1973 50  0000 C CNN
+F 2 "" H 3675 1800 50  0001 C CNN
+F 3 "~" H 3675 1800 50  0001 C CNN
+	1    3675 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 3675 1800
+Wire Wire Line
+	3675 1800 3350 1800
 $EndSCHEMATC
