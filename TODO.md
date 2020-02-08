@@ -1,8 +1,8 @@
 - [x] figure out if i can use the LC331632M-12 (32k words * 16 bits) sram left over from the x'eye project - should work
-- [ ] figure out what the _other_ RAM was from the x'eye project - was it DRAM?
+- [x] figure out what the _other_ RAM was from the x'eye project - was it DRAM?
 - [x] set up the SRAM-adapter for the TMS-9918 from the PDF - it's simple
 - [x] figure out if I can use any of the ROMs i already have - yes, a 27c256 is more than enough
-- [ ] how does the original decode logic work with so few chips?
+- [x] how does the original decode logic work with so few chips?
 - [x] can i use one sanyo 16-bit ram for both the vdp and z80 since it has individual byte enables? NO
 - [ ] check the footprint against a real TMS9918 (print it out sooner rather than later)
 - [x] can I use a knockoff U2413 as an AY-3-8910 to save some board room? are they that deeply compatible? i guess i already own an AY-3-8910. NEVER MIND IT'S AN SN76489 - already on order
@@ -23,3 +23,4 @@
 - [x] BIOS: what is up with the separate CE and OE in the original schematic (CE from A11?) Figure it out!!!
 - [x] Expansion stubs (EXT_DEC_STUB, EXT_IO_STUB) need pullups or they'll fuck up
 - [ ] what is up with the -5V on the controller schematic?
+- [ ] fet to protect the power switch?

@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -1223,10 +1223,16 @@ Connection ~ 10700 3325
 Wire Wire Line
 	10700 3325 9750 3325
 $Sheet
-S 3400 6775 500  625 
+S 750  6775 500  625 
 U 5E50A994
 F0 "Expansion" 50
 F1 "Expansion.sch" 50
+$EndSheet
+$Sheet
+S 3400 6775 500  625 
+U 5E40FC69
+F0 "Controllers" 50
+F1 "Controllers.sch" 50
 $EndSheet
 Wire Bus Line
 	5475 1550 5475 2950
