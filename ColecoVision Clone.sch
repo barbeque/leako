@@ -1222,6 +1222,12 @@ $EndComp
 Connection ~ 10700 3325
 Wire Wire Line
 	10700 3325 9750 3325
+$Sheet
+S 3400 6775 500  625 
+U 5E50A994
+F0 "Expansion" 50
+F1 "Expansion.sch" 50
+$EndSheet
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line
@@ -1230,10 +1236,4 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
-$Sheet
-S 3400 6775 500  625 
-U 5E50A994
-F0 "Expansion" 50
-F1 "Expansion.sch" 50
-$EndSheet
 $EndSCHEMATC
