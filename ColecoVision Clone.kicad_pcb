@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 7)
+    (drawings 13)
     (tracks 0)
     (zones 0)
     (modules 54)
@@ -943,7 +943,7 @@
   )
 
   (module Capacitors_SMD:C_0805_HandSoldering (layer F.Cu) (tedit 58AA84A8) (tstamp 5E3CE0AF)
-    (at 202.184 123.952 90)
+    (at 216.408 144.272 90)
     (descr "Capacitor SMD 0805, hand soldering")
     (tags "capacitor 0805")
     (path /5E499EC1)
@@ -3148,7 +3148,7 @@
   )
 
   (module Socket_Strips:Socket_Strip_Straight_2x15_Pitch2.54mm (layer F.Cu) (tedit 58CD5449) (tstamp 5E3C6B53)
-    (at 161.29 122.682 90)
+    (at 175.768 143.002 90)
     (descr "Through hole straight socket strip, 2x15, 2.54mm pitch, double rows")
     (tags "Through hole socket strip THT 2x15 2.54mm double row")
     (path /5E3779E2)
@@ -3244,6 +3244,16 @@
     )
   )
 
+  (gr_text "Cartridge slot keepout zone" (at 164.084 135.636) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text "TODO: Double check measurement - it doesn't seem centered" (at 203.2 152.908) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_line (start 152.908 154.94) (end 152.908 134.112) (layer F.SilkS) (width 0.12) (tstamp 5E3E27FE))
+  (gr_line (start 234.188 154.94) (end 152.908 154.94) (layer F.SilkS) (width 0.12))
+  (gr_line (start 234.188 134.112) (end 234.188 154.94) (layer F.SilkS) (width 0.12))
+  (gr_line (start 152.908 134.112) (end 234.188 134.112) (layer F.SilkS) (width 0.12))
   (gr_line (start 73.66 27.94) (end -25.4 27.94) (layer Edge.Cuts) (width 0.05) (tstamp 5E3C841D))
   (gr_line (start 73.66 127) (end 73.66 27.94) (layer Edge.Cuts) (width 0.05) (tstamp 5E3C841A))
   (gr_line (start -25.4 127) (end 73.66 127) (layer Edge.Cuts) (width 0.05) (tstamp 5E3C8417))
@@ -3254,7 +3264,7 @@
   (gr_text "leadedsolder.com 2020" (at 206.4385 107.8865 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "Front of Cartridge" (at 179.07 127.762) (layer F.SilkS)
+  (gr_text "Front of Cartridge" (at 194.564 148.082) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
 
