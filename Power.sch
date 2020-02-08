@@ -49,8 +49,8 @@ U 1 1 5E3C20B0
 P 4050 2700
 F 0 "SW1" H 4050 2985 50  0000 C CNN
 F 1 "Power Toggle" H 4050 2894 50  0000 C CNN
-F 2 "Buttons_Switches_ThroughHole:SW_PUSH-12mm" H 4050 2900 50  0001 C CNN
-F 3 "~" H 4050 2900 50  0001 C CNN
+F 2 "LeakyChips:PVA1_Switch" H 4050 2900 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/Y17P11141FP/CKN10276-ND/2296958/?itemSeq=317120675" H 4050 2900 50  0001 C CNN
 	1    4050 2700
 	1    0    0    -1  
 $EndComp

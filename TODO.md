@@ -7,7 +7,7 @@
 - [ ] check the footprint against a real TMS9918 (print it out sooner rather than later)
 - [x] can I use a knockoff U2413 as an AY-3-8910 to save some board room? are they that deeply compatible? i guess i already own an AY-3-8910. NEVER MIND IT'S AN SN76489 - already on order
 - [x] video amp? used the one from the PDF
-- [x] audio amp? is this too much gain?
+- [x] audio amp? is this too much gain? don't need one at all probably
 - [ ] reset circuit
 - [ ] cpu clock circuit
 - [x] how is the TMS clocked?
