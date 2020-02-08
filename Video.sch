@@ -363,7 +363,7 @@ F 3 "CUI Inc" H 3725 2075 50  0001 L BNN
 F 4 "B" H 3725 2075 50  0001 L BNN "Field4"
 F 5 "Manufacturer recommendations" H 3725 2075 50  0001 L BNN "Field5"
 	1    3725 2075
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR011

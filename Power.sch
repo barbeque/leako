@@ -15,66 +15,43 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR029
-U 1 1 5E3C0601
-P 3750 1800
-F 0 "#PWR029" H 3750 1550 50  0001 C CNN
-F 1 "GND" H 3755 1627 50  0000 C CNN
-F 2 "" H 3750 1800 50  0001 C CNN
-F 3 "" H 3750 1800 50  0001 C CNN
-	1    3750 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 1800 3675 1800
-$Comp
 L Device:CP C12
 U 1 1 5E3C1062
-P 3350 1950
-F 0 "C12" H 3232 1904 50  0000 R CNN
-F 1 "22µF" H 3232 1995 50  0000 R CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.50mm" H 3388 1800 50  0001 C CNN
-F 3 "~" H 3350 1950 50  0001 C CNN
-	1    3350 1950
+P 3650 1950
+F 0 "C12" H 3532 1904 50  0000 R CNN
+F 1 "22µF" H 3532 1995 50  0000 R CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.50mm" H 3688 1800 50  0001 C CNN
+F 3 "~" H 3650 1950 50  0001 C CNN
+	1    3650 1950
 	-1   0    0    1   
 $EndComp
-Connection ~ 3350 1800
 Wire Wire Line
-	3350 2100 3050 2100
+	3850 2100 3650 2100
 Wire Wire Line
 	3050 2100 3050 2000
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5E3C20B0
-P 4050 2700
-F 0 "SW1" H 4050 2985 50  0000 C CNN
-F 1 "Power Toggle" H 4050 2894 50  0000 C CNN
-F 2 "LeakyChips:PVA1_Switch" H 4050 2900 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/Y17P11141FP/CKN10276-ND/2296958/?itemSeq=317120675" H 4050 2900 50  0001 C CNN
-	1    4050 2700
+P 4200 2700
+F 0 "SW1" H 4200 2985 50  0000 C CNN
+F 1 "Power Toggle" H 4200 2894 50  0000 C CNN
+F 2 "LeakyChips:PVA1_Switch" H 4200 2900 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/Y17P11141FP/CKN10276-ND/2296958/?itemSeq=317120675" H 4200 2900 50  0001 C CNN
+	1    4200 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3850 2700 3350 2700
-Wire Wire Line
-	3350 2700 3350 2550
-Connection ~ 3350 2100
 $Comp
 L power:VCC #PWR030
 U 1 1 5E3C3489
-P 5450 2675
-F 0 "#PWR030" H 5450 2525 50  0001 C CNN
-F 1 "VCC" H 5467 2848 50  0000 C CNN
-F 2 "" H 5450 2675 50  0001 C CNN
-F 3 "" H 5450 2675 50  0001 C CNN
-	1    5450 2675
+P 5775 1050
+F 0 "#PWR030" H 5775 900 50  0001 C CNN
+F 1 "VCC" H 5792 1223 50  0000 C CNN
+F 2 "" H 5775 1050 50  0001 C CNN
+F 3 "" H 5775 1050 50  0001 C CNN
+	1    5775 1050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5450 2675 5450 2700
-Wire Wire Line
-	5450 2700 5350 2700
-Text Notes 2875 3075 0    50   ~ 0
+Text Notes 3550 3650 0    50   ~ 0
 TODO: reset
 $Comp
 L PJ-102A:PJ-102A J3
@@ -87,94 +64,198 @@ F 3 "1.03" H 2675 1900 50  0001 L BNN
 F 4 "CUI INC" H 2675 1900 50  0001 L BNN "Field4"
 F 5 "Manufacturer recommendations" H 2675 1900 50  0001 L BNN "Field5"
 	1    2675 1900
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
-Wire Wire Line
-	2875 1800 3350 1800
 Wire Wire Line
 	2875 2000 3050 2000
 NoConn ~ 2875 1900
-$Comp
-L Device:LED D1
-U 1 1 5E3C6907
-P 5625 2200
-F 0 "D1" H 5618 1945 50  0000 C CNN
-F 1 "LED" H 5618 2036 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 5625 2200 50  0001 C CNN
-F 3 "~" H 5625 2200 50  0001 C CNN
-	1    5625 2200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small_US R7
-U 1 1 5E3C7DB2
-P 5875 2200
-F 0 "R7" V 5670 2200 50  0000 C CNN
-F 1 "150Ω" V 5761 2200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 5875 2200 50  0001 C CNN
-F 3 "~" H 5875 2200 50  0001 C CNN
-	1    5875 2200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5475 2200 5250 2200
-Wire Wire Line
-	5250 2200 5250 2700
-Connection ~ 5250 2700
-Wire Wire Line
-	5250 2700 5150 2700
-Wire Wire Line
-	5975 2200 6100 2200
-Wire Wire Line
-	6100 2200 6100 1800
-Text Label 2925 2000 0    50   ~ 0
-RAW_5V
-Text Notes 3850 3500 0    50   ~ 0
+Text Notes 2800 3825 0    50   ~ 0
 maybe put a regulator in here too?
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5E493C9A
-P 5350 2700
-F 0 "#FLG0101" H 5350 2775 50  0001 C CNN
-F 1 "PWR_FLAG" H 5350 2873 50  0000 C CNN
-F 2 "" H 5350 2700 50  0001 C CNN
-F 3 "~" H 5350 2700 50  0001 C CNN
-	1    5350 2700
+P 5775 1050
+F 0 "#FLG0101" H 5775 1125 50  0001 C CNN
+F 1 "PWR_FLAG" H 5775 1223 50  0000 C CNN
+F 2 "" H 5775 1050 50  0001 C CNN
+F 3 "~" H 5775 1050 50  0001 C CNN
+	1    5775 1050
 	1    0    0    1   
 $EndComp
-Connection ~ 5350 2700
-Wire Wire Line
-	5350 2700 5250 2700
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5E4B4B7A
-P 3675 1800
-F 0 "#FLG0102" H 3675 1875 50  0001 C CNN
-F 1 "PWR_FLAG" H 3675 1973 50  0000 C CNN
-F 2 "" H 3675 1800 50  0001 C CNN
-F 3 "~" H 3675 1800 50  0001 C CNN
-	1    3675 1800
-	1    0    0    -1  
-$EndComp
-Connection ~ 3675 1800
-Wire Wire Line
-	3675 1800 3350 1800
-Wire Wire Line
-	3750 1800 6100 1800
-Connection ~ 3750 1800
-Wire Wire Line
-	3350 2250 3350 2100
 $Comp
 L Device:Polyfuse F1
 U 1 1 5E400A91
-P 3350 2400
-F 0 "F1" H 3438 2446 50  0000 L CNN
-F 1 "1.0A" H 3438 2355 50  0000 L CNN
-F 2 "0ZCK-polyfuse:0ZCK0100FF2E" H 3400 2200 50  0001 L CNN
-F 3 "~" H 3350 2400 50  0001 C CNN
-	1    3350 2400
+P 4500 2150
+F 0 "F1" H 4588 2196 50  0000 L CNN
+F 1 "1.0A" H 4588 2105 50  0000 L CNN
+F 2 "0ZCK-polyfuse:0ZCK0100FF2E" H 4550 1950 50  0001 L CNN
+F 3 "~" H 4500 2150 50  0001 C CNN
+	1    4500 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R12
+U 1 1 5E448774
+P 4850 2700
+F 0 "R12" V 4645 2700 50  0000 C CNN
+F 1 "330Ω" V 4736 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 4850 2700 50  0001 C CNN
+F 3 "~" H 4850 2700 50  0001 C CNN
+	1    4850 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NJFET_DGS Q2
+U 1 1 5E449BEC
+P 5150 2700
+F 0 "Q2" H 5341 2746 50  0000 L CNN
+F 1 "Q_NJFET_DGS" H 5341 2655 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 5350 2800 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/diodes-incorporated/DMN6075S-7/DMN6075S-7DICT-ND/5149299" H 5150 2700 50  0001 C CNN
+	1    5150 2700
 	1    0    0    -1  
 $EndComp
-Text Notes 3550 2900 0    50   ~ 0
-TODO: power switch\nvery weak (0.1A)
+Wire Wire Line
+	4000 2700 3850 2700
+Wire Wire Line
+	4750 2700 4550 2700
+Wire Wire Line
+	3850 2100 3850 2150
+Wire Wire Line
+	3750 1800 3750 3400
+Wire Wire Line
+	5250 2900 5250 3400
+$Comp
+L Device:R_Small_US R7
+U 1 1 5E3C7DB2
+P 5975 1500
+F 0 "R7" V 5770 1500 50  0000 C CNN
+F 1 "150Ω" V 5861 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5975 1500 50  0001 C CNN
+F 3 "~" H 5975 1500 50  0001 C CNN
+	1    5975 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 2150 4350 2150
+Wire Wire Line
+	4975 1550 4975 1050
+Wire Wire Line
+	4975 1050 5775 1050
+Connection ~ 3850 2150
+Wire Wire Line
+	3850 2150 3850 2700
+Connection ~ 5775 1050
+Wire Wire Line
+	5775 1050 5975 1050
+Wire Wire Line
+	4650 1550 4975 1550
+Connection ~ 3650 2100
+Connection ~ 3650 1800
+Wire Wire Line
+	3650 1800 3750 1800
+Text Label 3025 1800 1    50   ~ 0
+WALL_G
+Text Label 3025 2000 3    50   ~ 0
+WALL_V
+Wire Wire Line
+	3050 2100 3150 2100
+Wire Wire Line
+	2875 1800 3650 1800
+$Comp
+L Device:D_Schottky D2
+U 1 1 5E473FC7
+P 3300 2100
+F 0 "D2" H 3300 1884 50  0000 C CNN
+F 1 "50V 2A" H 3300 1975 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-15_P10.16mm_Horizontal" H 3300 2100 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/RL201-TP/RL201-TPCT-ND/950498/?itemSeq=317130355" H 3300 2100 50  0001 C CNN
+	1    3300 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3450 2100 3650 2100
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E4B4B7A
+P 5625 2225
+F 0 "#FLG0102" H 5625 2300 50  0001 C CNN
+F 1 "PWR_FLAG" H 5625 2398 50  0000 C CNN
+F 2 "" H 5625 2225 50  0001 C CNN
+F 3 "~" H 5625 2225 50  0001 C CNN
+	1    5625 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5E45514B
+P 5625 2200
+F 0 "#PWR0114" H 5625 1950 50  0001 C CNN
+F 1 "GND" H 5630 2027 50  0000 C CNN
+F 2 "" H 5625 2200 50  0001 C CNN
+F 3 "" H 5625 2200 50  0001 C CNN
+	1    5625 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1550 4650 2150
+Wire Wire Line
+	5250 2225 5250 2500
+Wire Wire Line
+	3750 3400 4550 3400
+Wire Wire Line
+	5975 1050 5975 1400
+Wire Wire Line
+	5975 1600 5975 1650
+$Comp
+L Device:LED D1
+U 1 1 5E3C6907
+P 5975 1800
+F 0 "D1" H 5968 1545 50  0000 C CNN
+F 1 "LED" H 5968 1636 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 5975 1800 50  0001 C CNN
+F 3 "~" H 5975 1800 50  0001 C CNN
+	1    5975 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5975 1950 5975 2225
+Connection ~ 5625 2225
+Wire Wire Line
+	5625 2225 5250 2225
+Wire Wire Line
+	5625 2225 5975 2225
+Wire Notes Line
+	5350 2450 6300 2450
+Wire Notes Line
+	6300 2450 6300 850 
+Wire Notes Line
+	6300 850  5350 850 
+Wire Notes Line
+	5350 850  5350 2450
+Text Notes 5425 1175 3    50   ~ 0
+ColecoVision logic power
+$Comp
+L Device:R_Small_US R13
+U 1 1 5E4A2317
+P 4550 3025
+F 0 "R13" H 4618 3071 50  0000 L CNN
+F 1 "10kΩ" H 4618 2980 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 4550 3025 50  0001 C CNN
+F 3 "~" H 4550 3025 50  0001 C CNN
+	1    4550 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2925 4550 2700
+Connection ~ 4550 2700
+Wire Wire Line
+	4550 2700 4400 2700
+Wire Wire Line
+	4550 3125 4550 3400
+Connection ~ 4550 3400
+Wire Wire Line
+	4550 3400 5250 3400
+Text Notes 2350 1525 3    50   ~ 0
+Should be centre positive
 $EndSCHEMATC
