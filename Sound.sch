@@ -149,25 +149,25 @@ Raw_Audio
 $Comp
 L RCJ-017:RCJ-017 J4
 U 1 1 5E3DB8E6
-P 7925 6025
-F 0 "J4" H 7767 5974 50  0000 R CNN
-F 1 "RCJ-017" H 7767 6065 50  0000 R CNN
-F 2 "CUI_RCJ-017" H 7925 6025 50  0001 L BNN
-F 3 "CUI Inc" H 7925 6025 50  0001 L BNN
-F 4 "B" H 7925 6025 50  0001 L BNN "Field4"
-F 5 "Manufacturer recommendations" H 7925 6025 50  0001 L BNN "Field5"
-	1    7925 6025
+P 8600 5850
+F 0 "J4" H 8442 5799 50  0000 R CNN
+F 1 "RCJ-017" H 8442 5890 50  0000 R CNN
+F 2 "CUI_RCJ-017" H 8600 5850 50  0001 L BNN
+F 3 "CUI Inc" H 8600 5850 50  0001 L BNN
+F 4 "B" H 8600 5850 50  0001 L BNN "Field4"
+F 5 "Manufacturer recommendations" H 8600 5850 50  0001 L BNN "Field5"
+	1    8600 5850
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR033
 U 1 1 5E3DD314
-P 7625 6125
-F 0 "#PWR033" H 7625 5875 50  0001 C CNN
-F 1 "GND" H 7630 5952 50  0000 C CNN
-F 2 "" H 7625 6125 50  0001 C CNN
-F 3 "" H 7625 6125 50  0001 C CNN
-	1    7625 6125
+P 8300 5950
+F 0 "#PWR033" H 8300 5700 50  0001 C CNN
+F 1 "GND" H 8305 5777 50  0000 C CNN
+F 2 "" H 8300 5950 50  0001 C CNN
+F 3 "" H 8300 5950 50  0001 C CNN
+	1    8300 5950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -183,8 +183,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 6900 5650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6700 5750 7275 5750
-Wire Wire Line
-	7625 5750 7625 5925
 Wire Wire Line
 	7000 5350 7625 5350
 Wire Wire Line
@@ -268,8 +266,6 @@ F 3 "~" H 7275 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7275 5750
-Wire Wire Line
-	7275 5750 7625 5750
 $Comp
 L Device:C C19
 U 1 1 5E3F96AC
@@ -281,9 +277,6 @@ F 3 "~" H 7275 5900 50  0001 C CNN
 	1    7275 5900
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7000 5450
-NoConn ~ 6400 5450
-NoConn ~ 6400 5550
 Wire Wire Line
 	6400 5350 6400 4950
 Wire Wire Line
@@ -297,4 +290,68 @@ Wire Wire Line
 	5875 4200 7425 4200
 Wire Wire Line
 	7425 4200 7425 4400
+$Comp
+L Device:CP C?
+U 1 1 5E3F1698
+P 8150 5750
+F 0 "C?" V 8405 5750 50  0000 C CNN
+F 1 "220µF" V 8314 5750 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D8.0mm_P3.50mm" H 8188 5600 50  0001 C CNN
+F 3 "~" H 8150 5750 50  0001 C CNN
+	1    8150 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7275 5750 8000 5750
+$Comp
+L Device:CP C?
+U 1 1 5E3F358B
+P 6000 5500
+F 0 "C?" H 6118 5546 50  0000 L CNN
+F 1 "10µF" H 6118 5455 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 6038 5350 50  0001 C CNN
+F 3 "~" H 6000 5500 50  0001 C CNN
+	1    6000 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5550 6400 5650
+Wire Wire Line
+	6400 5650 6000 5650
+Wire Wire Line
+	6400 5450 6325 5450
+Wire Wire Line
+	6325 5450 6325 5350
+Wire Wire Line
+	6325 5350 6000 5350
+Wire Wire Line
+	7000 5450 7000 6125
+Wire Wire Line
+	7000 6125 6375 6125
+Wire Wire Line
+	6375 6125 6375 6250
+$Comp
+L Device:C C?
+U 1 1 5E3F7B65
+P 6375 6400
+F 0 "C?" H 6490 6446 50  0000 L CNN
+F 1 "10µF" H 6490 6355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6413 6250 50  0001 C CNN
+F 3 "~" H 6375 6400 50  0001 C CNN
+	1    6375 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E3F80AD
+P 6375 6550
+F 0 "#PWR?" H 6375 6300 50  0001 C CNN
+F 1 "GND" H 6380 6377 50  0000 C CNN
+F 2 "" H 6375 6550 50  0001 C CNN
+F 3 "" H 6375 6550 50  0001 C CNN
+	1    6375 6550
+	1    0    0    -1  
+$EndComp
+Text Label 6375 6125 0    50   ~ 0
+Bypass
 $EndSCHEMATC
