@@ -207,4 +207,6 @@ F 3 "~" H 6025 4875 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6375 4875 6175 4875
+Text Label 6325 4875 1    50   ~ 0
+To_Speakers
 $EndSCHEMATC

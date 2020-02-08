@@ -1137,4 +1137,6 @@ Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
+Text Label 3275 1975 1    50   ~ 0
+To_TV
 $EndSCHEMATC

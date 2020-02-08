@@ -20,8 +20,8 @@ U 1 1 5E4296AD
 P 3675 3000
 F 0 "J5" H 3855 3046 50  0000 L CNN
 F 1 "Controller Port 1" H 3855 2955 50  0000 L CNN
-F 2 "" H 3675 3000 50  0001 C CNN
-F 3 " ~" H 3675 3000 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 3675 3000 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5747250-4/A32072-ND/808627" H 3675 3000 50  0001 C CNN
 	1    3675 3000
 	1    0    0    -1  
 $EndComp
@@ -31,8 +31,8 @@ U 1 1 5E429B8A
 P 3675 5050
 F 0 "J6" H 3855 5096 50  0000 L CNN
 F 1 "Controller Port 2" H 3855 5005 50  0000 L CNN
-F 2 "" H 3675 5050 50  0001 C CNN
-F 3 " ~" H 3675 5050 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 3675 5050 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5747250-4/A32072-ND/808627 ~" H 3675 5050 50  0001 C CNN
 	1    3675 5050
 	1    0    0    -1  
 $EndComp
