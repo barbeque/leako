@@ -257,89 +257,6 @@ Wire Wire Line
 	9550 2025 9550 2550
 Connection ~ 10025 2025
 $Comp
-L Device:Crystal Y1
-U 1 1 5E3E3796
-P 1525 3750
-F 0 "Y1" V 1571 3619 50  0000 R CNN
-F 1 "10.7MHz" V 1480 3619 50  0000 R CNN
-F 2 "Crystals:Crystal_HC49-U_Vertical" H 1525 3750 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/ecs-inc/ECS-107-3-S-1/110084" H 1525 3750 50  0001 C CNN
-	1    1525 3750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:CP1_Small C2
-U 1 1 5E3E6795
-P 1800 3425
-F 0 "C2" V 2028 3425 50  0000 C CNN
-F 1 "27pF" V 1937 3425 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1800 3425 50  0001 C CNN
-F 3 "~" H 1800 3425 50  0001 C CNN
-	1    1800 3425
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:CP1_Small C3
-U 1 1 5E3EB0AB
-P 1800 4175
-F 0 "C3" V 2028 4175 50  0000 C CNN
-F 1 "27pF" V 1937 4175 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1800 4175 50  0001 C CNN
-F 3 "~" H 1800 4175 50  0001 C CNN
-	1    1800 4175
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1700 4175 1525 4175
-Wire Wire Line
-	1525 4175 1525 3900
-Wire Wire Line
-	1700 3425 1525 3425
-Wire Wire Line
-	1525 3425 1525 3600
-Wire Wire Line
-	1525 3425 1375 3425
-Connection ~ 1525 3425
-Wire Wire Line
-	1525 4175 1375 4175
-Connection ~ 1525 4175
-Text GLabel 1375 3425 0    50   Input ~ 0
-XTAL1
-Text GLabel 1375 4175 0    50   Input ~ 0
-XTAL2
-Text GLabel 6400 2200 2    50   Input ~ 0
-XTAL1
-Text GLabel 6400 2100 2    50   Input ~ 0
-XTAL2
-Wire Wire Line
-	1900 3425 2075 3425
-Wire Wire Line
-	2075 3425 2075 4175
-Wire Wire Line
-	2075 4175 1900 4175
-$Comp
-L power:GND #PWR07
-U 1 1 5E3F6FD2
-P 2075 4175
-F 0 "#PWR07" H 2075 3925 50  0001 C CNN
-F 1 "GND" H 2080 4002 50  0000 C CNN
-F 2 "" H 2075 4175 50  0001 C CNN
-F 3 "" H 2075 4175 50  0001 C CNN
-	1    2075 4175
-	1    0    0    -1  
-$EndComp
-Connection ~ 2075 4175
-Wire Notes Line
-	975  3000 2300 3000
-Wire Notes Line
-	2300 3000 2300 4500
-Wire Notes Line
-	2300 4500 975  4500
-Wire Notes Line
-	975  4500 975  3000
-Text Notes 1650 4475 2    50   ~ 0
-TMS99x8 Crystal
-$Comp
 L Device:R_Small_US R5
 U 1 1 5E424465
 P 2500 1775
@@ -1135,12 +1052,6 @@ Wire Wire Line
 	6400 2700 6975 2700
 Wire Wire Line
 	6975 2700 6975 2500
-Wire Bus Line
-	4350 3200 4700 3200
-Wire Bus Line
-	5200 3600 5200 4225
-Wire Bus Line
-	6700 3800 6700 4225
 $Comp
 L power:VCC #PWR0118
 U 1 1 5E46DB17
@@ -1167,4 +1078,13 @@ Wire Wire Line
 	6975 2300 6975 2175
 Text Notes 6975 2725 2    50   ~ 0
 EXT_VDP_RESET
+NoConn ~ 6400 2200
+Wire Bus Line
+	4350 3200 4700 3200
+Wire Bus Line
+	5200 3600 5200 4225
+Wire Bus Line
+	6700 3800 6700 4225
+Text GLabel 6400 2100 2    50   Input ~ 0
+VID_CLK
 $EndSCHEMATC

@@ -31,3 +31,5 @@
 - [x] power U14, the ugly NOR that was used for the RAM
 - [x] break out the remainder of the pins so i can use them as an inverter if need be
 - [x] is it OK to tie CPU reset and VDP reset together? it is not
+- [ ] U21 feels unnecessary, we can probably drop it if we have leftover room on U14 in the end
+- [ ] find a replacement for the 7.15909MHz crystal

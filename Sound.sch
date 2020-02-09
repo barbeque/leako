@@ -128,7 +128,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 3875 5500 3875
 Text GLabel 5500 3875 2    50   Input ~ 0
-Audio_CLK
+AUD_CLK
 Text GLabel 4200 4125 0    50   Input ~ 0
 Audio_WR
 Wire Wire Line
