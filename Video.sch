@@ -182,7 +182,7 @@ Entry Wire Line
 	5200 3900 5300 4000
 Wire Bus Line
 	6700 4225 6700 4825
-Text GLabel 6400 2700 2    50   Input ~ 0
+Text GLabel 7050 2700 2    50   Input ~ 0
 !RESET
 Wire Notes Line
 	4650 800  4650 2950
@@ -1131,12 +1131,43 @@ Text Label 4650 5850 2    50   ~ 0
 WR
 Text Label 4675 6400 2    50   ~ 0
 RD
+Text Label 3275 1975 1    50   ~ 0
+To_TV
+Wire Wire Line
+	6400 2700 6975 2700
+Wire Wire Line
+	6975 2700 6975 2500
 Wire Bus Line
 	4350 3200 4700 3200
 Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
-Text Label 3275 1975 1    50   ~ 0
-To_TV
+Connection ~ 6975 2700
+Wire Wire Line
+	6975 2700 7050 2700
+$Comp
+L power:VCC #PWR0118
+U 1 1 5E46DB17
+P 6975 2175
+F 0 "#PWR0118" H 6975 2025 50  0001 C CNN
+F 1 "VCC" H 6992 2348 50  0000 C CNN
+F 2 "" H 6975 2175 50  0001 C CNN
+F 3 "" H 6975 2175 50  0001 C CNN
+	1    6975 2175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R15
+U 1 1 5E46E6C5
+P 6975 2400
+F 0 "R15" H 7043 2446 50  0000 L CNN
+F 1 "4.7kΩ" H 7043 2355 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6975 2400 50  0001 C CNN
+F 3 "~" H 6975 2400 50  0001 C CNN
+	1    6975 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6975 2300 6975 2175
 $EndSCHEMATC

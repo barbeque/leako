@@ -8,7 +8,7 @@
 - [x] can I use a knockoff U2413 as an AY-3-8910 to save some board room? are they that deeply compatible? i guess i already own an AY-3-8910. NEVER MIND IT'S AN SN76489 - already on order
 - [x] video amp? used the one from the PDF
 - [x] audio amp? is this too much gain? don't need one at all probably
-- [ ] reset circuit
+- [x] reset circuit
 - [ ] cpu clock circuit
 - [x] how is the TMS clocked?
 - [x] do i need to reverse a7..a0 for the TMS, or is that for data, or not at all?
@@ -25,7 +25,9 @@
 - [ ] what is up with the -5V on the controller schematic?
 - [x] fet to protect the power switch?
 - [x] rca jacks around the right way?
-- [ ] why are the two 541s on the controller featuring different data bus pinouts?
+- [x] why are the two 541s on the controller featuring different data bus pinouts?
+- [ ] map out the 541s
 - [ ] find some board spacers or a project case to lift this thing off a desk now that it's two sided
 - [x] power U14, the ugly NOR that was used for the RAM
 - [x] break out the remainder of the pins so i can use them as an inverter if need be
+- [ ] is it OK to tie CPU reset and VDP reset together?
