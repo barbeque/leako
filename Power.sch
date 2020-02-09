@@ -724,17 +724,6 @@ $EndComp
 Wire Wire Line
 	9950 5625 9950 5900
 $Comp
-L Device:Crystal Y1
-U 1 1 5E43F394
-P 3575 4425
-F 0 "Y1" H 3575 4693 50  0000 C CNN
-F 1 "7.15909" H 3575 4602 50  0000 C CNN
-F 2 "Crystals:Crystal_HC49-U_Vertical" H 3575 4425 50  0001 C CNN
-F 3 "~" H 3575 4425 50  0001 C CNN
-	1    3575 4425
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C3
 U 1 1 5E4427E6
 P 3575 3900
@@ -794,8 +783,6 @@ Connection ~ 2675 4050
 Wire Wire Line
 	3125 4050 2925 4050
 Connection ~ 3125 4425
-Wire Wire Line
-	3725 4425 3825 4425
 Wire Wire Line
 	3825 4425 3825 4050
 Wire Wire Line
@@ -1184,4 +1171,122 @@ F 3 "~" H 8900 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 5650 8900 6025
+$Comp
+L Device:Crystal Y?
+U 1 1 5E5A5EBE
+P 1325 5425
+F 0 "Y?" H 1325 5693 50  0000 C CNN
+F 1 "14.31818 (2x)" H 1325 5602 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-U_Vertical" H 1325 5425 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/9B-14.31818MBBK-B/887-1862-ND/3522029/?itemSeq=317149689" H 1325 5425 50  0001 C CNN
+	1    1325 5425
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 U22
+U 1 1 5E5A9C25
+P 2100 5425
+F 0 "U22" H 2100 5906 50  0000 C CNN
+F 1 "74LS74" H 2100 5815 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2100 5425 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 2100 5425 50  0001 C CNN
+	1    2100 5425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1475 5425 1800 5425
+Wire Wire Line
+	2400 5525 2600 5525
+Wire Wire Line
+	2600 5525 2600 4950
+Wire Wire Line
+	2600 4950 1750 4950
+Wire Wire Line
+	1750 4950 1750 5325
+Wire Wire Line
+	1750 5325 1800 5325
+Wire Wire Line
+	2400 5325 3750 5325
+Wire Wire Line
+	3750 5325 3750 4425
+Wire Wire Line
+	3750 4425 3825 4425
+Wire Wire Line
+	1175 5425 800  5425
+Wire Wire Line
+	800  5425 800  4700
+Wire Wire Line
+	800  4700 3425 4700
+Wire Wire Line
+	3425 4700 3425 4425
+Text Notes 3750 4550 2    50   ~ 0
+Crystal\n7.15909\nMHz
+Wire Notes Line
+	3375 4200 3375 4650
+Wire Notes Line
+	3375 4650 3800 4650
+Wire Notes Line
+	3800 4650 3800 4200
+Wire Notes Line
+	3800 4200 3375 4200
+Text Label 3150 5325 2    50   ~ 0
+7MHz
+Text Label 1725 5425 2    50   ~ 0
+14MHz
+$Comp
+L power:VCC #PWR?
+U 1 1 5E5DE5C6
+P 2450 5725
+F 0 "#PWR?" H 2450 5575 50  0001 C CNN
+F 1 "VCC" H 2467 5898 50  0000 C CNN
+F 2 "" H 2450 5725 50  0001 C CNN
+F 3 "" H 2450 5725 50  0001 C CNN
+	1    2450 5725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5725 2100 5725
+Wire Wire Line
+	2100 5125 2775 5125
+$Comp
+L power:VCC #PWR?
+U 1 1 5E5ED51B
+P 2775 5125
+F 0 "#PWR?" H 2775 4975 50  0001 C CNN
+F 1 "VCC" H 2792 5298 50  0000 C CNN
+F 2 "" H 2775 5125 50  0001 C CNN
+F 3 "" H 2775 5125 50  0001 C CNN
+	1    2775 5125
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS74 U22
+U 3 1 5E5F0EFF
+P 8300 5525
+F 0 "U22" H 8530 5571 50  0000 L CNN
+F 1 "74LS74" H 8530 5480 50  0000 L CNN
+F 2 "" H 8300 5525 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 8300 5525 50  0001 C CNN
+	3    8300 5525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 5125 7700 5125
+Wire Wire Line
+	7700 5125 7700 5375
+Wire Wire Line
+	7700 5925 8300 5925
+$Comp
+L Device:C C?
+U 1 1 5E5FFEE5
+P 7700 5525
+F 0 "C?" H 7815 5571 50  0000 L CNN
+F 1 "0.1µF" H 7815 5480 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7738 5375 50  0001 C CNN
+F 3 "~" H 7700 5525 50  0001 C CNN
+	1    7700 5525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 5675 7700 5925
 $EndSCHEMATC
