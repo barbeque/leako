@@ -33,3 +33,4 @@
 - [x] is it OK to tie CPU reset and VDP reset together? it is not
 - [ ] U21 feels unnecessary, we can probably drop it if we have leftover room on U14 in the end
 - [ ] find a replacement for the 7.15909MHz crystal (figure out how to divide a 14.31818)
+- [ ] you know what, can i just axe this entire clock section and use an oscillator chip
