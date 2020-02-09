@@ -182,8 +182,6 @@ Entry Wire Line
 	5200 3900 5300 4000
 Wire Bus Line
 	6700 4225 6700 4825
-Text GLabel 7050 2700 2    50   Input ~ 0
-!RESET
 Wire Notes Line
 	4650 800  4650 2950
 Wire Notes Line
@@ -1143,9 +1141,6 @@ Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
-Connection ~ 6975 2700
-Wire Wire Line
-	6975 2700 7050 2700
 $Comp
 L power:VCC #PWR0118
 U 1 1 5E46DB17
@@ -1170,4 +1165,6 @@ F 3 "~" H 6975 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6975 2300 6975 2175
+Text Notes 6975 2725 2    50   ~ 0
+EXT_VDP_RESET
 $EndSCHEMATC
