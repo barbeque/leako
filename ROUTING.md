@@ -1,0 +1,2 @@
+- lots of ground planes around sound chip
+- don't run clock lines under the video or audio analogue lines
