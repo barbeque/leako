@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -258,4 +258,58 @@ Wire Wire Line
 	4550 3400 5250 3400
 Text Notes 2350 1525 3    50   ~ 0
 Should be centre positive
+$Comp
+L 74xx:74LS02 U14
+U 5 1 5E4100D4
+P 10475 1725
+F 0 "U14" H 10705 1771 50  0000 L CNN
+F 1 "74LS02" H 10705 1680 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 10475 1725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 10475 1725 50  0001 C CNN
+	5    10475 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5E412F5E
+P 10475 2225
+F 0 "#PWR0116" H 10475 1975 50  0001 C CNN
+F 1 "GND" H 10480 2052 50  0000 C CNN
+F 2 "" H 10475 2225 50  0001 C CNN
+F 3 "" H 10475 2225 50  0001 C CNN
+	1    10475 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0117
+U 1 1 5E413392
+P 10475 1225
+F 0 "#PWR0117" H 10475 1075 50  0001 C CNN
+F 1 "VCC" H 10492 1398 50  0000 C CNN
+F 2 "" H 10475 1225 50  0001 C CNN
+F 3 "" H 10475 1225 50  0001 C CNN
+	1    10475 1225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10475 1225 10175 1225
+Wire Wire Line
+	10175 1225 10175 1550
+Wire Wire Line
+	10175 2225 10475 2225
+Connection ~ 10475 1225
+Connection ~ 10475 2225
+$Comp
+L Device:C C20
+U 1 1 5E413C90
+P 10175 1700
+F 0 "C20" H 10290 1746 50  0000 L CNN
+F 1 "0.1µF" H 10290 1655 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10213 1550 50  0001 C CNN
+F 3 "~" H 10175 1700 50  0001 C CNN
+	1    10175 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10175 1850 10175 2225
 $EndSCHEMATC

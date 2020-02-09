@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -1242,4 +1242,10 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
+$Sheet
+S 4200 6775 500  625 
+U 5E40230D
+F0 "Testpoints" 50
+F1 "Testpoints.sch" 50
+$EndSheet
 $EndSCHEMATC

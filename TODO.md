@@ -27,3 +27,5 @@
 - [x] rca jacks around the right way?
 - [ ] why are the two 541s on the controller featuring different data bus pinouts?
 - [ ] find some board spacers or a project case to lift this thing off a desk now that it's two sided
+- [x] power U14, the ugly NOR that was used for the RAM
+- [x] break out the remainder of the pins so i can use them as an inverter if need be

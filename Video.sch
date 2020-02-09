@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -969,7 +969,7 @@ U 6 1 5E4ED145
 P 3775 6400
 F 0 "U4" H 3775 6717 50  0000 C CNN
 F 1 "74HCT04" H 3775 6626 50  0000 C CNN
-F 2 "" H 3775 6400 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3775 6400 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3775 6400 50  0001 C CNN
 	6    3775 6400
 	1    0    0    -1  
@@ -993,7 +993,7 @@ U 2 1 5E4F7848
 P 3775 6950
 F 0 "U4" H 3775 7267 50  0000 C CNN
 F 1 "74HCT04" H 3775 7176 50  0000 C CNN
-F 2 "" H 3775 6950 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3775 6950 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3775 6950 50  0001 C CNN
 	2    3775 6950
 	1    0    0    -1  
@@ -1008,7 +1008,7 @@ U 3 1 5E4FFC02
 P 5775 5825
 F 0 "U4" H 5775 6142 50  0000 C CNN
 F 1 "74HCT04" H 5775 6051 50  0000 C CNN
-F 2 "" H 5775 5825 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 5775 5825 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5775 5825 50  0001 C CNN
 	3    5775 5825
 	1    0    0    -1  
@@ -1021,7 +1021,7 @@ U 4 1 5E500AF5
 P 5775 6400
 F 0 "U4" H 5775 6717 50  0000 C CNN
 F 1 "74HCT04" H 5775 6626 50  0000 C CNN
-F 2 "" H 5775 6400 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 5775 6400 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5775 6400 50  0001 C CNN
 	4    5775 6400
 	1    0    0    -1  
@@ -1042,7 +1042,7 @@ U 5 1 5E505E19
 P 5775 7000
 F 0 "U4" H 5775 7317 50  0000 C CNN
 F 1 "74HCT04" H 5775 7226 50  0000 C CNN
-F 2 "" H 5775 7000 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 5775 7000 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5775 7000 50  0001 C CNN
 	5    5775 7000
 	1    0    0    -1  
@@ -1065,7 +1065,7 @@ U 7 1 5E516DBF
 P 4875 7500
 F 0 "U4" V 4508 7500 50  0000 C CNN
 F 1 "74HCT04" V 4599 7500 50  0000 C CNN
-F 2 "" H 4875 7500 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4875 7500 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4875 7500 50  0001 C CNN
 	7    4875 7500
 	0    1    1    0   
