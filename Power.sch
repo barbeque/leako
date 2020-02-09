@@ -978,8 +978,6 @@ Wire Wire Line
 	6600 2575 7000 2575
 Wire Wire Line
 	7000 2575 7000 2825
-Wire Wire Line
-	7000 4900 5325 4900
 $Comp
 L Device:R_Small_US R27
 U 1 1 5E4F47FE
@@ -997,7 +995,7 @@ Wire Wire Line
 	7000 3250 7200 3250
 Connection ~ 7000 3250
 Wire Wire Line
-	7000 3250 7000 4900
+	7000 3250 7000 4800
 $Comp
 L Device:C C26
 U 1 1 5E4FA849
@@ -1137,7 +1135,7 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8650 367
 $EndComp
 Text GLabel 8950 3675 2    50   Input ~ 0
 VID_CLK
-Text Notes 5950 4500 2    50   ~ 0
+Text Notes 6425 3100 2    118  ~ 0
 Clock
 Wire Wire Line
 	5025 4375 5025 4700
@@ -1172,91 +1170,47 @@ $EndComp
 Wire Wire Line
 	8900 5650 8900 6025
 $Comp
-L Device:Crystal Y?
+L Device:Crystal Y1
 U 1 1 5E5A5EBE
-P 1325 5425
-F 0 "Y?" H 1325 5693 50  0000 C CNN
-F 1 "14.31818 (2x)" H 1325 5602 50  0000 C CNN
-F 2 "Crystals:Crystal_HC49-U_Vertical" H 1325 5425 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/9B-14.31818MBBK-B/887-1862-ND/3522029/?itemSeq=317149689" H 1325 5425 50  0001 C CNN
-	1    1325 5425
+P 3575 4425
+F 0 "Y1" H 3575 4693 50  0000 C CNN
+F 1 "14.31818 (2x)" H 3575 4602 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-U_Vertical" H 3575 4425 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/9B-14.31818MBBK-B/887-1862-ND/3522029/?itemSeq=317149689" H 3575 4425 50  0001 C CNN
+	1    3575 4425
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS74 U22
 U 1 1 5E5A9C25
-P 2100 5425
-F 0 "U22" H 2100 5906 50  0000 C CNN
-F 1 "74LS74" H 2100 5815 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2100 5425 50  0001 C CNN
-F 3 "74xx/74hc_hct74.pdf" H 2100 5425 50  0001 C CNN
-	1    2100 5425
+P 6100 4900
+F 0 "U22" H 6100 5381 50  0000 C CNN
+F 1 "74LS74" H 6100 5290 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 6100 4900 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 6100 4900 50  0001 C CNN
+	1    6100 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1475 5425 1800 5425
-Wire Wire Line
-	2400 5525 2600 5525
-Wire Wire Line
-	2600 5525 2600 4950
-Wire Wire Line
-	2600 4950 1750 4950
-Wire Wire Line
-	1750 4950 1750 5325
-Wire Wire Line
-	1750 5325 1800 5325
-Wire Wire Line
-	2400 5325 3750 5325
-Wire Wire Line
-	3750 5325 3750 4425
-Wire Wire Line
-	3750 4425 3825 4425
-Wire Wire Line
-	1175 5425 800  5425
-Wire Wire Line
-	800  5425 800  4700
-Wire Wire Line
-	800  4700 3425 4700
-Wire Wire Line
-	3425 4700 3425 4425
-Text Notes 3750 4550 2    50   ~ 0
-Crystal\n7.15909\nMHz
-Wire Notes Line
-	3375 4200 3375 4650
-Wire Notes Line
-	3375 4650 3800 4650
-Wire Notes Line
-	3800 4650 3800 4200
-Wire Notes Line
-	3800 4200 3375 4200
-Text Label 3150 5325 2    50   ~ 0
-7MHz
-Text Label 1725 5425 2    50   ~ 0
-14MHz
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0131
 U 1 1 5E5DE5C6
-P 2450 5725
-F 0 "#PWR?" H 2450 5575 50  0001 C CNN
-F 1 "VCC" H 2467 5898 50  0000 C CNN
-F 2 "" H 2450 5725 50  0001 C CNN
-F 3 "" H 2450 5725 50  0001 C CNN
-	1    2450 5725
+P 6425 5200
+F 0 "#PWR0131" H 6425 5050 50  0001 C CNN
+F 1 "VCC" H 6442 5373 50  0000 C CNN
+F 2 "" H 6425 5200 50  0001 C CNN
+F 3 "" H 6425 5200 50  0001 C CNN
+	1    6425 5200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2450 5725 2100 5725
-Wire Wire Line
-	2100 5125 2775 5125
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0132
 U 1 1 5E5ED51B
-P 2775 5125
-F 0 "#PWR?" H 2775 4975 50  0001 C CNN
-F 1 "VCC" H 2792 5298 50  0000 C CNN
-F 2 "" H 2775 5125 50  0001 C CNN
-F 3 "" H 2775 5125 50  0001 C CNN
-	1    2775 5125
+P 6425 4600
+F 0 "#PWR0132" H 6425 4450 50  0001 C CNN
+F 1 "VCC" H 6442 4773 50  0000 C CNN
+F 2 "" H 6425 4600 50  0001 C CNN
+F 3 "" H 6425 4600 50  0001 C CNN
+	1    6425 4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1277,10 +1231,10 @@ Wire Wire Line
 Wire Wire Line
 	7700 5925 8300 5925
 $Comp
-L Device:C C?
+L Device:C C29
 U 1 1 5E5FFEE5
 P 7700 5525
-F 0 "C?" H 7815 5571 50  0000 L CNN
+F 0 "C29" H 7815 5571 50  0000 L CNN
 F 1 "0.1µF" H 7815 5480 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7738 5375 50  0001 C CNN
 F 3 "~" H 7700 5525 50  0001 C CNN
@@ -1289,4 +1243,40 @@ F 3 "~" H 7700 5525 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7700 5675 7700 5925
+Wire Wire Line
+	3725 4425 3825 4425
+Text Notes 4550 4700 2    50   ~ 0
+TODO: tweak passives for x2 crystal
+Text Label 5600 4900 2    50   ~ 0
+14MHz
+Wire Wire Line
+	5800 4900 5325 4900
+Wire Wire Line
+	6400 4800 7000 4800
+Text Label 6875 4800 2    50   ~ 0
+7MHz
+Wire Wire Line
+	6400 5000 6575 5000
+Wire Wire Line
+	6575 5000 6575 4325
+Wire Wire Line
+	6575 4325 5650 4325
+Wire Wire Line
+	5650 4325 5650 4800
+Wire Wire Line
+	5650 4800 5800 4800
+Wire Wire Line
+	6425 4600 6100 4600
+Wire Wire Line
+	6100 5200 6425 5200
+Wire Notes Line
+	5600 5350 6650 5350
+Wire Notes Line
+	6650 5350 6650 4275
+Wire Notes Line
+	6650 4275 5600 4275
+Wire Notes Line
+	5600 4275 5600 5350
+Text Notes 5600 5350 0    50   ~ 0
+Clock div/2\n(2x crystal was fitted)
 $EndSCHEMATC
