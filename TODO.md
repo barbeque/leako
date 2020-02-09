@@ -25,4 +25,5 @@
 - [ ] what is up with the -5V on the controller schematic?
 - [x] fet to protect the power switch?
 - [x] rca jacks around the right way?
-- [ ] why are the two 541s on the controller featuring different data bus pinouts
+- [ ] why are the two 541s on the controller featuring different data bus pinouts?
+- [ ] find some board spacers or a project case to lift this thing off a desk now that it's two sided
