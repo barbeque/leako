@@ -722,12 +722,6 @@ Text GLabel 5325 2400 0    50   Input ~ 0
 AD6
 Text GLabel 5325 2300 0    50   Input ~ 0
 AD7
-Text GLabel 6400 2300 2    50   Input ~ 0
-P38
-Text GLabel 6400 2400 2    50   Input ~ 0
-P37
-Text GLabel 6400 2600 2    50   Input ~ 0
-P35
 $Comp
 L power:GND #PWR021
 U 1 1 5E4C1428
@@ -1079,12 +1073,15 @@ Wire Wire Line
 Text Notes 6975 2725 2    50   ~ 0
 EXT_VDP_RESET
 NoConn ~ 6400 2200
+Text GLabel 6400 2100 2    50   Input ~ 0
+VID_CLK
+NoConn ~ 6400 2400
+NoConn ~ 6400 2600
+NoConn ~ 6400 2300
 Wire Bus Line
 	4350 3200 4700 3200
 Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
-Text GLabel 6400 2100 2    50   Input ~ 0
-VID_CLK
 $EndSCHEMATC
