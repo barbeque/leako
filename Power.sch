@@ -931,12 +931,10 @@ F 3 "~" H 7750 2575 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 7650 2575
-Text GLabel 7850 2575 2    50   Input ~ 0
+Text GLabel 8625 2575 2    50   Input ~ 0
 CPU_CLK
-Text GLabel 8025 2025 2    50   Input ~ 0
+Text GLabel 8625 2025 2    50   Input ~ 0
 AUD_CLK
-Wire Wire Line
-	8025 2025 7950 2025
 $Comp
 L Device:R_Small_US R30
 U 1 1 5E50D254
@@ -1217,4 +1215,8 @@ Text Label 8975 3675 0    50   ~ 0
 10MHz
 Text Label 7000 3500 0    50   ~ 0
 3.57MHz
+Wire Wire Line
+	7950 2025 8625 2025
+Wire Wire Line
+	8625 2575 7850 2575
 $EndSCHEMATC

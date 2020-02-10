@@ -1041,7 +1041,7 @@ U 1 1 5E3D3F9E
 P 5700 7075
 F 0 "WJ4" H 5700 7339 50  0000 C CNN
 F 1 "(normally open)" H 5700 7248 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5700 7075 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5700 7075 50  0001 C CNN
 F 3 "~" H 5700 7075 50  0001 C CNN
 	1    5700 7075
 	1    0    0    -1  
@@ -1052,7 +1052,7 @@ U 1 1 5E3DC9DE
 P 5700 7450
 F 0 "WJ5" H 5700 7714 50  0000 C CNN
 F 1 "(normally open)" H 5700 7623 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5700 7450 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5700 7450 50  0001 C CNN
 F 3 "~" H 5700 7450 50  0001 C CNN
 	1    5700 7450
 	1    0    0    -1  
@@ -1240,6 +1240,10 @@ U 5E40230D
 F0 "Testpoints" 50
 F1 "Testpoints.sch" 50
 $EndSheet
+Text GLabel 1875 2875 0    50   Input ~ 0
+!M1
+Text GLabel 1875 2175 0    50   Input ~ 0
+CPU_CLK
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line
@@ -1248,8 +1252,4 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
-Text GLabel 1875 2875 0    50   Input ~ 0
-!M1
-Text GLabel 1875 2175 0    50   Input ~ 0
-CPU_CLK
 $EndSCHEMATC

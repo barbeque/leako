@@ -5,4 +5,5 @@
   (lib (name 0ZCK-polyfuse)(type KiCad)(uri ${KIPRJMOD}/0ZCK-polyfuse.pretty)(options "")(descr ""))
   (lib (name Connector_Dsub)(type KiCad)(uri ${KIPRJMOD}/Connector_Dsub.pretty)(options "")(descr ""))
   (lib (name tdk-inductor)(type KiCad)(uri ${KIPRJMOD}/tdk-inductor.pretty)(options "")(descr ""))
+  (lib (name Jumper)(type KiCad)(uri ${KIPRJMOD}/Jumper.pretty)(options "")(descr ""))
 )
