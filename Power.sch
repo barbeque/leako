@@ -1279,4 +1279,8 @@ Wire Notes Line
 	5600 4275 5600 5350
 Text Notes 5600 5350 0    50   ~ 0
 Clock div/2\n(2x crystal was fitted)
+Text Notes 2600 5200 0    50   ~ 0
+TODO: dump this entire mess and make an oscillator\ndispense directly to pin 11 of the input flop
+Text Notes 2900 5500 0    50   ~ 0
+actually put in another clock divider first
 $EndSCHEMATC
