@@ -9,10 +9,10 @@
 - [x] video amp? used the one from the PDF
 - [x] audio amp? is this too much gain? don't need one at all probably
 - [x] reset circuit
-- [ ] cpu clock circuit ??????????????????
+- [x] cpu clock circuit ?????????????????? good enough for now?
 - [x] how is the TMS clocked?
 - [x] do i need to reverse a7..a0 for the TMS, or is that for data, or not at all?
-- [ ] what does RD in the schematic do? they wouldn't have an extra inverter stage for nothing.
+- [ ] what does RD in the SRAM-as-VRAM schematic do? they wouldn't have an extra inverter stage for nothing.
 - [x] figure out memory decode
 - [x] figure out IO decode
 - [x] figure out cart decode (a subset of memory decode - bank switching)
@@ -32,5 +32,6 @@
 - [x] break out the remainder of the pins so i can use them as an inverter if need be
 - [x] is it OK to tie CPU reset and VDP reset together? it is not
 - [ ] U21 feels unnecessary, we can probably drop it if we have leftover room on U14 in the end
-- [ ] find a replacement for the 7.15909MHz crystal (figure out how to divide a 14.31818)
-- [ ] you know what, can i just axe this entire clock section and use a 14mhz oscillator chip
+- [x] find a replacement for the 7.15909MHz crystal (figure out how to divide a 14.31818)
+- [x] you know what, can i just axe this entire clock section and use a 14mhz oscillator chip
+- [x] replace the n/o jumpers with smd ones
