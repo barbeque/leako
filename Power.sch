@@ -724,104 +724,6 @@ $EndComp
 Wire Wire Line
 	9950 5625 9950 5900
 $Comp
-L Device:C C3
-U 1 1 5E4427E6
-P 3575 3900
-F 0 "C3" V 3323 3900 50  0000 C CNN
-F 1 "2.2nF" V 3414 3900 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3613 3750 50  0001 C CNN
-F 3 "~" H 3575 3900 50  0001 C CNN
-	1    3575 3900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3725 3900 4325 3900
-$Comp
-L Device:C C2
-U 1 1 5E447A87
-P 3275 4425
-F 0 "C2" V 3023 4425 50  0000 C CNN
-F 1 "100nF" V 3114 4425 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3313 4275 50  0001 C CNN
-F 3 "~" H 3275 4425 50  0001 C CNN
-	1    3275 4425
-	0    1    1    0   
-$EndComp
-$Comp
-L 74xx:74HC04 U19
-U 4 1 5E44AB08
-P 2825 4425
-F 0 "U19" H 2825 4742 50  0000 C CNN
-F 1 "74HC04" H 2825 4651 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2825 4425 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2825 4425 50  0001 C CNN
-	4    2825 4425
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small_US R23
-U 1 1 5E44C8E1
-P 2825 4050
-F 0 "R23" V 3030 4050 50  0000 C CNN
-F 1 "330Ω" V 2939 4050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 2825 4050 50  0001 C CNN
-F 3 "~" H 2825 4050 50  0001 C CNN
-	1    2825 4050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2675 3900 2675 4050
-Wire Wire Line
-	2675 4050 2725 4050
-Wire Wire Line
-	2675 3900 3425 3900
-Wire Wire Line
-	2675 4050 2525 4050
-Wire Wire Line
-	2525 4050 2525 4425
-Connection ~ 2675 4050
-Wire Wire Line
-	3125 4050 2925 4050
-Connection ~ 3125 4425
-Wire Wire Line
-	3825 4425 3825 4050
-Wire Wire Line
-	3825 4050 3950 4050
-Wire Wire Line
-	4325 4050 4325 3900
-$Comp
-L Device:R_Small_US R24
-U 1 1 5E46CDED
-P 4050 4050
-F 0 "R24" V 3845 4050 50  0000 C CNN
-F 1 "620Ω" V 3936 4050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 4050 4050 50  0001 C CNN
-F 3 "~" H 4050 4050 50  0001 C CNN
-	1    4050 4050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4150 4050 4325 4050
-$Comp
-L 74xx:74HC04 U19
-U 5 1 5E46EA93
-P 4125 4425
-F 0 "U19" H 4125 4742 50  0000 C CNN
-F 1 "74HC04" H 4125 4651 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4125 4425 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4125 4425 50  0001 C CNN
-	5    4125 4425
-	1    0    0    -1  
-$EndComp
-Connection ~ 3825 4425
-Wire Wire Line
-	4425 4425 4525 4425
-Wire Wire Line
-	4525 4425 4525 4050
-Wire Wire Line
-	4525 4050 4325 4050
-Connection ~ 4325 4050
-$Comp
 L 74xx:74LS74 U20
 U 2 1 5E473EBE
 P 5025 5000
@@ -833,10 +735,6 @@ F 3 "74xx/74hc_hct74.pdf" H 5025 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3125 5000 4725 5000
-Wire Wire Line
-	3125 4425 3125 5000
-Wire Wire Line
 	4725 2850 4725 3275
 Wire Wire Line
 	4725 3275 4875 3275
@@ -844,8 +742,6 @@ Wire Wire Line
 	4875 3275 4875 3700
 Wire Wire Line
 	4875 3700 5150 3700
-Wire Wire Line
-	3125 4050 3125 4425
 Wire Wire Line
 	4725 4900 4725 3850
 Wire Wire Line
@@ -994,8 +890,6 @@ Wire Wire Line
 Wire Wire Line
 	7000 3250 7200 3250
 Connection ~ 7000 3250
-Wire Wire Line
-	7000 3250 7000 4800
 $Comp
 L Device:C C26
 U 1 1 5E4FA849
@@ -1098,7 +992,7 @@ L Device:C C27
 U 1 1 5E5278C7
 P 7975 3250
 F 0 "C27" V 7723 3250 50  0000 C CNN
-F 1 "82J?" V 7814 3250 50  0000 C CNN
+F 1 "82pF" V 7814 3250 50  0000 C CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8013 3100 50  0001 C CNN
 F 3 "~" H 7975 3250 50  0001 C CNN
 	1    7975 3250
@@ -1133,7 +1027,7 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8650 367
 	2    8650 3675
 	1    0    0    -1  
 $EndComp
-Text GLabel 8950 3675 2    50   Input ~ 0
+Text GLabel 9325 3675 2    50   Input ~ 0
 VID_CLK
 Text Notes 6425 3100 2    118  ~ 0
 Clock
@@ -1170,47 +1064,36 @@ $EndComp
 Wire Wire Line
 	8900 5650 8900 6025
 $Comp
-L Device:Crystal Y1
-U 1 1 5E5A5EBE
-P 3575 4425
-F 0 "Y1" H 3575 4693 50  0000 C CNN
-F 1 "14.31818 (2x)" H 3575 4602 50  0000 C CNN
-F 2 "Crystals:Crystal_HC49-U_Vertical" H 3575 4425 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/9B-14.31818MBBK-B/887-1862-ND/3522029/?itemSeq=317149689" H 3575 4425 50  0001 C CNN
-	1    3575 4425
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74xx:74LS74 U22
 U 1 1 5E5A9C25
-P 6100 4900
-F 0 "U22" H 6100 5381 50  0000 C CNN
-F 1 "74LS74" H 6100 5290 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 6100 4900 50  0001 C CNN
-F 3 "74xx/74hc_hct74.pdf" H 6100 4900 50  0001 C CNN
-	1    6100 4900
+P 3750 4425
+F 0 "U22" H 3750 4906 50  0000 C CNN
+F 1 "74LS74" H 3750 4815 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3750 4425 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 3750 4425 50  0001 C CNN
+	1    3750 4425
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0131
 U 1 1 5E5DE5C6
-P 6425 5200
-F 0 "#PWR0131" H 6425 5050 50  0001 C CNN
-F 1 "VCC" H 6442 5373 50  0000 C CNN
-F 2 "" H 6425 5200 50  0001 C CNN
-F 3 "" H 6425 5200 50  0001 C CNN
-	1    6425 5200
+P 4075 4725
+F 0 "#PWR0131" H 4075 4575 50  0001 C CNN
+F 1 "VCC" H 4092 4898 50  0000 C CNN
+F 2 "" H 4075 4725 50  0001 C CNN
+F 3 "" H 4075 4725 50  0001 C CNN
+	1    4075 4725
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0132
 U 1 1 5E5ED51B
-P 6425 4600
-F 0 "#PWR0132" H 6425 4450 50  0001 C CNN
-F 1 "VCC" H 6442 4773 50  0000 C CNN
-F 2 "" H 6425 4600 50  0001 C CNN
-F 3 "" H 6425 4600 50  0001 C CNN
-	1    6425 4600
+P 4075 4125
+F 0 "#PWR0132" H 4075 3975 50  0001 C CNN
+F 1 "VCC" H 4092 4298 50  0000 C CNN
+F 2 "" H 4075 4125 50  0001 C CNN
+F 3 "" H 4075 4125 50  0001 C CNN
+	1    4075 4125
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1243,44 +1126,95 @@ F 3 "~" H 7700 5525 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7700 5675 7700 5925
-Wire Wire Line
-	3725 4425 3825 4425
-Text Notes 4550 4700 2    50   ~ 0
-TODO: tweak passives for x2 crystal
-Text Label 5600 4900 2    50   ~ 0
-14MHz
-Wire Wire Line
-	5800 4900 5325 4900
-Wire Wire Line
-	6400 4800 7000 4800
-Text Label 6875 4800 2    50   ~ 0
+Text Label 4600 4325 2    50   ~ 0
 7MHz
 Wire Wire Line
-	6400 5000 6575 5000
+	4050 4325 4650 4325
 Wire Wire Line
-	6575 5000 6575 4325
+	4050 4525 4225 4525
 Wire Wire Line
-	6575 4325 5650 4325
+	4225 4525 4225 3850
 Wire Wire Line
-	5650 4325 5650 4800
+	4225 3850 3300 3850
 Wire Wire Line
-	5650 4800 5800 4800
+	3300 3850 3300 4325
 Wire Wire Line
-	6425 4600 6100 4600
+	3300 4325 3450 4325
 Wire Wire Line
-	6100 5200 6425 5200
+	4075 4125 3750 4125
+Wire Wire Line
+	3750 4725 4075 4725
 Wire Notes Line
-	5600 5350 6650 5350
+	3250 4875 4300 4875
 Wire Notes Line
-	6650 5350 6650 4275
+	4300 4875 4300 3800
 Wire Notes Line
-	6650 4275 5600 4275
+	4300 3800 3250 3800
 Wire Notes Line
-	5600 4275 5600 5350
-Text Notes 5600 5350 0    50   ~ 0
+	3250 3800 3250 4875
+Text Notes 3250 4875 0    50   ~ 0
 Clock div/2\n(2x crystal was fitted)
-Text Notes 2600 5200 0    50   ~ 0
-TODO: dump this entire mess and make an oscillator\ndispense directly to pin 11 of the input flop
-Text Notes 2900 5500 0    50   ~ 0
-actually put in another clock divider first
+Text Notes 2000 5075 0    50   ~ 0
+I dumped this entire mess and made an oscillator\ndispense directly to pin 11 of the new extra clock divider
+Text Notes 5450 5025 0    50   ~ 0
+this is about where U8 on the original schematic starts\n
+Wire Wire Line
+	5325 4900 7000 4900
+Wire Wire Line
+	7000 3250 7000 4900
+$Comp
+L Oscillator:CXO_DIP8 X1
+U 1 1 5E6EEF49
+P 2275 4425
+F 0 "X1" H 2619 4471 50  0000 L CNN
+F 1 "14.31818MHz" H 2619 4380 50  0000 L CNN
+F 2 "Oscillators:Oscillator_DIP-8_LargePads" H 2725 4075 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/abracon-llc/ACH-14.31818MHZ-EK/535-9170-5-ND/675365" H 2175 4425 50  0001 C CNN
+	1    2275 4425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4325 4650 5000
+Wire Wire Line
+	4650 5000 4725 5000
+$Comp
+L power:VCC #PWR0133
+U 1 1 5E71302C
+P 2275 3825
+F 0 "#PWR0133" H 2275 3675 50  0001 C CNN
+F 1 "VCC" H 2292 3998 50  0000 C CNN
+F 2 "" H 2275 3825 50  0001 C CNN
+F 3 "" H 2275 3825 50  0001 C CNN
+	1    2275 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E713B31
+P 1975 3825
+F 0 "C2" V 1723 3825 50  0000 C CNN
+F 1 "0.1µF" V 1814 3825 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2013 3675 50  0001 C CNN
+F 3 "~" H 1975 3825 50  0001 C CNN
+	1    1975 3825
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2275 4125 2275 3825
+Wire Wire Line
+	2125 3825 2275 3825
+Connection ~ 2275 3825
+Wire Wire Line
+	1825 3825 1825 4725
+Wire Wire Line
+	1825 4725 2275 4725
+Wire Wire Line
+	2575 4425 3450 4425
+NoConn ~ 1975 4425
+Wire Wire Line
+	9325 3675 8950 3675
+Text Label 8975 3675 0    50   ~ 0
+10MHz
+Text Label 7000 3500 0    50   ~ 0
+3.57MHz
 $EndSCHEMATC
