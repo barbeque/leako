@@ -22,11 +22,11 @@
 - [x] ram wraparound?
 - [x] BIOS: what is up with the separate CE and OE in the original schematic (CE from A11?) Figure it out!!!
 - [x] Expansion stubs (EXT_DEC_STUB, EXT_IO_STUB) need pullups or they'll fuck up
-- [ ] what is up with the -5V on the controller schematic?
+- [ ] (CRITICAL) what is up with the -5V on the controller schematic?
 - [x] fet to protect the power switch?
 - [x] rca jacks around the right way?
 - [x] why are the two 541s on the controller featuring different data bus pinouts?
-- [ ] map out the 541s
+- [x] map out the 541s
 - [ ] find some board spacers or a project case to lift this thing off a desk now that it's two sided
 - [x] power U14, the ugly NOR that was used for the RAM
 - [x] break out the remainder of the pins so i can use them as an inverter if need be
@@ -39,4 +39,4 @@
 - [x] power regulation - should i still have it if i have a 5V 2A switching supply?
 - [x] replace the inline diode with a shunt to ground - rearrange the diode and fuse
 - [x] is the SMD polyfuse on the load too small? yes, it's gone
-- [ ] weird flipflop-y section of the controller area with -5v
+- [x] weird flipflop-y section of the controller area with -5v
