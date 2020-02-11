@@ -3,4 +3,5 @@
   (lib (name RCJ-017)(type Legacy)(uri ${KIPRJMOD}/Jacks.pretty/RCJ-017.lib)(options "")(descr ""))
   (lib (name PJ-102A)(type Legacy)(uri ${KIPRJMOD}/Jacks.pretty/PJ-102A.lib)(options "")(descr ""))
   (lib (name 0ZCK-polyfuse)(type Legacy)(uri ${KIPRJMOD}/0ZCK-polyfuse.pretty/0ZCK-polyfuse.lib)(options "")(descr ""))
+  (lib (name TPS60403DBVR)(type Legacy)(uri ${KIPRJMOD}/TPS60403DBVR.pretty/TPS60403DBVR.lib)(options "")(descr ""))
 )
