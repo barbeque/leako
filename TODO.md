@@ -35,3 +35,4 @@
 - [x] find a replacement for the 7.15909MHz crystal (figure out how to divide a 14.31818)
 - [x] you know what, can i just axe this entire clock section and use a 14mhz oscillator chip
 - [x] replace the n/o jumpers with smd ones
+- [ ] size the power supply; can i get by with a 5V 2A switcher or will the voltage drop ruin it
