@@ -39,3 +39,4 @@
 - [x] power regulation - should i still have it if i have a 5V 2A switching supply?
 - [x] replace the inline diode with a shunt to ground - rearrange the diode and fuse
 - [x] is the SMD polyfuse on the load too small? yes, it's gone
+- [ ] weird flipflop-y section of the controller area with -5v
