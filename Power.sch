@@ -83,12 +83,12 @@ $EndComp
 $Comp
 L Device:Polyfuse F1
 U 1 1 5E400A91
-P 2800 1825
-F 0 "F1" H 2888 1871 50  0000 L CNN
-F 1 "1.0A" H 2888 1780 50  0000 L CNN
-F 2 "0ZCK-polyfuse:0ZCK0100FF2E" H 2850 1625 50  0001 L CNN
-F 3 "~" H 2800 1825 50  0001 C CNN
-	1    2800 1825
+P 2575 1825
+F 0 "F1" H 2663 1871 50  0000 L CNN
+F 1 "1.0A" H 2663 1780 50  0000 L CNN
+F 2 "0ZCK-polyfuse:0ZCK0100FF2E" H 2625 1625 50  0001 L CNN
+F 3 "~" H 2575 1825 50  0001 C CNN
+	1    2575 1825
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -135,8 +135,6 @@ F 3 "~" H 4275 1175 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2150 1825 2650 1825
-Wire Wire Line
 	3275 1225 3275 725 
 Wire Wire Line
 	3275 725  4075 725 
@@ -156,23 +154,17 @@ Text Label 1325 1475 1    50   ~ 0
 WALL_G
 Text Label 1325 1675 3    50   ~ 0
 WALL_V
-Wire Wire Line
-	1350 1775 1450 1775
-Wire Wire Line
-	1175 1475 1950 1475
 $Comp
 L Device:D_Schottky D2
 U 1 1 5E473FC7
-P 1600 1775
-F 0 "D2" H 1600 1559 50  0000 C CNN
-F 1 "50V 2A" H 1600 1650 50  0000 C CNN
-F 2 "Diodes_ThroughHole:D_DO-15_P10.16mm_Horizontal" H 1600 1775 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/RL201-TP/RL201-TPCT-ND/950498/?itemSeq=317130355" H 1600 1775 50  0001 C CNN
-	1    1600 1775
-	-1   0    0    1   
+P 1725 1625
+F 0 "D2" H 1725 1409 50  0000 C CNN
+F 1 "50V 2A" H 1725 1500 50  0000 C CNN
+F 2 "Diodes_ThroughHole:D_DO-15_P10.16mm_Horizontal" H 1725 1625 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/RL201-TP/RL201-TPCT-ND/950498/?itemSeq=317130355" H 1725 1625 50  0001 C CNN
+	1    1725 1625
+	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	1750 1775 1950 1775
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5E4B4B7A
@@ -1219,4 +1211,31 @@ Wire Wire Line
 	7950 2025 8625 2025
 Wire Wire Line
 	8625 2575 7850 2575
+Wire Wire Line
+	2150 1825 2425 1825
+Wire Wire Line
+	2725 1825 2950 1825
+$Comp
+L Device:Fuse_Small F2
+U 1 1 5E46D729
+P 1475 1775
+F 0 "F2" H 1475 1925 50  0000 C CNN
+F 1 "2A" H 1475 1850 50  0000 C CNN
+F 2 "0251002.MRT1L:0251002.MRT1L" H 1475 1775 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/littelfuse-inc/0251002.MRT1L/F3171CT-ND/1984467" H 1475 1775 50  0001 C CNN
+	1    1475 1775
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1175 1475 1725 1475
+Wire Wire Line
+	1350 1775 1375 1775
+Wire Wire Line
+	1575 1775 1725 1775
+Connection ~ 1725 1775
+Wire Wire Line
+	1725 1775 1950 1775
+Connection ~ 1725 1475
+Wire Wire Line
+	1725 1475 1950 1475
 $EndSCHEMATC
