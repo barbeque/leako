@@ -38,3 +38,4 @@
 - [ ] size the power supply; can i get by with a 5V 2A switcher or will the voltage drop ruin it
 - [x] power regulation - should i still have it if i have a 5V 2A switching supply?
 - [x] replace the inline diode with a shunt to ground - rearrange the diode and fuse
+- [x] is the SMD polyfuse on the load too small? yes, it's gone

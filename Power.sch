@@ -81,17 +81,6 @@ F 3 "~" H 4075 725 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:Polyfuse F1
-U 1 1 5E400A91
-P 2575 1825
-F 0 "F1" H 2663 1871 50  0000 L CNN
-F 1 "1.0A" H 2663 1780 50  0000 L CNN
-F 2 "0ZCK-polyfuse:0ZCK0100FF2E" H 2625 1625 50  0001 L CNN
-F 3 "~" H 2575 1825 50  0001 C CNN
-	1    2575 1825
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_Small_US R12
 U 1 1 5E448774
 P 3150 2375
@@ -1211,10 +1200,6 @@ Wire Wire Line
 	7950 2025 8625 2025
 Wire Wire Line
 	8625 2575 7850 2575
-Wire Wire Line
-	2150 1825 2425 1825
-Wire Wire Line
-	2725 1825 2950 1825
 $Comp
 L Device:Fuse_Small F2
 U 1 1 5E46D729
@@ -1238,4 +1223,6 @@ Wire Wire Line
 Connection ~ 1725 1475
 Wire Wire Line
 	1725 1475 1950 1475
+Wire Wire Line
+	2150 1825 2950 1825
 $EndSCHEMATC
