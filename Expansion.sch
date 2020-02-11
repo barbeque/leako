@@ -111,10 +111,10 @@ $EndComp
 Text GLabel 6425 5075 2    50   Input ~ 0
 !HALT
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP13
 U 1 1 5E493261
 P 5525 5075
-F 0 "TP?" H 5583 5193 50  0000 L CNN
+F 0 "TP13" H 5583 5193 50  0000 L CNN
 F 1 "TestPoint" H 5583 5102 50  0000 L CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5725 5075 50  0001 C CNN
 F 3 "~" H 5725 5075 50  0001 C CNN
@@ -128,14 +128,48 @@ Text GLabel 6425 5275 2    50   Input ~ 0
 Wire Wire Line
 	6425 5275 5525 5275
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP14
 U 1 1 5E49458D
 P 5525 5275
-F 0 "TP?" H 5583 5393 50  0000 L CNN
+F 0 "TP14" H 5583 5393 50  0000 L CNN
 F 1 "TestPoint" H 5583 5302 50  0000 L CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5725 5275 50  0001 C CNN
 F 3 "~" H 5725 5275 50  0001 C CNN
 	1    5525 5275
 	1    0    0    -1  
 $EndComp
+Text GLabel 6425 5525 2    50   Input ~ 0
+A15
+$Comp
+L Connector:TestPoint TP15
+U 1 1 5E497D76
+P 5525 5500
+F 0 "TP15" H 5583 5618 50  0000 L CNN
+F 1 "TestPoint" H 5583 5527 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5725 5500 50  0001 C CNN
+F 3 "~" H 5725 5500 50  0001 C CNN
+	1    5525 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6425 5525 5525 5525
+Wire Wire Line
+	5525 5525 5525 5500
+Text Notes 5450 5450 2    50   ~ 0
+A lot of these\ntest points were\nput here to make\nKiCad shut up about\nusing a global label\nfor no reason;\nthey'd be on an expansion\nheader anyway, so that's\nmy excuse 
+Text GLabel 6425 5750 2    50   Input ~ 0
+!BUSACK
+$Comp
+L Connector:TestPoint TP16
+U 1 1 5E4AE01F
+P 5525 5750
+F 0 "TP16" H 5583 5868 50  0000 L CNN
+F 1 "TestPoint" H 5583 5777 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5725 5750 50  0001 C CNN
+F 3 "~" H 5725 5750 50  0001 C CNN
+	1    5525 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6425 5750 5525 5750
 $EndSCHEMATC
