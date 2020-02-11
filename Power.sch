@@ -1311,7 +1311,7 @@ Wire Wire Line
 Wire Wire Line
 	6775 1075 6450 1075
 Wire Wire Line
-	6450 1075 6450 800 
+	6450 1075 6450 875 
 Wire Wire Line
 	6450 800  6375 800 
 $Comp
@@ -1353,4 +1353,18 @@ Wire Notes Line
 	8875 600  5775 600 
 Text Notes 8275 700  0    50   ~ 0
 -5V Generator
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E49426A
+P 6450 875
+F 0 "TP?" V 6404 1063 50  0000 L CNN
+F 1 "-5V" V 6495 1063 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6650 875 50  0001 C CNN
+F 3 "~" H 6650 875 50  0001 C CNN
+	1    6450 875 
+	0    1    1    0   
+$EndComp
+Connection ~ 6450 875 
+Wire Wire Line
+	6450 875  6450 800 
 $EndSCHEMATC
