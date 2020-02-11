@@ -882,7 +882,7 @@ Wire Wire Line
 Wire Wire Line
 	3725 2625 3725 2000
 Text GLabel 3725 2000 1    50   Input ~ 0
-EXT_DEC_STUB
+EXT_DECODE_STUB
 Wire Wire Line
 	3975 4450 3725 4450
 Wire Wire Line
@@ -916,9 +916,9 @@ Text GLabel 4975 2625 2    50   Input ~ 0
 Text GLabel 4975 2525 2    50   Input ~ 0
 !CART_0x80
 Text GLabel 4975 2225 2    50   Input ~ 0
-EX_20_3F
+EXT_20_3F
 Text GLabel 4975 2325 2    50   Input ~ 0
-EX_40_5F
+EXT_40_5F
 Text GLabel 4975 2125 2    50   Input ~ 0
 !BIOS_OE
 Text Notes 6900 6700 2    50   ~ 0
@@ -1244,6 +1244,16 @@ Text GLabel 1875 2875 0    50   Input ~ 0
 !M1
 Text GLabel 1875 2175 0    50   Input ~ 0
 CPU_CLK
+Text GLabel 1875 2475 0    50   Input ~ 0
+!NMI
+Text GLabel 625  3175 0    50   Input ~ 0
+!HALT
+Wire Wire Line
+	1875 3175 625  3175
+Wire Wire Line
+	625  3175 625  2150
+Wire Wire Line
+	625  1000 975  1000
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line
@@ -1252,4 +1262,17 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
+$Comp
+L Device:R_Small_US R44
+U 1 1 5E48FDB2
+P 625 2050
+F 0 "R44" H 693 2096 50  0000 L CNN
+F 1 "3.3k" H 693 2005 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 625 2050 50  0001 C CNN
+F 3 "~" H 625 2050 50  0001 C CNN
+	1    625  2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	625  1950 625  1000
 $EndSCHEMATC

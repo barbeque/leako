@@ -695,7 +695,7 @@ Wire Wire Line
 Wire Wire Line
 	5275 3550 5125 3550
 Text GLabel 5125 3550 0    50   Input ~ 0
-VIRQ
+!NMI
 Wire Wire Line
 	5400 3500 5125 3500
 Wire Wire Line

@@ -838,7 +838,7 @@ Wire Wire Line
 	7825 3725 8600 3725
 Connection ~ 7825 3725
 Text GLabel 8600 3725 2    50   Input ~ 0
-QUAD
+EXT_QUAD
 $Comp
 L Device:R_Small_US R36
 U 1 1 5E5F3A20
