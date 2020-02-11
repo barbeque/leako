@@ -162,32 +162,32 @@ F 3 "https://www.digikey.ca/product-detail/en/MM74HCT05MX/MM74HCT05MXCT-ND/20944
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R38
 U 1 1 5E45A772
 P 9425 5500
-F 0 "R?" H 9493 5546 50  0000 L CNN
+F 0 "R38" H 9493 5546 50  0000 L CNN
 F 1 "270Ω" H 9493 5455 50  0000 L CNN
-F 2 "" H 9425 5500 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9425 5500 50  0001 C CNN
 F 3 "~" H 9425 5500 50  0001 C CNN
 	1    9425 5500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R39
 U 1 1 5E45BF06
 P 9425 5850
-F 0 "R?" H 9493 5896 50  0000 L CNN
+F 0 "R39" H 9493 5896 50  0000 L CNN
 F 1 "270Ω" H 9493 5805 50  0000 L CNN
-F 2 "" H 9425 5850 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9425 5850 50  0001 C CNN
 F 3 "~" H 9425 5850 50  0001 C CNN
 	1    9425 5850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0134
 U 1 1 5E45C599
 P 2225 5925
-F 0 "#PWR?" H 2225 5775 50  0001 C CNN
+F 0 "#PWR0134" H 2225 5775 50  0001 C CNN
 F 1 "VCC" H 2242 6098 50  0000 C CNN
 F 2 "" H 2225 5925 50  0001 C CNN
 F 3 "" H 2225 5925 50  0001 C CNN
@@ -195,10 +195,10 @@ F 3 "" H 2225 5925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0135
 U 1 1 5E45CBE1
 P 10025 6175
-F 0 "#PWR?" H 10025 5925 50  0001 C CNN
+F 0 "#PWR0135" H 10025 5925 50  0001 C CNN
 F 1 "GND" H 10030 6002 50  0000 C CNN
 F 2 "" H 10025 6175 50  0001 C CNN
 F 3 "" H 10025 6175 50  0001 C CNN
@@ -206,23 +206,23 @@ F 3 "" H 10025 6175 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Network07_US RN?
+L Device:R_Network07_US RN1
 U 1 1 5E461DA7
 P 4675 3825
-F 0 "RN?" H 4296 3779 50  0000 R CNN
+F 0 "RN1" H 4296 3779 50  0000 R CNN
 F 1 "22kΩ" H 4296 3870 50  0000 R CNN
-F 2 "Resistor_THT:R_Array_SIP8" V 5150 3825 50  0001 C CNN
+F 2 "Resistors_ThroughHole:R_Array_SIP8" V 5150 3825 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4675 3825 50  0001 C CNN
 	1    4675 3825
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Network07_US RN?
+L Device:R_Network07_US RN2
 U 1 1 5E462CBA
 P 4675 6000
-F 0 "RN?" H 4296 5954 50  0000 R CNN
+F 0 "RN2" H 4296 5954 50  0000 R CNN
 F 1 "22kΩ" H 4296 6045 50  0000 R CNN
-F 2 "Resistor_THT:R_Array_SIP8" V 5150 6000 50  0001 C CNN
+F 2 "Resistors_ThroughHole:R_Array_SIP8" V 5150 6000 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4675 6000 50  0001 C CNN
 	1    4675 6000
 	1    0    0    1   
@@ -296,12 +296,12 @@ Connection ~ 4975 2675
 Wire Wire Line
 	4975 2675 5900 2675
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R33
 U 1 1 5E4A2C2C
 P 3625 1950
-F 0 "R?" H 3557 1904 50  0000 R CNN
+F 0 "R33" H 3557 1904 50  0000 R CNN
 F 1 "1.8kΩ" H 3557 1995 50  0000 R CNN
-F 2 "" H 3625 1950 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3625 1950 50  0001 C CNN
 F 3 "~" H 3625 1950 50  0001 C CNN
 	1    3625 1950
 	-1   0    0    1   
@@ -311,12 +311,12 @@ Wire Wire Line
 Wire Wire Line
 	3625 1700 3425 1700
 $Comp
-L Device:C C?
+L Device:C C33
 U 1 1 5E4A6473
 P 3425 1850
-F 0 "C?" H 3311 1804 50  0000 R CNN
+F 0 "C33" H 3311 1804 50  0000 R CNN
 F 1 "0.1µF" H 3311 1895 50  0000 R CNN
-F 2 "" H 3463 1700 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3463 1700 50  0001 C CNN
 F 3 "~" H 3425 1850 50  0001 C CNN
 	1    3425 1850
 	1    0    0    1   
@@ -325,12 +325,12 @@ Wire Wire Line
 	3425 1700 3050 1700
 Connection ~ 3425 1700
 $Comp
-L 74xx:74HCT00 U?
+L 74xx:74HCT00 U23
 U 3 1 5E4AA931
 P 2750 1600
-F 0 "U?" H 2750 1925 50  0000 C CNN
+F 0 "U23" H 2750 1925 50  0000 C CNN
 F 1 "74HCT00" H 2750 1834 50  0000 C CNN
-F 2 "" H 2750 1600 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2750 1600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2750 1600 50  0001 C CNN
 	3    2750 1600
 	-1   0    0    -1  
@@ -356,32 +356,32 @@ Connection ~ 3150 1500
 Wire Wire Line
 	3150 1075 2350 1075
 $Comp
-L Device:C C?
+L Device:C C3
 U 1 1 5E4BE17E
 P 2200 1075
-F 0 "C?" V 1948 1075 50  0000 C CNN
+F 0 "C3" V 1948 1075 50  0000 C CNN
 F 1 "47nF" V 2039 1075 50  0000 C CNN
-F 2 "" H 2238 925 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2238 925 50  0001 C CNN
 F 3 "~" H 2200 1075 50  0001 C CNN
 	1    2200 1075
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R23
 U 1 1 5E4BFE54
 P 1750 975
-F 0 "R?" H 1682 929 50  0000 R CNN
-F 1 "R_Small_US" H 1682 1020 50  0000 R CNN
-F 2 "" H 1750 975 50  0001 C CNN
+F 0 "R23" H 1683 929 50  0000 R CNN
+F 1 "10kΩ" H 1683 1020 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 1750 975 50  0001 C CNN
 F 3 "~" H 1750 975 50  0001 C CNN
 	1    1750 975 
 	1    0    0    1   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0136
 U 1 1 5E4C9BC4
 P 1750 875
-F 0 "#PWR?" H 1750 725 50  0001 C CNN
+F 0 "#PWR0136" H 1750 725 50  0001 C CNN
 F 1 "VCC" H 1767 1048 50  0000 C CNN
 F 2 "" H 1750 875 50  0001 C CNN
 F 3 "" H 1750 875 50  0001 C CNN
@@ -389,23 +389,23 @@ F 3 "" H 1750 875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:2N3904 Q?
+L Transistor_BJT:2N3904 Q4
 U 1 1 5E4CA909
 P 1850 1600
-F 0 "Q?" H 2041 1646 50  0000 L CNN
+F 0 "Q4" H 2041 1646 50  0000 L CNN
 F 1 "2N3904" H 2041 1555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2050 1525 50  0001 L CIN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 2050 1525 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 1850 1600 50  0001 L CNN
 	1    1850 1600
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C30
 U 1 1 5E4CB4C4
 P 2200 1600
-F 0 "C?" V 1948 1600 50  0000 C CNN
+F 0 "C30" V 1948 1600 50  0000 C CNN
 F 1 "100pF" V 2039 1600 50  0000 C CNN
-F 2 "" H 2238 1450 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2238 1450 50  0001 C CNN
 F 3 "~" H 2200 1600 50  0001 C CNN
 	1    2200 1600
 	0    1    1    0   
@@ -413,12 +413,12 @@ $EndComp
 Wire Wire Line
 	2350 1600 2450 1600
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R31
 U 1 1 5E4D20C5
 P 2200 1950
-F 0 "R?" V 1995 1950 50  0000 C CNN
+F 0 "R31" V 1995 1950 50  0000 C CNN
 F 1 "22k" V 2086 1950 50  0000 C CNN
-F 2 "" H 2200 1950 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2200 1950 50  0001 C CNN
 F 3 "~" H 2200 1950 50  0001 C CNN
 	1    2200 1950
 	0    1    1    0   
@@ -443,10 +443,10 @@ Wire Wire Line
 	4975 2575 5750 2575
 Connection ~ 2350 1950
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0137
 U 1 1 5E4E2E8A
 P 1750 1800
-F 0 "#PWR?" H 1750 1550 50  0001 C CNN
+F 0 "#PWR0137" H 1750 1550 50  0001 C CNN
 F 1 "GND" H 1755 1627 50  0000 C CNN
 F 2 "" H 1750 1800 50  0001 C CNN
 F 3 "" H 1750 1800 50  0001 C CNN
@@ -459,12 +459,12 @@ Wire Wire Line
 	1750 1400 1750 1075
 Connection ~ 1750 1075
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R34
 U 1 1 5E5087DF
 P 3775 6425
-F 0 "R?" H 3707 6379 50  0000 R CNN
+F 0 "R34" H 3707 6379 50  0000 R CNN
 F 1 "1.8kΩ" H 3707 6470 50  0000 R CNN
-F 2 "" H 3775 6425 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3775 6425 50  0001 C CNN
 F 3 "~" H 3775 6425 50  0001 C CNN
 	1    3775 6425
 	-1   0    0    -1  
@@ -474,12 +474,12 @@ Wire Wire Line
 Wire Wire Line
 	3775 6675 3575 6675
 $Comp
-L Device:C C?
+L Device:C C34
 U 1 1 5E5087E7
 P 3575 6525
-F 0 "C?" H 3461 6479 50  0000 R CNN
+F 0 "C34" H 3461 6479 50  0000 R CNN
 F 1 "0.1µF" H 3461 6570 50  0000 R CNN
-F 2 "" H 3613 6375 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3613 6375 50  0001 C CNN
 F 3 "~" H 3575 6525 50  0001 C CNN
 	1    3575 6525
 	1    0    0    -1  
@@ -495,32 +495,32 @@ Connection ~ 3300 6875
 Wire Wire Line
 	3300 7300 2500 7300
 $Comp
-L Device:C C?
+L Device:C C32
 U 1 1 5E5087FB
 P 2350 7300
-F 0 "C?" V 2098 7300 50  0000 C CNN
+F 0 "C32" V 2098 7300 50  0000 C CNN
 F 1 "47nF" V 2189 7300 50  0000 C CNN
-F 2 "" H 2388 7150 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2388 7150 50  0001 C CNN
 F 3 "~" H 2350 7300 50  0001 C CNN
 	1    2350 7300
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R24
 U 1 1 5E508801
 P 1900 7400
-F 0 "R?" H 1832 7354 50  0000 R CNN
-F 1 "R_Small_US" H 1832 7445 50  0000 R CNN
-F 2 "" H 1900 7400 50  0001 C CNN
+F 0 "R24" H 1833 7354 50  0000 R CNN
+F 1 "10kΩ" H 1833 7445 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 1900 7400 50  0001 C CNN
 F 3 "~" H 1900 7400 50  0001 C CNN
 	1    1900 7400
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0138
 U 1 1 5E508807
 P 1900 7500
-F 0 "#PWR?" H 1900 7350 50  0001 C CNN
+F 0 "#PWR0138" H 1900 7350 50  0001 C CNN
 F 1 "VCC" H 1917 7673 50  0000 C CNN
 F 2 "" H 1900 7500 50  0001 C CNN
 F 3 "" H 1900 7500 50  0001 C CNN
@@ -528,23 +528,23 @@ F 3 "" H 1900 7500 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Transistor_BJT:2N3904 Q?
+L Transistor_BJT:2N3904 Q5
 U 1 1 5E50880D
 P 2000 6775
-F 0 "Q?" H 2191 6821 50  0000 L CNN
-F 1 "2N3904" H 2191 6730 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2200 6700 50  0001 L CIN
+F 0 "Q5" H 2191 6729 50  0000 L CNN
+F 1 "2N3904" H 2191 6820 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 2200 6700 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2000 6775 50  0001 L CNN
 	1    2000 6775
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C31
 U 1 1 5E508813
 P 2350 6775
-F 0 "C?" V 2098 6775 50  0000 C CNN
+F 0 "C31" V 2098 6775 50  0000 C CNN
 F 1 "100pF" V 2189 6775 50  0000 C CNN
-F 2 "" H 2388 6625 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2388 6625 50  0001 C CNN
 F 3 "~" H 2350 6775 50  0001 C CNN
 	1    2350 6775
 	0    1    -1   0   
@@ -552,12 +552,12 @@ $EndComp
 Wire Wire Line
 	2500 6775 2600 6775
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R32
 U 1 1 5E50881A
 P 2350 6425
-F 0 "R?" V 2145 6425 50  0000 C CNN
+F 0 "R32" V 2145 6425 50  0000 C CNN
 F 1 "22k" V 2236 6425 50  0000 C CNN
-F 2 "" H 2350 6425 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2350 6425 50  0001 C CNN
 F 3 "~" H 2350 6425 50  0001 C CNN
 	1    2350 6425
 	0    1    -1   0   
@@ -574,10 +574,10 @@ Wire Wire Line
 Connection ~ 2500 6775
 Connection ~ 2500 6425
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0139
 U 1 1 5E508828
 P 1900 6575
-F 0 "#PWR?" H 1900 6325 50  0001 C CNN
+F 0 "#PWR0139" H 1900 6325 50  0001 C CNN
 F 1 "GND" H 1905 6402 50  0000 C CNN
 F 2 "" H 1900 6575 50  0001 C CNN
 F 3 "" H 1900 6575 50  0001 C CNN
@@ -590,38 +590,34 @@ Wire Wire Line
 	1900 6975 1900 7300
 Connection ~ 1900 7300
 $Comp
-L 74xx:74HCT00 U?
+L 74xx:74HCT00 U23
 U 4 1 5E50E61B
 P 2900 6775
-F 0 "U?" H 2900 6458 50  0000 C CNN
+F 0 "U23" H 2900 6458 50  0000 C CNN
 F 1 "74HCT00" H 2900 6549 50  0000 C CNN
-F 2 "" H 2900 6775 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2900 6775 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 2900 6775 50  0001 C CNN
 	4    2900 6775
 	-1   0    0    1   
 $EndComp
-Text GLabel 4375 6200 3    50   Input ~ 0
-2v5
 Wire Wire Line
 	9425 5600 9425 5750
-Text GLabel 9425 5675 0    50   Input ~ 0
-2v5
 $Comp
-L 74xx:74HCT00 U?
+L 74xx:74HCT00 U23
 U 5 1 5E541870
 P 10025 5675
-F 0 "U?" H 10255 5721 50  0000 L CNN
+F 0 "U23" H 10255 5721 50  0000 L CNN
 F 1 "74HCT00" H 10255 5630 50  0000 L CNN
-F 2 "" H 10025 5675 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 10025 5675 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 10025 5675 50  0001 C CNN
 	5    10025 5675
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0140
 U 1 1 5E54E398
 P 10025 5175
-F 0 "#PWR?" H 10025 5025 50  0001 C CNN
+F 0 "#PWR0140" H 10025 5025 50  0001 C CNN
 F 1 "VCC" H 10042 5348 50  0000 C CNN
 F 2 "" H 10025 5175 50  0001 C CNN
 F 3 "" H 10025 5175 50  0001 C CNN
@@ -638,8 +634,6 @@ Wire Wire Line
 Wire Wire Line
 	9425 6175 10025 6175
 Connection ~ 10025 6175
-Text GLabel 4375 4025 3    50   Input ~ 0
-2v5
 Wire Wire Line
 	3775 5525 2275 5525
 Wire Wire Line
@@ -758,56 +752,56 @@ Connection ~ 5750 5600
 Wire Wire Line
 	5750 5600 5050 5600
 $Comp
-L Device:C C?
+L Device:C C36
 U 1 1 5E5CC9E5
 P 8250 4725
-F 0 "C?" H 8365 4771 50  0000 L CNN
+F 0 "C36" H 8365 4771 50  0000 L CNN
 F 1 "10nF" H 8365 4680 50  0000 L CNN
-F 2 "" H 8288 4575 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8288 4575 50  0001 C CNN
 F 3 "~" H 8250 4725 50  0001 C CNN
 	1    8250 4725
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C35
 U 1 1 5E5CD406
 P 8250 2700
-F 0 "C?" H 8365 2746 50  0000 L CNN
+F 0 "C35" H 8365 2746 50  0000 L CNN
 F 1 "10nF" H 8365 2655 50  0000 L CNN
-F 2 "" H 8288 2550 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8288 2550 50  0001 C CNN
 F 3 "~" H 8250 2700 50  0001 C CNN
 	1    8250 2700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4001 D?
+L Diode:1N4001 D4
 U 1 1 5E5CF4A7
 P 8250 4325
-F 0 "D?" V 8204 4404 50  0000 L CNN
+F 0 "D4" V 8204 4404 50  0000 L CNN
 F 1 "1N4001" V 8295 4404 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8250 4150 50  0001 C CNN
+F 2 "Diodes_ThroughHole:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 8250 4150 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8250 4325 50  0001 C CNN
 	1    8250 4325
 	0    1    1    0   
 $EndComp
 $Comp
-L Diode:1N4001 D?
+L Diode:1N4001 D3
 U 1 1 5E5D01F4
 P 8250 3100
-F 0 "D?" V 8296 3021 50  0000 R CNN
+F 0 "D3" V 8296 3021 50  0000 R CNN
 F 1 "1N4001" V 8205 3021 50  0000 R CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8250 2925 50  0001 C CNN
+F 2 "Diodes_ThroughHole:D_DO-41_SOD81_P2.54mm_Vertical_AnodeUp" H 8250 2925 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8250 3100 50  0001 C CNN
 	1    8250 3100
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 74xx:74LS05 U?
+L 74xx:74LS05 U18
 U 4 1 5E5D11FA
 P 7400 3725
-F 0 "U?" H 7400 4042 50  0000 C CNN
+F 0 "U18" H 7400 4042 50  0000 C CNN
 F 1 "74LS05" H 7400 3951 50  0000 C CNN
-F 2 "" H 7400 3725 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 7400 3725 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 7400 3725 50  0001 C CNN
 	4    7400 3725
 	-1   0    0    -1  
@@ -815,21 +809,21 @@ $EndComp
 Text GLabel 7100 3725 0    50   Input ~ 0
 !INT
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R35
 U 1 1 5E5DC206
 P 7825 3825
-F 0 "R?" H 7757 3779 50  0000 R CNN
+F 0 "R35" H 7757 3779 50  0000 R CNN
 F 1 "1.5kΩ" H 7757 3870 50  0000 R CNN
-F 2 "" H 7825 3825 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7825 3825 50  0001 C CNN
 F 3 "~" H 7825 3825 50  0001 C CNN
 	1    7825 3825
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0141
 U 1 1 5E5DD400
 P 7825 3925
-F 0 "#PWR?" H 7825 3675 50  0001 C CNN
+F 0 "#PWR0141" H 7825 3675 50  0001 C CNN
 F 1 "GND" H 7830 3752 50  0000 C CNN
 F 2 "" H 7825 3925 50  0001 C CNN
 F 3 "" H 7825 3925 50  0001 C CNN
@@ -846,23 +840,23 @@ Connection ~ 7825 3725
 Text GLabel 8600 3725 2    50   Input ~ 0
 QUAD
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R36
 U 1 1 5E5F3A20
 P 8825 2900
-F 0 "R?" V 8620 2900 50  0000 C CNN
+F 0 "R36" V 8620 2900 50  0000 C CNN
 F 1 "100kΩ" V 8711 2900 50  0000 C CNN
-F 2 "" H 8825 2900 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 8825 2900 50  0001 C CNN
 F 3 "~" H 8825 2900 50  0001 C CNN
 	1    8825 2900
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R37
 U 1 1 5E5F7C02
 P 8850 4525
-F 0 "R?" V 8645 4525 50  0000 C CNN
+F 0 "R37" V 8645 4525 50  0000 C CNN
 F 1 "100kΩ" V 8736 4525 50  0000 C CNN
-F 2 "" H 8850 4525 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 8850 4525 50  0001 C CNN
 F 3 "~" H 8850 4525 50  0001 C CNN
 	1    8850 4525
 	0    1    1    0   
@@ -895,16 +889,209 @@ Connection ~ 9125 3725
 Wire Wire Line
 	9125 3725 9125 2900
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0142
 U 1 1 5E626837
 P 9425 3650
-F 0 "#PWR?" H 9425 3500 50  0001 C CNN
+F 0 "#PWR0142" H 9425 3500 50  0001 C CNN
 F 1 "VCC" H 9442 3823 50  0000 C CNN
 F 2 "" H 9425 3650 50  0001 C CNN
 F 3 "" H 9425 3650 50  0001 C CNN
 	1    9425 3650
 	1    0    0    -1  
 $EndComp
-Text Notes 9650 1700 2    50   ~ 0
-TODO: weird flip flop thing
+Text Notes 9850 1800 2    50   ~ 0
+TODO: how the fuck do we get -5v
+Text Label 4375 6200 3    50   ~ 0
+2v5
+Text Label 4375 4025 3    50   ~ 0
+2v5
+Text Label 9425 5675 2    50   ~ 0
+2v5
+Text GLabel 8250 1150 0    50   Input ~ 0
+CTRL_EN_1
+Text Notes 8075 1275 2    50   ~ 0
+c0w
+Text GLabel 8250 750  0    50   Input ~ 0
+CTRL_EN_2
+Text Notes 7925 875  0    50   ~ 0
+80w
+$Comp
+L 74xx:74HCT00 U23
+U 1 1 5E65E065
+P 8775 1400
+F 0 "U23" H 8775 1725 50  0000 C CNN
+F 1 "74HCT00" H 8775 1634 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 8775 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 8775 1400 50  0001 C CNN
+	1    8775 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HCT00 U23
+U 2 1 5E6609D8
+P 8775 850
+F 0 "U23" H 8775 1175 50  0000 C CNN
+F 1 "74HCT00" H 8775 1084 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 8775 850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 8775 850 50  0001 C CNN
+	2    8775 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8475 950  8250 950 
+Wire Wire Line
+	8250 950  8250 750 
+Wire Wire Line
+	8475 1500 8250 1500
+Wire Wire Line
+	8250 1500 8250 1150
+Wire Wire Line
+	9075 850  9075 1050
+Wire Wire Line
+	8475 1050 8475 1300
+Wire Wire Line
+	8475 1050 9075 1050
+Wire Wire Line
+	9075 1400 9075 1150
+Wire Wire Line
+	9075 1150 8400 1150
+Wire Wire Line
+	8400 1150 8400 750 
+Wire Wire Line
+	8400 750  8475 750 
+Wire Wire Line
+	9075 1400 9575 1400
+Wire Wire Line
+	9575 850  9075 850 
+Connection ~ 9075 1400
+Connection ~ 9075 850 
+$Comp
+L Device:R_Small_US R40
+U 1 1 5E6872F4
+P 9575 950
+F 0 "R40" H 9508 904 50  0000 R CNN
+F 1 "1.5kΩ" H 9508 995 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9575 950 50  0001 C CNN
+F 3 "~" H 9575 950 50  0001 C CNN
+	1    9575 950 
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R41
+U 1 1 5E68B076
+P 9575 1300
+F 0 "R41" H 9508 1254 50  0000 R CNN
+F 1 "1.5kΩ" H 9508 1345 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9575 1300 50  0001 C CNN
+F 3 "~" H 9575 1300 50  0001 C CNN
+	1    9575 1300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9575 1200 9575 1125
+Wire Wire Line
+	9575 1125 9350 1125
+Connection ~ 9575 1125
+Wire Wire Line
+	9575 1125 9575 1050
+Text GLabel 9350 1125 0    50   Input ~ 10
+-5V
+$Comp
+L Device:R_Small_US R42
+U 1 1 5E6ACC7E
+P 9825 850
+F 0 "R42" V 9620 850 50  0000 C CNN
+F 1 "120Ω" V 9711 850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9825 850 50  0001 C CNN
+F 3 "~" H 9825 850 50  0001 C CNN
+	1    9825 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R43
+U 1 1 5E6AD9B9
+P 9825 1400
+F 0 "R43" V 9620 1400 50  0000 C CNN
+F 1 "120Ω" V 9711 1400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9825 1400 50  0001 C CNN
+F 3 "~" H 9825 1400 50  0001 C CNN
+	1    9825 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9575 850  9725 850 
+Connection ~ 9575 850 
+Wire Wire Line
+	9575 1400 9725 1400
+Connection ~ 9575 1400
+$Comp
+L Device:C C38
+U 1 1 5E6DD3B0
+P 10150 1325
+F 0 "C38" H 10265 1371 50  0000 L CNN
+F 1 "10nF" H 10265 1280 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10188 1175 50  0001 C CNN
+F 3 "~" H 10150 1325 50  0001 C CNN
+	1    10150 1325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C37
+U 1 1 5E6DE0A9
+P 10150 875
+F 0 "C37" H 10265 921 50  0000 L CNN
+F 1 "10nF" H 10265 830 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10188 725 50  0001 C CNN
+F 3 "~" H 10150 875 50  0001 C CNN
+	1    10150 875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0143
+U 1 1 5E6E0C9B
+P 10700 1175
+F 0 "#PWR0143" H 10700 925 50  0001 C CNN
+F 1 "GND" H 10705 1002 50  0000 C CNN
+F 2 "" H 10700 1175 50  0001 C CNN
+F 3 "" H 10700 1175 50  0001 C CNN
+	1    10700 1175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 1025 10150 1100
+Connection ~ 10150 1100
+Wire Wire Line
+	10150 1100 10150 1175
+Wire Wire Line
+	10700 1100 10700 1175
+Wire Wire Line
+	10150 1100 10700 1100
+Wire Wire Line
+	9925 1400 10025 1400
+Wire Wire Line
+	10025 1400 10025 1475
+Wire Wire Line
+	10025 1475 10150 1475
+Wire Wire Line
+	9925 850  10025 850 
+Wire Wire Line
+	10025 850  10025 725 
+Wire Wire Line
+	10025 725  10150 725 
+Wire Wire Line
+	10025 1475 10025 1850
+Connection ~ 10025 1475
+Wire Wire Line
+	10025 725  10025 600 
+Wire Wire Line
+	10025 600  10525 600 
+Connection ~ 10025 725 
+Text Label 10525 600  0    50   ~ 0
+CTRL_PIN_8
+Text Label 10025 1850 3    50   ~ 0
+CTRL_PIN_5
+Text Label 1075 3950 0    50   ~ 0
+CTRL_PIN_5
+Text Label 2625 3950 2    50   ~ 0
+CTRL_PIN_8
 $EndSCHEMATC
