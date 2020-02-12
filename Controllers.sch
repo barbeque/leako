@@ -899,8 +899,6 @@ F 3 "" H 9425 3650 50  0001 C CNN
 	1    9425 3650
 	1    0    0    -1  
 $EndComp
-Text Notes 9850 1800 2    50   ~ 0
-TODO: how the fuck do we get -5v
 Text Label 4375 6200 3    50   ~ 0
 2v5
 Text Label 4375 4025 3    50   ~ 0

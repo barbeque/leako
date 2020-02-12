@@ -1249,14 +1249,6 @@ Wire Wire Line
 	625  3175 625  2150
 Wire Wire Line
 	625  1000 975  1000
-Wire Bus Line
-	5475 1550 5475 2950
-Wire Bus Line
-	5475 3050 5475 5000
-Wire Bus Line
-	3475 3675 3475 5000
-Wire Bus Line
-	3475 1550 3475 3475
 $Comp
 L Device:R_Small_US R44
 U 1 1 5E48FDB2
@@ -1275,4 +1267,12 @@ Text GLabel 1875 4275 0    50   Input ~ 0
 Connection ~ 9750 3325
 Wire Wire Line
 	9750 3325 10775 3325
+Wire Bus Line
+	5475 1550 5475 2950
+Wire Bus Line
+	5475 3050 5475 5000
+Wire Bus Line
+	3475 3675 3475 5000
+Wire Bus Line
+	3475 1550 3475 3475
 $EndSCHEMATC
