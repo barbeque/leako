@@ -108,23 +108,6 @@ F 3 "~" H 5725 5275 50  0001 C CNN
 	1    5525 5275
 	1    0    0    -1  
 $EndComp
-Text GLabel 6425 5525 2    50   Input ~ 0
-A15
-$Comp
-L Connector:TestPoint TP15
-U 1 1 5E497D76
-P 5525 5500
-F 0 "TP15" H 5583 5618 50  0000 L CNN
-F 1 "TestPoint" H 5583 5527 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5725 5500 50  0001 C CNN
-F 3 "~" H 5725 5500 50  0001 C CNN
-	1    5525 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6425 5525 5525 5525
-Wire Wire Line
-	5525 5525 5525 5500
 Text Notes 5450 5450 2    50   ~ 0
 A lot of these\ntest points were\nput here to make\nKiCad shut up about\nusing a global label\nfor no reason;\nthey'd be on an expansion\nheader anyway, so that's\nmy excuse 
 $EndSCHEMATC
