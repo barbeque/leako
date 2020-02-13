@@ -175,11 +175,6 @@ Wire Wire Line
 	1875 4175 1100 4175
 Wire Wire Line
 	1100 4175 1100 1675
-Wire Wire Line
-	1100 4175 975  4175
-Connection ~ 1100 4175
-Text GLabel 975  4175 0    50   Input ~ 0
-!BUSRQ
 $Comp
 L Device:R_Small_US R3
 U 1 1 5E3833F1
@@ -1251,8 +1246,6 @@ F 3 "~" H 625 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	625  1950 625  1000
-Text GLabel 1875 4275 0    50   Input ~ 0
-!BUSACK
 Connection ~ 9750 3325
 Wire Wire Line
 	9750 3325 10775 3325
@@ -1267,6 +1260,7 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3250 137
 	4    3250 1375
 	1    0    0    -1  
 $EndComp
+NoConn ~ 1875 4275
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line

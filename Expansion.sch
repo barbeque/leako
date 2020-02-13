@@ -93,21 +93,6 @@ Text GLabel 6425 4725 2    50   Input ~ 0
 EXT_40_5F
 NoConn ~ 6425 4600
 NoConn ~ 6425 4725
-Text GLabel 6425 4875 2    50   Input ~ 0
-!BUSRQ
-Wire Wire Line
-	6425 4875 5525 4875
-$Comp
-L Connector:TestPoint TP12
-U 1 1 5E4538E0
-P 5525 4875
-F 0 "TP12" H 5583 4993 50  0000 L CNN
-F 1 "TestPoint" H 5583 4902 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5725 4875 50  0001 C CNN
-F 3 "~" H 5725 4875 50  0001 C CNN
-	1    5525 4875
-	1    0    0    -1  
-$EndComp
 Text GLabel 6425 5075 2    50   Input ~ 0
 !HALT
 $Comp
@@ -157,19 +142,4 @@ Wire Wire Line
 	5525 5525 5525 5500
 Text Notes 5450 5450 2    50   ~ 0
 A lot of these\ntest points were\nput here to make\nKiCad shut up about\nusing a global label\nfor no reason;\nthey'd be on an expansion\nheader anyway, so that's\nmy excuse 
-Text GLabel 6425 5750 2    50   Input ~ 0
-!BUSACK
-$Comp
-L Connector:TestPoint TP16
-U 1 1 5E4AE01F
-P 5525 5750
-F 0 "TP16" H 5583 5868 50  0000 L CNN
-F 1 "TestPoint" H 5583 5777 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5725 5750 50  0001 C CNN
-F 3 "~" H 5725 5750 50  0001 C CNN
-	1    5525 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6425 5750 5525 5750
 $EndSCHEMATC
