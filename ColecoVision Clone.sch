@@ -835,17 +835,6 @@ Text GLabel 3975 2225 0    50   Input ~ 0
 A14
 Text GLabel 3975 2325 0    50   Input ~ 0
 A15
-$Comp
-L 74xx:74LS04 U18
-U 1 1 5E53CEC2
-P 3250 1375
-F 0 "U18" H 3250 1692 50  0000 C CNN
-F 1 "74LS05" H 3250 1601 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 3250 1375 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/texas-instruments/SN74LS04DR/562927" H 3250 1375 50  0001 C CNN
-	1    3250 1375
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2950 1375 1425 1375
 Wire Wire Line
@@ -1275,4 +1264,15 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
+$Comp
+L 74xx:74HC04 U19
+U 4 1 5E457D38
+P 3250 1375
+F 0 "U19" H 3250 1692 50  0000 C CNN
+F 1 "74HC04" H 3250 1601 50  0000 C CNN
+F 2 "" H 3250 1375 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3250 1375 50  0001 C CNN
+	4    3250 1375
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
