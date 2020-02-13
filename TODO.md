@@ -40,3 +40,6 @@
 - [x] replace the inline diode with a shunt to ground - rearrange the diode and fuse
 - [x] is the SMD polyfuse on the load too small? yes, it's gone
 - [x] weird flipflop-y section of the controller area with -5v
+- [ ] U21 (74hc04) seems not well used, lots of empty pins there
+- [ ] U22 (flipflop) not well used either
+- [ ] U18 (74ls05) is only half used
