@@ -1225,8 +1225,6 @@ Text GLabel 1875 2175 0    50   Input ~ 0
 CPU_CLK
 Text GLabel 1875 2475 0    50   Input ~ 0
 !NMI
-Text GLabel 625  3175 0    50   Input ~ 0
-!HALT
 Wire Wire Line
 	1875 3175 625  3175
 Wire Wire Line

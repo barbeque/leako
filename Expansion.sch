@@ -93,21 +93,6 @@ Text GLabel 6425 4725 2    50   Input ~ 0
 EXT_40_5F
 NoConn ~ 6425 4600
 NoConn ~ 6425 4725
-Text GLabel 6425 5075 2    50   Input ~ 0
-!HALT
-$Comp
-L Connector:TestPoint TP13
-U 1 1 5E493261
-P 5525 5075
-F 0 "TP13" H 5583 5193 50  0000 L CNN
-F 1 "TestPoint" H 5583 5102 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5725 5075 50  0001 C CNN
-F 3 "~" H 5725 5075 50  0001 C CNN
-	1    5525 5075
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6425 5075 5525 5075
 Text GLabel 6425 5275 2    50   Input ~ 0
 !RESET
 Wire Wire Line
