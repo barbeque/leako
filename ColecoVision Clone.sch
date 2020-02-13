@@ -1256,14 +1256,6 @@ Text GLabel 1875 4275 0    50   Input ~ 0
 Connection ~ 9750 3325
 Wire Wire Line
 	9750 3325 10775 3325
-Wire Bus Line
-	5475 1550 5475 2950
-Wire Bus Line
-	5475 3050 5475 5000
-Wire Bus Line
-	3475 3675 3475 5000
-Wire Bus Line
-	3475 1550 3475 3475
 $Comp
 L 74xx:74HC04 U19
 U 4 1 5E457D38
@@ -1275,4 +1267,12 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3250 137
 	4    3250 1375
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	5475 1550 5475 2950
+Wire Bus Line
+	5475 3050 5475 5000
+Wire Bus Line
+	3475 3675 3475 5000
+Wire Bus Line
+	3475 1550 3475 3475
 $EndSCHEMATC
