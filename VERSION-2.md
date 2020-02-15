@@ -1,0 +1,3 @@
+- [ ] ESD protection diodes on the controller ports
+- [ ] use fewer inverters (do we need any 04s or can they all be an 05?)
+- [ ] jumper for BIOS ROM selection (e.g. no-delay)
