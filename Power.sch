@@ -784,17 +784,6 @@ F 3 "~" H 5475 4125 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5575 4125 5825 4125
-$Comp
-L Device:C C25
-U 1 1 5E48E046
-P 5475 3700
-F 0 "C25" V 5223 3700 50  0000 C CNN
-F 1 "68µF" V 5314 3700 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5513 3550 50  0001 C CNN
-F 3 "~" H 5475 3700 50  0001 C CNN
-	1    5475 3700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5625 3700 5825 3700
 $Comp
@@ -1505,4 +1494,15 @@ F 3 "" H 2275 4725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2275 4725
+$Comp
+L Device:CP C25
+U 1 1 5E48E046
+P 5475 3700
+F 0 "C25" V 5223 3700 50  0000 C CNN
+F 1 "68µF" V 5314 3700 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 5513 3550 50  0001 C CNN
+F 3 "~" H 5475 3700 50  0001 C CNN
+	1    5475 3700
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC

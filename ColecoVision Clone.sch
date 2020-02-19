@@ -32,7 +32,7 @@ P 9700 5250
 F 0 "J1" H 9750 6167 50  0000 C CNN
 F 1 "Cartridge Slot" H 9750 6076 50  0000 C CNN
 F 2 "Socket_Strips:Socket_Strip_Straight_2x15_Pitch2.54mm" H 9700 5250 50  0001 C CNN
-F 3 "~" H 9700 5250 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/sullins-connector-solutions/EBC15DCWN/S3305-ND/927257" H 9700 5250 50  0001 C CNN
 	1    9700 5250
 	1    0    0    -1  
 $EndComp
