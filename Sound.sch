@@ -80,22 +80,6 @@ Wire Wire Line
 	3550 5125 3550 5175
 Wire Wire Line
 	3550 2725 3550 4825
-Text GLabel 4300 3675 0    50   Input ~ 0
-D2
-Text GLabel 4300 3775 0    50   Input ~ 0
-D1
-Text GLabel 4300 3875 0    50   Input ~ 0
-D0
-Text GLabel 5200 3775 2    50   Input ~ 0
-D3
-Text GLabel 5200 3975 2    50   Input ~ 0
-D4
-Text GLabel 5200 4075 2    50   Input ~ 0
-D5
-Text GLabel 5200 4175 2    50   Input ~ 0
-D6
-Text GLabel 5200 4275 2    50   Input ~ 0
-D7
 $Comp
 L Device:R_Small_US R8
 U 1 1 5E3CBFF6
@@ -209,4 +193,20 @@ Wire Wire Line
 	6375 4875 6175 4875
 Text Label 6325 4875 1    50   ~ 0
 To_Speakers
+Text GLabel 4300 3875 0    50   Input ~ 0
+D7
+Text GLabel 4300 3775 0    50   Input ~ 0
+D6
+Text GLabel 4300 3675 0    50   Input ~ 0
+D5
+Text GLabel 5200 3775 2    50   Input ~ 0
+D4
+Text GLabel 5200 3975 2    50   Input ~ 0
+D3
+Text GLabel 5200 4075 2    50   Input ~ 0
+D2
+Text GLabel 5200 4175 2    50   Input ~ 0
+D1
+Text GLabel 5200 4275 2    50   Input ~ 0
+D0
 $EndSCHEMATC

@@ -3,4 +3,4 @@
 - [ ] jumper for BIOS ROM selection (e.g. no-delay)
 - [ ] better footprint for cart connector, with screw holes
 - [x] use a through-hole electrolytic for the 68uF clock circuit
-- [ ] reverse data bus on 76489 (Z80 D7 -> 76489 D0)
+- [x] reverse data bus on 76489 (Z80 D7 -> 76489 D0)
