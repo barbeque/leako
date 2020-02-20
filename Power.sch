@@ -1495,12 +1495,12 @@ F 3 "" H 2275 4725 50  0001 C CNN
 $EndComp
 Connection ~ 2275 4725
 $Comp
-L Device:CP C25
+L Device:C C25
 U 1 1 5E48E046
 P 5475 3700
 F 0 "C25" V 5223 3700 50  0000 C CNN
 F 1 "68µF" V 5314 3700 50  0000 C CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 5513 3550 50  0001 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5513 3550 50  0001 C CNN
 F 3 "~" H 5475 3700 50  0001 C CNN
 	1    5475 3700
 	0    -1   1    0   
