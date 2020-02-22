@@ -5,3 +5,4 @@
 - [x] use a through-hole electrolytic for the 68uF clock circuit
 - [x] reverse data bus on 76489 (Z80 D7 -> 76489 D0)
 - [x] use a 1206 bipolar ceramic for the 68uF clock circuit
+- [ ] do i really need the -5V inverter or can i just hook it to GND with better logic?
