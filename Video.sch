@@ -1078,6 +1078,7 @@ VID_CLK
 NoConn ~ 6400 2400
 NoConn ~ 6400 2600
 NoConn ~ 6400 2300
+NoConn ~ 4675 6400
 Wire Bus Line
 	4350 3200 4700 3200
 Wire Bus Line

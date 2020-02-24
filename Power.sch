@@ -567,83 +567,8 @@ Wire Notes Line
 	5325 7650 5325 5875
 Wire Notes Line
 	5325 5875 550  5875
-$Comp
-L 74xx:74HC04 U19
-U 3 1 5E418EAA
-P 4525 3400
-F 0 "U19" H 4525 3717 50  0000 C CNN
-F 1 "74HC04" H 4525 3626 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4525 3400 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/texas-instruments/SN74LS04DR/296-14875-1-ND/562570" H 4525 3400 50  0001 C CNN
-	3    4525 3400
-	1    0    0    -1  
-$EndComp
-Text GLabel 4225 3400 0    50   Input ~ 0
+Text GLabel 6250 2400 0    50   Input ~ 0
 !M1
-$Comp
-L 74xx:74LS74 U20
-U 1 1 5E419BAC
-P 5025 2850
-F 0 "U20" H 5025 3331 50  0000 C CNN
-F 1 "74LS74" H 5025 3240 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 5025 2850 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/texas-instruments/SN74LS74ADR/296-14899-1-ND/562577" H 5025 2850 50  0001 C CNN
-	1    5025 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4825 3400 5025 3400
-Wire Wire Line
-	5025 3400 5025 3150
-Wire Wire Line
-	5025 2550 5025 2275
-$Comp
-L Device:R_Small_US R22
-U 1 1 5E41E57A
-P 5025 2175
-F 0 "R22" H 5093 2221 50  0000 L CNN
-F 1 "1kΩ" H 5093 2130 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 5025 2175 50  0001 C CNN
-F 3 "~" H 5025 2175 50  0001 C CNN
-	1    5025 2175
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0125
-U 1 1 5E41EBFF
-P 5025 2075
-F 0 "#PWR0125" H 5025 1925 50  0001 C CNN
-F 1 "VCC" H 5042 2248 50  0000 C CNN
-F 2 "" H 5025 2075 50  0001 C CNN
-F 3 "" H 5025 2075 50  0001 C CNN
-	1    5025 2075
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4725 2750 4625 2750
-Wire Wire Line
-	4625 2750 4625 3200
-Wire Wire Line
-	4625 3200 5400 3200
-Wire Wire Line
-	5400 3200 5400 2950
-Wire Wire Line
-	5400 2950 5325 2950
-Wire Wire Line
-	5325 2750 5675 2750
-$Comp
-L 74xx:74HC04 U21
-U 2 1 5E4248FB
-P 5975 2750
-F 0 "U21" H 5975 3067 50  0000 C CNN
-F 1 "74HC04" H 5975 2976 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 5975 2750 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5975 2750 50  0001 C CNN
-	2    5975 2750
-	1    0    0    -1  
-$EndComp
-Text GLabel 6275 2750 2    50   Input ~ 0
-!WAIT
 $Comp
 L 74xx:74HC04 U19
 U 7 1 5E42A78C
@@ -715,21 +640,6 @@ F 3 "74xx/74hc_hct74.pdf" H 5025 5000 50  0001 C CNN
 	2    5025 5000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4725 2850 4725 3275
-Wire Wire Line
-	4725 3275 4875 3275
-Wire Wire Line
-	4875 3275 4875 3700
-Wire Wire Line
-	4875 3700 5150 3700
-Wire Wire Line
-	4725 4900 4725 3850
-Wire Wire Line
-	4725 3850 4875 3850
-Wire Wire Line
-	4875 3850 4875 3700
-Connection ~ 4875 3700
 $Comp
 L power:VCC #PWR0126
 U 1 1 5E480BC1
@@ -758,279 +668,8 @@ Wire Wire Line
 	4725 5525 5025 5525
 Wire Wire Line
 	5025 5525 5025 5300
-NoConn ~ 5325 5100
-Wire Wire Line
-	5150 3700 5150 4125
-Wire Wire Line
-	5150 4125 5375 4125
-Wire Wire Line
-	5825 4125 5825 3700
-Connection ~ 5150 3700
-Wire Wire Line
-	5150 3700 5325 3700
-Connection ~ 5825 3700
-Wire Wire Line
-	5825 3700 6050 3700
-$Comp
-L Device:R_Small_US R25
-U 1 1 5E48C912
-P 5475 4125
-F 0 "R25" V 5270 4125 50  0000 C CNN
-F 1 "1.1kΩ" V 5361 4125 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 5475 4125 50  0001 C CNN
-F 3 "~" H 5475 4125 50  0001 C CNN
-	1    5475 4125
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5575 4125 5825 4125
-Wire Wire Line
-	5625 3700 5825 3700
-$Comp
-L Device:R_Small_US R26
-U 1 1 5E49182C
-P 5825 3500
-F 0 "R26" H 5757 3454 50  0000 R CNN
-F 1 "180Ω" H 5757 3545 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 5825 3500 50  0001 C CNN
-F 3 "~" H 5825 3500 50  0001 C CNN
-	1    5825 3500
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:VCC #PWR0128
-U 1 1 5E4923D3
-P 5825 3400
-F 0 "#PWR0128" H 5825 3250 50  0001 C CNN
-F 1 "VCC" H 5842 3573 50  0000 C CNN
-F 2 "" H 5825 3400 50  0001 C CNN
-F 3 "" H 5825 3400 50  0001 C CNN
-	1    5825 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5825 3600 5825 3700
-$Comp
-L Transistor_BJT:2N3904 Q3
-U 1 1 5E498CF5
-P 6250 3700
-F 0 "Q3" H 6440 3746 50  0000 L CNN
-F 1 "2N3904" H 6440 3655 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 6450 3625 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 6250 3700 50  0001 L CNN
-	1    6250 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0129
-U 1 1 5E499DCC
-P 6475 4100
-F 0 "#PWR0129" H 6475 3950 50  0001 C CNN
-F 1 "VCC" H 6492 4273 50  0000 C CNN
-F 2 "" H 6475 4100 50  0001 C CNN
-F 3 "" H 6475 4100 50  0001 C CNN
-	1    6475 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6475 4100 6350 4100
-Wire Wire Line
-	6350 4100 6350 3900
-Wire Wire Line
-	6350 3500 6600 3500
-Wire Wire Line
-	6600 3500 6600 2575
-Wire Wire Line
-	6600 2575 7000 2575
-Wire Wire Line
-	7000 2575 7000 2825
-$Comp
-L Device:R_Small_US R27
-U 1 1 5E4F47FE
-P 7000 2925
-F 0 "R27" H 7068 2971 50  0000 L CNN
-F 1 "270Ω" H 7068 2880 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 7000 2925 50  0001 C CNN
-F 3 "~" H 7000 2925 50  0001 C CNN
-	1    7000 2925
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7000 3025 7000 3250
-Wire Wire Line
-	7000 3250 7200 3250
-Connection ~ 7000 3250
-$Comp
-L Device:C C26
-U 1 1 5E4FA849
-P 7350 3250
-F 0 "C26" V 7098 3250 50  0000 C CNN
-F 1 "120nF" V 7189 3250 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7388 3100 50  0001 C CNN
-F 3 "~" H 7350 3250 50  0001 C CNN
-	1    7350 3250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7500 3250 7650 3250
-Wire Wire Line
-	7000 2575 7650 2575
-Connection ~ 7000 2575
-Wire Wire Line
-	7650 2575 7650 2025
-$Comp
-L Device:R_Small_US R28
-U 1 1 5E50485E
-P 7750 2025
-F 0 "R28" V 7545 2025 50  0000 C CNN
-F 1 "1kΩ" V 7636 2025 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 7750 2025 50  0001 C CNN
-F 3 "~" H 7750 2025 50  0001 C CNN
-	1    7750 2025
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small_US R29
-U 1 1 5E505FA3
-P 7750 2575
-F 0 "R29" V 7545 2575 50  0000 C CNN
-F 1 "22kΩ" V 7636 2575 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 7750 2575 50  0001 C CNN
-F 3 "~" H 7750 2575 50  0001 C CNN
-	1    7750 2575
-	0    1    1    0   
-$EndComp
-Connection ~ 7650 2575
-Text GLabel 8625 2575 2    50   Input ~ 0
-CPU_CLK
-Text GLabel 8625 2025 2    50   Input ~ 0
-AUD_CLK
-$Comp
-L Device:R_Small_US R30
-U 1 1 5E50D254
-P 7950 2125
-F 0 "R30" H 7882 2079 50  0000 R CNN
-F 1 "1kΩ" H 7882 2170 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 7950 2125 50  0001 C CNN
-F 3 "~" H 7950 2125 50  0001 C CNN
-	1    7950 2125
-	-1   0    0    1   
-$EndComp
-Connection ~ 7950 2025
-Wire Wire Line
-	7950 2025 7850 2025
-$Comp
-L power:GND #PWR0130
-U 1 1 5E50DCFF
-P 7950 2225
-F 0 "#PWR0130" H 7950 1975 50  0001 C CNN
-F 1 "GND" H 7955 2052 50  0000 C CNN
-F 2 "" H 7950 2225 50  0001 C CNN
-F 3 "" H 7950 2225 50  0001 C CNN
-	1    7950 2225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7650 3250 7650 2925
-Connection ~ 7650 3250
-Wire Wire Line
-	7650 3250 7650 3675
-$Comp
-L 74xx:74HC04 U19
-U 1 1 5E51D01E
-P 7950 3675
-F 0 "U19" H 7950 3500 50  0000 C CNN
-F 1 "74HC04" H 7950 3901 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 7950 3675 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7950 3675 50  0001 C CNN
-	1    7950 3675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8250 3675 8250 3250
-Wire Wire Line
-	8250 2925 8075 2925
-Wire Wire Line
-	7650 3250 7825 3250
-Connection ~ 8250 3250
-Wire Wire Line
-	8250 3250 8250 2925
-$Comp
-L Device:C C27
-U 1 1 5E5278C7
-P 7975 3250
-F 0 "C27" V 7723 3250 50  0000 C CNN
-F 1 "82pF" V 7814 3250 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8013 3100 50  0001 C CNN
-F 3 "~" H 7975 3250 50  0001 C CNN
-	1    7975 3250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8125 3250 8250 3250
-$Comp
-L Device:L_Small L1
-U 1 1 5E5295ED
-P 7975 2925
-F 0 "L1" V 8160 2925 50  0000 C CNN
-F 1 "2.7µH" V 8069 2925 50  0000 C CNN
-F 2 "tdk-inductor:MLF2012A2R7KT000" H 7975 2925 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/MLF2012A2R7KT000/445-1052-1-ND/504450/?itemSeq=317149024" H 7975 2925 50  0001 C CNN
-	1    7975 2925
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7875 2925 7650 2925
-Wire Wire Line
-	8250 3675 8350 3675
-Connection ~ 8250 3675
-$Comp
-L 74xx:74HC04 U19
-U 2 1 5E530B08
-P 8650 3675
-F 0 "U19" H 8650 3500 50  0000 C CNN
-F 1 "74HC04" H 8650 3901 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 8650 3675 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 8650 3675 50  0001 C CNN
-	2    8650 3675
-	1    0    0    -1  
-$EndComp
-Text GLabel 9325 3675 2    50   Input ~ 0
-VID_CLK
-Text Notes 6425 3100 2    118  ~ 0
-Clock
 Wire Wire Line
 	5025 4375 5025 4700
-$Comp
-L 74xx:74HC04 U21
-U 7 1 5E58E8E9
-P 9400 5525
-F 0 "U21" H 9630 5571 50  0000 L CNN
-F 1 "74HC04" H 9630 5480 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 9400 5525 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 9400 5525 50  0001 C CNN
-	7    9400 5525
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9400 5025 8900 5025
-Wire Wire Line
-	8900 5025 8900 5350
-Wire Wire Line
-	8900 6025 9400 6025
-$Comp
-L Device:C C28
-U 1 1 5E596762
-P 8900 5500
-F 0 "C28" H 9015 5546 50  0000 L CNN
-F 1 "0.1µF" H 9015 5455 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8938 5350 50  0001 C CNN
-F 3 "~" H 8900 5500 50  0001 C CNN
-	1    8900 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8900 5650 8900 6025
 $Comp
 L 74xx:74LS74 U22
 U 1 1 5E5A9C25
@@ -1124,12 +763,8 @@ Text Notes 3250 4875 0    50   ~ 0
 Clock div/2\n(2x crystal was fitted)
 Text Notes 2000 5075 0    50   ~ 0
 I dumped this entire mess and made an oscillator\ndispense directly to pin 11 of the new extra clock divider
-Text Notes 5450 5025 0    50   ~ 0
+Text Notes 4000 5800 0    50   ~ 0
 this is about where U8 on the original schematic starts\n
-Wire Wire Line
-	5325 4900 7000 4900
-Wire Wire Line
-	7000 3250 7000 4900
 $Comp
 L Oscillator:CXO_DIP8 X1
 U 1 1 5E6EEF49
@@ -1179,16 +814,6 @@ Wire Wire Line
 Wire Wire Line
 	2575 4425 3450 4425
 NoConn ~ 1975 4425
-Wire Wire Line
-	9325 3675 8950 3675
-Text Label 8975 3675 0    50   ~ 0
-10MHz
-Text Label 7000 3500 0    50   ~ 0
-3.57MHz
-Wire Wire Line
-	7950 2025 8625 2025
-Wire Wire Line
-	8625 2575 7850 2575
 $Comp
 L Device:Fuse_Small F2
 U 1 1 5E46D729
@@ -1381,18 +1006,6 @@ F 3 "" H 10475 5900 50  0001 C CNN
 $EndComp
 Connection ~ 10475 5900
 $Comp
-L power:GND #PWR0149
-U 1 1 5E49C612
-P 9400 6025
-F 0 "#PWR0149" H 9400 5775 50  0001 C CNN
-F 1 "GND" H 9405 5852 50  0000 C CNN
-F 2 "" H 9400 6025 50  0001 C CNN
-F 3 "" H 9400 6025 50  0001 C CNN
-	1    9400 6025
-	1    0    0    -1  
-$EndComp
-Connection ~ 9400 6025
-$Comp
 L power:GND #PWR0150
 U 1 1 5E49CC73
 P 8300 5925
@@ -1416,18 +1029,6 @@ F 3 "" H 8300 5125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8300 5125
-$Comp
-L power:VCC #PWR0152
-U 1 1 5E49DBD9
-P 9400 5025
-F 0 "#PWR0152" H 9400 4875 50  0001 C CNN
-F 1 "VCC" H 9417 5198 50  0000 C CNN
-F 2 "" H 9400 5025 50  0001 C CNN
-F 3 "" H 9400 5025 50  0001 C CNN
-	1    9400 5025
-	1    0    0    -1  
-$EndComp
-Connection ~ 9400 5025
 $Comp
 L power:GND #PWR0153
 U 1 1 5E49E383
@@ -1494,15 +1095,355 @@ F 3 "" H 2275 4725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2275 4725
+Wire Wire Line
+	4725 4900 4500 4900
+Wire Wire Line
+	4500 4900 4500 5700
+Wire Wire Line
+	4500 5700 5325 5700
+Wire Wire Line
+	5325 5700 5325 5100
+Wire Wire Line
+	5325 4900 5325 3775
+Wire Wire Line
+	5325 3775 6300 3775
+$Comp
+L Device:R_Small_US R27
+U 1 1 5E5B55BA
+P 6475 3775
+F 0 "R27" V 6270 3775 50  0000 C CNN
+F 1 "47" V 6361 3775 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6475 3775 50  0001 C CNN
+F 3 "~" H 6475 3775 50  0001 C CNN
+	1    6475 3775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6575 3775 8275 3775
+Text GLabel 8275 3775 2    50   Input ~ 0
+CPU_CLK
+Wire Wire Line
+	5325 5700 5725 5700
+Wire Wire Line
+	5725 5700 5725 4750
+Connection ~ 5325 5700
+$Comp
+L Device:R_Small_US R25
+U 1 1 5E5C13DE
+P 5725 4600
+F 0 "R25" H 5657 4554 50  0000 R CNN
+F 1 "1.1k" H 5657 4645 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5725 4600 50  0001 C CNN
+F 3 "~" H 5725 4600 50  0001 C CNN
+	1    5725 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R22
+U 1 1 5E5C242B
+P 5725 4275
+F 0 "R22" H 5793 4321 50  0000 L CNN
+F 1 "180" H 5793 4230 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5725 4275 50  0001 C CNN
+F 3 "~" H 5725 4275 50  0001 C CNN
+	1    5725 4275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5725 4375 5725 4450
+$Comp
+L power:VCC #PWR0125
+U 1 1 5E5C853C
+P 5725 4050
+F 0 "#PWR0125" H 5725 3900 50  0001 C CNN
+F 1 "VCC" H 5742 4223 50  0000 C CNN
+F 2 "" H 5725 4050 50  0001 C CNN
+F 3 "" H 5725 4050 50  0001 C CNN
+	1    5725 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5725 4050 5725 4175
+Wire Wire Line
+	5725 4450 6075 4450
+Connection ~ 5725 4450
+Wire Wire Line
+	5725 4450 5725 4500
+Connection ~ 6300 3775
+Wire Wire Line
+	6300 3775 6375 3775
 $Comp
 L Device:C C25
-U 1 1 5E48E046
-P 5475 3700
-F 0 "C25" V 5223 3700 50  0000 C CNN
-F 1 "68µF" V 5314 3700 50  0000 C CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5513 3550 50  0001 C CNN
-F 3 "~" H 5475 3700 50  0001 C CNN
-	1    5475 3700
-	0    -1   1    0   
+U 1 1 5E5D8ABA
+P 6075 4600
+F 0 "C25" H 6190 4646 50  0000 L CNN
+F 1 "68pF" H 6190 4555 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6113 4450 50  0001 C CNN
+F 3 "~" H 6075 4600 50  0001 C CNN
+	1    6075 4600
+	1    0    0    -1  
 $EndComp
+Connection ~ 6075 4450
+Wire Wire Line
+	5725 4750 6075 4750
+Connection ~ 5725 4750
+Wire Wire Line
+	5725 4750 5725 4700
+Connection ~ 6075 4750
+Wire Wire Line
+	6075 4750 6300 4750
+Connection ~ 6300 4750
+Wire Wire Line
+	6300 4750 8250 4750
+$Comp
+L Transistor_BJT:2N3906 Q3
+U 1 1 5E5E5D86
+P 6075 4075
+F 0 "Q3" V 6403 4075 50  0000 C CNN
+F 1 "2N3906" V 6312 4075 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 6275 4000 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 6075 4075 50  0001 L CNN
+	1    6075 4075
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6275 3975 6300 3975
+Connection ~ 6300 3975
+Wire Wire Line
+	6300 3975 6300 3775
+Wire Wire Line
+	6075 4450 6075 4275
+Wire Wire Line
+	5725 4050 5875 4050
+Wire Wire Line
+	5875 4050 5875 3975
+Connection ~ 5725 4050
+Wire Wire Line
+	6300 3975 6300 4200
+$Comp
+L Device:R_Small_US R26
+U 1 1 5E601796
+P 6300 4300
+F 0 "R26" H 6368 4346 50  0000 L CNN
+F 1 "270" H 6368 4255 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6300 4300 50  0001 C CNN
+F 3 "~" H 6300 4300 50  0001 C CNN
+	1    6300 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4400 6300 4750
+Wire Wire Line
+	6300 3975 6725 3975
+$Comp
+L Device:R_Small_US R29
+U 1 1 5E60A478
+P 6825 3975
+F 0 "R29" V 7030 3975 50  0000 C CNN
+F 1 "1k" V 6939 3975 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 6825 3975 50  0001 C CNN
+F 3 "~" H 6825 3975 50  0001 C CNN
+	1    6825 3975
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6925 3975 7150 3975
+$Comp
+L Device:R_Small_US R30
+U 1 1 5E60B5EF
+P 7150 4075
+F 0 "R30" H 7082 4029 50  0000 R CNN
+F 1 "1k" H 7082 4120 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7150 4075 50  0001 C CNN
+F 3 "~" H 7150 4075 50  0001 C CNN
+	1    7150 4075
+	-1   0    0    1   
+$EndComp
+Connection ~ 7150 3975
+Wire Wire Line
+	7150 3975 8275 3975
+$Comp
+L power:GND #PWR0128
+U 1 1 5E60C80E
+P 7150 4175
+F 0 "#PWR0128" H 7150 3925 50  0001 C CNN
+F 1 "GND" H 7155 4002 50  0000 C CNN
+F 2 "" H 7150 4175 50  0001 C CNN
+F 3 "" H 7150 4175 50  0001 C CNN
+	1    7150 4175
+	1    0    0    -1  
+$EndComp
+Text GLabel 8275 3975 2    50   Input ~ 0
+AUD_CLK
+Text GLabel 8250 4750 2    50   Input ~ 0
+!CPU_CLK
+$Comp
+L Device:C C26
+U 1 1 5E60E91B
+P 6300 5125
+F 0 "C26" H 6415 5171 50  0000 L CNN
+F 1 "100pF" H 6415 5080 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6338 4975 50  0001 C CNN
+F 3 "~" H 6300 5125 50  0001 C CNN
+	1    6300 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4750 6300 4975
+$Comp
+L 74xx:74LS04 U11
+U 1 1 5E620B2B
+P 6600 5575
+F 0 "U11" H 6600 5892 50  0000 C CNN
+F 1 "74LS04" H 6600 5801 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 6600 5575 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6600 5575 50  0001 C CNN
+	1    6600 5575
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U11
+U 2 1 5E622759
+P 7200 5575
+F 0 "U11" H 7200 5892 50  0000 C CNN
+F 1 "74LS04" H 7200 5801 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 7200 5575 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 7200 5575 50  0001 C CNN
+	2    7200 5575
+	1    0    0    -1  
+$EndComp
+Text GLabel 7575 4950 2    50   Input ~ 0
+VID_CLK
+Wire Wire Line
+	7500 5575 7500 4950
+Wire Wire Line
+	7500 4950 7575 4950
+Wire Wire Line
+	6300 5275 6300 5575
+Wire Wire Line
+	6300 5575 6300 6050
+Wire Wire Line
+	6300 6050 6500 6050
+Wire Wire Line
+	6900 6050 6900 5575
+Connection ~ 6300 5575
+Connection ~ 6900 5575
+$Comp
+L Device:L_Small L1
+U 1 1 5E638A20
+P 6600 6050
+F 0 "L1" V 6419 6050 50  0000 C CNN
+F 1 "2.7uH" V 6510 6050 50  0000 C CNN
+F 2 "tdk-inductor:MLF2012A2R7KT000" H 6600 6050 50  0001 C CNN
+F 3 "~" H 6600 6050 50  0001 C CNN
+	1    6600 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 6050 6900 6050
+$Comp
+L Device:C C27
+U 1 1 5E63B4F1
+P 6600 6400
+F 0 "C27" V 6348 6400 50  0000 C CNN
+F 1 "82pF" V 6439 6400 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6638 6250 50  0001 C CNN
+F 3 "~" H 6600 6400 50  0001 C CNN
+	1    6600 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 6400 6900 6400
+Wire Wire Line
+	6900 6400 6900 6050
+Connection ~ 6900 6050
+Wire Wire Line
+	6450 6400 6300 6400
+Wire Wire Line
+	6300 6400 6300 6050
+Connection ~ 6300 6050
+$Comp
+L 74xx:74LS04 U11
+U 3 1 5E67D755
+P 6600 2400
+F 0 "U11" H 6600 2717 50  0000 C CNN
+F 1 "74LS04" H 6600 2626 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 6600 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6600 2400 50  0001 C CNN
+	3    6600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2400 6250 2400
+$Comp
+L 74xx:74LS74 U20
+U 1 1 5E68E1FE
+P 7350 2775
+F 0 "U20" H 7350 2294 50  0000 C CNN
+F 1 "74LS74" H 7350 2385 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 7350 2775 50  0001 C CNN
+F 3 "74xx/74hc_hct74.pdf" H 7350 2775 50  0001 C CNN
+	1    7350 2775
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 2475 7350 2400
+Wire Wire Line
+	7350 2400 6900 2400
+Wire Wire Line
+	7650 2875 7800 2875
+Wire Wire Line
+	7800 2875 7800 3250
+Wire Wire Line
+	7800 3250 6900 3250
+Wire Wire Line
+	6900 3250 6900 2675
+Wire Wire Line
+	6900 2675 7050 2675
+Text GLabel 7900 2150 0    50   Input ~ 0
+CPU_CLK
+Wire Wire Line
+	7900 2150 8050 2150
+Wire Wire Line
+	8050 2150 8050 2775
+Wire Wire Line
+	8050 2775 7650 2775
+Text GLabel 7050 3425 2    50   Input ~ 0
+!WAIT
+Wire Wire Line
+	7050 2875 6700 2875
+Wire Wire Line
+	6700 2875 6700 3425
+Wire Wire Line
+	6700 3425 7050 3425
+$Comp
+L Device:R_Small_US R28
+U 1 1 5E6CDAD5
+P 8150 3125
+F 0 "R28" V 7945 3125 50  0000 C CNN
+F 1 "1k" V 8036 3125 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 8150 3125 50  0001 C CNN
+F 3 "~" H 8150 3125 50  0001 C CNN
+	1    8150 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0129
+U 1 1 5E6CEE41
+P 8375 3100
+F 0 "#PWR0129" H 8375 2950 50  0001 C CNN
+F 1 "VCC" H 8392 3273 50  0000 C CNN
+F 2 "" H 8375 3100 50  0001 C CNN
+F 3 "" H 8375 3100 50  0001 C CNN
+	1    8375 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3125 8375 3125
+Wire Wire Line
+	8375 3125 8375 3100
+Wire Wire Line
+	8050 3125 7350 3125
+Wire Wire Line
+	7350 3125 7350 3075
 $EndSCHEMATC

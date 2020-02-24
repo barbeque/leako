@@ -141,17 +141,6 @@ F 5 "Manufacturer recommendations" H 6675 4975 50  0001 L BNN "Field5"
 	1    6675 4975
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR033
-U 1 1 5E3DD314
-P 8125 5875
-F 0 "#PWR033" H 8125 5625 50  0001 C CNN
-F 1 "GND" H 8130 5702 50  0000 C CNN
-F 2 "" H 8125 5875 50  0001 C CNN
-F 3 "" H 8125 5875 50  0001 C CNN
-	1    8125 5875
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4050 4875 5375 4875
 $Comp

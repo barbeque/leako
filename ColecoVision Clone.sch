@@ -1253,7 +1253,7 @@ U 4 1 5E457D38
 P 3250 1375
 F 0 "U19" H 3250 1692 50  0000 C CNN
 F 1 "74HC04" H 3250 1601 50  0000 C CNN
-F 2 "" H 3250 1375 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3250 1375 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3250 1375 50  0001 C CNN
 	4    3250 1375
 	1    0    0    -1  
