@@ -7,3 +7,4 @@
 - [x] use a 1206 bipolar ceramic for the 68uF clock circuit
 - [ ] figure out what the !Q -> D problem with "U8" is and how clock is supposed to look
 - [ ] ok redo the entire clock circuit from the other schematic. there is a lot of fuckup. 68uF vs. 68pF
+- [ ] do i really need the -5V inverter or can i just hook it to GND with better logic?
