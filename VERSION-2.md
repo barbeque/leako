@@ -5,3 +5,5 @@
 - [x] use a through-hole electrolytic for the 68uF clock circuit
 - [x] reverse data bus on 76489 (Z80 D7 -> 76489 D0)
 - [x] use a 1206 bipolar ceramic for the 68uF clock circuit
+- [ ] figure out what the !Q -> D problem with "U8" is and how clock is supposed to look
+- [ ] ok redo the entire clock circuit from the other schematic. there is a lot of fuckup. 68uF vs. 68pF
