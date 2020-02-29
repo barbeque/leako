@@ -570,17 +570,6 @@ Wire Notes Line
 Text GLabel 6250 2400 0    50   Input ~ 0
 !M1
 $Comp
-L 74xx:74HC04 U19
-U 7 1 5E42A78C
-P 10475 4350
-F 0 "U19" H 10705 4396 50  0000 L CNN
-F 1 "74HC04" H 10705 4305 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 10475 4350 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 10475 4350 50  0001 C CNN
-	7    10475 4350
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74xx:74LS74 U20
 U 3 1 5E42B02D
 P 10475 5500
@@ -592,30 +581,11 @@ F 3 "74xx/74hc_hct74.pdf" H 10475 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10475 3850 10200 3850
-Wire Wire Line
-	9925 3850 9925 4175
-Wire Wire Line
-	9925 4850 10200 4850
-Wire Wire Line
 	10475 5100 9950 5100
 Wire Wire Line
 	9950 5100 9950 5325
 Wire Wire Line
 	9950 5900 10475 5900
-$Comp
-L Device:C C23
-U 1 1 5E42F952
-P 9925 4325
-F 0 "C23" H 10040 4371 50  0000 L CNN
-F 1 "0.1µF" H 10040 4280 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9963 4175 50  0001 C CNN
-F 3 "~" H 9925 4325 50  0001 C CNN
-	1    9925 4325
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9925 4475 9925 4850
 $Comp
 L Device:C C24
 U 1 1 5E43011A
@@ -1029,34 +999,6 @@ F 3 "" H 8300 5125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8300 5125
-$Comp
-L power:GND #PWR0153
-U 1 1 5E49E383
-P 10200 4850
-F 0 "#PWR0153" H 10200 4600 50  0001 C CNN
-F 1 "GND" H 10205 4677 50  0000 C CNN
-F 2 "" H 10200 4850 50  0001 C CNN
-F 3 "" H 10200 4850 50  0001 C CNN
-	1    10200 4850
-	1    0    0    -1  
-$EndComp
-Connection ~ 10200 4850
-Wire Wire Line
-	10200 4850 10475 4850
-$Comp
-L power:VCC #PWR0154
-U 1 1 5E49EB2F
-P 10200 3850
-F 0 "#PWR0154" H 10200 3700 50  0001 C CNN
-F 1 "VCC" H 10217 4023 50  0000 C CNN
-F 2 "" H 10200 3850 50  0001 C CNN
-F 3 "" H 10200 3850 50  0001 C CNN
-	1    10200 3850
-	1    0    0    -1  
-$EndComp
-Connection ~ 10200 3850
-Wire Wire Line
-	10200 3850 9925 3850
 $Comp
 L power:GND #PWR0155
 U 1 1 5E49FB6B

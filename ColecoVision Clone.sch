@@ -1247,18 +1247,20 @@ Wire Wire Line
 Connection ~ 9750 3325
 Wire Wire Line
 	9750 3325 10775 3325
+NoConn ~ 1875 4275
 $Comp
-L 74xx:74HC04 U19
-U 4 1 5E457D38
+L 74xx:74LS02 U14
+U 2 1 5E5C8B29
 P 3250 1375
-F 0 "U19" H 3250 1692 50  0000 C CNN
-F 1 "74HC04" H 3250 1601 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3250 1375 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3250 1375 50  0001 C CNN
-	4    3250 1375
+F 0 "U14" H 3250 1700 50  0000 C CNN
+F 1 "74LS02" H 3250 1609 50  0000 C CNN
+F 2 "" H 3250 1375 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 3250 1375 50  0001 C CNN
+	2    3250 1375
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1875 4275
+Wire Wire Line
+	2950 1275 2950 1375
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line
@@ -1267,4 +1269,7 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
+Connection ~ 2950 1375
+Wire Wire Line
+	2950 1375 2950 1475
 $EndSCHEMATC
