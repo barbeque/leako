@@ -1261,6 +1261,9 @@ F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 3250 1375 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 1275 2950 1375
+Connection ~ 2950 1375
+Wire Wire Line
+	2950 1375 2950 1475
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line
@@ -1269,7 +1272,4 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
-Connection ~ 2950 1375
-Wire Wire Line
-	2950 1375 2950 1475
 $EndSCHEMATC
