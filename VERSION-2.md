@@ -1,5 +1,5 @@
 - [ ] ESD protection diodes on the controller ports
-- [ ] use fewer inverters (do we need any 04s or can they all be an 05?)
+- [x] use fewer inverters (do we need any 04s or can they all be an 05?)
 - [ ] jumper for BIOS ROM selection (e.g. no-delay)
 - [ ] (not needed) better footprint for cart connector, with screw holes
 - [x] use a through-hole electrolytic for the 68uF clock circuit
