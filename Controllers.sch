@@ -44,6 +44,7 @@ F 0 "U15" H 6450 3691 50  0000 C CNN
 F 1 "Controller 1" H 6450 3600 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm" H 6450 2825 50  0001 C CNN
 F 3 "https://www.digikey.ca/product-detail/en/SN74HCT541DWR/296-14870-1-ND/562554/?itemSeq=317132221" H 6450 2825 50  0001 C CNN
+F 4 "296-14870-1-ND" H 6450 2825 50  0001 C CNN "DigiKey"
 	1    6450 2825
 	1    0    0    -1  
 $EndComp
@@ -55,6 +56,7 @@ F 0 "U16" H 6450 6016 50  0000 C CNN
 F 1 "Controller 2" H 6450 5925 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm" H 6450 5150 50  0001 C CNN
 F 3 "https://www.digikey.ca/product-detail/en/SN74HCT541DWR/296-14870-1-ND/562554/?itemSeq=317132221" H 6450 5150 50  0001 C CNN
+F 4 "296-14870-1-ND" H 6450 5150 50  0001 C CNN "DigiKey"
 	1    6450 5150
 	1    0    0    -1  
 $EndComp
