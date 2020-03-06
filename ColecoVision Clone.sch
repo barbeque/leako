@@ -821,6 +821,7 @@ F 0 "U13" H 4475 4931 50  0000 C CNN
 F 1 "74LS138 (I/O)" H 4475 4840 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 4475 4150 50  0001 C CNN
 F 3 "https://www.digikey.ca/product-detail/en/texas-instruments/SN74LS138DR/296-14883-2-ND/562882" H 4475 4150 50  0001 C CNN
+F 4 "296-14883-2-ND" H 4475 4150 50  0001 C CNN "DigiKey"
 	1    4475 4150
 	1    0    0    -1  
 $EndComp
@@ -856,6 +857,7 @@ F 0 "U12" H 4475 3206 50  0000 C CNN
 F 1 "74LS138 (Mem. Mapped)" H 4475 3115 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-16_3.9x9.9mm_Pitch1.27mm" H 4475 2425 50  0001 C CNN
 F 3 "https://www.digikey.ca/product-detail/en/texas-instruments/SN74LS138DR/296-14883-2-ND/562882" H 4475 2425 50  0001 C CNN
+F 4 "296-14883-2-ND" H 4475 2425 50  0001 C CNN "DigiKey"
 	1    4475 2425
 	1    0    0    -1  
 $EndComp
@@ -1073,6 +1075,7 @@ F 0 "U14" H 7850 4525 50  0000 C CNN
 F 1 "74LS02" H 7850 4434 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 7850 4200 50  0001 C CNN
 F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/74HCT02D653/1727-2829-2-ND/763104" H 7850 4200 50  0001 C CNN
+F 4 "1727-2829-2-ND" H 7850 4200 50  0001 C CNN "DigiKey"
 	1    7850 4200
 	1    0    0    -1  
 $EndComp
@@ -1254,8 +1257,8 @@ U 2 1 5E5C8B29
 P 3250 1375
 F 0 "U14" H 3250 1700 50  0000 C CNN
 F 1 "74LS02" H 3250 1609 50  0000 C CNN
-F 2 "" H 3250 1375 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 3250 1375 50  0001 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3250 1375 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/74HCT02D653/1727-2829-2-ND/763104" H 3250 1375 50  0001 C CNN
 	2    3250 1375
 	1    0    0    -1  
 $EndComp
