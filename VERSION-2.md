@@ -9,4 +9,4 @@
 - [x] ok redo the entire clock circuit from the other schematic. there is a lot of fuckup. 68uF vs. 68pF
 - [ ] do i really need the -5V inverter or can i just hook it to GND with better logic?
 - [x] move the Work RAM chip down
-- [ ] move power jack inward for better strain relief
+- [x] move power jack inward for better strain relief
