@@ -10,3 +10,4 @@
 - [ ] do i really need the -5V inverter or can i just hook it to GND with better logic?
 - [x] move the Work RAM chip down
 - [x] move power jack inward for better strain relief
+- [ ] fix the cartridge port footprint so it is spaced out properly (2x15, but with 1x15 in between)
