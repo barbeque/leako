@@ -43,3 +43,5 @@
 - [ ] U21 (74hc04) seems not well used, lots of empty pins there
 - [ ] U22 (flipflop) not well used either
 - [ ] U18 (74ls05) is only half used
+- [ ] 100pF is 0.1uF idiot, fix it
+- [ ] print out a bom for the v0.2 tag
