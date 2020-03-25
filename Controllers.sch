@@ -396,7 +396,7 @@ U 1 1 5E4CA909
 P 1850 1600
 F 0 "Q4" H 2041 1646 50  0000 L CNN
 F 1 "2N3904" H 2041 1555 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 2050 1525 50  0001 L CIN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 2050 1525 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 1850 1600 50  0001 L CNN
 	1    1850 1600
 	-1   0    0    -1  
@@ -535,7 +535,7 @@ U 1 1 5E50880D
 P 2000 6775
 F 0 "Q5" H 2191 6729 50  0000 L CNN
 F 1 "2N3904" H 2191 6820 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 2200 6700 50  0001 L CIN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 2200 6700 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2000 6775 50  0001 L CNN
 	1    2000 6775
 	-1   0    0    1   
