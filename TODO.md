@@ -43,5 +43,6 @@
 - [ ] U21 (74hc04) seems not well used, lots of empty pins there
 - [ ] U22 (flipflop) not well used either
 - [ ] U18 (74ls05) is only half used
-- [ ] CRITICAL: undo the 100pF that i converted to 0.1uF on the real board (C26, C30, C31)
+- [x] CRITICAL: undo the 100pF that i converted to 0.1uF on the real board (C26, C30, C31)
+- [x] rotate the power switch
 - [ ] print out a bom for the v0.2 tag
