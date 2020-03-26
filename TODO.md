@@ -4,7 +4,7 @@
 - [x] figure out if I can use any of the ROMs i already have - yes, a 27c256 is more than enough
 - [x] how does the original decode logic work with so few chips?
 - [x] can i use one sanyo 16-bit ram for both the vdp and z80 since it has individual byte enables? NO
-- [ ] check the footprint against a real TMS9918 (print it out sooner rather than later)
+- [x] check the footprint against a real TMS9918 (print it out sooner rather than later)
 - [x] can I use a knockoff U2413 as an AY-3-8910 to save some board room? are they that deeply compatible? i guess i already own an AY-3-8910. NEVER MIND IT'S AN SN76489 - already on order
 - [x] video amp? used the one from the PDF
 - [x] audio amp? is this too much gain? don't need one at all probably
@@ -27,7 +27,7 @@
 - [x] rca jacks around the right way?
 - [x] why are the two 541s on the controller featuring different data bus pinouts?
 - [x] map out the 541s
-- [ ] find some board spacers or a project case to lift this thing off a desk now that it's two sided
+- [x] find some board spacers or a project case to lift this thing off a desk now that it's two sided
 - [x] power U14, the ugly NOR that was used for the RAM
 - [x] break out the remainder of the pins so i can use them as an inverter if need be
 - [x] is it OK to tie CPU reset and VDP reset together? it is not
@@ -45,4 +45,4 @@
 - [ ] U18 (74ls05) is only half used
 - [x] CRITICAL: undo the 100pF that i converted to 0.1uF on the real board (C26, C30, C31)
 - [x] rotate the power switch
-- [ ] print out a bom for the v0.2 tag
+- [x] print out a bom for the v0.2 tag

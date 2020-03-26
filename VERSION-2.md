@@ -1,7 +1,7 @@
 - [ ] ESD protection diodes on the controller ports
 - [x] use fewer inverters (do we need any 04s or can they all be an 05?)
 - [ ] jumper for BIOS ROM selection (e.g. no-delay)
-- [ ] (not needed) better footprint for cart connector, with screw holes
+- [x] (not needed) better footprint for cart connector, with screw holes
 - [x] use a through-hole electrolytic for the 68uF clock circuit
 - [x] reverse data bus on 76489 (Z80 D7 -> 76489 D0)
 - [x] use a 1206 bipolar ceramic for the 68uF clock circuit
