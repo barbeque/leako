@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CPU:Z80CPU U1
-U 1 1 5E376550
-P 2575 3075
-F 0 "U1" H 2575 4756 50  0000 C CNN
-F 1 "Z80CPU" H 2575 4665 50  0000 C CNN
-F 2 "Sockets:PLCC44" H 2575 3475 50  0001 C CNN
-F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 2575 3475 50  0001 C CNN
-	1    2575 3075
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x15_Odd_Even J1
 U 1 1 5E3779E2
 P 9700 5250
@@ -132,12 +121,12 @@ D0
 $Comp
 L power:GND #PWR02
 U 1 1 5E380ECF
-P 2575 4725
-F 0 "#PWR02" H 2575 4475 50  0001 C CNN
-F 1 "GND" H 2580 4552 50  0000 C CNN
-F 2 "" H 2575 4725 50  0001 C CNN
-F 3 "" H 2575 4725 50  0001 C CNN
-	1    2575 4725
+P 3075 4000
+F 0 "#PWR02" H 3075 3750 50  0001 C CNN
+F 1 "GND" H 3080 3827 50  0000 C CNN
+F 2 "" H 3075 4000 50  0001 C CNN
+F 3 "" H 3075 4000 50  0001 C CNN
+	1    3075 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -154,10 +143,6 @@ F 3 "~" H 975 1325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1875 3075 975  3075
-Wire Wire Line
-	975  3075 975  1425
-Wire Wire Line
 	975  1225 975  1000
 Text GLabel 975  3075 0    50   Input ~ 0
 !WAIT
@@ -172,10 +157,6 @@ F 3 "~" H 1100 1575 50  0001 C CNN
 	1    1100 1575
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1875 4175 1100 4175
-Wire Wire Line
-	1100 4175 1100 1675
 $Comp
 L Device:R_Small_US R3
 U 1 1 5E3833F1
@@ -187,8 +168,6 @@ F 3 "~" H 1225 1850 50  0001 C CNN
 	1    1225 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1875 2575 1225 2575
 Wire Wire Line
 	1225 2575 1225 1950
 Wire Wire Line
@@ -217,8 +196,6 @@ F 3 "https://html.alldatasheet.com/html-pdf/40652/SANYO/LC331632M-12/267/2/LC331
 $EndComp
 Wire Wire Line
 	6975 1000 6975 1625
-Wire Wire Line
-	2575 4575 2575 4725
 $Comp
 L power:GND #PWR04
 U 1 1 5E3997C6
@@ -289,40 +266,8 @@ Entry Wire Line
 	3375 4175 3475 4275
 Entry Wire Line
 	3375 4275 3475 4375
-Wire Wire Line
-	3275 1875 3375 1875
 Entry Wire Line
 	3375 1875 3475 1975
-Wire Wire Line
-	3275 1975 3375 1975
-Wire Wire Line
-	3275 2075 3375 2075
-Wire Wire Line
-	3275 2175 3375 2175
-Wire Wire Line
-	3275 2275 3375 2275
-Wire Wire Line
-	3275 2375 3375 2375
-Wire Wire Line
-	3275 2475 3375 2475
-Wire Wire Line
-	3275 2575 3375 2575
-Wire Wire Line
-	3275 2675 3375 2675
-Wire Wire Line
-	3275 2775 3375 2775
-Wire Wire Line
-	3275 2875 3375 2875
-Wire Wire Line
-	3275 2975 3375 2975
-Wire Wire Line
-	3275 3075 3375 3075
-Wire Wire Line
-	3275 3175 3375 3175
-Wire Wire Line
-	3275 3275 3375 3275
-Wire Wire Line
-	3275 3375 3375 3375
 Entry Wire Line
 	3375 1975 3475 2075
 Entry Wire Line
@@ -427,7 +372,7 @@ Text Label 3475 4950 2    50   ~ 0
 D[0..7]
 Text Label 4475 1550 1    50   ~ 0
 A[0..15]
-Text GLabel 1875 1875 0    50   Input ~ 0
+Text GLabel 1925 3950 0    50   Input ~ 0
 !RESET
 Wire Wire Line
 	6975 2350 7075 2350
@@ -835,16 +780,12 @@ A15
 Wire Wire Line
 	2950 1375 1425 1375
 Wire Wire Line
-	1425 1375 1425 2975
-Wire Wire Line
-	1425 2975 1875 2975
-Wire Wire Line
 	3550 1375 3650 1375
 Wire Wire Line
 	3650 1375 3650 2725
 Wire Wire Line
 	3650 2725 3975 2725
-Text GLabel 1875 3775 0    50   Input ~ 0
+Text GLabel 1925 3250 0    50   Input ~ 0
 !MREQ
 Text GLabel 3975 2825 0    50   Input ~ 0
 !MREQ
@@ -874,7 +815,7 @@ Wire Wire Line
 	3725 4450 3725 3625
 Text GLabel 3725 3625 1    50   Input ~ 0
 EXT_IO_STUB
-Text GLabel 1875 3875 0    50   Input ~ 0
+Text GLabel 1925 3350 0    50   Input ~ 0
 !IOREQ
 Text GLabel 3975 4550 0    50   Input ~ 0
 !IOREQ
@@ -886,9 +827,9 @@ Text GLabel 3975 3950 0    50   Input ~ 0
 A5
 Text GLabel 3975 3850 0    50   Input ~ 0
 !WR
-Text GLabel 1875 3675 0    50   Input ~ 0
+Text GLabel 1925 3550 0    50   Input ~ 0
 !WR
-Text GLabel 1875 3575 0    50   Input ~ 0
+Text GLabel 1925 3450 0    50   Input ~ 0
 !RD
 Text GLabel 4975 2425 2    50   Input ~ 0
 !RAM_CE
@@ -1144,42 +1085,28 @@ Text Label 3300 1975 0    50   ~ 0
 A1
 Text Label 3300 1875 0    50   ~ 0
 A0
-Wire Wire Line
-	1225 1000 6975 1000
-Wire Wire Line
-	2575 1575 2375 1575
-Wire Wire Line
-	1550 1575 1550 4575
-Wire Wire Line
-	1550 4575 2575 4575
-Connection ~ 2575 4575
 $Comp
 L power:VCC #PWR0109
 U 1 1 5E48DC05
-P 2375 1575
-F 0 "#PWR0109" H 2375 1425 50  0001 C CNN
-F 1 "VCC" H 2392 1748 50  0000 C CNN
-F 2 "" H 2375 1575 50  0001 C CNN
-F 3 "" H 2375 1575 50  0001 C CNN
-	1    2375 1575
+P 3075 3650
+F 0 "#PWR0109" H 3075 3500 50  0001 C CNN
+F 1 "VCC" H 3092 3823 50  0000 C CNN
+F 2 "" H 3075 3650 50  0001 C CNN
+F 3 "" H 3075 3650 50  0001 C CNN
+	1    3075 3650
 	1    0    0    -1  
 $EndComp
-Connection ~ 2375 1575
-Wire Wire Line
-	2375 1575 2150 1575
 $Comp
 L Device:C C18
 U 1 1 5E48E2C8
-P 2000 1575
-F 0 "C18" V 1748 1575 50  0000 C CNN
-F 1 "0.1µF" V 1839 1575 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2038 1425 50  0001 C CNN
-F 3 "~" H 2000 1575 50  0001 C CNN
-	1    2000 1575
-	0    1    1    0   
+P 3075 3825
+F 0 "C18" V 2823 3825 50  0000 C CNN
+F 1 "0.1µF" V 2914 3825 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3113 3675 50  0001 C CNN
+F 3 "~" H 3075 3825 50  0001 C CNN
+	1    3075 3825
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1850 1575 1550 1575
 $Comp
 L power:VCC #PWR0110
 U 1 1 5E4B6753
@@ -1223,16 +1150,12 @@ U 5E40230D
 F0 "Testpoints" 50
 F1 "Testpoints.sch" 50
 $EndSheet
-Text GLabel 1875 2875 0    50   Input ~ 0
+Text GLabel 1925 4050 0    50   Input ~ 0
 !M1
-Text GLabel 1875 2175 0    50   Input ~ 0
+Text GLabel 1925 2850 0    50   Input ~ 0
 CPU_CLK
-Text GLabel 1875 2475 0    50   Input ~ 0
+Text GLabel 1925 3050 0    50   Input ~ 0
 !NMI
-Wire Wire Line
-	1875 3175 625  3175
-Wire Wire Line
-	625  3175 625  2150
 Wire Wire Line
 	625  1000 975  1000
 $Comp
@@ -1251,7 +1174,6 @@ Wire Wire Line
 Connection ~ 9750 3325
 Wire Wire Line
 	9750 3325 10775 3325
-NoConn ~ 1875 4275
 $Comp
 L 74xx:74LS02 U14
 U 2 1 5E5C8B29
@@ -1268,6 +1190,172 @@ Wire Wire Line
 Connection ~ 2950 1375
 Wire Wire Line
 	2950 1375 2950 1475
+$Comp
+L LeadedSolder:PLCCZ80 U1
+U 1 1 5E7ED869
+P 2425 1800
+F 0 "U1" H 2425 1915 50  0000 C CNN
+F 1 "PLCCZ80" H 2425 1824 50  0000 C CNN
+F 2 "Sockets:PLCC44" H 2425 1800 50  0001 C CNN
+F 3 "" H 2425 1800 50  0001 C CNN
+	1    2425 1800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 3675 3075 3650
+Wire Wire Line
+	3075 3675 2925 3675
+Wire Wire Line
+	2925 3675 2925 3750
+Connection ~ 3075 3675
+Wire Wire Line
+	3075 3975 3075 4000
+Wire Wire Line
+	3075 3975 2925 3975
+Wire Wire Line
+	2925 3975 2925 3850
+Connection ~ 3075 3975
+Wire Wire Line
+	2925 1875 2925 2000
+Wire Wire Line
+	2925 1875 3375 1875
+Wire Wire Line
+	2975 1975 2975 2100
+Wire Wire Line
+	2975 2100 2925 2100
+Wire Wire Line
+	2975 1975 3375 1975
+Wire Wire Line
+	2925 2200 3025 2200
+Wire Wire Line
+	3025 2200 3025 2075
+Wire Wire Line
+	3025 2075 3375 2075
+Wire Wire Line
+	3075 2175 3075 2300
+Wire Wire Line
+	3075 2300 2925 2300
+Wire Wire Line
+	3075 2175 3375 2175
+Wire Wire Line
+	2925 2400 3125 2400
+Wire Wire Line
+	3125 2275 3375 2275
+Wire Wire Line
+	3125 2400 3125 2275
+Wire Wire Line
+	3150 2375 3150 2500
+Wire Wire Line
+	3150 2500 2925 2500
+Wire Wire Line
+	3150 2375 3375 2375
+Wire Wire Line
+	2925 2600 3200 2600
+Wire Wire Line
+	3200 2600 3200 2475
+Wire Wire Line
+	3200 2475 3375 2475
+Wire Wire Line
+	3225 2575 3225 2625
+Wire Wire Line
+	3225 2625 2925 2625
+Wire Wire Line
+	2925 2625 2925 2700
+Wire Wire Line
+	3225 2575 3375 2575
+Wire Wire Line
+	2925 2800 2950 2800
+Wire Wire Line
+	2950 2800 2950 2675
+Wire Wire Line
+	2950 2675 3375 2675
+Wire Wire Line
+	2975 2775 2975 2900
+Wire Wire Line
+	2975 2900 2925 2900
+Wire Wire Line
+	2975 2775 3375 2775
+Wire Wire Line
+	2925 3000 3000 3000
+Wire Wire Line
+	3000 3000 3000 2875
+Wire Wire Line
+	3000 2875 3375 2875
+Wire Wire Line
+	3025 2975 3025 3100
+Wire Wire Line
+	3025 3100 2925 3100
+Wire Wire Line
+	3025 2975 3375 2975
+Wire Wire Line
+	2925 3200 3050 3200
+Wire Wire Line
+	3050 3200 3050 3075
+Wire Wire Line
+	3050 3075 3375 3075
+Wire Wire Line
+	3075 3175 3075 3300
+Wire Wire Line
+	3075 3300 2925 3300
+Wire Wire Line
+	3075 3175 3375 3175
+Wire Wire Line
+	2925 3400 3100 3400
+Wire Wire Line
+	3100 3400 3100 3275
+Wire Wire Line
+	3100 3275 3375 3275
+Wire Wire Line
+	2925 3500 3200 3500
+Wire Wire Line
+	3200 3500 3200 3375
+Wire Wire Line
+	3200 3375 3375 3375
+Text Label 1925 2000 2    50   ~ 0
+D0
+Text Label 1925 2100 2    50   ~ 0
+D1
+Text Label 1925 2200 2    50   ~ 0
+D2
+Wire Wire Line
+	1925 3750 975  3750
+Wire Wire Line
+	975  1425 975  3750
+Wire Wire Line
+	1225 2950 1225 2575
+Wire Wire Line
+	1425 4150 1925 4150
+Wire Wire Line
+	1425 1375 1425 4150
+Wire Wire Line
+	1225 2950 1925 2950
+Wire Wire Line
+	1925 3850 1100 3850
+Wire Wire Line
+	1100 3850 1100 1675
+Wire Wire Line
+	1925 3150 625  3150
+Wire Wire Line
+	625  3150 625  2150
+Text Label 1925 3150 2    50   ~ 0
+HALT_PU
+Text Label 1925 3850 2    50   ~ 0
+BUSRQ_PU
+Text Label 1925 2950 2    50   ~ 0
+INT_PU
+Text Label 1925 2300 2    50   ~ 0
+D3
+Text Label 1925 2400 2    50   ~ 0
+D4
+Text Label 1925 2500 2    50   ~ 0
+D5
+Text Label 1925 2600 2    50   ~ 0
+D6
+Text Label 1925 2700 2    50   ~ 0
+D7
+NoConn ~ 1925 3650
+Wire Wire Line
+	1225 1000 6975 1000
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line
