@@ -1,0 +1,2 @@
+ - [ ] fix the z80 symbol and then the footprint and reroute all CPU signals
+ - [ ] figure out what else i fucked up the same way
