@@ -67,8 +67,6 @@ $EndComp
 Wire Wire Line
 	1175 1675 1350 1675
 NoConn ~ 1175 1575
-Text Notes 600  3200 0    50   ~ 0
-TODO: put a regulator in here - wall voltage is going to drop so it will be higher than 5V
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5E493C9A
@@ -83,20 +81,20 @@ $EndComp
 $Comp
 L Device:R_Small_US R12
 U 1 1 5E448774
-P 3150 2375
-F 0 "R12" V 2945 2375 50  0000 C CNN
-F 1 "330Ω" V 3036 2375 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 3150 2375 50  0001 C CNN
-F 3 "~" H 3150 2375 50  0001 C CNN
-	1    3150 2375
+P 3050 2375
+F 0 "R12" V 2845 2375 50  0000 C CNN
+F 1 "330Ω" V 2936 2375 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3050 2375 50  0001 C CNN
+F 3 "~" H 3050 2375 50  0001 C CNN
+	1    3050 2375
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Q_NJFET_DGS Q2
+L Device:Q_NJFET_GSD Q2
 U 1 1 5E449BEC
 P 3450 2375
 F 0 "Q2" H 3641 2421 50  0000 L CNN
-F 1 "Q_NJFET_DGS" H 3641 2330 50  0000 L CNN
+F 1 "Q_NJFET_GSD" H 3641 2330 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 3650 2475 50  0001 C CNN
 F 3 "https://www.digikey.ca/product-detail/en/diodes-incorporated/DMN6075S-7/DMN6075S-7DICT-ND/5149299" H 3450 2375 50  0001 C CNN
 F 4 "DMN6075S-7DICT-ND" H 3450 2375 50  0001 C CNN "DigiKey"
@@ -105,8 +103,6 @@ F 4 "DMN6075S-7DICT-ND" H 3450 2375 50  0001 C CNN "DigiKey"
 $EndComp
 Wire Wire Line
 	2300 2375 2150 2375
-Wire Wire Line
-	3050 2375 2850 2375
 Wire Wire Line
 	2150 1775 2150 1825
 Wire Wire Line
@@ -1395,4 +1391,14 @@ Wire Wire Line
 	8050 3125 7350 3125
 Wire Wire Line
 	7350 3125 7350 3075
+Text Label 3250 2375 3    50   ~ 0
+Gate
+Text Label 3550 2700 0    50   ~ 0
+Source
+Text Label 3550 2150 2    50   ~ 0
+Drain
+Wire Wire Line
+	2950 2375 2850 2375
+Wire Wire Line
+	3250 2375 3150 2375
 $EndSCHEMATC
