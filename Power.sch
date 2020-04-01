@@ -1401,4 +1401,10 @@ F 3 "" H 3925 1900 50  0001 C CNN
 	1    3925 1900
 	1    0    0    -1  
 $EndComp
+Text Label 5900 3975 1    50   ~ 0
+CLK_C
+Text Label 6075 4400 0    50   ~ 0
+CLK_B
+Text Label 6275 3975 1    50   ~ 0
+CLK_E
 $EndSCHEMATC
