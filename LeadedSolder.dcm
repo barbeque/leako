@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PLCCZ80
+D The PLCC variant of the Zilog Z80
+$ENDCMP
+#
+#End Doc Library
