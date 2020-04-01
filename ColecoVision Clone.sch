@@ -1357,6 +1357,7 @@ Wire Wire Line
 	3000 3950 3000 3750
 Wire Wire Line
 	3000 3750 2925 3750
+Connection ~ 3175 3950
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line
@@ -1365,5 +1366,4 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
-Connection ~ 3175 3950
 $EndSCHEMATC
