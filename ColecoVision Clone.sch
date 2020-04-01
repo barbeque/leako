@@ -701,8 +701,6 @@ Text GLabel 9150 5250 0    50   Input ~ 0
 A3
 Text GLabel 9150 5350 0    50   Input ~ 0
 A4
-Text GLabel 9150 5450 0    50   Input ~ 0
-A13
 Text GLabel 9150 5550 0    50   Input ~ 0
 A5
 Text GLabel 9150 5650 0    50   Input ~ 0
@@ -725,8 +723,6 @@ Text GLabel 10475 5150 2    50   Input ~ 0
 A11
 Text GLabel 10475 5250 2    50   Input ~ 0
 A10
-Text GLabel 10475 5450 2    50   Input ~ 0
-A14
 Text GLabel 10475 5650 2    50   Input ~ 0
 A12
 Text GLabel 10475 5750 2    50   Input ~ 0
@@ -771,12 +767,6 @@ F 4 "296-14883-2-ND" H 4475 4150 50  0001 C CNN "DigiKey"
 	1    4475 4150
 	1    0    0    -1  
 $EndComp
-Text GLabel 3975 2125 0    50   Input ~ 0
-A13
-Text GLabel 3975 2225 0    50   Input ~ 0
-A14
-Text GLabel 3975 2325 0    50   Input ~ 0
-A15
 Wire Wire Line
 	2950 1375 1425 1375
 Wire Wire Line
@@ -1364,4 +1354,10 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
+Text Label 3975 2125 2    50   ~ 0
+A13
+Text Label 3975 2225 2    50   ~ 0
+A14
+Text Label 3975 2325 2    50   ~ 0
+A15
 $EndSCHEMATC
