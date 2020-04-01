@@ -1019,9 +1019,6 @@ Wire Wire Line
 	6975 2300 6975 2175
 Text Notes 6975 2725 2    50   ~ 0
 EXT_VDP_RESET
-NoConn ~ 6400 2200
-Text GLabel 6400 2100 2    50   Input ~ 0
-VID_CLK
 NoConn ~ 6400 2400
 NoConn ~ 6400 2600
 NoConn ~ 6400 2300
@@ -1108,12 +1105,6 @@ Text Label 11100 2525 0    50   ~ 0
 VRAM_Upper_Byte_PU
 Text Notes 9400 5350 0    50   ~ 0
 Note address pins are not in numerical\norder - changed to improve reliability\nof slow RAM
-Wire Bus Line
-	4350 3200 4700 3200
-Wire Bus Line
-	5200 3600 5200 4225
-Wire Bus Line
-	6700 3800 6700 4225
 Text GLabel 9550 3550 0    50   Input ~ 0
 RAM_A0
 Text GLabel 9550 3450 0    50   Input ~ 0
@@ -1146,4 +1137,58 @@ Text GLabel 10800 3250 2    50   Input Italic 0
 RAM_A13
 Text Notes 11050 5475 2    50   Italic 0
 leonardomiliani.com/en/2019/lm80c-tms9918a/
+$Comp
+L Device:Crystal Y1
+U 1 1 5E875480
+P 6525 1575
+F 0 "Y1" H 6525 1307 50  0000 C CNN
+F 1 "10.738635MHZ" H 6525 1398 50  0000 C CNN
+F 2 "Crystals:Crystal_HC49-U_Vertical" H 6525 1575 50  0001 C CNN
+F 3 "~" H 6525 1575 50  0001 C CNN
+F 4 "CTX1443-ND" H 6525 1575 50  0001 C CNN "DigiKey"
+	1    6525 1575
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C26
+U 1 1 5E87AEF5
+P 6800 1675
+F 0 "C26" H 6892 1721 50  0000 L CNN
+F 1 "33pF" H 6892 1630 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6800 1675 50  0001 C CNN
+F 3 "~" H 6800 1675 50  0001 C CNN
+	1    6800 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C23
+U 1 1 5E87B8DE
+P 6250 1675
+F 0 "C23" H 6159 1629 50  0000 R CNN
+F 1 "33pF" H 6159 1720 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6250 1675 50  0001 C CNN
+F 3 "~" H 6250 1675 50  0001 C CNN
+	1    6250 1675
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6400 2100 6400 1850
+Wire Wire Line
+	6400 1850 6250 1850
+Wire Wire Line
+	6250 1850 6250 1775
+Wire Wire Line
+	6400 2200 6800 2200
+Wire Wire Line
+	6800 2200 6800 1775
+Wire Wire Line
+	6675 1575 6800 1575
+Wire Wire Line
+	6375 1575 6250 1575
+Wire Bus Line
+	4350 3200 4700 3200
+Wire Bus Line
+	5200 3600 5200 4225
+Wire Bus Line
+	6700 3800 6700 4225
 $EndSCHEMATC
