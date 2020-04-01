@@ -485,14 +485,6 @@ Text GLabel 5400 2100 0    50   Input ~ 0
 RAS
 Text GLabel 5400 2200 0    50   Input ~ 0
 CAS
-Text GLabel 10800 3150 2    50   Input ~ 0
-RAM_A13
-Text GLabel 10800 3050 2    50   Input ~ 0
-RAM_A12
-Text GLabel 10800 2950 2    50   Input ~ 0
-RAM_A11
-Text GLabel 10800 2850 2    50   Input ~ 0
-RAM_A10
 Text GLabel 9550 3650 0    50   Input ~ 0
 VD0
 Text GLabel 9550 3750 0    50   Input ~ 0
@@ -523,28 +515,6 @@ Text GLabel 8475 3575 2    50   Input ~ 0
 RAM_A5
 Text GLabel 8475 3675 2    50   Input ~ 0
 RAM_A6
-Text GLabel 9550 3550 0    50   Input ~ 0
-RAM_A0
-Text GLabel 9550 3450 0    50   Input ~ 0
-RAM_A1
-Text GLabel 9550 3350 0    50   Input ~ 0
-RAM_A2
-Text GLabel 9550 3250 0    50   Input ~ 0
-RAM_A3
-Text GLabel 9550 3150 0    50   Input ~ 0
-RAM_A4
-Text GLabel 9550 3050 0    50   Input ~ 0
-RAM_A5
-Text GLabel 9550 2950 0    50   Input ~ 0
-RAM_A6
-Text GLabel 9550 2850 0    50   Input ~ 0
-RAM_A7
-Text GLabel 9550 2750 0    50   Input ~ 0
-RAM_A8
-Text GLabel 9550 2650 0    50   Input ~ 0
-RAM_A9
-Text GLabel 10800 3250 2    50   Input ~ 0
-RAM_A13
 Text GLabel 10800 2750 2    50   Input ~ 0
 RW
 Text GLabel 10800 3450 2    50   Input ~ 0
@@ -1131,15 +1101,49 @@ Wire Wire Line
 	11100 4350 11100 4250
 Wire Wire Line
 	10800 4250 11100 4250
+Connection ~ 11100 4250
+Wire Wire Line
+	11100 4250 11100 4150
+Text Label 11100 2525 0    50   ~ 0
+VRAM_Upper_Byte_PU
+Text Notes 9400 5350 0    50   ~ 0
+Note address pins are not in numerical\norder - changed to improve reliability\nof slow RAM
 Wire Bus Line
 	4350 3200 4700 3200
 Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
-Connection ~ 11100 4250
-Wire Wire Line
-	11100 4250 11100 4150
-Text Label 11100 2525 0    50   ~ 0
-VRAM_Upper_Byte_PU
+Text GLabel 9550 3550 0    50   Input ~ 0
+RAM_A0
+Text GLabel 9550 3450 0    50   Input ~ 0
+RAM_A1
+Text GLabel 9550 3350 0    50   Input ~ 0
+RAM_A2
+Text GLabel 9550 3250 0    50   Input ~ 0
+RAM_A3
+Text GLabel 9550 3150 0    50   Input ~ 10
+RAM_A5
+Text GLabel 9550 3050 0    50   Input ~ 0
+RAM_A6
+Text GLabel 9550 2950 0    50   Input ~ 10
+RAM_A8
+Text GLabel 9550 2850 0    50   Input ~ 0
+RAM_A9
+Text GLabel 9550 2750 0    50   Input ~ 10
+RAM_A12
+Text GLabel 9550 2650 0    50   Input ~ 0
+RAM_A10
+Text GLabel 10800 2850 2    50   Input ~ 0
+RAM_A4
+Text GLabel 10800 2950 2    50   Input ~ 0
+RAM_A7
+Text GLabel 10800 3050 2    50   Input ~ 0
+RAM_A11
+Text GLabel 10800 3150 2    50   Input ~ 0
+RAM_A13
+Text GLabel 10800 3250 2    50   Input Italic 0
+RAM_A13
+Text Notes 11050 5475 2    50   Italic 0
+leonardomiliani.com/en/2019/lm80c-tms9918a/
 $EndSCHEMATC
