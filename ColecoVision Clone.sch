@@ -183,17 +183,6 @@ Wire Wire Line
 Connection ~ 1100 1000
 Wire Wire Line
 	1100 1000 1225 1000
-$Comp
-L LeakoChips:LC331632M-12 U2
-U 1 1 5E388AFC
-P 6325 3000
-F 0 "U2" H 6450 4215 50  0000 C CNN
-F 1 "Work RAM" H 6450 4124 50  0000 C CNN
-F 2 "LeakyChips:SOIC-40-JLead" H 6325 3550 50  0001 C CNN
-F 3 "https://html.alldatasheet.com/html-pdf/40652/SANYO/LC331632M-12/267/2/LC331632M-12.html" H 6325 3550 50  0001 C CNN
-	1    6325 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6975 1000 6975 1625
 $Comp
@@ -499,7 +488,7 @@ Wire Wire Line
 Wire Wire Line
 	7425 2150 7425 1625
 Wire Wire Line
-	7425 1625 6975 1625
+	7425 1625 7300 1625
 Connection ~ 6975 1625
 Wire Wire Line
 	6975 1625 6975 2050
@@ -539,18 +528,8 @@ Wire Wire Line
 Connection ~ 5725 4425
 Wire Wire Line
 	5725 4425 5725 4725
-Text Notes 7050 1550 0    50   ~ 0
+Text Notes 7075 1325 0    50   ~ 0
 Disable upper write,\nupper enable\n(16-bit RAM in 8-bit mode)
-NoConn ~ 6975 3150
-NoConn ~ 6975 3250
-NoConn ~ 6975 3350
-NoConn ~ 6975 3450
-NoConn ~ 6975 3550
-NoConn ~ 6975 3650
-NoConn ~ 6975 3750
-NoConn ~ 6975 3850
-Text Notes 7075 3550 0    50   ~ 0
-TODO: is it safer to tie these\npins to ground?
 Wire Bus Line
 	3475 1550 5475 1550
 Wire Wire Line
@@ -1358,6 +1337,69 @@ Wire Wire Line
 Wire Wire Line
 	3000 3750 2925 3750
 Connection ~ 3175 3950
+$Comp
+L Device:R_Small_US R?
+U 1 1 5E8E36F5
+P 7200 1625
+F 0 "R?" V 6995 1625 50  0000 C CNN
+F 1 "2kΩ" V 7086 1625 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7200 1625 50  0001 C CNN
+F 3 "~" H 7200 1625 50  0001 C CNN
+	1    7200 1625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 1625 6975 1625
+Text Label 7350 1625 1    50   ~ 0
+WRAM_Upper_Byte_PU
+$Comp
+L LeakoChips:LC331632M-12 U2
+U 1 1 5E388AFC
+P 6325 3000
+F 0 "U2" H 6450 4215 50  0000 C CNN
+F 1 "Work RAM" H 6450 4124 50  0000 C CNN
+F 2 "LeakyChips:SOIC-40-JLead" H 6325 3550 50  0001 C CNN
+F 3 "https://html.alldatasheet.com/html-pdf/40652/SANYO/LC331632M-12/267/2/LC331632M-12.html" H 6325 3550 50  0001 C CNN
+	1    6325 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6975 3150 7675 3150
+Wire Wire Line
+	7675 3150 7675 2850
+Connection ~ 7675 2850
+Wire Wire Line
+	7675 3150 7675 3250
+Wire Wire Line
+	7675 3850 6975 3850
+Connection ~ 7675 3150
+Wire Wire Line
+	6975 3750 7675 3750
+Connection ~ 7675 3750
+Wire Wire Line
+	7675 3750 7675 3850
+Wire Wire Line
+	6975 3650 7675 3650
+Connection ~ 7675 3650
+Wire Wire Line
+	7675 3650 7675 3750
+Wire Wire Line
+	6975 3550 7675 3550
+Connection ~ 7675 3550
+Wire Wire Line
+	7675 3550 7675 3650
+Wire Wire Line
+	6975 3450 7675 3450
+Connection ~ 7675 3450
+Wire Wire Line
+	7675 3450 7675 3550
+Wire Wire Line
+	6975 3350 7675 3350
+Connection ~ 7675 3350
+Wire Wire Line
+	7675 3350 7675 3450
+Wire Wire Line
+	6975 3250 7675 3250
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line
@@ -1366,4 +1408,7 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
+Connection ~ 7675 3250
+Wire Wire Line
+	7675 3250 7675 3350
 $EndSCHEMATC

@@ -75,17 +75,6 @@ Wire Wire Line
 	4875 3200 4875 1150
 Connection ~ 5750 1150
 $Comp
-L LeakoChips:LC331632M-12 U9
-U 1 1 5E39317A
-P 10150 3500
-F 0 "U9" H 10175 4765 50  0000 C CNN
-F 1 "VRAM" H 10175 4674 50  0000 C CNN
-F 2 "LeakyChips:SOIC-40-JLead" H 10150 4050 50  0001 C CNN
-F 3 "https://html.alldatasheet.com/html-pdf/40652/SANYO/LC331632M-12/267/2/LC331632M-12.html" H 10150 4050 50  0001 C CNN
-	1    10150 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C10
 U 1 1 5E397437
 P 10175 2025
@@ -249,7 +238,7 @@ $EndComp
 Wire Wire Line
 	10325 2025 10800 2025
 Wire Wire Line
-	10800 2025 10800 2550
+	10800 2025 10800 2125
 Connection ~ 10325 2025
 Wire Wire Line
 	10025 2025 9550 2025
@@ -562,18 +551,6 @@ Text GLabel 10800 3450 2    50   Input ~ 0
 WR
 Text GLabel 10800 3550 2    50   Input ~ 0
 CAS
-NoConn ~ 10800 3350
-NoConn ~ 10800 2650
-NoConn ~ 10800 3650
-NoConn ~ 10800 3750
-NoConn ~ 10800 3850
-NoConn ~ 10800 3950
-NoConn ~ 10800 4050
-NoConn ~ 10800 4150
-NoConn ~ 10800 4250
-NoConn ~ 10800 4350
-Text Notes 11100 1600 2    50   ~ 0
-TODO: Should the upper byte be tied to ground,\ninstead of floating? Nothing uses those data lines...
 Text GLabel 7475 2975 0    50   Input ~ 0
 AD0
 Text GLabel 7475 3075 0    50   Input ~ 0
@@ -1079,10 +1056,90 @@ NoConn ~ 6400 2400
 NoConn ~ 6400 2600
 NoConn ~ 6400 2300
 NoConn ~ 4675 6400
+$Comp
+L Device:R_Small_US R?
+U 1 1 5E88CCE0
+P 11100 2325
+F 0 "R?" H 11033 2279 50  0000 R CNN
+F 1 "2kΩ" H 11033 2370 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 11100 2325 50  0001 C CNN
+F 3 "~" H 11100 2325 50  0001 C CNN
+	1    11100 2325
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10800 2650 11100 2650
+Wire Wire Line
+	11100 2650 11100 2425
+$Comp
+L LeakoChips:LC331632M-12 U9
+U 1 1 5E39317A
+P 10150 3500
+F 0 "U9" H 10175 4765 50  0000 C CNN
+F 1 "VRAM" H 10175 4674 50  0000 C CNN
+F 2 "LeakyChips:SOIC-40-JLead" H 10150 4050 50  0001 C CNN
+F 3 "https://html.alldatasheet.com/html-pdf/40652/SANYO/LC331632M-12/267/2/LC331632M-12.html" H 10150 4050 50  0001 C CNN
+	1    10150 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11100 2225 11100 2125
+Wire Wire Line
+	11100 2125 10800 2125
+Connection ~ 10800 2125
+Wire Wire Line
+	10800 2125 10800 2550
+Wire Wire Line
+	11100 2650 11100 3350
+Wire Wire Line
+	11100 3350 10800 3350
+Connection ~ 11100 2650
+Wire Wire Line
+	11100 3350 11100 3650
+Wire Wire Line
+	11100 3650 10800 3650
+Connection ~ 11100 3350
+Wire Wire Line
+	10800 4350 11100 4350
+Connection ~ 11100 3650
+Wire Wire Line
+	10800 3750 11100 3750
+Connection ~ 11100 3750
+Wire Wire Line
+	11100 3750 11100 3650
+Wire Wire Line
+	10800 3850 11100 3850
+Connection ~ 11100 3850
+Wire Wire Line
+	11100 3850 11100 3750
+Wire Wire Line
+	10800 3950 11100 3950
+Connection ~ 11100 3950
+Wire Wire Line
+	11100 3950 11100 3850
+Wire Wire Line
+	10800 4050 11100 4050
+Connection ~ 11100 4050
+Wire Wire Line
+	11100 4050 11100 3950
+Wire Wire Line
+	10800 4150 11100 4150
+Connection ~ 11100 4150
+Wire Wire Line
+	11100 4150 11100 4050
+Wire Wire Line
+	11100 4350 11100 4250
+Wire Wire Line
+	10800 4250 11100 4250
 Wire Bus Line
 	4350 3200 4700 3200
 Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
+Connection ~ 11100 4250
+Wire Wire Line
+	11100 4250 11100 4150
+Text Label 11100 2525 0    50   ~ 0
+VRAM_Upper_Byte_PU
 $EndSCHEMATC
