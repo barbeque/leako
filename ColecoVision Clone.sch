@@ -1400,6 +1400,9 @@ Wire Wire Line
 	7675 3350 7675 3450
 Wire Wire Line
 	6975 3250 7675 3250
+Connection ~ 7675 3250
+Wire Wire Line
+	7675 3250 7675 3350
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line
@@ -1408,7 +1411,4 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
-Connection ~ 7675 3250
-Wire Wire Line
-	7675 3250 7675 3350
 $EndSCHEMATC
