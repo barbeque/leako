@@ -469,7 +469,6 @@ Wire Wire Line
 Connection ~ 9275 2725
 Wire Wire Line
 	9275 2725 9150 2725
-NoConn ~ 9350 2925
 Text Notes 10600 3475 2    50   ~ 0
 TODO: might change this to a 27sf256 for SMD
 $Comp
@@ -1403,6 +1402,10 @@ Wire Wire Line
 Connection ~ 7675 3250
 Wire Wire Line
 	7675 3250 7675 3350
+Wire Wire Line
+	9350 2925 9275 2925
+Wire Wire Line
+	9275 2925 9275 2725
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line
