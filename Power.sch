@@ -1177,7 +1177,7 @@ F 1 "1kΩ" V 6939 3975 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 6825 3975 50  0001 C CNN
 F 3 "~" H 6825 3975 50  0001 C CNN
 	1    6825 3975
-	0    -1   -1   0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	6925 3975 7150 3975
