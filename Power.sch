@@ -406,6 +406,7 @@ F 0 "U18" H 3050 7517 50  0000 C CNN
 F 1 "74LS05" H 3050 7426 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3050 7200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 3050 7200 50  0001 C CNN
+F 4 "296-1630-1-ND" H 3050 7200 50  0001 C CNN "DigiKey"
 	6    3050 7200
 	1    0    0    -1  
 $EndComp
@@ -417,6 +418,7 @@ F 0 "U18" H 4175 7517 50  0000 C CNN
 F 1 "74LS05" H 4175 7426 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4175 7200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 4175 7200 50  0001 C CNN
+F 4 "296-1630-1-ND" H 4175 7200 50  0001 C CNN "DigiKey"
 	5    4175 7200
 	1    0    0    -1  
 $EndComp
@@ -523,6 +525,7 @@ F 0 "U18" H 10705 3121 50  0000 L CNN
 F 1 "74LS05" H 10705 3030 50  0000 L CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 10475 3075 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 10475 3075 50  0001 C CNN
+F 4 "296-1630-1-ND" H 10475 3075 50  0001 C CNN "DigiKey"
 	7    10475 3075
 	1    0    0    -1  
 $EndComp
@@ -1384,6 +1387,7 @@ F 0 "U17" H 9155 5696 50  0000 L CNN
 F 1 "74LS05" H 9155 5605 50  0000 L CNN
 F 2 "" H 8925 5650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 8925 5650 50  0001 C CNN
+F 4 "296-1630-1-ND" H 8925 5650 50  0001 C CNN "DigiKey"
 	7    8925 5650
 	1    0    0    -1  
 $EndComp
