@@ -1415,4 +1415,54 @@ Text Label 4500 4325 1    50   ~ 0
 7MHz
 Text Label 3200 4425 1    50   ~ 0
 14MHz
+Text Label 5450 3775 1    50   ~ 0
+3.57MHz
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5EE5E603
+P 1200 2550
+F 0 "TP2" H 1258 2668 50  0000 L CNN
+F 1 "TestPoint" H 1258 2577 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1400 2550 50  0001 C CNN
+F 3 "~" H 1400 2550 50  0001 C CNN
+	1    1200 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5EE5EEB4
+P 1200 2875
+F 0 "TP3" H 1258 2993 50  0000 L CNN
+F 1 "TestPoint" H 1258 2902 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1400 2875 50  0001 C CNN
+F 3 "~" H 1400 2875 50  0001 C CNN
+	1    1200 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5EE5FC03
+P 975 2550
+F 0 "#PWR?" H 975 2400 50  0001 C CNN
+F 1 "VCC" H 992 2723 50  0000 C CNN
+F 2 "" H 975 2550 50  0001 C CNN
+F 3 "" H 975 2550 50  0001 C CNN
+	1    975  2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EE60615
+P 1200 3050
+F 0 "#PWR?" H 1200 2800 50  0001 C CNN
+F 1 "GND" H 1205 2877 50  0000 C CNN
+F 2 "" H 1200 3050 50  0001 C CNN
+F 3 "" H 1200 3050 50  0001 C CNN
+	1    1200 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	975  2550 1200 2550
+Wire Wire Line
+	1200 3050 1200 2875
 $EndSCHEMATC
