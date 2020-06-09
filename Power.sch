@@ -1465,4 +1465,8 @@ Wire Wire Line
 	975  2550 1200 2550
 Wire Wire Line
 	1200 3050 1200 2875
+Text Notes 6575 4550 0    50   ~ 10
+TODO: Remove all of this crap
+Text Notes 6825 3350 0    50   ~ 10
+TODO: Wire this pin into an inverter!!!
 $EndSCHEMATC

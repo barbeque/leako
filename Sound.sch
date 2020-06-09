@@ -56,8 +56,6 @@ Wire Wire Line
 Wire Wire Line
 	5200 2350 4725 2350
 Wire Wire Line
-	5200 2725 3900 2725
-Wire Wire Line
 	3550 5175 4300 5175
 Connection ~ 5200 2725
 Wire Wire Line
@@ -80,27 +78,6 @@ Wire Wire Line
 	3550 5125 3550 5175
 Wire Wire Line
 	3550 2725 3550 4825
-$Comp
-L Device:R_Small_US R8
-U 1 1 5E3CBFF6
-P 3900 2825
-F 0 "R8" H 3968 2871 50  0000 L CNN
-F 1 "2kΩ" H 3968 2780 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 3900 2825 50  0001 C CNN
-F 3 "~" H 3900 2825 50  0001 C CNN
-	1    3900 2825
-	1    0    0    -1  
-$EndComp
-Connection ~ 3900 2725
-Wire Wire Line
-	3900 2725 3550 2725
-Wire Wire Line
-	4300 3975 3900 3975
-Wire Wire Line
-	3900 3975 3900 2925
-Wire Wire Line
-	3900 3975 3200 3975
-Connection ~ 3900 3975
 Text GLabel 3200 3975 0    50   Input ~ 0
 !WAIT
 Text Notes 2425 4575 0    50   ~ 0
@@ -198,4 +175,29 @@ Text GLabel 5200 4175 2    50   Input ~ 0
 D1
 Text GLabel 5200 4275 2    50   Input ~ 0
 D0
+Connection ~ 3900 3975
+Wire Wire Line
+	3900 3975 3200 3975
+Wire Wire Line
+	4300 3975 3900 3975
+Connection ~ 3900 2725
+Wire Wire Line
+	3900 2725 3550 2725
+Wire Wire Line
+	5200 2725 3900 2725
+Wire Wire Line
+	3900 3975 3900 2925
+$Comp
+L Device:R_Small_US R8
+U 1 1 5E3CBFF6
+P 3900 2825
+F 0 "R8" H 3968 2871 50  0000 L CNN
+F 1 "2kΩ" H 3968 2780 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 3900 2825 50  0001 C CNN
+F 3 "~" H 3900 2825 50  0001 C CNN
+	1    3900 2825
+	1    0    0    -1  
+$EndComp
+Text Notes 3975 3050 0    50   ~ 10
+TODO: REMOVE
 $EndSCHEMATC
