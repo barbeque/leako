@@ -651,7 +651,7 @@ Wire Wire Line
 	5125 3450 4800 3450
 Text GLabel 4800 3450 0    50   Input ~ 0
 VDC_R
-Text GLabel 5400 3400 0    50   Input ~ 0
+Text GLabel 5175 3375 0    50   Input ~ 0
 VDC_W
 Text GLabel 5325 3000 0    50   Input ~ 0
 AD0
@@ -1208,15 +1208,21 @@ Wire Wire Line
 	6550 1400 6675 1400
 Wire Wire Line
 	6675 1400 6675 1575
+Connection ~ 6675 1575
+Wire Wire Line
+	6675 1575 6800 1575
+Text Notes 6450 2375 0    50   Italic 10
+Outputs
+Wire Wire Line
+	5400 3400 5225 3400
+Wire Wire Line
+	5225 3400 5225 3375
+Wire Wire Line
+	5225 3375 5175 3375
 Wire Bus Line
 	4350 3200 4700 3200
 Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
-Connection ~ 6675 1575
-Wire Wire Line
-	6675 1575 6800 1575
-Text Notes 6450 2375 0    50   Italic 10
-Outputs
 $EndSCHEMATC
