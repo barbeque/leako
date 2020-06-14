@@ -4,3 +4,4 @@
 plot
 *.html
 *.xml
+*autosave*

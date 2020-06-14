@@ -1414,4 +1414,8 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
+Text Notes 8075 4450 0    50   ~ 0
+TODO: Still need an inverter\nhere...
+Text Notes 6100 7225 0    50   ~ 0
+TODO: this looks bad, just\ntie BIOS_OE and BIOS_CE\ntogether... if that actually\nfixed the ROM read, that is
 $EndSCHEMATC
