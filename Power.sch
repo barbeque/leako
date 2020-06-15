@@ -1036,181 +1036,21 @@ Wire Wire Line
 Wire Wire Line
 	5325 5700 5325 5100
 Wire Wire Line
-	5325 4900 5325 3775
-Wire Wire Line
-	5325 3775 6300 3775
+	5325 4900 5325 4325
 $Comp
 L Device:R_Small_US R27
 U 1 1 5E5B55BA
-P 6475 3775
-F 0 "R27" V 6270 3775 50  0000 C CNN
-F 1 "47Ω" V 6361 3775 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 6475 3775 50  0001 C CNN
-F 3 "~" H 6475 3775 50  0001 C CNN
-F 4 "RMCF0805JT47R0CT-ND" V 6475 3775 50  0001 C CNN "DigiKey"
-	1    6475 3775
-	0    1    1    0   
+P 5325 4225
+F 0 "R27" V 5120 4225 50  0000 C CNN
+F 1 "47Ω" V 5211 4225 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 5325 4225 50  0001 C CNN
+F 3 "~" H 5325 4225 50  0001 C CNN
+F 4 "RMCF0805JT47R0CT-ND" V 5325 4225 50  0001 C CNN "DigiKey"
+	1    5325 4225
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6575 3775 8275 3775
 Text GLabel 8275 3775 2    50   Input ~ 0
 CPU_CLK
-Wire Wire Line
-	5325 5700 5725 5700
-Wire Wire Line
-	5725 5700 5725 4750
-Connection ~ 5325 5700
-$Comp
-L Device:R_Small_US R25
-U 1 1 5E5C13DE
-P 5725 4600
-F 0 "R25" H 5657 4554 50  0000 R CNN
-F 1 "1.1kΩ" H 5657 4645 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 5725 4600 50  0001 C CNN
-F 3 "~" H 5725 4600 50  0001 C CNN
-	1    5725 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small_US R22
-U 1 1 5E5C242B
-P 5725 4275
-F 0 "R22" H 5793 4321 50  0000 L CNN
-F 1 "180Ω" H 5793 4230 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 5725 4275 50  0001 C CNN
-F 3 "~" H 5725 4275 50  0001 C CNN
-	1    5725 4275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5725 4375 5725 4450
-$Comp
-L power:VCC #PWR0125
-U 1 1 5E5C853C
-P 5725 4050
-F 0 "#PWR0125" H 5725 3900 50  0001 C CNN
-F 1 "VCC" H 5742 4223 50  0000 C CNN
-F 2 "" H 5725 4050 50  0001 C CNN
-F 3 "" H 5725 4050 50  0001 C CNN
-	1    5725 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5725 4050 5725 4175
-Wire Wire Line
-	5725 4450 6075 4450
-Connection ~ 5725 4450
-Wire Wire Line
-	5725 4450 5725 4500
-Connection ~ 6300 3775
-Wire Wire Line
-	6300 3775 6375 3775
-$Comp
-L Device:C C25
-U 1 1 5E5D8ABA
-P 6075 4600
-F 0 "C25" H 6190 4646 50  0000 L CNN
-F 1 "68pF" H 6190 4555 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6113 4450 50  0001 C CNN
-F 3 "~" H 6075 4600 50  0001 C CNN
-	1    6075 4600
-	1    0    0    -1  
-$EndComp
-Connection ~ 6075 4450
-Wire Wire Line
-	5725 4750 6075 4750
-Connection ~ 5725 4750
-Wire Wire Line
-	5725 4750 5725 4700
-Connection ~ 6075 4750
-Wire Wire Line
-	6075 4750 6300 4750
-Connection ~ 6300 4750
-Wire Wire Line
-	6300 4750 8250 4750
-$Comp
-L Transistor_BJT:2N3906 Q3
-U 1 1 5E5E5D86
-P 6075 4075
-F 0 "Q3" V 6403 4075 50  0000 C CNN
-F 1 "2N3906" V 6312 4075 50  0000 C CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 6275 4000 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 6075 4075 50  0001 L CNN
-F 4 "‎2N3906-AP‎" V 6075 4075 50  0001 C CNN "DigiKey"
-	1    6075 4075
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6275 3975 6300 3975
-Connection ~ 6300 3975
-Wire Wire Line
-	6300 3975 6300 3775
-Wire Wire Line
-	6075 4450 6075 4275
-Wire Wire Line
-	5725 4050 5875 4050
-Wire Wire Line
-	5875 4050 5875 3975
-Connection ~ 5725 4050
-Wire Wire Line
-	6300 3975 6300 4200
-$Comp
-L Device:R_Small_US R26
-U 1 1 5E601796
-P 6300 4300
-F 0 "R26" H 6368 4346 50  0000 L CNN
-F 1 "270Ω" H 6368 4255 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 6300 4300 50  0001 C CNN
-F 3 "~" H 6300 4300 50  0001 C CNN
-	1    6300 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6300 4400 6300 4750
-Wire Wire Line
-	6300 3975 6725 3975
-$Comp
-L Device:R_Small_US R29
-U 1 1 5E60A478
-P 6825 3975
-F 0 "R29" V 7030 3975 50  0000 C CNN
-F 1 "1kΩ" V 6939 3975 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 6825 3975 50  0001 C CNN
-F 3 "~" H 6825 3975 50  0001 C CNN
-	1    6825 3975
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6925 3975 7150 3975
-$Comp
-L Device:R_Small_US R30
-U 1 1 5E60B5EF
-P 7150 4075
-F 0 "R30" H 7082 4029 50  0000 R CNN
-F 1 "1kΩ" H 7082 4120 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 7150 4075 50  0001 C CNN
-F 3 "~" H 7150 4075 50  0001 C CNN
-	1    7150 4075
-	-1   0    0    1   
-$EndComp
-Connection ~ 7150 3975
-Wire Wire Line
-	7150 3975 8275 3975
-$Comp
-L power:GND #PWR0128
-U 1 1 5E60C80E
-P 7150 4175
-F 0 "#PWR0128" H 7150 3925 50  0001 C CNN
-F 1 "GND" H 7155 4002 50  0000 C CNN
-F 2 "" H 7150 4175 50  0001 C CNN
-F 3 "" H 7150 4175 50  0001 C CNN
-	1    7150 4175
-	1    0    0    -1  
-$EndComp
-Text GLabel 8275 3975 2    50   Input ~ 0
-AUD_CLK
-Text GLabel 8250 4750 2    50   Input ~ 0
-!CPU_CLK
 $Comp
 L 74xx:74LS04 U11
 U 3 1 5E67D755
@@ -1258,14 +1098,8 @@ Wire Wire Line
 	8050 2150 8050 2775
 Wire Wire Line
 	8050 2775 7650 2775
-Text GLabel 7050 3425 2    50   Input ~ 0
-!WAIT
 Wire Wire Line
 	7050 2875 6700 2875
-Wire Wire Line
-	6700 2875 6700 3425
-Wire Wire Line
-	6700 3425 7050 3425
 $Comp
 L Device:R_Small_US R28
 U 1 1 5E6CDAD5
@@ -1317,12 +1151,6 @@ F 3 "" H 3925 1900 50  0001 C CNN
 	1    3925 1900
 	1    0    0    -1  
 $EndComp
-Text Label 5900 3975 1    50   ~ 0
-CLK_C
-Text Label 6075 4400 0    50   ~ 0
-CLK_B
-Text Label 6275 3975 1    50   ~ 0
-CLK_E
 $Comp
 L 74xx:74LS04 U11
 U 7 1 5E8F1243
@@ -1465,8 +1293,31 @@ Wire Wire Line
 	975  2550 1200 2550
 Wire Wire Line
 	1200 3050 1200 2875
-Text Notes 6575 4550 0    50   ~ 10
-TODO: Remove all of this crap
-Text Notes 6825 3350 0    50   ~ 10
-TODO: Wire this pin into an inverter!!!
+Text Notes 6050 4125 0    50   ~ 0
+Revised June 2020 - transistor and other clock shift stuff removed,\nCPU clock tied to audio clock
+$Comp
+L 74xx:74LS04 U11
+U 1 1 5EECCB58
+P 8000 3550
+F 0 "U11" H 8000 3867 50  0000 C CNN
+F 1 "74LS04" H 8000 3776 50  0000 C CNN
+F 2 "" H 8000 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8000 3550 50  0001 C CNN
+	1    8000 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8300 3550 2    50   Input ~ 0
+!WAIT
+Wire Wire Line
+	7700 3550 6700 3550
+Wire Wire Line
+	6700 2875 6700 3550
+Text Label 7625 3550 2    50   ~ 0
+WAIT
+Text Notes 6750 2800 2    50   ~ 0
+Revised June 2020 -\nWAIT needed inversion
+Wire Wire Line
+	5325 3775 8275 3775
+Wire Wire Line
+	5325 3775 5325 4125
 $EndSCHEMATC

@@ -14,36 +14,16 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 6425 3975 2    50   Input ~ 0
-EXT_IO_STUB
 Text GLabel 6425 3675 2    50   Input ~ 0
 EXT_DECODE_STUB
-Wire Wire Line
-	6425 3975 5525 3975
-Wire Wire Line
-	5525 3975 5525 3750
 Wire Wire Line
 	6425 3675 6175 3675
 Wire Wire Line
 	6175 3675 6175 3550
 Wire Wire Line
 	6175 3200 5525 3200
-Connection ~ 5525 3200
 Wire Wire Line
 	5525 3200 5525 2200
-$Comp
-L Device:R_Small_US R9
-U 1 1 5E50BAB4
-P 5525 3650
-F 0 "R9" H 5457 3604 50  0000 R CNN
-F 1 "3.3kΩ" H 5457 3695 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 5525 3650 50  0001 C CNN
-F 3 "~" H 5525 3650 50  0001 C CNN
-	1    5525 3650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5525 3550 5525 3200
 $Comp
 L Device:R_Small_US R10
 U 1 1 5E50BD76
@@ -110,4 +90,32 @@ F 3 "~" H 5725 5275 50  0001 C CNN
 $EndComp
 Text Notes 5450 5450 2    50   ~ 0
 A lot of these\ntest points were\nput here to make\nKiCad shut up about\nusing a global label\nfor no reason;\nthey'd be on an expansion\nheader anyway, so that's\nmy excuse 
+$Comp
+L Device:R_Small_US R9
+U 1 1 5E50BAB4
+P 7450 4050
+F 0 "R9" H 7382 4004 50  0000 R CNN
+F 1 "3.3kΩ" H 7382 4095 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7450 4050 50  0001 C CNN
+F 3 "~" H 7450 4050 50  0001 C CNN
+	1    7450 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5EF0F26F
+P 7450 4150
+F 0 "#PWR0125" H 7450 3900 50  0001 C CNN
+F 1 "GND" H 7455 3977 50  0000 C CNN
+F 2 "" H 7450 4150 50  0001 C CNN
+F 3 "" H 7450 4150 50  0001 C CNN
+	1    7450 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 7150 3950 0    50   Input ~ 0
+EXT_IO_STUB
+Wire Wire Line
+	7450 3950 7150 3950
+Text Notes 7250 3850 0    50   ~ 0
+Revised June 2020 - EXT_IO_STUB should\nbe pulled low so it doesn't deactivate IO\ndecoding
 $EndSCHEMATC

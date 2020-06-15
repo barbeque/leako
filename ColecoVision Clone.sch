@@ -815,8 +815,6 @@ Text GLabel 4975 2325 2    50   Input ~ 0
 EXT_40_5F
 Text GLabel 4975 2125 2    50   Input ~ 0
 !BIOS_OE
-Text Notes 6900 6700 2    50   ~ 0
-BIOS CE is really weird on original,\nlooks like it is for some kind of BIOS ROM\nexpansion?\nhttp://www.arcadecomponents.com/f/Colecovision_Dual_BIOS_Installation.pdf
 NoConn ~ 4975 3950
 NoConn ~ 4975 4350
 Text GLabel 4975 4550 2    50   Input ~ 0
@@ -929,45 +927,9 @@ F 3 "~" H 5250 1825 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 1825 5450 1825
-$Comp
-L Device:Jumper WJ4
-U 1 1 5E3D3F9E
-P 5700 7075
-F 0 "WJ4" H 5700 7339 50  0000 C CNN
-F 1 "(normally open)" H 5700 7248 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5700 7075 50  0001 C CNN
-F 3 "~" H 5700 7075 50  0001 C CNN
-	1    5700 7075
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper WJ5
-U 1 1 5E3DC9DE
-P 5700 7450
-F 0 "WJ5" H 5700 7714 50  0000 C CNN
-F 1 "(normally open)" H 5700 7623 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5700 7450 50  0001 C CNN
-F 3 "~" H 5700 7450 50  0001 C CNN
-	1    5700 7450
-	1    0    0    -1  
-$EndComp
-Text GLabel 5400 7075 0    50   Input ~ 0
+Text GLabel 8300 950  0    50   Input ~ 0
 !BIOS_OE
-Text GLabel 5400 7450 0    50   Input ~ 0
-A12
-Wire Wire Line
-	6000 7075 6000 7450
-Wire Wire Line
-	6000 7675 6450 7675
-Connection ~ 6000 7450
-Wire Wire Line
-	6000 7450 6000 7675
-Text GLabel 5400 7675 0    50   Input ~ 0
-A11
-Wire Wire Line
-	6000 7675 5400 7675
-Connection ~ 6000 7675
-Text GLabel 6450 7675 2    50   Input ~ 0
+Text GLabel 8700 950  2    50   Input ~ 0
 !BIOS_CE
 Text GLabel 6975 2250 2    50   Input ~ 0
 !WR
@@ -975,7 +937,7 @@ Text GLabel 7550 4100 0    50   Input ~ 0
 !RAM_CE
 Text GLabel 7550 4300 0    50   Input ~ 0
 !RD
-Text GLabel 8150 4200 2    50   Input ~ 0
+Text GLabel 8875 4200 2    50   Input ~ 0
 !RAM_OE
 $Comp
 L 74xx:74LS02 U14
@@ -1406,6 +1368,25 @@ Wire Wire Line
 	9350 2925 9275 2925
 Wire Wire Line
 	9275 2925 9275 2725
+Text Notes 8650 4725 2    50   ~ 0
+Revised June 2020:\ninverted OE (I didn't understand NOR)
+$Comp
+L 74xx:74LS04 U11
+U 2 1 5EEDECFC
+P 8575 4200
+F 0 "U11" H 8575 4517 50  0000 C CNN
+F 1 "74LS04" H 8575 4426 50  0000 C CNN
+F 2 "" H 8575 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8575 4200 50  0001 C CNN
+	2    8575 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8275 4200 8150 4200
+Wire Wire Line
+	8700 950  8300 950 
+Text Notes 7850 850  0    50   ~ 0
+Revised June 2020 - tied /BIOS_OE\nand /BIOS_CE together for 27C256
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line
@@ -1414,8 +1395,4 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
-Text Notes 8075 4450 0    50   ~ 0
-TODO: Still need an inverter\nhere...
-Text Notes 6100 7225 0    50   ~ 0
-TODO: this looks bad, just\ntie BIOS_OE and BIOS_CE\ntogether... if that actually\nfixed the ROM read, that is
 $EndSCHEMATC

@@ -88,8 +88,6 @@ Wire Wire Line
 	4050 4275 4050 4875
 Wire Wire Line
 	5200 3875 5500 3875
-Text GLabel 5500 3875 2    50   Input ~ 0
-AUD_CLK
 Text GLabel 4200 4125 0    50   Input ~ 0
 Audio_WR
 Wire Wire Line
@@ -175,29 +173,14 @@ Text GLabel 5200 4175 2    50   Input ~ 0
 D1
 Text GLabel 5200 4275 2    50   Input ~ 0
 D0
-Connection ~ 3900 3975
 Wire Wire Line
-	3900 3975 3200 3975
+	3550 2725 5200 2725
 Wire Wire Line
-	4300 3975 3900 3975
-Connection ~ 3900 2725
-Wire Wire Line
-	3900 2725 3550 2725
-Wire Wire Line
-	5200 2725 3900 2725
-Wire Wire Line
-	3900 3975 3900 2925
-$Comp
-L Device:R_Small_US R8
-U 1 1 5E3CBFF6
-P 3900 2825
-F 0 "R8" H 3968 2871 50  0000 L CNN
-F 1 "2kΩ" H 3968 2780 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 3900 2825 50  0001 C CNN
-F 3 "~" H 3900 2825 50  0001 C CNN
-	1    3900 2825
-	1    0    0    -1  
-$EndComp
-Text Notes 3975 3050 0    50   ~ 10
-TODO: REMOVE
+	3200 3975 4300 3975
+Text Notes 4625 3275 2    50   ~ 0
+Revised June 2020:\nExtraneous 2k pullup R8\non /WAIT removed
+Text GLabel 5500 3875 2    50   Input ~ 0
+CPU_CLK
+Text Notes 6825 4075 2    50   ~ 0
+Revised June 2020:\ntie sound chip to CPU clock directly
 $EndSCHEMATC
