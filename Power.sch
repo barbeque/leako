@@ -1295,17 +1295,6 @@ Wire Wire Line
 	1200 3050 1200 2875
 Text Notes 6050 4125 0    50   ~ 0
 Revised June 2020 - transistor and other clock shift stuff removed,\nCPU clock tied to audio clock
-$Comp
-L 74xx:74LS04 U11
-U 1 1 5EECCB58
-P 8000 3550
-F 0 "U11" H 8000 3867 50  0000 C CNN
-F 1 "74LS04" H 8000 3776 50  0000 C CNN
-F 2 "" H 8000 3550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8000 3550 50  0001 C CNN
-	1    8000 3550
-	1    0    0    -1  
-$EndComp
 Text GLabel 8300 3550 2    50   Input ~ 0
 !WAIT
 Wire Wire Line
@@ -1320,4 +1309,15 @@ Wire Wire Line
 	5325 3775 8275 3775
 Wire Wire Line
 	5325 3775 5325 4125
+$Comp
+L 74xx:74LS05 U17
+U 6 1 5EFDE432
+P 8000 3550
+F 0 "U17" H 8000 3867 50  0000 C CNN
+F 1 "74LS05" H 8000 3776 50  0000 C CNN
+F 2 "" H 8000 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 8000 3550 50  0001 C CNN
+	6    8000 3550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
