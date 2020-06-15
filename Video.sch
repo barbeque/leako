@@ -302,17 +302,6 @@ F 3 "" H 2500 2175 50  0001 C CNN
 	1    2500 2175
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Q_NPN_Darlington_BCE Q1
-U 1 1 5E41A766
-P 2925 1675
-F 0 "Q1" H 3116 1721 50  0000 L CNN
-F 1 "2n4401" H 3116 1630 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 3125 1775 50  0001 C CNN
-F 3 "~" H 2925 1675 50  0001 C CNN
-	1    2925 1675
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2725 1675 2500 1675
 Connection ~ 2500 1675
@@ -1225,4 +1214,17 @@ Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
+Text Notes 4150 1675 2    50   ~ 0
+Revised June 2020: \nFixed wrong pinout for\n2n4401
+$Comp
+L Device:Q_NPN_EBC Q1
+U 1 1 5F007C10
+P 2925 1675
+F 0 "Q1" H 3116 1721 50  0000 L CNN
+F 1 "2n4401" H 3116 1630 50  0000 L CNN
+F 2 "" H 3125 1775 50  0001 C CNN
+F 3 "~" H 2925 1675 50  0001 C CNN
+	1    2925 1675
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
