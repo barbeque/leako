@@ -259,25 +259,25 @@ $EndComp
 $Comp
 L RCJ-017:RCJ-017 J2
 U 1 1 5E3A6E8A
-P 3725 2075
-F 0 "J2" H 3567 2024 50  0000 R CNN
-F 1 "Composite video" H 3567 2115 50  0000 R CNN
-F 2 "Jacks:CUI_RCJ-017" H 3725 2075 50  0001 L BNN
-F 3 "CUI Inc" H 3725 2075 50  0001 L BNN
-F 4 "B" H 3725 2075 50  0001 L BNN "Field4"
-F 5 "Manufacturer recommendations" H 3725 2075 50  0001 L BNN "Field5"
-	1    3725 2075
+P 3925 2075
+F 0 "J2" H 3767 2024 50  0000 R CNN
+F 1 "Composite video" H 3767 2115 50  0000 R CNN
+F 2 "Jacks:CUI_RCJ-017" H 3925 2075 50  0001 L BNN
+F 3 "CUI Inc" H 3925 2075 50  0001 L BNN
+F 4 "B" H 3925 2075 50  0001 L BNN "Field4"
+F 5 "Manufacturer recommendations" H 3925 2075 50  0001 L BNN "Field5"
+	1    3925 2075
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR011
 U 1 1 5E3A60DD
-P 3425 2175
-F 0 "#PWR011" H 3425 1925 50  0001 C CNN
-F 1 "GND" H 3430 2002 50  0000 C CNN
-F 2 "" H 3425 2175 50  0001 C CNN
-F 3 "" H 3425 2175 50  0001 C CNN
-	1    3425 2175
+P 3625 2175
+F 0 "#PWR011" H 3625 1925 50  0001 C CNN
+F 1 "GND" H 3630 2002 50  0000 C CNN
+F 2 "" H 3625 2175 50  0001 C CNN
+F 3 "" H 3625 2175 50  0001 C CNN
+	1    3625 2175
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -307,8 +307,6 @@ Wire Wire Line
 Connection ~ 2500 1675
 Wire Wire Line
 	3025 1875 3025 1975
-Wire Wire Line
-	3025 1975 3425 1975
 $Comp
 L Device:R_Small_US R6
 U 1 1 5E427E82
@@ -320,7 +318,6 @@ F 3 "~" H 3025 2075 50  0001 C CNN
 	1    3025 2075
 	1    0    0    -1  
 $EndComp
-Connection ~ 3025 1975
 $Comp
 L power:GND #PWR010
 U 1 1 5E428873
@@ -1208,12 +1205,6 @@ Wire Wire Line
 	5225 3400 5225 3375
 Wire Wire Line
 	5225 3375 5175 3375
-Wire Bus Line
-	4350 3200 4700 3200
-Wire Bus Line
-	5200 3600 5200 4225
-Wire Bus Line
-	6700 3800 6700 4225
 Text Notes 4150 1675 2    50   ~ 0
 Revised June 2020: \nFixed wrong pinout for\n2n4401
 $Comp
@@ -1222,9 +1213,29 @@ U 1 1 5F007C10
 P 2925 1675
 F 0 "Q1" H 3116 1721 50  0000 L CNN
 F 1 "2n4401" H 3116 1630 50  0000 L CNN
-F 2 "" H 3125 1775 50  0001 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 3125 1775 50  0001 C CNN
 F 3 "~" H 2925 1675 50  0001 C CNN
 	1    2925 1675
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:CP1_Small C25
+U 1 1 5EEBA833
+P 3525 1975
+F 0 "C25" V 3753 1975 50  0000 C CNN
+F 1 "220µF" V 3662 1975 50  0000 C CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 3525 1975 50  0001 C CNN
+F 3 "~" H 3525 1975 50  0001 C CNN
+	1    3525 1975
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3425 1975 3025 1975
+Wire Bus Line
+	4350 3200 4700 3200
+Wire Bus Line
+	5200 3600 5200 4225
+Wire Bus Line
+	6700 3800 6700 4225
+Connection ~ 3025 1975
 $EndSCHEMATC
