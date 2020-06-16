@@ -469,8 +469,6 @@ Wire Wire Line
 Connection ~ 9275 2725
 Wire Wire Line
 	9275 2725 9150 2725
-Text Notes 10600 3475 2    50   ~ 0
-TODO: might change this to a 27sf256 for SMD
 $Comp
 L Device:C C14
 U 1 1 5E3CFA07
