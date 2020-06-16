@@ -729,8 +729,6 @@ Text GLabel 9350 3025 0    50   Input ~ 0
 !BIOS_CE
 Text GLabel 9350 3125 0    50   Input ~ 0
 !BIOS_OE
-Text GLabel 6975 2950 2    50   Input ~ 0
-!RAM_OE
 Text GLabel 6975 3050 2    50   Input ~ 0
 !RAM_CE
 $Comp
@@ -757,8 +755,6 @@ Text GLabel 1925 3250 0    50   Input ~ 0
 !MREQ
 Text GLabel 3975 2825 0    50   Input ~ 0
 !MREQ
-Text Label 3725 2725 0    50   ~ 0
-RFSH
 $Comp
 L 74xx:74LS138 U12
 U 1 1 5E52F80A
@@ -937,8 +933,6 @@ Text GLabel 7550 4100 0    50   Input ~ 0
 !RAM_CE
 Text GLabel 7550 4300 0    50   Input ~ 0
 !RD
-Text GLabel 8875 4200 2    50   Input ~ 0
-!RAM_OE
 $Comp
 L 74xx:74LS02 U14
 U 1 1 5E44D26C
@@ -1368,25 +1362,48 @@ Wire Wire Line
 	9350 2925 9275 2925
 Wire Wire Line
 	9275 2925 9275 2725
-Text Notes 8650 4725 2    50   ~ 0
-Revised June 2020:\ninverted OE (I didn't understand NOR)
-$Comp
-L 74xx:74LS04 U11
-U 2 1 5EEDECFC
-P 8575 4200
-F 0 "U11" H 8575 4517 50  0000 C CNN
-F 1 "74LS04" H 8575 4426 50  0000 C CNN
-F 2 "" H 8575 4200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8575 4200 50  0001 C CNN
-	2    8575 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8275 4200 8150 4200
+Text Notes 8650 4525 2    50   ~ 0
+Revised June 2020:\nRevised RAM refresh circuit\n
 Wire Wire Line
 	8700 950  8300 950 
 Text Notes 7850 850  0    50   ~ 0
 Revised June 2020 - tied /BIOS_OE\nand /BIOS_CE together for 27C256
+Wire Wire Line
+	8225 3750 8225 4200
+Wire Wire Line
+	8225 4200 8150 4200
+Text GLabel 8525 3950 0    50   Input ~ 0
+RFSH
+$Comp
+L 74xx:74LS02 U14
+U 3 1 5EED59AA
+P 8925 3850
+F 0 "U14" H 8925 4175 50  0000 C CNN
+F 1 "74LS02" H 8925 4084 50  0000 C CNN
+F 2 "" H 8925 3850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 8925 3850 50  0001 C CNN
+	3    8925 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8525 3950 8625 3950
+Text GLabel 9350 3850 2    50   Input ~ 0
+!WRAM_REFRESH
+Wire Wire Line
+	9350 3850 9225 3850
+Text Label 3725 2725 0    50   ~ 0
+RFSH
+Text GLabel 3700 2975 2    50   Input ~ 0
+RFSH
+Wire Wire Line
+	3700 2975 3650 2975
+Wire Wire Line
+	3650 2975 3650 2725
+Connection ~ 3650 2725
+Text GLabel 6975 2950 2    50   Input ~ 0
+!WRAM_REFRESH
+Wire Wire Line
+	8225 3750 8625 3750
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line
@@ -1395,4 +1412,6 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
+Text Label 8550 3750 2    50   ~ 0
+RAM_OE
 $EndSCHEMATC
