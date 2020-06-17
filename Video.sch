@@ -1205,8 +1205,8 @@ Wire Wire Line
 	5225 3400 5225 3375
 Wire Wire Line
 	5225 3375 5175 3375
-Text Notes 4150 1675 2    50   ~ 0
-Revised June 2020: \nFixed wrong pinout for\n2n4401
+Text Notes 4375 1650 2    50   ~ 0
+Revised June 2020: \nFixed wrong pinout for\n2n4401, add output cap
 $Comp
 L Device:Q_NPN_EBC Q1
 U 1 1 5F007C10
@@ -1231,11 +1231,11 @@ F 3 "~" H 3525 1975 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3425 1975 3025 1975
+Connection ~ 3025 1975
 Wire Bus Line
 	4350 3200 4700 3200
 Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
-Connection ~ 3025 1975
 $EndSCHEMATC
