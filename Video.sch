@@ -1238,4 +1238,12 @@ Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
+Text Notes 6625 2925 0    50   ~ 0
+MSB
+Text Notes 6625 3650 0    50   ~ 0
+LSB
+Text Notes 6700 3725 0    50   ~ 0
+MSB
+Text Notes 5025 3675 0    50   ~ 0
+LSB
 $EndSCHEMATC

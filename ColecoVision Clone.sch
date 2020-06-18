@@ -1402,6 +1402,8 @@ Text GLabel 6975 2950 2    50   Input ~ 0
 !WRAM_REFRESH
 Wire Wire Line
 	8225 3750 8625 3750
+Text Label 8550 3750 2    50   ~ 0
+RAM_OE
 Wire Bus Line
 	5475 1550 5475 2950
 Wire Bus Line
@@ -1410,6 +1412,4 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
-Text Label 8550 3750 2    50   ~ 0
-RAM_OE
 $EndSCHEMATC
