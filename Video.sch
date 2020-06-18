@@ -1119,8 +1119,6 @@ Text GLabel 10800 3050 2    50   Input ~ 0
 RAM_A11
 Text GLabel 10800 3150 2    50   Input ~ 0
 RAM_A13
-Text GLabel 10800 3250 2    50   Input Italic 0
-RAM_A13
 Text Notes 11050 5475 2    50   Italic 0
 leonardomiliani.com/en/2019/lm80c-tms9918a/
 $Comp
@@ -1232,12 +1230,6 @@ $EndComp
 Wire Wire Line
 	3425 1975 3025 1975
 Connection ~ 3025 1975
-Wire Bus Line
-	4350 3200 4700 3200
-Wire Bus Line
-	5200 3600 5200 4225
-Wire Bus Line
-	6700 3800 6700 4225
 Text Notes 6625 2925 0    50   ~ 0
 MSB
 Text Notes 6625 3650 0    50   ~ 0
@@ -1246,4 +1238,25 @@ Text Notes 6700 3725 0    50   ~ 0
 MSB
 Text Notes 5025 3675 0    50   ~ 0
 LSB
+$Comp
+L power:GND #PWR?
+U 1 1 5EEEDA3D
+P 11000 4525
+F 0 "#PWR?" H 11000 4275 50  0001 C CNN
+F 1 "GND" H 11005 4352 50  0000 C CNN
+F 2 "" H 11000 4525 50  0001 C CNN
+F 3 "" H 11000 4525 50  0001 C CNN
+	1    11000 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 4525 11000 3250
+Wire Wire Line
+	11000 3250 10800 3250
+Wire Bus Line
+	4350 3200 4700 3200
+Wire Bus Line
+	5200 3600 5200 4225
+Wire Bus Line
+	6700 3800 6700 4225
 $EndSCHEMATC
