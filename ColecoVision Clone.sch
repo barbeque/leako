@@ -177,40 +177,11 @@ Text GLabel 925  2575 0    50   Input ~ 0
 !INT
 Wire Wire Line
 	1225 1750 1225 1000
-Connection ~ 1225 1000
 Wire Wire Line
 	1100 1475 1100 1000
 Connection ~ 1100 1000
 Wire Wire Line
 	1100 1000 1225 1000
-Wire Wire Line
-	6975 1000 6975 1625
-$Comp
-L power:GND #PWR04
-U 1 1 5E3997C6
-P 5725 4725
-F 0 "#PWR04" H 5725 4475 50  0001 C CNN
-F 1 "GND" H 5730 4552 50  0000 C CNN
-F 2 "" H 5725 4725 50  0001 C CNN
-F 3 "" H 5725 4725 50  0001 C CNN
-	1    5725 4725
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5E39D7F7
-P 5525 1300
-F 0 "#PWR03" H 5525 1050 50  0001 C CNN
-F 1 "GND" H 5530 1127 50  0000 C CNN
-F 2 "" H 5525 1300 50  0001 C CNN
-F 3 "" H 5525 1300 50  0001 C CNN
-	1    5525 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5725 2050 5725 1300
-Wire Wire Line
-	5725 1300 5525 1300
 $Sheet
 S 1700 6775 525  625 
 U 5E388268
@@ -291,54 +262,6 @@ Text GLabel 3475 4575 0    50   BiDi ~ 0
 D[0..7]
 Text GLabel 3475 1625 0    50   BiDi ~ 0
 A[0..15]
-Wire Wire Line
-	5725 3150 5575 3150
-Wire Wire Line
-	5725 3250 5575 3250
-Wire Wire Line
-	5725 3350 5575 3350
-Wire Wire Line
-	5725 3450 5575 3450
-Wire Wire Line
-	5725 3550 5575 3550
-Wire Wire Line
-	5725 3650 5575 3650
-Wire Wire Line
-	5725 3750 5575 3750
-Wire Wire Line
-	5725 3850 5575 3850
-Text Label 5725 3150 2    50   ~ 0
-D0
-Text Label 5725 3250 2    50   ~ 0
-D1
-Text Label 5725 3350 2    50   ~ 0
-D2
-Text Label 5725 3450 2    50   ~ 0
-D3
-Text Label 5725 3550 2    50   ~ 0
-D4
-Text Label 5725 3650 2    50   ~ 0
-D5
-Text Label 5725 3750 2    50   ~ 0
-D6
-Text Label 5725 3850 2    50   ~ 0
-D7
-Entry Wire Line
-	5475 3050 5575 3150
-Entry Wire Line
-	5475 3150 5575 3250
-Entry Wire Line
-	5475 3250 5575 3350
-Entry Wire Line
-	5475 3350 5575 3450
-Entry Wire Line
-	5475 3450 5575 3550
-Entry Wire Line
-	5475 3550 5575 3650
-Entry Wire Line
-	5475 3650 5575 3750
-Entry Wire Line
-	5475 3750 5575 3850
 Wire Bus Line
 	3475 5000 5475 5000
 Text Label 3275 3575 0    50   ~ 0
@@ -363,42 +286,6 @@ Text Label 4475 1550 1    50   ~ 0
 A[0..15]
 Text GLabel 1925 3950 0    50   Input ~ 0
 !RESET
-Wire Wire Line
-	6975 2350 7075 2350
-Wire Wire Line
-	7075 2350 7075 2450
-Wire Wire Line
-	7075 2750 6975 2750
-Wire Wire Line
-	6975 2650 7075 2650
-Connection ~ 7075 2650
-Wire Wire Line
-	7075 2650 7075 2750
-Wire Wire Line
-	6975 2550 7075 2550
-Connection ~ 7075 2550
-Wire Wire Line
-	7075 2550 7075 2650
-Wire Wire Line
-	6975 2450 7075 2450
-Connection ~ 7075 2450
-Wire Wire Line
-	7075 2450 7075 2550
-$Comp
-L power:GND #PWR05
-U 1 1 5E3C2DB1
-P 7275 2550
-F 0 "#PWR05" H 7275 2300 50  0001 C CNN
-F 1 "GND" H 7280 2377 50  0000 C CNN
-F 2 "" H 7275 2550 50  0001 C CNN
-F 3 "" H 7275 2550 50  0001 C CNN
-	1    7275 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7275 2550 7075 2550
-Text Notes 7100 2525 0    50   ~ 0
-Disable all\nbut first 1K
 $Sheet
 S 2825 6775 525  625 
 U 5E3C7714
@@ -469,106 +356,8 @@ Wire Wire Line
 Connection ~ 9275 2725
 Wire Wire Line
 	9275 2725 9150 2725
-$Comp
-L Device:C C14
-U 1 1 5E3CFA07
-P 5975 4425
-F 0 "C14" V 5723 4425 50  0000 C CNN
-F 1 "0.1µF" V 5814 4425 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6013 4275 50  0001 C CNN
-F 3 "~" H 5975 4425 50  0001 C CNN
-	1    5975 4425
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6975 2150 7425 2150
-Wire Wire Line
-	7425 2150 7425 1625
-Wire Wire Line
-	7425 1625 7300 1625
-Connection ~ 6975 1625
-Wire Wire Line
-	6975 1625 6975 2050
-Wire Wire Line
-	6975 2850 7675 2850
-Wire Wire Line
-	7675 2850 7675 1625
-Wire Wire Line
-	7675 1625 7425 1625
-Connection ~ 7425 1625
-$Comp
-L power:VCC #PWR0101
-U 1 1 5E3D5CF8
-P 6225 4275
-F 0 "#PWR0101" H 6225 4125 50  0001 C CNN
-F 1 "VCC" H 6242 4448 50  0000 C CNN
-F 2 "" H 6225 4275 50  0001 C CNN
-F 3 "" H 6225 4275 50  0001 C CNN
-	1    6225 4275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6225 4275 6225 4425
-Wire Wire Line
-	6225 4725 6975 4725
-Wire Wire Line
-	6975 4725 6975 3950
-Wire Wire Line
-	6125 4425 6225 4425
-Wire Wire Line
-	5725 3950 5725 4425
-Connection ~ 6225 4425
-Wire Wire Line
-	6225 4425 6225 4725
-Wire Wire Line
-	5825 4425 5725 4425
-Connection ~ 5725 4425
-Wire Wire Line
-	5725 4425 5725 4725
-Text Notes 7075 1325 0    50   ~ 0
-Disable upper write,\nupper enable\n(16-bit RAM in 8-bit mode)
 Wire Bus Line
 	3475 1550 5475 1550
-Wire Wire Line
-	5575 3050 5725 3050
-Wire Wire Line
-	5725 2950 5575 2950
-Wire Wire Line
-	5725 2850 5575 2850
-Wire Wire Line
-	5725 2750 5575 2750
-Wire Wire Line
-	5725 2650 5575 2650
-Wire Wire Line
-	5725 2550 5575 2550
-Wire Wire Line
-	5725 2450 5575 2450
-Wire Wire Line
-	5725 2350 5575 2350
-Wire Wire Line
-	5725 2250 5575 2250
-Wire Wire Line
-	5725 2150 5575 2150
-Entry Wire Line
-	5475 2050 5575 2150
-Entry Wire Line
-	5475 2150 5575 2250
-Entry Wire Line
-	5475 2250 5575 2350
-Entry Wire Line
-	5475 2350 5575 2450
-Entry Wire Line
-	5475 2450 5575 2550
-Entry Wire Line
-	5475 2550 5575 2650
-Entry Wire Line
-	5475 2650 5575 2750
-Entry Wire Line
-	5475 2750 5575 2850
-Entry Wire Line
-	5475 2850 5575 2950
-Entry Wire Line
-	5475 2950 5575 3050
 Text GLabel 9350 1325 0    50   Input ~ 0
 A0
 Text GLabel 9350 1425 0    50   Input ~ 0
@@ -727,8 +516,6 @@ Text GLabel 9350 3025 0    50   Input ~ 0
 !BIOS_CE
 Text GLabel 9350 3125 0    50   Input ~ 0
 !BIOS_OE
-Text GLabel 6975 3050 2    50   Input ~ 0
-!RAM_CE
 $Comp
 L 74xx:74LS138 U13
 U 1 1 5E5302E5
@@ -925,8 +712,6 @@ Text GLabel 8300 950  0    50   Input ~ 0
 !BIOS_OE
 Text GLabel 8700 950  2    50   Input ~ 0
 !BIOS_CE
-Text GLabel 6975 2250 2    50   Input ~ 0
-!WR
 Text GLabel 7550 4100 0    50   Input ~ 0
 !RAM_CE
 Text GLabel 7550 4300 0    50   Input ~ 0
@@ -955,26 +740,6 @@ F 3 "" H 975 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 975  1000
-Text Label 5725 2150 2    50   ~ 0
-A9
-Text Label 5725 2250 2    50   ~ 0
-A8
-Text Label 5725 2350 2    50   ~ 0
-A7
-Text Label 5725 2450 2    50   ~ 0
-A6
-Text Label 5725 2550 2    50   ~ 0
-A5
-Text Label 5725 2650 2    50   ~ 0
-A4
-Text Label 5725 2750 2    50   ~ 0
-A3
-Text Label 5725 2850 2    50   ~ 0
-A2
-Text Label 5725 2950 2    50   ~ 0
-A1
-Text Label 5725 3050 2    50   ~ 0
-A0
 Text Label 3300 3375 0    50   ~ 0
 A15
 Text Label 3300 3275 0    50   ~ 0
@@ -1268,8 +1033,6 @@ D6
 Text Label 1925 2700 2    50   ~ 0
 D7
 NoConn ~ 1925 3650
-Wire Wire Line
-	1225 1000 6975 1000
 Text Label 3975 2125 2    50   ~ 0
 A13
 Text Label 3975 2225 2    50   ~ 0
@@ -1290,72 +1053,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 3750 2925 3750
 Connection ~ 3175 3950
-$Comp
-L Device:R_Small_US R45
-U 1 1 5E8E36F5
-P 7200 1625
-F 0 "R45" V 6995 1625 50  0000 C CNN
-F 1 "2kΩ" V 7086 1625 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 7200 1625 50  0001 C CNN
-F 3 "~" H 7200 1625 50  0001 C CNN
-	1    7200 1625
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7100 1625 6975 1625
-Text Label 7350 1625 1    50   ~ 0
-WRAM_Upper_Byte_PU
-$Comp
-L LeakoChips:LC331632M-12 U2
-U 1 1 5E388AFC
-P 6325 3000
-F 0 "U2" H 6450 4215 50  0000 C CNN
-F 1 "Work RAM" H 6450 4124 50  0000 C CNN
-F 2 "LeakyChips:SOIC-40-JLead" H 6325 3550 50  0001 C CNN
-F 3 "https://html.alldatasheet.com/html-pdf/40652/SANYO/LC331632M-12/267/2/LC331632M-12.html" H 6325 3550 50  0001 C CNN
-	1    6325 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6975 3150 7675 3150
-Wire Wire Line
-	7675 3150 7675 2850
-Connection ~ 7675 2850
-Wire Wire Line
-	7675 3150 7675 3250
-Wire Wire Line
-	7675 3850 6975 3850
-Connection ~ 7675 3150
-Wire Wire Line
-	6975 3750 7675 3750
-Connection ~ 7675 3750
-Wire Wire Line
-	7675 3750 7675 3850
-Wire Wire Line
-	6975 3650 7675 3650
-Connection ~ 7675 3650
-Wire Wire Line
-	7675 3650 7675 3750
-Wire Wire Line
-	6975 3550 7675 3550
-Connection ~ 7675 3550
-Wire Wire Line
-	7675 3550 7675 3650
-Wire Wire Line
-	6975 3450 7675 3450
-Connection ~ 7675 3450
-Wire Wire Line
-	7675 3450 7675 3550
-Wire Wire Line
-	6975 3350 7675 3350
-Connection ~ 7675 3350
-Wire Wire Line
-	7675 3350 7675 3450
-Wire Wire Line
-	6975 3250 7675 3250
-Connection ~ 7675 3250
-Wire Wire Line
-	7675 3250 7675 3350
 Wire Wire Line
 	9350 2925 9275 2925
 Wire Wire Line
@@ -1367,11 +1064,122 @@ Wire Wire Line
 Text Notes 7850 850  0    50   ~ 0
 Revised June 2020 - tied /BIOS_OE\nand /BIOS_CE together for 27C256
 Wire Wire Line
-	8225 3750 8225 4200
+	8225 3750 8225 3950
 Wire Wire Line
 	8225 4200 8150 4200
-Text GLabel 8525 3950 0    50   Input ~ 0
+Text Label 3725 2725 0    50   ~ 0
 RFSH
+Wire Wire Line
+	8225 3750 8625 3750
+Text Label 8550 3750 2    50   ~ 0
+RAM_OE
+$Comp
+L AS6C62256:AS6C62256-DIP U100
+U 1 1 5F060E50
+P 6400 1350
+F 0 "U100" H 6400 1555 50  0000 C CNN
+F 1 "AS6C62256-DIP" H 6400 1464 50  0000 C CNN
+F 2 "Housings_DIP:DIP-28_W15.24mm_Socket_LongPads" H 6400 1350 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C62256.pdf" H 6400 1350 50  0001 C CNN
+F 4 "1450-1033-ND" H 6400 1373 50  0000 C CNN "DigiKey"
+	1    6400 1350
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	5475 1550 5475 2950
+Wire Bus Line
+	5475 3050 5475 5000
+Text Label 5950 1500 2    50   ~ 0
+A0
+Text Label 5950 1600 2    50   ~ 0
+A1
+Text Label 5950 1700 2    50   ~ 0
+A2
+Text Label 5950 1800 2    50   ~ 0
+A3
+Text Label 5950 1900 2    50   ~ 0
+A4
+Text Label 5950 2000 2    50   ~ 0
+A5
+Text Label 5950 2100 2    50   ~ 0
+A6
+Text Label 5950 2200 2    50   ~ 0
+A7
+Text Label 5950 2300 2    50   ~ 0
+A8
+Text Label 5950 2400 2    50   ~ 0
+A9
+Text Label 5950 3100 2    50   ~ 0
+D0
+Text Label 5950 3200 2    50   ~ 0
+D1
+Text Label 5950 3300 2    50   ~ 0
+D2
+Text Label 5950 3400 2    50   ~ 0
+D3
+Text Label 5950 3500 2    50   ~ 0
+D4
+Text Label 5950 3600 2    50   ~ 0
+D5
+Text Label 5950 3700 2    50   ~ 0
+D6
+Text Label 5950 3800 2    50   ~ 0
+D7
+$Comp
+L power:GND #PWR0101
+U 1 1 5F0BF406
+P 7375 2525
+F 0 "#PWR0101" H 7375 2275 50  0001 C CNN
+F 1 "GND" H 7380 2352 50  0000 C CNN
+F 2 "" H 7375 2525 50  0001 C CNN
+F 3 "" H 7375 2525 50  0001 C CNN
+	1    7375 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5F0BFD36
+P 7375 2250
+F 0 "C10" H 7467 2296 50  0000 L CNN
+F 1 "0.1µF" H 7467 2205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7375 2250 50  0001 C CNN
+F 3 "~" H 7375 2250 50  0001 C CNN
+	1    7375 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0128
+U 1 1 5F0C10C2
+P 7375 1925
+F 0 "#PWR0128" H 7375 1775 50  0001 C CNN
+F 1 "VCC" H 7392 2098 50  0000 C CNN
+F 2 "" H 7375 1925 50  0001 C CNN
+F 3 "" H 7375 1925 50  0001 C CNN
+	1    7375 1925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7375 2150 7375 1925
+Wire Wire Line
+	7375 2350 7375 2525
+Wire Wire Line
+	6850 2525 6850 2300
+Connection ~ 7375 2525
+Wire Wire Line
+	6850 2200 6850 1925
+Connection ~ 7375 1925
+Text GLabel 6850 1500 2    50   Input ~ 0
+!WR
+Text GLabel 6850 1700 2    50   Input ~ 0
+!RAM_CE
+Wire Wire Line
+	6850 2525 7375 2525
+Wire Wire Line
+	6850 1925 7375 1925
+Text GLabel 9350 3850 2    50   Input ~ 0
+!RAM_OE
+Wire Wire Line
+	9350 3850 9225 3850
 $Comp
 L 74xx:74LS02 U14
 U 3 1 5EED59AA
@@ -1384,32 +1192,51 @@ F 3 "http://www.ti.com/lit/gpn/sn74ls02" H 8925 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8525 3950 8625 3950
-Text GLabel 9350 3850 2    50   Input ~ 0
-!WRAM_REFRESH
+	8625 3950 8225 3950
+Connection ~ 8225 3950
 Wire Wire Line
-	9350 3850 9225 3850
-Text Label 3725 2725 0    50   ~ 0
-RFSH
-Text GLabel 3700 2975 2    50   Input ~ 0
-RFSH
+	8225 3950 8225 4200
+Text GLabel 6850 1600 2    50   Input ~ 0
+!RAM_OE
+$Comp
+L power:GND #PWR0162
+U 1 1 5F139A04
+P 5700 2900
+F 0 "#PWR0162" H 5700 2650 50  0001 C CNN
+F 1 "GND" H 5705 2727 50  0000 C CNN
+F 2 "" H 5700 2900 50  0001 C CNN
+F 3 "" H 5700 2900 50  0001 C CNN
+	1    5700 2900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3700 2975 3650 2975
+	5950 2900 5700 2900
 Wire Wire Line
-	3650 2975 3650 2725
-Connection ~ 3650 2725
-Text GLabel 6975 2950 2    50   Input ~ 0
-!WRAM_REFRESH
+	5950 2800 5700 2800
 Wire Wire Line
-	8225 3750 8625 3750
-Text Label 8550 3750 2    50   ~ 0
-RAM_OE
-Wire Bus Line
-	5475 1550 5475 2950
-Wire Bus Line
-	5475 3050 5475 5000
+	5700 2800 5700 2900
+Connection ~ 5700 2900
+Wire Wire Line
+	5950 2700 5700 2700
+Wire Wire Line
+	5700 2700 5700 2800
+Connection ~ 5700 2800
+Wire Wire Line
+	5950 2600 5700 2600
+Wire Wire Line
+	5700 2600 5700 2700
+Connection ~ 5700 2700
+Wire Wire Line
+	5950 2500 5700 2500
+Wire Wire Line
+	5700 2500 5700 2600
+Connection ~ 5700 2600
+Text Notes 8100 2925 2    50   ~ 0
+Revised June 2020: 62256 SRAM
 Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
+Text Label 2575 1375 0    50   ~ 0
+!RFSH
 $EndSCHEMATC

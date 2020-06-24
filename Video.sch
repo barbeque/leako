@@ -74,64 +74,6 @@ Wire Wire Line
 Wire Wire Line
 	4875 3200 4875 1150
 Connection ~ 5750 1150
-$Comp
-L Device:C C10
-U 1 1 5E397437
-P 10175 2025
-F 0 "C10" V 9923 2025 50  0000 C CNN
-F 1 "0.1µF" V 10014 2025 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10213 1875 50  0001 C CNN
-F 3 "~" H 10175 2025 50  0001 C CNN
-	1    10175 2025
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C11
-U 1 1 5E397A02
-P 10175 4900
-F 0 "C11" V 9923 4900 50  0000 C CNN
-F 1 "0.1µF" V 10014 4900 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10213 4750 50  0001 C CNN
-F 3 "~" H 10175 4900 50  0001 C CNN
-	1    10175 4900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10025 4900 9550 4900
-Wire Wire Line
-	9550 4900 9550 4450
-Wire Wire Line
-	10325 4900 10800 4900
-Wire Wire Line
-	10800 4900 10800 4450
-$Comp
-L power:VCC #PWR028
-U 1 1 5E39B890
-P 11075 4900
-F 0 "#PWR028" H 11075 4750 50  0001 C CNN
-F 1 "VCC" H 11092 5073 50  0000 C CNN
-F 2 "" H 11075 4900 50  0001 C CNN
-F 3 "" H 11075 4900 50  0001 C CNN
-	1    11075 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR025
-U 1 1 5E39C917
-P 9250 4900
-F 0 "#PWR025" H 9250 4650 50  0001 C CNN
-F 1 "GND" H 9255 4727 50  0000 C CNN
-F 2 "" H 9250 4900 50  0001 C CNN
-F 3 "" H 9250 4900 50  0001 C CNN
-	1    9250 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9550 4900 9250 4900
-Connection ~ 9550 4900
-Wire Wire Line
-	10800 4900 11075 4900
-Connection ~ 10800 4900
 Text GLabel 6400 2500 2    50   Input ~ 0
 Composite
 Text GLabel 2300 1675 0    50   Input ~ 0
@@ -213,38 +155,6 @@ Wire Wire Line
 	5400 2300 5325 2300
 Wire Wire Line
 	4875 1150 5750 1150
-$Comp
-L power:VCC #PWR027
-U 1 1 5E3DEA17
-P 10325 2025
-F 0 "#PWR027" H 10325 1875 50  0001 C CNN
-F 1 "VCC" H 10342 2198 50  0000 C CNN
-F 2 "" H 10325 2025 50  0001 C CNN
-F 3 "" H 10325 2025 50  0001 C CNN
-	1    10325 2025
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 5E3DF404
-P 10025 2025
-F 0 "#PWR026" H 10025 1775 50  0001 C CNN
-F 1 "GND" H 10030 1852 50  0000 C CNN
-F 2 "" H 10025 2025 50  0001 C CNN
-F 3 "" H 10025 2025 50  0001 C CNN
-	1    10025 2025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10325 2025 10800 2025
-Wire Wire Line
-	10800 2025 10800 2125
-Connection ~ 10325 2025
-Wire Wire Line
-	10025 2025 9550 2025
-Wire Wire Line
-	9550 2025 9550 2550
-Connection ~ 10025 2025
 $Comp
 L Device:R_Small_US R5
 U 1 1 5E424465
@@ -471,42 +381,6 @@ Text GLabel 5400 2100 0    50   Input ~ 0
 RAS
 Text GLabel 5400 2200 0    50   Input ~ 0
 CAS
-Text GLabel 9550 3650 0    50   Input ~ 0
-VD0
-Text GLabel 9550 3750 0    50   Input ~ 0
-VD1
-Text GLabel 9550 3850 0    50   Input ~ 0
-VD2
-Text GLabel 9550 3950 0    50   Input ~ 0
-VD3
-Text GLabel 9550 4050 0    50   Input ~ 0
-VD4
-Text GLabel 9550 4150 0    50   Input ~ 0
-VD5
-Text GLabel 9550 4250 0    50   Input ~ 0
-VD6
-Text GLabel 9550 4350 0    50   Input ~ 0
-VD7
-Text GLabel 8475 3075 2    50   Input ~ 0
-RAM_A0
-Text GLabel 8475 3175 2    50   Input ~ 0
-RAM_A1
-Text GLabel 8475 3275 2    50   Input ~ 0
-RAM_A2
-Text GLabel 8475 3375 2    50   Input ~ 0
-RAM_A3
-Text GLabel 8475 3475 2    50   Input ~ 0
-RAM_A4
-Text GLabel 8475 3575 2    50   Input ~ 0
-RAM_A5
-Text GLabel 8475 3675 2    50   Input ~ 0
-RAM_A6
-Text GLabel 10800 2750 2    50   Input ~ 0
-RW
-Text GLabel 10800 3450 2    50   Input ~ 0
-WR
-Text GLabel 10800 3550 2    50   Input ~ 0
-CAS
 Text GLabel 7475 2975 0    50   Input ~ 0
 AD0
 Text GLabel 7475 3075 0    50   Input ~ 0
@@ -539,20 +413,6 @@ Text GLabel 7475 5500 0    50   Input ~ 0
 AD6
 Text GLabel 7475 5600 0    50   Input ~ 0
 AD7
-Text GLabel 8475 5000 2    50   Input ~ 0
-RAM_A7
-Text GLabel 8475 5100 2    50   Input ~ 0
-RAM_A8
-Text GLabel 8475 5200 2    50   Input ~ 0
-RAM_A9
-Text GLabel 8475 5300 2    50   Input ~ 0
-RAM_A10
-Text GLabel 8475 5400 2    50   Input ~ 0
-RAM_A11
-Text GLabel 8475 5500 2    50   Input ~ 0
-RAM_A12
-Text GLabel 8475 5600 2    50   Input ~ 0
-RAM_A13
 Text GLabel 7475 1100 0    50   Input ~ 0
 AD0
 Text GLabel 7475 1200 0    50   Input ~ 0
@@ -1009,116 +869,8 @@ NoConn ~ 6400 2400
 NoConn ~ 6400 2600
 NoConn ~ 6400 2300
 NoConn ~ 4675 6400
-$Comp
-L Device:R_Small_US R46
-U 1 1 5E88CCE0
-P 11100 2325
-F 0 "R46" H 11033 2279 50  0000 R CNN
-F 1 "2kΩ" H 11033 2370 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 11100 2325 50  0001 C CNN
-F 3 "~" H 11100 2325 50  0001 C CNN
-	1    11100 2325
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	10800 2650 11100 2650
-Wire Wire Line
-	11100 2650 11100 2425
-$Comp
-L LeakoChips:LC331632M-12 U9
-U 1 1 5E39317A
-P 10150 3500
-F 0 "U9" H 10175 4765 50  0000 C CNN
-F 1 "VRAM" H 10175 4674 50  0000 C CNN
-F 2 "LeakyChips:SOIC-40-JLead" H 10150 4050 50  0001 C CNN
-F 3 "https://html.alldatasheet.com/html-pdf/40652/SANYO/LC331632M-12/267/2/LC331632M-12.html" H 10150 4050 50  0001 C CNN
-	1    10150 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11100 2225 11100 2125
-Wire Wire Line
-	11100 2125 10800 2125
-Connection ~ 10800 2125
-Wire Wire Line
-	10800 2125 10800 2550
-Wire Wire Line
-	11100 2650 11100 3350
-Wire Wire Line
-	11100 3350 10800 3350
-Connection ~ 11100 2650
-Wire Wire Line
-	11100 3350 11100 3650
-Wire Wire Line
-	11100 3650 10800 3650
-Connection ~ 11100 3350
-Wire Wire Line
-	10800 4350 11100 4350
-Connection ~ 11100 3650
-Wire Wire Line
-	10800 3750 11100 3750
-Connection ~ 11100 3750
-Wire Wire Line
-	11100 3750 11100 3650
-Wire Wire Line
-	10800 3850 11100 3850
-Connection ~ 11100 3850
-Wire Wire Line
-	11100 3850 11100 3750
-Wire Wire Line
-	10800 3950 11100 3950
-Connection ~ 11100 3950
-Wire Wire Line
-	11100 3950 11100 3850
-Wire Wire Line
-	10800 4050 11100 4050
-Connection ~ 11100 4050
-Wire Wire Line
-	11100 4050 11100 3950
-Wire Wire Line
-	10800 4150 11100 4150
-Connection ~ 11100 4150
-Wire Wire Line
-	11100 4150 11100 4050
-Wire Wire Line
-	11100 4350 11100 4250
-Wire Wire Line
-	10800 4250 11100 4250
-Connection ~ 11100 4250
-Wire Wire Line
-	11100 4250 11100 4150
-Text Label 11100 2525 0    50   ~ 0
-VRAM_Upper_Byte_PU
 Text Notes 9400 5350 0    50   ~ 0
 Note address pins are not in numerical\norder - changed to improve reliability\nof slow RAM
-Text GLabel 9550 3550 0    50   Input ~ 0
-RAM_A0
-Text GLabel 9550 3450 0    50   Input ~ 0
-RAM_A1
-Text GLabel 9550 3350 0    50   Input ~ 0
-RAM_A2
-Text GLabel 9550 3250 0    50   Input ~ 0
-RAM_A3
-Text GLabel 9550 3150 0    50   Input ~ 10
-RAM_A5
-Text GLabel 9550 3050 0    50   Input ~ 0
-RAM_A6
-Text GLabel 9550 2950 0    50   Input ~ 10
-RAM_A8
-Text GLabel 9550 2850 0    50   Input ~ 0
-RAM_A9
-Text GLabel 9550 2750 0    50   Input ~ 10
-RAM_A12
-Text GLabel 9550 2650 0    50   Input ~ 0
-RAM_A10
-Text GLabel 10800 2850 2    50   Input ~ 0
-RAM_A4
-Text GLabel 10800 2950 2    50   Input ~ 0
-RAM_A7
-Text GLabel 10800 3050 2    50   Input ~ 0
-RAM_A11
-Text GLabel 10800 3150 2    50   Input ~ 0
-RAM_A13
 Text Notes 11050 5475 2    50   Italic 0
 leonardomiliani.com/en/2019/lm80c-tms9918a/
 $Comp
@@ -1239,24 +991,155 @@ MSB
 Text Notes 5025 3675 0    50   ~ 0
 LSB
 $Comp
-L power:GND #PWR0128
-U 1 1 5EEEDA3D
-P 11000 4525
-F 0 "#PWR0128" H 11000 4275 50  0001 C CNN
-F 1 "GND" H 11005 4352 50  0000 C CNN
-F 2 "" H 11000 4525 50  0001 C CNN
-F 3 "" H 11000 4525 50  0001 C CNN
-	1    11000 4525
+L AS6C62256:AS6C62256-DIP U101
+U 1 1 5F19B75B
+P 10250 2075
+F 0 "U101" H 10250 2280 50  0000 C CNN
+F 1 "AS6C62256-DIP" H 10250 2189 50  0000 C CNN
+F 2 "Housings_DIP:DIP-28_W15.24mm_Socket_LongPads" H 10250 2075 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C62256.pdf" H 10250 2075 50  0001 C CNN
+F 4 "1450-1033-ND" H 10250 2098 50  0000 C CNN "DigiKey"
+	1    10250 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0163
+U 1 1 5F19CADB
+P 10900 3050
+F 0 "#PWR0163" H 10900 2900 50  0001 C CNN
+F 1 "VCC" H 10917 3223 50  0000 C CNN
+F 2 "" H 10900 3050 50  0001 C CNN
+F 3 "" H 10900 3050 50  0001 C CNN
+	1    10900 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 5F19D12D
+P 10900 3150
+F 0 "C11" H 10808 3196 50  0000 R CNN
+F 1 "0.1µF" H 10808 3105 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10900 3150 50  0001 C CNN
+F 3 "~" H 10900 3150 50  0001 C CNN
+	1    10900 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0164
+U 1 1 5F19D783
+P 10900 3250
+F 0 "#PWR0164" H 10900 3000 50  0001 C CNN
+F 1 "GND" H 10905 3077 50  0000 C CNN
+F 2 "" H 10900 3250 50  0001 C CNN
+F 3 "" H 10900 3250 50  0001 C CNN
+	1    10900 3250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10900 3050 10900 2925
+Wire Wire Line
+	10900 2925 10700 2925
+Connection ~ 10900 3050
+Wire Wire Line
+	10700 3025 10700 3250
+Wire Wire Line
+	10700 3250 10900 3250
+Connection ~ 10900 3250
+Text GLabel 10700 2225 2    50   Input ~ 0
+RW
+Text GLabel 10700 2425 2    50   Input ~ 0
+CAS
+Text GLabel 10700 2325 2    50   Input ~ 0
+WR
+Text Label 9800 3825 2    50   ~ 0
+VD0
+Text Label 9800 3925 2    50   ~ 0
+VD1
+Text Label 9800 4025 2    50   ~ 0
+VD2
+Text Label 9800 4125 2    50   ~ 0
+VD3
+Text Label 9800 4225 2    50   ~ 0
+VD4
+Text Label 9800 4325 2    50   ~ 0
+VD5
+Text Label 9800 4425 2    50   ~ 0
+VD6
+Text Label 9800 4525 2    50   ~ 0
+VD7
+Text Label 9800 2225 2    50   ~ 0
+RAM_A0
+Text Label 9800 2325 2    50   ~ 0
+RAM_A1
+Text Label 9800 2425 2    50   ~ 0
+RAM_A2
+Text Label 9800 2525 2    50   ~ 0
+RAM_A3
+Text Label 9800 2625 2    50   ~ 10
+RAM_A5
+Text Label 9800 2725 2    50   ~ 0
+RAM_A6
+Text Label 9800 2825 2    50   ~ 10
+RAM_A8
+Text Label 9800 2925 2    50   ~ 0
+RAM_A9
+Text Label 9800 3025 2    50   ~ 10
+RAM_A12
+Text Label 9800 3125 2    50   ~ 0
+RAM_A10
+Text Label 9800 3225 2    50   ~ 0
+RAM_A4
+Text Label 9800 3325 2    50   ~ 0
+RAM_A7
+Text Label 9800 3425 2    50   ~ 0
+RAM_A11
+Text Label 9800 3525 2    50   ~ 0
+RAM_A13
+$Comp
+L power:GND #PWR0165
+U 1 1 5F1C58CA
+P 9550 3625
+F 0 "#PWR0165" H 9550 3375 50  0001 C CNN
+F 1 "GND" H 9555 3452 50  0000 C CNN
+F 2 "" H 9550 3625 50  0001 C CNN
+F 3 "" H 9550 3625 50  0001 C CNN
+	1    9550 3625
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11000 4525 11000 3250
-Wire Wire Line
-	11000 3250 10800 3250
+	9800 3625 9550 3625
 Wire Bus Line
 	4350 3200 4700 3200
 Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
+Text Label 8475 3675 0    50   ~ 0
+RAM_A6
+Text Label 8475 3575 0    50   ~ 0
+RAM_A5
+Text Label 8475 3475 0    50   ~ 0
+RAM_A4
+Text Label 8475 3375 0    50   ~ 0
+RAM_A3
+Text Label 8475 3275 0    50   ~ 0
+RAM_A2
+Text Label 8475 3175 0    50   ~ 0
+RAM_A1
+Text Label 8475 3075 0    50   ~ 0
+RAM_A0
+Text Label 8475 5000 0    50   ~ 0
+RAM_A7
+Text Label 8475 5600 0    50   ~ 0
+RAM_A13
+Text Label 8475 5100 0    50   ~ 0
+RAM_A8
+Text Label 8475 5200 0    50   ~ 0
+RAM_A9
+Text Label 8475 5300 0    50   ~ 0
+RAM_A10
+Text Label 8475 5400 0    50   ~ 0
+RAM_A11
+Text Label 8475 5500 0    50   ~ 0
+RAM_A12
 $EndSCHEMATC
