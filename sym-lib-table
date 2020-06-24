@@ -5,4 +5,5 @@
   (lib (name 0ZCK-polyfuse)(type Legacy)(uri ${KIPRJMOD}/0ZCK-polyfuse.pretty/0ZCK-polyfuse.lib)(options "")(descr ""))
   (lib (name TPS60403DBVR)(type Legacy)(uri ${KIPRJMOD}/TPS60403DBVR.pretty/TPS60403DBVR.lib)(options "")(descr ""))
   (lib (name LeadedSolder)(type Legacy)(uri ${KIPRJMOD}/LeadedSolder.lib)(options "")(descr ""))
+  (lib (name AS6C62256)(type Legacy)(uri ${KIPRJMOD}/AS6C62256.lib)(options "")(descr ""))
 )
