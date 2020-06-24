@@ -1237,4 +1237,6 @@ Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
+Text Label 2575 1375 0    50   ~ 0
+!RFSH
 $EndSCHEMATC
