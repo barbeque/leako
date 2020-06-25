@@ -46,3 +46,7 @@
 - [x] CRITICAL: undo the 100pF that i converted to 0.1uF on the real board (C26, C30, C31)
 - [x] rotate the power switch
 - [x] print out a bom for the v0.2 tag
+- [x] abandon sanyo psram for 62256
+- [ ] jumpers to potentially enable high address pins in ram (shh!)
+- [ ] jumper to bypass capacitor on composite output
+- [ ] jumper to switch -5V super pulldown to ground
