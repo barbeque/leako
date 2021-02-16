@@ -21,6 +21,8 @@ Namely, you will need to find:
 
 Please note the Leako has, so far, only been constructed and tested in NTSC regions. A PAL version would be a very interesting conversion, but would use a chip like a TMS9919 as well as probably some other board changes.
 
+You will also need a barrel-jack power supply capable of producing exactly +5V DC - no voltage regulator is present on the board, so please use a high-quality adapter for best results.
+
 ## Tools
 The ColecoVision games and console rely on the presence of a BIOS ROM. In order to program the EPROM with the BIOS, you'll need a copy of the BIOS (it can be dumped from a real ColecoVision) and an EPROM programmer such as a TL866II+.
 
