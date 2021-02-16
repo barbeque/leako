@@ -10,7 +10,7 @@ I originally developed this board in order to play some ColecoVision games that 
 # Building It Yourself
 You'll want to consult the BOM PDF for the version of the Leako board you wish to assemble. The first truly "working" version was v0.6.
 
-Not all parts can be obtained new. Many components are salvaged and can be obtained from eBay or other Chinese-market surplus stores such as AliExpress.
+Not all parts can be obtained new. Many components are salvaged and can be obtained from eBay or other Chinese-market surplus stores such as AliExpress. Because the sellers and availability are changing constantly, I unfortunately cannot recommend a specific vendor. I suggest ordering from multiple different sellers and building more Leakos :)
 
 Namely, you will need to find:
  - A TI TMS9918 (_not_ TMS9118 or TMS9928) VDP;
