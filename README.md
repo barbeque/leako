@@ -13,13 +13,13 @@ You'll want to consult the BOM PDF for the version of the Leako board you wish t
 Not all parts can be obtained new. Many components are salvaged and can be obtained from eBay or other Chinese-market surplus stores such as AliExpress.
 
 Namely, you will need to find:
- - A TI TMS9918 (_not_ TMS9118 or TMS9928)[^ntsc] VDP;
+ - A TI TMS9918 (_not_ TMS9118 or TMS9928) VDP;
  - A TI SN76489 sound chip;
  - A 27c512-compatible EPROM (a 27c256 may also work but has not been tested);
  - ColecoVision cartridge games;
  - A ColecoVision-compatible controller
 
-[^ntsc]: Please note the Leako has only been constructed and tested in NTSC regions. A PAL version would be a very interesting conversion, but would use a chip like a TMS9919 as well as probably some other board changes.
+Please note the Leako has, so far, only been constructed and tested in NTSC regions. A PAL version would be a very interesting conversion, but would use a chip like a TMS9919 as well as probably some other board changes.
 
 ## Tools
 The ColecoVision games and console rely on the presence of a BIOS ROM. In order to program the EPROM with the BIOS, you'll need a copy of the BIOS (it can be dumped from a real ColecoVision) and an EPROM programmer such as a TL866II+.
