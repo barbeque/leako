@@ -13,7 +13,7 @@ You'll want to consult the BOM PDF for the version of the Leako board you wish t
 Not all parts can be obtained new. Many components are salvaged and can be obtained from eBay or other Chinese-market surplus stores such as AliExpress. Because the sellers and availability are changing constantly, I unfortunately cannot recommend a specific vendor. I suggest ordering from multiple different sellers and building more Leakos :)
 
 Namely, you will need to find:
- - A TI TMS9918 (_not_ TMS9118 or TMS9928) VDP;
+ - A TI TMS9918A/TMS9918ANL (_not_ TMS9118 or TMS9928) VDP;
  - A TI SN76489 sound chip;
  - A 27c512-compatible EPROM (a 27c256 may also work but has not been tested);
  - ColecoVision cartridge games;
@@ -44,6 +44,8 @@ If you have built your own Leako and tested it with a game that's not listed her
 |---------------|--------|-------|
 | ColecoVision controller | Yes | |
 | ADAM controller | Yes | | 
+
+Please note the Leako board does not have a ColecoVision expansion connector, so it cannot work with any Expansion Modules, including the ADAM.
 
 # Links
  - [Console5 schematics and parts list](https://console5.com/wiki/Colecovision)
