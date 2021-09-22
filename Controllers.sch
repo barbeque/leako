@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ColecoVision Clone-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -71,8 +70,6 @@ CTRL_R
 Wire Wire Line
 	5475 2025 5475 2225
 Connection ~ 5475 2225
-Text Notes 5175 3950 1    50   ~ 0
-TODO: everything else
 Text Label 2275 3275 0    50   ~ 0
 Select
 Text Label 2275 2975 0    50   ~ 0
@@ -836,9 +833,9 @@ $EndComp
 Wire Wire Line
 	7700 3725 7825 3725
 Wire Wire Line
-	8250 3250 8250 4175
+	8250 3250 8250 3725
 Wire Wire Line
-	7825 3725 8600 3725
+	7825 3725 8250 3725
 Connection ~ 7825 3725
 Text GLabel 8600 3725 2    50   Input ~ 0
 EXT_QUAD
@@ -1123,4 +1120,9 @@ Wire Wire Line
 	3575 6175 3400 6175
 Wire Wire Line
 	3400 6175 3400 6250
+Connection ~ 8250 3725
+Wire Wire Line
+	8250 3725 8250 4175
+Wire Wire Line
+	8250 3725 8600 3725
 $EndSCHEMATC

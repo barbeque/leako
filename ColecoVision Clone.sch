@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ColecoVision Clone-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1233,10 +1232,10 @@ Wire Wire Line
 Connection ~ 5700 2600
 Text Notes 8100 2925 2    50   ~ 0
 Revised June 2020: 62256 SRAM
+Text Label 2575 1375 0    50   ~ 0
+!RFSH
 Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
 	3475 1550 3475 3475
-Text Label 2575 1375 0    50   ~ 0
-!RFSH
 $EndSCHEMATC

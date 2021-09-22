@@ -47,6 +47,10 @@ If you have built your own Leako and tested it with a game that's not listed her
 
 Please note the Leako board does not have a ColecoVision expansion connector, so it cannot work with any Expansion Modules, including the ADAM.
 
+# Version History
+ * v0.6: First working version.
+ * v0.7: Correct missing junction from D3/D4 to R35 (EXT_QUAD pulldown.) Thank you to Oliver Fiero for catching this.
+
 # Links
  - [Console5 schematics and parts list](https://console5.com/wiki/Colecovision)
  - ChildOfCv's [better schematics](https://atariage.com/forums/topic/285656-new-colecovision-schematics/)
