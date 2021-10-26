@@ -35,7 +35,7 @@
 - [x] find a replacement for the 7.15909MHz crystal (figure out how to divide a 14.31818)
 - [x] you know what, can i just axe this entire clock section and use a 14mhz oscillator chip
 - [x] replace the n/o jumpers with smd ones
-- [ ] size the power supply; can i get by with a 5V 2A switcher or will the voltage drop ruin it
+- [x] size the power supply; can i get by with a 5V 2A switcher or will the voltage drop ruin it
 - [x] power regulation - should i still have it if i have a 5V 2A switching supply?
 - [x] replace the inline diode with a shunt to ground - rearrange the diode and fuse
 - [x] is the SMD polyfuse on the load too small? yes, it's gone
@@ -50,3 +50,4 @@
 - [ ] jumpers to potentially enable high address pins in ram (shh!)
 - [ ] jumper to bypass capacitor on composite output
 - [ ] jumper to switch -5V super pulldown to ground
+- [x] controller port numbers flipped

@@ -18,7 +18,7 @@ L Connector:DB9_Male J5
 U 1 1 5E4296AD
 P 1975 2875
 F 0 "J5" H 2155 2921 50  0000 L CNN
-F 1 "Controller Port 1" H 2155 2830 50  0000 L CNN
+F 1 "Controller Port 2" H 2155 2830 50  0000 L CNN
 F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 1975 2875 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5747250-4/A32072-ND/808627" H 1975 2875 50  0001 C CNN
 	1    1975 2875
@@ -29,7 +29,7 @@ L Connector:DB9_Male J6
 U 1 1 5E429B8A
 P 1975 5225
 F 0 "J6" H 2155 5271 50  0000 L CNN
-F 1 "Controller Port 2" H 2155 5180 50  0000 L CNN
+F 1 "Controller Port 1" H 2155 5180 50  0000 L CNN
 F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 1975 5225 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5747250-4/A32072-ND/808627 ~" H 1975 5225 50  0001 C CNN
 	1    1975 5225
