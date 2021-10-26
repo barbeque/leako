@@ -40,7 +40,7 @@
 - [x] replace the inline diode with a shunt to ground - rearrange the diode and fuse
 - [x] is the SMD polyfuse on the load too small? yes, it's gone
 - [x] weird flipflop-y section of the controller area with -5v
-- [ ] U21 (74hc04) seems not well used, lots of empty pins there
+- [x] U21 (74hc04) seems not well used, lots of empty pins there
 - [ ] U22 (flipflop) not well used either
 - [ ] U18 (74ls05) is only half used
 - [x] CRITICAL: undo the 100pF that i converted to 0.1uF on the real board (C26, C30, C31)
@@ -51,3 +51,7 @@
 - [ ] jumper to bypass capacitor on composite output
 - [ ] jumper to switch -5V super pulldown to ground
 - [x] controller port numbers flipped
+- [ ] unused inputs of u17 (ls05) should be grounded
+- [ ] unused inputs of u11 (ls04) should be grounded
+- [ ] u17 and u18 should probably be merged, both are ls05s and barely used
+- [ ] can u11 and u17 be merged and u11 dropped?

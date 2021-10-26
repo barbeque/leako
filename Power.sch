@@ -1319,4 +1319,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 8000 3550 50  0001 C CNN
 	6    8000 3550
 	1    0    0    -1  
 $EndComp
+Text Label 6900 2400 0    50   ~ 0
+M1
 $EndSCHEMATC
