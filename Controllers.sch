@@ -35,59 +35,18 @@ F 3 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/57
 	1    1975 5225
 	-1   0    0    1   
 $EndComp
-$Comp
-L 74xx_IEEE:74LS541 U15
-U 1 1 5E42D33F
-P 6450 2825
-F 0 "U15" H 6450 3691 50  0000 C CNN
-F 1 "Controller 1" H 6450 3600 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm" H 6450 2825 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/SN74HCT541DWR/296-14870-1-ND/562554/?itemSeq=317132221" H 6450 2825 50  0001 C CNN
-F 4 "296-14870-1-ND" H 6450 2825 50  0001 C CNN "DigiKey"
-	1    6450 2825
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx_IEEE:74LS541 U16
-U 1 1 5E42EB2C
-P 6450 5150
-F 0 "U16" H 6450 6016 50  0000 C CNN
-F 1 "Controller 2" H 6450 5925 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm" H 6450 5150 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/SN74HCT541DWR/296-14870-1-ND/562554/?itemSeq=317132221" H 6450 5150 50  0001 C CNN
-F 4 "296-14870-1-ND" H 6450 5150 50  0001 C CNN "DigiKey"
-	1    6450 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 2225 5475 2225
-Wire Wire Line
-	5475 2225 5475 4550
-Wire Wire Line
-	5475 4550 5900 4550
 Text GLabel 5475 2025 1    50   Input ~ 0
 CTRL_R
-Wire Wire Line
-	5475 2025 5475 2225
-Connection ~ 5475 2225
 Text GLabel 3825 4425 0    50   Input ~ 0
 A1
 Wire Wire Line
 	3825 4425 5450 4425
-Wire Wire Line
-	5450 4425 5450 4700
-Wire Wire Line
-	5450 4700 5900 4700
 Text GLabel 3825 1675 1    50   Input ~ 0
 A1
 Wire Wire Line
 	3825 1675 3825 1775
 Wire Wire Line
 	4425 1775 4650 1775
-Wire Wire Line
-	5400 1775 5400 2375
-Wire Wire Line
-	5400 2375 5900 2375
 $Comp
 L Device:R_Small_US R14
 U 1 1 5E4048A8
@@ -113,37 +72,37 @@ F 3 "" H 4650 1575 50  0001 C CNN
 	1    4650 1575
 	1    0    0    -1  
 $EndComp
-Text GLabel 7000 2575 2    50   Input ~ 0
+Text GLabel 6900 2575 2    50   Input ~ 0
 D7
-Text GLabel 7000 3275 2    50   Input ~ 0
+Text GLabel 6900 3275 2    50   Input ~ 0
 D0
-Text GLabel 7000 3175 2    50   Input ~ 0
+Text GLabel 6900 3175 2    50   Input ~ 0
 D1
-Text GLabel 7000 3075 2    50   Input ~ 0
+Text GLabel 6900 3075 2    50   Input ~ 0
 D2
-Text GLabel 7000 2975 2    50   Input ~ 0
+Text GLabel 6900 2975 2    50   Input ~ 0
 D3
-Text GLabel 7000 2875 2    50   Input ~ 0
+Text GLabel 6900 2875 2    50   Input ~ 0
 D4
-Text GLabel 7000 2775 2    50   Input ~ 0
+Text GLabel 6900 2775 2    50   Input ~ 0
 D5
-Text GLabel 7000 2675 2    50   Input ~ 0
+Text GLabel 6900 2675 2    50   Input ~ 0
 D6
-Text GLabel 7000 4900 2    50   Input ~ 0
+Text GLabel 6900 4900 2    50   Input ~ 0
 D0
-Text GLabel 7000 5000 2    50   Input ~ 0
+Text GLabel 6900 5000 2    50   Input ~ 0
 D1
-Text GLabel 7000 5100 2    50   Input ~ 0
+Text GLabel 6900 5100 2    50   Input ~ 0
 D2
-Text GLabel 7000 5200 2    50   Input ~ 0
+Text GLabel 6900 5200 2    50   Input ~ 0
 D3
-Text GLabel 7000 5300 2    50   Input ~ 0
+Text GLabel 6900 5300 2    50   Input ~ 0
 D4
-Text GLabel 7000 5400 2    50   Input ~ 0
+Text GLabel 6900 5400 2    50   Input ~ 0
 D5
-Text GLabel 7000 5500 2    50   Input ~ 0
+Text GLabel 6900 5500 2    50   Input ~ 0
 D6
-Text GLabel 7000 5600 2    50   Input ~ 0
+Text GLabel 6900 5600 2    50   Input ~ 0
 D7
 $Comp
 L 74xx:74LS05 U17
@@ -1106,4 +1065,112 @@ F 3 "~" H 3575 6825 50  0001 C CNN
 	1    3575 6825
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xx:74LS541 U15
+U 1 1 6178D08C
+P 6400 3075
+F 0 "U15" H 6400 4056 50  0000 C CNN
+F 1 "74LS541 (Ctrl. 2)" H 6400 3965 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 6400 3075 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS541" H 6400 3075 50  0001 C CNN
+F 4 "296-14870-1-ND" H 6400 3075 50  0001 C CNN "DigiKey"
+	1    6400 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0134
+U 1 1 6178F899
+P 7975 1975
+F 0 "#PWR0134" H 7975 1825 50  0001 C CNN
+F 1 "VCC" H 7992 2148 50  0000 C CNN
+F 2 "" H 7975 1975 50  0001 C CNN
+F 3 "" H 7975 1975 50  0001 C CNN
+	1    7975 1975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7975 1975 7700 1975
+Wire Wire Line
+	5475 2025 5475 3475
+Wire Wire Line
+	5900 3475 5475 3475
+Connection ~ 5475 3475
+Wire Wire Line
+	5400 3575 5900 3575
+Wire Wire Line
+	5400 1775 5400 3575
+$Comp
+L power:VCC #PWR0166
+U 1 1 617BF5B7
+P 6825 2275
+F 0 "#PWR0166" H 6825 2125 50  0001 C CNN
+F 1 "VCC" H 6842 2448 50  0000 C CNN
+F 2 "" H 6825 2275 50  0001 C CNN
+F 3 "" H 6825 2275 50  0001 C CNN
+	1    6825 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6825 2275 6400 2275
+$Comp
+L power:GND #PWR0167
+U 1 1 617C96EB
+P 6400 3875
+F 0 "#PWR0167" H 6400 3625 50  0001 C CNN
+F 1 "GND" H 6405 3702 50  0000 C CNN
+F 2 "" H 6400 3875 50  0001 C CNN
+F 3 "" H 6400 3875 50  0001 C CNN
+	1    6400 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS541 U16
+U 1 1 617CC064
+P 6400 5400
+F 0 "U16" H 6400 6381 50  0000 C CNN
+F 1 "74LS541 (Ctrl. 1)" H 6400 6290 50  0000 C CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 6400 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS541" H 6400 5400 50  0001 C CNN
+F 4 "296-14870-1-ND" H 6400 5400 50  0001 C CNN "DigiKey"
+	1    6400 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 5900 5900 5900
+Wire Wire Line
+	5450 4425 5450 5900
+Wire Wire Line
+	5475 5800 5900 5800
+Wire Wire Line
+	5475 3475 5475 5800
+$Comp
+L power:GND #PWR0168
+U 1 1 617ED5C8
+P 6775 6050
+F 0 "#PWR0168" H 6775 5800 50  0001 C CNN
+F 1 "GND" H 6780 5877 50  0000 C CNN
+F 2 "" H 6775 6050 50  0001 C CNN
+F 3 "" H 6775 6050 50  0001 C CNN
+	1    6775 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0169
+U 1 1 617F7236
+P 6825 4600
+F 0 "#PWR0169" H 6825 4450 50  0001 C CNN
+F 1 "VCC" H 6842 4773 50  0000 C CNN
+F 2 "" H 6825 4600 50  0001 C CNN
+F 3 "" H 6825 4600 50  0001 C CNN
+	1    6825 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6825 4600 6400 4600
+Wire Wire Line
+	6775 6050 6525 6050
+Wire Wire Line
+	6525 6050 6525 6200
+Wire Wire Line
+	6525 6200 6400 6200
 $EndSCHEMATC
