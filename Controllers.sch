@@ -867,20 +867,6 @@ Wire Wire Line
 Wire Wire Line
 	8250 1500 8250 1150
 Wire Wire Line
-	9075 850  9075 1050
-Wire Wire Line
-	8475 1050 8475 1300
-Wire Wire Line
-	8475 1050 9075 1050
-Wire Wire Line
-	9075 1400 9075 1150
-Wire Wire Line
-	9075 1150 8400 1150
-Wire Wire Line
-	8400 1150 8400 750 
-Wire Wire Line
-	8400 750  8475 750 
-Wire Wire Line
 	9575 1200 9575 1125
 Wire Wire Line
 	9575 1125 9350 1125
@@ -1015,21 +1001,8 @@ Text GLabel 8250 750  0    50   Input ~ 0
 CTRL_EN_2
 Text Notes 8075 1275 2    50   ~ 0
 c0w
-Connection ~ 9075 1400
-Connection ~ 9075 850 
 Text GLabel 8250 1150 0    50   Input ~ 0
 CTRL_EN_1
-$Comp
-L 74xx:74HCT00 U23
-U 1 1 5E65E065
-P 8775 1400
-F 0 "U23" H 8775 1725 50  0000 C CNN
-F 1 "74HCT00" H 8775 1634 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 8775 1400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 8775 1400 50  0001 C CNN
-	1    8775 1400
-	1    0    0    -1  
-$EndComp
 $Comp
 L 74xx:74HCT00 U23
 U 2 1 5E6609D8
@@ -1160,4 +1133,35 @@ Wire Wire Line
 	6525 6050 6525 6200
 Wire Wire Line
 	6525 6200 6400 6200
+Text Label 5750 3575 0    50   ~ 0
+~A1
+$Comp
+L 74xx:74HCT00 U23
+U 1 1 5E65E065
+P 8775 1400
+F 0 "U23" H 8775 1175 50  0000 C CNN
+F 1 "74HCT00" H 8775 1100 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 8775 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 8775 1400 50  0001 C CNN
+	1    8775 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8475 750  8425 750 
+Wire Wire Line
+	8425 750  8425 1050
+Wire Wire Line
+	8425 1050 9075 1225
+Wire Wire Line
+	9075 1225 9075 1400
+Connection ~ 9075 1400
+Wire Wire Line
+	9075 850  9075 1000
+Wire Wire Line
+	9075 1000 8425 1175
+Wire Wire Line
+	8425 1175 8425 1300
+Wire Wire Line
+	8425 1300 8475 1300
+Connection ~ 9075 850 
 $EndSCHEMATC

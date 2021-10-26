@@ -135,11 +135,11 @@ L Device:R_Small_US R1
 U 1 1 5E381B79
 P 975 1325
 F 0 "R1" H 1043 1371 50  0000 L CNN
-F 1 "1kΩ" H 1043 1280 50  0000 L CNN
+F 1 "2.7kΩ" H 1043 1280 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 975 1325 50  0001 C CNN
 F 3 "~" H 975 1325 50  0001 C CNN
 	1    975  1325
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	975  1225 975  1000
@@ -1234,6 +1234,8 @@ Text Notes 8100 2925 2    50   ~ 0
 Revised June 2020: 62256 SRAM
 Text Label 2575 1375 0    50   ~ 0
 !RFSH
+Text Notes 1325 1050 0    50   ~ 0
+Revised October 2021:\n~WAIT~ is 2.7k pullup on ChildOfCv schematics
 Wire Bus Line
 	3475 3675 3475 5000
 Wire Bus Line
