@@ -1107,12 +1107,6 @@ F 3 "" H 9550 3625 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9800 3625 9550 3625
-Wire Bus Line
-	4350 3200 4700 3200
-Wire Bus Line
-	5200 3600 5200 4225
-Wire Bus Line
-	6700 3800 6700 4225
 Text Label 8475 3675 0    50   ~ 0
 RAM_A6
 Text Label 8475 3575 0    50   ~ 0
@@ -1141,4 +1135,10 @@ Text Label 8475 5400 0    50   ~ 0
 RAM_A11
 Text Label 8475 5500 0    50   ~ 0
 RAM_A12
+Wire Bus Line
+	4350 3200 4700 3200
+Wire Bus Line
+	5200 3600 5200 4225
+Wire Bus Line
+	6700 3800 6700 4225
 $EndSCHEMATC
