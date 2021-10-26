@@ -458,17 +458,6 @@ Wire Wire Line
 	3775 6525 3775 6675
 Wire Wire Line
 	3775 6675 3575 6675
-$Comp
-L Device:C C34
-U 1 1 5E5087E7
-P 3575 6825
-F 0 "C34" H 3875 6750 50  0000 R CNN
-F 1 "0.1µF" H 3925 6850 50  0000 R CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3613 6675 50  0001 C CNN
-F 3 "~" H 3575 6825 50  0001 C CNN
-	1    3575 6825
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3575 6675 3200 6675
 Connection ~ 3575 6675
@@ -890,36 +879,26 @@ Text Label 4375 4025 3    50   ~ 0
 2v5
 Text Label 9425 5675 2    50   ~ 0
 2v5
-Text GLabel 8250 1150 0    50   Input ~ 0
-CTRL_EN_1
-Text Notes 8075 1275 2    50   ~ 0
-c0w
-Text GLabel 8250 750  0    50   Input ~ 0
-CTRL_EN_2
-Text Notes 7925 875  0    50   ~ 0
-80w
+Text Label 1075 3950 0    50   ~ 0
+CTRL_PIN_5
+Text Label 2625 3950 2    50   ~ 0
+CTRL_PIN_8
 $Comp
-L 74xx:74HCT00 U23
-U 1 1 5E65E065
-P 8775 1400
-F 0 "U23" H 8775 1725 50  0000 C CNN
-F 1 "74HCT00" H 8775 1634 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 8775 1400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 8775 1400 50  0001 C CNN
-	1    8775 1400
+L power:GND #PWR0158
+U 1 1 5E49F995
+P 3425 2000
+F 0 "#PWR0158" H 3425 1750 50  0001 C CNN
+F 1 "GND" H 3430 1827 50  0000 C CNN
+F 2 "" H 3425 2000 50  0001 C CNN
+F 3 "" H 3425 2000 50  0001 C CNN
+	1    3425 2000
 	1    0    0    -1  
 $EndComp
-$Comp
-L 74xx:74HCT00 U23
-U 2 1 5E6609D8
-P 8775 850
-F 0 "U23" H 8775 1175 50  0000 C CNN
-F 1 "74HCT00" H 8775 1084 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 8775 850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 8775 850 50  0001 C CNN
-	2    8775 850 
-	1    0    0    -1  
-$EndComp
+Connection ~ 8250 3725
+Wire Wire Line
+	8250 3725 8250 4175
+Wire Wire Line
+	8250 3725 8600 3725
 Wire Wire Line
 	8475 950  8250 950 
 Wire Wire Line
@@ -943,11 +922,81 @@ Wire Wire Line
 Wire Wire Line
 	8400 750  8475 750 
 Wire Wire Line
-	9075 1400 9575 1400
+	9575 1200 9575 1125
+Wire Wire Line
+	9575 1125 9350 1125
+Connection ~ 9575 1125
+Wire Wire Line
+	9575 1125 9575 1050
+Wire Wire Line
+	10700 1100 10700 1175
+Wire Wire Line
+	10150 1025 10150 1100
+Wire Wire Line
+	10150 1100 10150 1175
+Connection ~ 10150 1100
+Wire Wire Line
+	10150 1100 10700 1100
+Wire Wire Line
+	9925 1400 10025 1400
+Wire Wire Line
+	10025 1475 10150 1475
+Wire Wire Line
+	9925 850  10025 850 
+Wire Wire Line
+	10025 725  10150 725 
+Wire Wire Line
+	10025 1400 10025 1475
+Wire Wire Line
+	10025 1475 10025 1850
+Connection ~ 10025 1475
+Wire Wire Line
+	10025 600  10525 600 
+Wire Wire Line
+	10025 850  10025 725 
+Wire Wire Line
+	10025 725  10025 600 
+Connection ~ 10025 725 
+$Comp
+L power:GND #PWR0143
+U 1 1 5E6E0C9B
+P 10700 1175
+F 0 "#PWR0143" H 10700 925 50  0001 C CNN
+F 1 "GND" H 10705 1002 50  0000 C CNN
+F 2 "" H 10700 1175 50  0001 C CNN
+F 3 "" H 10700 1175 50  0001 C CNN
+	1    10700 1175
+	1    0    0    -1  
+$EndComp
+Text Label 10525 600  0    50   ~ 0
+CTRL_PIN_8
+$Comp
+L Device:C C37
+U 1 1 5E6DE0A9
+P 10150 875
+F 0 "C37" H 10265 921 50  0000 L CNN
+F 1 "10nF" H 10265 830 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10188 725 50  0001 C CNN
+F 3 "~" H 10150 875 50  0001 C CNN
+	1    10150 875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R42
+U 1 1 5E6ACC7E
+P 9825 850
+F 0 "R42" V 9620 850 50  0000 C CNN
+F 1 "120Ω" V 9711 850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9825 850 50  0001 C CNN
+F 3 "~" H 9825 850 50  0001 C CNN
+	1    9825 850 
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	9575 850  9075 850 
-Connection ~ 9075 1400
-Connection ~ 9075 850 
+Wire Wire Line
+	9575 850  9725 850 
+Connection ~ 9575 850 
 $Comp
 L Device:R_Small_US R40
 U 1 1 5E6872F4
@@ -959,36 +1008,20 @@ F 3 "~" H 9575 950 50  0001 C CNN
 	1    9575 950 
 	1    0    0    1   
 $EndComp
-$Comp
-L Device:R_Small_US R41
-U 1 1 5E68B076
-P 9575 1300
-F 0 "R41" H 9508 1254 50  0000 R CNN
-F 1 "1.5kΩ" H 9508 1345 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 9575 1300 50  0001 C CNN
-F 3 "~" H 9575 1300 50  0001 C CNN
-	1    9575 1300
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	9575 1200 9575 1125
-Wire Wire Line
-	9575 1125 9350 1125
-Connection ~ 9575 1125
-Wire Wire Line
-	9575 1125 9575 1050
 Text GLabel 9350 1125 0    50   Input ~ 10
 -5V
+Text Label 10025 1850 3    50   ~ 0
+CTRL_PIN_5
 $Comp
-L Device:R_Small_US R42
-U 1 1 5E6ACC7E
-P 9825 850
-F 0 "R42" V 9620 850 50  0000 C CNN
-F 1 "120Ω" V 9711 850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" H 9825 850 50  0001 C CNN
-F 3 "~" H 9825 850 50  0001 C CNN
-	1    9825 850 
-	0    1    1    0   
+L Device:C C38
+U 1 1 5E6DD3B0
+P 10150 1325
+F 0 "C38" H 10265 1371 50  0000 L CNN
+F 1 "10nF" H 10265 1280 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10188 1175 50  0001 C CNN
+F 3 "~" H 10150 1325 50  0001 C CNN
+	1    10150 1325
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R43
@@ -1002,106 +1035,75 @@ F 3 "~" H 9825 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9575 850  9725 850 
-Connection ~ 9575 850 
+	9075 1400 9575 1400
 Wire Wire Line
 	9575 1400 9725 1400
 Connection ~ 9575 1400
 $Comp
-L Device:C C38
-U 1 1 5E6DD3B0
-P 10150 1325
-F 0 "C38" H 10265 1371 50  0000 L CNN
-F 1 "10nF" H 10265 1280 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10188 1175 50  0001 C CNN
-F 3 "~" H 10150 1325 50  0001 C CNN
-	1    10150 1325
+L Device:R_Small_US R41
+U 1 1 5E68B076
+P 9575 1300
+F 0 "R41" H 9508 1254 50  0000 R CNN
+F 1 "1.5kΩ" H 9508 1345 50  0000 R CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9575 1300 50  0001 C CNN
+F 3 "~" H 9575 1300 50  0001 C CNN
+	1    9575 1300
+	1    0    0    1   
+$EndComp
+Text Notes 7925 875  0    50   ~ 0
+80w
+Text GLabel 8250 750  0    50   Input ~ 0
+CTRL_EN_2
+Text Notes 8075 1275 2    50   ~ 0
+c0w
+Connection ~ 9075 1400
+Connection ~ 9075 850 
+Text GLabel 8250 1150 0    50   Input ~ 0
+CTRL_EN_1
+$Comp
+L 74xx:74HCT00 U23
+U 1 1 5E65E065
+P 8775 1400
+F 0 "U23" H 8775 1725 50  0000 C CNN
+F 1 "74HCT00" H 8775 1634 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 8775 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 8775 1400 50  0001 C CNN
+	1    8775 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C37
-U 1 1 5E6DE0A9
-P 10150 875
-F 0 "C37" H 10265 921 50  0000 L CNN
-F 1 "10nF" H 10265 830 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10188 725 50  0001 C CNN
-F 3 "~" H 10150 875 50  0001 C CNN
-	1    10150 875 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0143
-U 1 1 5E6E0C9B
-P 10700 1175
-F 0 "#PWR0143" H 10700 925 50  0001 C CNN
-F 1 "GND" H 10705 1002 50  0000 C CNN
-F 2 "" H 10700 1175 50  0001 C CNN
-F 3 "" H 10700 1175 50  0001 C CNN
-	1    10700 1175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10150 1025 10150 1100
-Connection ~ 10150 1100
-Wire Wire Line
-	10150 1100 10150 1175
-Wire Wire Line
-	10700 1100 10700 1175
-Wire Wire Line
-	10150 1100 10700 1100
-Wire Wire Line
-	9925 1400 10025 1400
-Wire Wire Line
-	10025 1400 10025 1475
-Wire Wire Line
-	10025 1475 10150 1475
-Wire Wire Line
-	9925 850  10025 850 
-Wire Wire Line
-	10025 850  10025 725 
-Wire Wire Line
-	10025 725  10150 725 
-Wire Wire Line
-	10025 1475 10025 1850
-Connection ~ 10025 1475
-Wire Wire Line
-	10025 725  10025 600 
-Wire Wire Line
-	10025 600  10525 600 
-Connection ~ 10025 725 
-Text Label 10525 600  0    50   ~ 0
-CTRL_PIN_8
-Text Label 10025 1850 3    50   ~ 0
-CTRL_PIN_5
-Text Label 1075 3950 0    50   ~ 0
-CTRL_PIN_5
-Text Label 2625 3950 2    50   ~ 0
-CTRL_PIN_8
-$Comp
-L power:GND #PWR0158
-U 1 1 5E49F995
-P 3425 2000
-F 0 "#PWR0158" H 3425 1750 50  0001 C CNN
-F 1 "GND" H 3430 1827 50  0000 C CNN
-F 2 "" H 3425 2000 50  0001 C CNN
-F 3 "" H 3425 2000 50  0001 C CNN
-	1    3425 2000
+L 74xx:74HCT00 U23
+U 2 1 5E6609D8
+P 8775 850
+F 0 "U23" H 8775 1175 50  0000 C CNN
+F 1 "74HCT00" H 8775 1084 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 8775 850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hct00" H 8775 850 50  0001 C CNN
+	2    8775 850 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0159
 U 1 1 5E4A0B07
-P 3575 6975
-F 0 "#PWR0159" H 3575 6725 50  0001 C CNN
-F 1 "GND" H 3580 6802 50  0000 C CNN
-F 2 "" H 3575 6975 50  0001 C CNN
-F 3 "" H 3575 6975 50  0001 C CNN
-	1    3575 6975
+P 3575 7050
+F 0 "#PWR0159" H 3575 6800 50  0001 C CNN
+F 1 "GND" H 3580 6877 50  0000 C CNN
+F 2 "" H 3575 7050 50  0001 C CNN
+F 3 "" H 3575 7050 50  0001 C CNN
+	1    3575 7050
 	1    0    0    -1  
 $EndComp
-Connection ~ 8250 3725
 Wire Wire Line
-	8250 3725 8250 4175
-Wire Wire Line
-	8250 3725 8600 3725
+	3575 7050 3575 6975
+$Comp
+L Device:C C34
+U 1 1 5E5087E7
+P 3575 6825
+F 0 "C34" H 3461 6779 50  0000 R CNN
+F 1 "0.1µF" H 3461 6870 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3613 6675 50  0001 C CNN
+F 3 "~" H 3575 6825 50  0001 C CNN
+	1    3575 6825
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
