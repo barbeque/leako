@@ -1,6 +1,9 @@
 # Leako
 A ColecoVision-compatible games console that you can build yourself!
 
+# License
+The Leako project is licensed under [the Creative Commons Attribution-NonCommercial 4.0 license](https://creativecommons.org/licenses/by-nc/4.0/).
+
 # Project Introduction
 I originally developed this board in order to play some ColecoVision games that I had gotten from the flea market. This turned into several articles on my old-computer repair blog, Leaded Solder:
 
@@ -8,6 +11,8 @@ I originally developed this board in order to play some ColecoVision games that 
  - [Part 2](https://www.leadedsolder.com/2020/07/10/colecovision-diy-part-2.html), covering the assembly and debugging.
  - [Part 3](https://www.leadedsolder.com/2021/10/14/colecovision-diy-part-3.html), covering "digital" joysticks and the Hand Controller
  - [Part 4](https://www.leadedsolder.com/2021/10/26/colecovision-diy-part-4.html), partially covering "quadrature" joysticks such as the steering wheel and Roller Controller
+
+If you enjoyed this project or if you're interested in contributing to future development, I would greatly appreciate a subscription to [the Leaded Solder Patreon](https://www.patreon.com/leadedsolder). The Patreon not only helps me afford to develop expensive projects like this one, but also includes behind-the-scenes posts and previews of upcoming articles.
 
 # Building It Yourself
 Stay tuned for a more involved assembly guide, but early adopters are welcome to assemble and test a board.
