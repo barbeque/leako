@@ -6,8 +6,12 @@ I originally developed this board in order to play some ColecoVision games that 
 
  - [Part 1](https://www.leadedsolder.com/2020/02/16/colecovision-diy-part-1.html), covering the impetus and design;
  - [Part 2](https://www.leadedsolder.com/2020/07/10/colecovision-diy-part-2.html), covering the assembly and debugging.
+ - [Part 3](https://www.leadedsolder.com/2021/10/14/colecovision-diy-part-3.html), covering "digital" joysticks and the Hand Controller
+ - [Part 4](https://www.leadedsolder.com/2021/10/26/colecovision-diy-part-4.html), partially covering "quadrature" joysticks such as the steering wheel and Roller Controller
 
 # Building It Yourself
+Stay tuned for a more involved assembly guide, but early adopters are welcome to assemble and test a board.
+
 You'll want to consult the BOM PDF for the version of the Leako board you wish to assemble. The first truly "working" version was v0.6.
 
 Not all parts can be obtained new. Many components are salvaged and can be obtained from eBay or other Chinese-market surplus stores such as AliExpress. Because the sellers and availability are changing constantly, I unfortunately cannot recommend a specific vendor. I suggest ordering from multiple different sellers and building more Leakos :)
@@ -22,6 +26,8 @@ Namely, you will need to find:
 Please note the Leako has, so far, only been constructed and tested in NTSC regions. A PAL version would be a very interesting conversion, but would use a chip like a TMS9919 as well as probably some other board changes.
 
 You will also need a barrel-jack power supply capable of producing exactly +5V DC - no voltage regulator is present on the board, so please use a high-quality adapter for best results.
+
+Please also note that at the time of publication, a silicon and fabrication shortage has meant that many parts (for instance, the TI TPS60403 -5V voltage inverter) have become difficult and/or more expensive to locate than when the machine was originally designed.
 
 ## Tools
 The ColecoVision games and console rely on the presence of a BIOS ROM. In order to program the EPROM with the BIOS, you'll need a copy of the BIOS (it can be dumped from a real ColecoVision) and an EPROM programmer such as a TL866II+.
@@ -39,17 +45,26 @@ If you have built your own Leako and tested it with a game that's not listed her
 | Carnival      | Yes    |       |
 | Frenzy        | Yes    |       |
 | Ken Uston's Black Jack / Poker | Yes    |       |
+| Looping 	| Yes	 |	 |
+| Omega Race	| Yes	 | Tested with Hand Controller |
 
 | Peripheral    | Works? | Notes |
 |---------------|--------|-------|
 | ColecoVision controller | Yes | |
-| ADAM controller | Yes | | 
+| ADAM controller | Yes | |
+| Super Action Controller | Yes | Tested with _Super Action Baseball_ only |
+| Roller Controller | Partial | Tested with _Slither_ only; my controller is not working properly, even on a real ColecoVision |
+| Expansion Module #2 (steering controller) | Partial | Tested with _Turbo_ only; my controller is not working properly, even on a real ColecoVision |
 
-Please note the Leako board does not have a ColecoVision expansion connector, so it cannot work with any Expansion Modules, including the ADAM.
+The latter two will be re-investigated as the controllers are tested, and hopefully this table will be updated with some better news.
+
+Please note:
+ * The Leako board does not have a ColecoVision expansion connector, so it cannot work with any Expansion Modules, including the ADAM.
+ * The Leako board does not have a ColecoVision power connector, so the Roller Controller will need to be powered independently using a ColecoVision power supply such as the ColUSB, or wired for a +5V source such as a USB cable.
 
 # Version History
  * v0.6: First working version.
- * v0.7: Correct missing junction from D3/D4 to R35 (EXT_QUAD pulldown.) Thank you to Oliver Fiero for catching this.
+ * v0.7 (in progress:) Correct missing junction from D3/D4 to R35 (EXT_QUAD pulldown.) Thank you to Oliver Fiero for catching this.
 
 # Links
  - [Console5 schematics and parts list](https://console5.com/wiki/Colecovision)
