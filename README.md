@@ -1,4 +1,5 @@
 # Leako
+![The Leako logo](LeakoLogo.png)
 A ColecoVision-compatible games console that you can build yourself!
 
 # License
