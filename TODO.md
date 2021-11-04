@@ -12,17 +12,17 @@
 - [x] cpu clock circuit ?????????????????? good enough for now?
 - [x] how is the TMS clocked?
 - [x] do i need to reverse a7..a0 for the TMS, or is that for data, or not at all?
-- [ ] what does RD in the SRAM-as-VRAM schematic do? they wouldn't have an extra inverter stage for nothing.
+- [x] what does RD in the SRAM-as-VRAM schematic do? they wouldn't have an extra inverter stage for nothing.
 - [x] figure out memory decode
 - [x] figure out IO decode
 - [x] figure out cart decode (a subset of memory decode - bank switching)
-- [ ] what even are controllers?
+- [x] what even are controllers?
 - [x] add a bios rom
 - [x] put in the keep-out zone for the cartridge slot (81mm x 40mm)
 - [x] ram wraparound?
 - [x] BIOS: what is up with the separate CE and OE in the original schematic (CE from A11?) Figure it out!!!
 - [x] Expansion stubs (EXT_DEC_STUB, EXT_IO_STUB) need pullups or they'll fuck up
-- [ ] (CRITICAL) what is up with the -5V on the controller schematic?
+- [x] (CRITICAL) what is up with the -5V on the controller schematic?
 - [x] fet to protect the power switch?
 - [x] rca jacks around the right way?
 - [x] why are the two 541s on the controller featuring different data bus pinouts?
@@ -31,7 +31,7 @@
 - [x] power U14, the ugly NOR that was used for the RAM
 - [x] break out the remainder of the pins so i can use them as an inverter if need be
 - [x] is it OK to tie CPU reset and VDP reset together? it is not
-- [ ] U21 feels unnecessary, we can probably drop it if we have leftover room on U14 in the end
+- [x] U21 feels unnecessary, we can probably drop it if we have leftover room on U14 in the end
 - [x] find a replacement for the 7.15909MHz crystal (figure out how to divide a 14.31818)
 - [x] you know what, can i just axe this entire clock section and use a 14mhz oscillator chip
 - [x] replace the n/o jumpers with smd ones
@@ -47,6 +47,7 @@
 - [x] rotate the power switch
 - [x] print out a bom for the v0.2 tag
 - [x] abandon sanyo psram for 62256
+# V0.7
 - [ ] jumpers to potentially enable high address pins in ram (shh!)
 - [ ] jumper to bypass capacitor on composite output
 - [ ] jumper to switch -5V super pulldown to ground
@@ -55,3 +56,6 @@
 - [ ] unused inputs of u11 (ls04) should be grounded
 - [ ] u17 and u18 should probably be merged, both are ls05s and barely used
 - [ ] can u11 and u17 be merged and u11 dropped?
+- [x] TI -5v regulator no longer available, use ICL7220?
+- [x] bracing hole near cartridge
+- [ ] use the footprint of the de9 connector that i have, so it can be bolted
