@@ -797,129 +797,12 @@ Wire Wire Line
 	1725 1475 1950 1475
 Wire Wire Line
 	2150 1825 2950 1825
-$Comp
-L TPS60403DBVR:TPS60403DBVR U24
-U 1 1 5E44B69D
-P 7375 1075
-F 0 "U24" H 7375 1412 60  0000 C CNN
-F 1 "TPS60403DBVR" H 7375 1306 60  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 7375 1315 60  0001 C CNN
-F 3 "" H 6775 1075 60  0000 C CNN
-F 4 "TPS60403DBVR" H 7375 1075 50  0001 C CNN "DigiKey"
-	1    7375 1075
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0144
-U 1 1 5E44CEA9
-P 6200 1175
-F 0 "#PWR0144" H 6200 1025 50  0001 C CNN
-F 1 "VCC" H 6217 1348 50  0000 C CNN
-F 2 "" H 6200 1175 50  0001 C CNN
-F 3 "" H 6200 1175 50  0001 C CNN
-	1    6200 1175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6775 1175 6750 1175
-Text GLabel 6375 800  0    50   Input ~ 10
+Text GLabel 8500 1050 2    50   Input ~ 10
 -5V
-$Comp
-L Device:C C40
-U 1 1 5E455A6F
-P 6750 1325
-F 0 "C40" H 6865 1371 50  0000 L CNN
-F 1 "1µF" H 6865 1280 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6788 1175 50  0001 C CNN
-F 3 "~" H 6750 1325 50  0001 C CNN
-	1    6750 1325
-	1    0    0    -1  
-$EndComp
-Connection ~ 6750 1175
-Wire Wire Line
-	6750 1175 6200 1175
-Wire Wire Line
-	6750 1475 7400 1475
-Wire Wire Line
-	8225 1475 8225 1175
-Wire Wire Line
-	8225 1175 7975 1175
-$Comp
-L power:GND #PWR0145
-U 1 1 5E45EB9C
-P 7400 1475
-F 0 "#PWR0145" H 7400 1225 50  0001 C CNN
-F 1 "GND" H 7405 1302 50  0000 C CNN
-F 2 "" H 7400 1475 50  0001 C CNN
-F 3 "" H 7400 1475 50  0001 C CNN
-	1    7400 1475
-	1    0    0    -1  
-$EndComp
-Connection ~ 7400 1475
-Wire Wire Line
-	7400 1475 8225 1475
-$Comp
-L Device:C C41
-U 1 1 5E46030F
-P 8425 1175
-F 0 "C41" H 8540 1221 50  0000 L CNN
-F 1 "1µF" H 8540 1130 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8463 1025 50  0001 C CNN
-F 3 "~" H 8425 1175 50  0001 C CNN
-	1    8425 1175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7975 1275 7975 1350
-Wire Wire Line
-	7975 1350 8425 1350
-Wire Wire Line
-	8425 1350 8425 1325
-Wire Wire Line
-	8425 1025 8425 1000
-Wire Wire Line
-	8425 1000 7975 1000
-Wire Wire Line
-	7975 1000 7975 1075
-Wire Wire Line
-	6775 1075 6450 1075
-Wire Wire Line
-	6450 1075 6450 875 
-Wire Wire Line
-	6450 800  6375 800 
-$Comp
-L Device:C C39
-U 1 1 5E47B3B1
-P 6450 1525
-F 0 "C39" H 6565 1571 50  0000 L CNN
-F 1 "1µF" H 6565 1480 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6488 1375 50  0001 C CNN
-F 3 "~" H 6450 1525 50  0001 C CNN
-	1    6450 1525
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0146
-U 1 1 5E47BF5D
-P 6450 1675
-F 0 "#PWR0146" H 6450 1425 50  0001 C CNN
-F 1 "GND" H 6455 1502 50  0000 C CNN
-F 2 "" H 6450 1675 50  0001 C CNN
-F 3 "" H 6450 1675 50  0001 C CNN
-	1    6450 1675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6450 1375 6450 1075
-Connection ~ 6450 1075
 Wire Notes Line
 	5775 600  5775 2000
 Wire Notes Line
 	5775 2000 7600 2000
-Wire Notes Line
-	7600 2000 7600 1650
-Wire Notes Line
-	7600 1650 8875 1650
 Wire Notes Line
 	8875 1650 8875 600 
 Wire Notes Line
@@ -929,17 +812,14 @@ Text Notes 8275 700  0    50   ~ 0
 $Comp
 L Connector:TestPoint TP10
 U 1 1 5E49426A
-P 6450 875
-F 0 "TP10" V 6404 1063 50  0000 L CNN
-F 1 "-5V" V 6495 1063 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 6650 875 50  0001 C CNN
-F 3 "~" H 6650 875 50  0001 C CNN
-	1    6450 875 
-	0    1    1    0   
+P 8475 1050
+F 0 "TP10" H 8525 1175 50  0000 L CNN
+F 1 "-5V" H 8400 1275 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 8675 1050 50  0001 C CNN
+F 3 "~" H 8675 1050 50  0001 C CNN
+	1    8475 1050
+	1    0    0    -1  
 $EndComp
-Connection ~ 6450 875 
-Wire Wire Line
-	6450 875  6450 800 
 $Comp
 L power:VCC #PWR0147
 U 1 1 5E49B71F
@@ -1321,4 +1201,96 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 8000 3550 50  0001 C CNN
 $EndComp
 Text Label 6900 2400 0    50   ~ 0
 M1
+$Comp
+L Regulator_SwitchedCapacitor:ICL7660 U?
+U 1 1 61854456
+P 6675 1350
+F 0 "U?" H 6675 1917 50  0000 C CNN
+F 1 "ICL7660" H 6675 1826 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6775 1250 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/ICL7660-MAX1044.pdf" H 6775 1250 50  0001 C CNN
+	1    6675 1350
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7600 1650 8875 1650
+Wire Notes Line
+	7600 2000 7600 1650
+Wire Wire Line
+	8500 1050 8475 1050
+$Comp
+L Device:C_Small C?
+U 1 1 61872628
+P 7250 1450
+F 0 "C?" H 7342 1496 50  0000 L CNN
+F 1 "10µF" H 7342 1405 50  0000 L CNN
+F 2 "" H 7250 1450 50  0001 C CNN
+F 3 "~" H 7250 1450 50  0001 C CNN
+	1    7250 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1550 7250 1650
+Wire Wire Line
+	7250 1650 7075 1650
+Wire Wire Line
+	7250 1350 7250 1250
+Wire Wire Line
+	7250 1250 7075 1250
+Connection ~ 8475 1050
+Wire Wire Line
+	8475 1050 8075 1050
+$Comp
+L power:VCC #PWR?
+U 1 1 61892221
+P 5975 1050
+F 0 "#PWR?" H 5975 900 50  0001 C CNN
+F 1 "VCC" H 5992 1223 50  0000 C CNN
+F 2 "" H 5975 1050 50  0001 C CNN
+F 3 "" H 5975 1050 50  0001 C CNN
+	1    5975 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5975 1050 6275 1050
+$Comp
+L Device:C_Small C?
+U 1 1 61897C6F
+P 8075 1300
+F 0 "C?" H 8167 1346 50  0000 L CNN
+F 1 "10µF" H 8167 1255 50  0000 L CNN
+F 2 "" H 8075 1300 50  0001 C CNN
+F 3 "~" H 8075 1300 50  0001 C CNN
+	1    8075 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61899506
+P 8075 1400
+F 0 "#PWR?" H 8075 1150 50  0001 C CNN
+F 1 "GND" H 8080 1227 50  0000 C CNN
+F 2 "" H 8075 1400 50  0001 C CNN
+F 3 "" H 8075 1400 50  0001 C CNN
+	1    8075 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8075 1200 8075 1050
+Connection ~ 8075 1050
+Wire Wire Line
+	8075 1050 7075 1050
+$Comp
+L power:GND #PWR?
+U 1 1 6189FAC7
+P 6675 1850
+F 0 "#PWR?" H 6675 1600 50  0001 C CNN
+F 1 "GND" H 6825 1775 50  0000 C CNN
+F 2 "" H 6675 1850 50  0001 C CNN
+F 3 "" H 6675 1850 50  0001 C CNN
+	1    6675 1850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6275 1550
+NoConn ~ 6275 1350
 $EndSCHEMATC
