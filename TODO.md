@@ -58,4 +58,4 @@
 - [ ] can u11 and u17 be merged and u11 dropped?
 - [x] TI -5v regulator no longer available, use ICL7220?
 - [x] bracing hole near cartridge
-- [ ] use the footprint of the de9 connector that i have, so it can be bolted
+- [ ] use the footprint of the de9 connector that i have, so it can be bolted (AMPHENOL 617-A009P-AJ121)
