@@ -53,7 +53,7 @@
 - [ ] jumper to switch -5V super pulldown to ground
 - [x] controller port numbers flipped
 - [x] unused inputs of u17 (ls05) should be grounded
-- [ ] unused inputs of u11 (ls04) should be grounded
+- [x] unused inputs of u11 (ls04) should be grounded
 - [ ] u17 and u18 should probably be merged, both are ls05s and barely used
 - [ ] can u11 and u17 be merged and u11 dropped?
 - [x] TI -5v regulator no longer available, use ICL7220?
