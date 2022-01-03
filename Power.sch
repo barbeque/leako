@@ -1267,4 +1267,82 @@ Wire Wire Line
 	1125 1775 1950 1775
 Text Notes 600  1050 0    50   ~ 0
 Revised Jan 2022:\nRemoved barrel jack and reverse-polarity protection diode\nfor 5V USB-B jack (should make it easier to find a PSU as well)
+$Comp
+L 74xx:74LS05 U17
+U 2 1 61D42566
+P 7450 4650
+F 0 "U17" H 7450 4967 50  0000 C CNN
+F 1 "74LS05" H 7450 4876 50  0000 C CNN
+F 2 "" H 7450 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 7450 4650 50  0001 C CNN
+	2    7450 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS05 U17
+U 3 1 61D432FA
+P 7450 5050
+F 0 "U17" H 7450 5367 50  0000 C CNN
+F 1 "74LS05" H 7450 5276 50  0000 C CNN
+F 2 "" H 7450 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 7450 5050 50  0001 C CNN
+	3    7450 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS05 U17
+U 4 1 61D447EC
+P 7450 5450
+F 0 "U17" H 7450 5767 50  0000 C CNN
+F 1 "74LS05" H 7450 5676 50  0000 C CNN
+F 2 "" H 7450 5450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 7450 5450 50  0001 C CNN
+	4    7450 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS05 U17
+U 5 1 61D45FA1
+P 7450 5850
+F 0 "U17" H 7450 6167 50  0000 C CNN
+F 1 "74LS05" H 7450 6076 50  0000 C CNN
+F 2 "" H 7450 5850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS05" H 7450 5850 50  0001 C CNN
+	5    7450 5850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7750 4650
+NoConn ~ 7750 5050
+NoConn ~ 7750 5450
+NoConn ~ 7750 5850
+$Comp
+L power:GND #PWR?
+U 1 1 61D5A562
+P 7050 6000
+F 0 "#PWR?" H 7050 5750 50  0001 C CNN
+F 1 "GND" H 7055 5827 50  0000 C CNN
+F 2 "" H 7050 6000 50  0001 C CNN
+F 3 "" H 7050 6000 50  0001 C CNN
+	1    7050 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 6000 7050 5850
+Wire Wire Line
+	7050 4650 7150 4650
+Wire Wire Line
+	7150 5050 7050 5050
+Connection ~ 7050 5050
+Wire Wire Line
+	7050 5050 7050 4650
+Wire Wire Line
+	7150 5450 7050 5450
+Connection ~ 7050 5450
+Wire Wire Line
+	7050 5450 7050 5050
+Wire Wire Line
+	7150 5850 7050 5850
+Connection ~ 7050 5850
+Wire Wire Line
+	7050 5850 7050 5450
 $EndSCHEMATC

@@ -52,13 +52,13 @@
 - [ ] jumper to bypass capacitor on composite output
 - [ ] jumper to switch -5V super pulldown to ground
 - [x] controller port numbers flipped
-- [ ] unused inputs of u17 (ls05) should be grounded
+- [x] unused inputs of u17 (ls05) should be grounded
 - [ ] unused inputs of u11 (ls04) should be grounded
 - [ ] u17 and u18 should probably be merged, both are ls05s and barely used
 - [ ] can u11 and u17 be merged and u11 dropped?
 - [x] TI -5v regulator no longer available, use ICL7220?
 - [x] bracing hole near cartridge
-- [ ] use the footprint of the de9 connector that i have, so it can be bolted (AMPHENOL 617-A009P-AJ121)
-- [ ] change the BOM to use a better de9 connector, possibly the one the footprint is based on (maybe AE10968-ND?)
+- [ ] ~~use the footprint of the de9 connector that i have, so it can be bolted (AMPHENOL 617-A009P-AJ121)~~
+- [x] change the BOM to use a better de9 connector, possibly the one the footprint is based on (maybe AE10968-ND?)
 - [x] convert power jack to USB
 - [x] finish "making visible" all the hidden cap/resistor values
