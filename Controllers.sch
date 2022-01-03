@@ -171,7 +171,7 @@ F 1 "22kΩ" H 4296 6045 50  0000 R CNN
 F 2 "Resistors_ThroughHole:R_Array_SIP8" V 5150 6000 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4675 6000 50  0001 C CNN
 	1    4675 6000
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	5900 3275 4375 3275
@@ -834,7 +834,7 @@ F 3 "" H 9425 3650 50  0001 C CNN
 	1    9425 3650
 	1    0    0    -1  
 $EndComp
-Text Label 4975 6200 3    50   ~ 0
+Text Label 4375 6200 3    50   ~ 0
 2v5
 Text Label 4375 4025 3    50   ~ 0
 2v5
