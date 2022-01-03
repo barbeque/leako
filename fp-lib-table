@@ -7,4 +7,5 @@
   (lib (name tdk-inductor)(type KiCad)(uri ${KIPRJMOD}/tdk-inductor.pretty)(options "")(descr ""))
   (lib (name Jumper)(type KiCad)(uri ${KIPRJMOD}/Jumper.pretty)(options "")(descr ""))
   (lib (name 0251002.MRT1L)(type KiCad)(uri ${KIPRJMOD}/0251002.MRT1L.pretty)(options "")(descr ""))
+  (lib (name USB-B1HSB6)(type KiCad)(uri ${KIPRJMOD}/USB-B1HSB6)(options "")(descr ""))
 )

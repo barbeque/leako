@@ -17,17 +17,13 @@ $Comp
 L Device:CP C12
 U 1 1 5E3C1062
 P 1950 1625
-F 0 "C12" H 1832 1579 50  0000 R CNN
-F 1 "22µF" H 1832 1670 50  0000 R CNN
+F 0 "C12" H 2200 1575 50  0000 R CNN
+F 1 "22µF" H 2250 1675 50  0000 R CNN
 F 2 "Capacitors_ThroughHole:CP_Radial_D5.0mm_P2.50mm" H 1988 1475 50  0001 C CNN
 F 3 "~" H 1950 1625 50  0001 C CNN
 	1    1950 1625
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2150 1775 1950 1775
-Wire Wire Line
-	1350 1775 1350 1675
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5E3C20B0
@@ -50,22 +46,6 @@ F 3 "" H 4075 725 50  0001 C CNN
 	1    4075 725 
 	1    0    0    -1  
 $EndComp
-$Comp
-L PJ-102A:PJ-102A J3
-U 1 1 5E3C418F
-P 975 1575
-F 0 "J3" H 970 1915 50  0000 C CNN
-F 1 "PJ-102A" H 970 1824 50  0000 C CNN
-F 2 "Jacks:CUI_PJ-102A" H 975 1575 50  0001 L BNN
-F 3 "1.03" H 975 1575 50  0001 L BNN
-F 4 "CUI INC" H 975 1575 50  0001 L BNN "Field4"
-F 5 "Manufacturer recommendations" H 975 1575 50  0001 L BNN "Field5"
-	1    975  1575
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	1175 1675 1350 1675
-NoConn ~ 1175 1575
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5E493C9A
@@ -103,10 +83,6 @@ $EndComp
 Wire Wire Line
 	2300 2375 2150 2375
 Wire Wire Line
-	2150 1775 2150 1825
-Wire Wire Line
-	2050 1475 2050 3075
-Wire Wire Line
 	3550 2575 3550 3075
 $Comp
 L Device:R_Small_US R7
@@ -123,7 +99,6 @@ Wire Wire Line
 	3275 1225 3275 725 
 Wire Wire Line
 	3275 725  4075 725 
-Connection ~ 2150 1825
 Wire Wire Line
 	2150 1825 2150 2375
 Connection ~ 4075 725 
@@ -131,25 +106,6 @@ Wire Wire Line
 	4075 725  4275 725 
 Wire Wire Line
 	2950 1225 3275 1225
-Connection ~ 1950 1775
-Connection ~ 1950 1475
-Wire Wire Line
-	1950 1475 2050 1475
-Text Label 1325 1475 1    50   ~ 0
-WALL_G
-Text Label 1325 1675 3    50   ~ 0
-WALL_V
-$Comp
-L Device:D_Schottky D2
-U 1 1 5E473FC7
-P 1725 1625
-F 0 "D2" H 1725 1409 50  0000 C CNN
-F 1 "50V 2A" H 1725 1500 50  0000 C CNN
-F 2 "Diodes_ThroughHole:D_DO-15_P10.16mm_Horizontal" H 1725 1625 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/RL201-TP/RL201-TPCT-ND/950498/?itemSeq=317130355" H 1725 1625 50  0001 C CNN
-	1    1725 1625
-	0    1    -1   0   
-$EndComp
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5E4B4B7A
@@ -165,8 +121,6 @@ Wire Wire Line
 	2950 1225 2950 1825
 Wire Wire Line
 	3550 1900 3550 2175
-Wire Wire Line
-	2050 3075 2850 3075
 Wire Wire Line
 	4275 725  4275 1075
 Wire Wire Line
@@ -220,8 +174,6 @@ Wire Wire Line
 Connection ~ 2850 3075
 Wire Wire Line
 	2850 3075 3550 3075
-Text Notes 650  1200 3    50   ~ 0
-Should be centre positive
 $Comp
 L 74xx:74LS02 U14
 U 5 1 5E4100D4
@@ -772,29 +724,6 @@ Wire Wire Line
 Wire Wire Line
 	2575 4425 3450 4425
 NoConn ~ 1975 4425
-$Comp
-L Device:Fuse_Small F2
-U 1 1 5E46D729
-P 1475 1775
-F 0 "F2" H 1475 1925 50  0000 C CNN
-F 1 "2A" H 1475 1850 50  0000 C CNN
-F 2 "0251002.MRT1L:0251002.MRT1L" H 1475 1775 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/littelfuse-inc/0251002.MRT1L/F3171CT-ND/1984467" H 1475 1775 50  0001 C CNN
-	1    1475 1775
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	1175 1475 1725 1475
-Wire Wire Line
-	1350 1775 1375 1775
-Wire Wire Line
-	1575 1775 1725 1775
-Connection ~ 1725 1775
-Wire Wire Line
-	1725 1775 1950 1775
-Connection ~ 1725 1475
-Wire Wire Line
-	1725 1475 1950 1475
 Wire Wire Line
 	2150 1825 2950 1825
 Text GLabel 8500 1050 2    50   Input ~ 10
@@ -1293,4 +1222,49 @@ F 3 "" H 6675 1850 50  0001 C CNN
 $EndComp
 NoConn ~ 6275 1550
 NoConn ~ 6275 1350
+$Comp
+L USB-B1HSB6:USB-B1HSB6 J3
+U 1 1 61D42E51
+P 1025 1575
+F 0 "J3" H 1118 1942 50  0000 C CNN
+F 1 "USB-B1HSB6" H 1118 1851 50  0000 C CNN
+F 2 "OST_USB-B1HSB6" H 1025 1575 50  0001 L BNN
+F 3 "" H 1025 1575 50  0001 L BNN
+F 4 "ON-SHORE TECHNOLOGY" H 1025 1575 50  0001 L BNN "MANUFACTURER"
+F 5 "ED2983-ND" H 1025 1575 50  0001 C CNN "DigiKey"
+	1    1025 1575
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 1125 1575
+NoConn ~ 1125 1675
+Wire Wire Line
+	2150 1475 2150 1825
+Wire Wire Line
+	1950 1475 2150 1475
+Connection ~ 2150 1825
+Wire Wire Line
+	1950 1775 1950 3075
+Wire Wire Line
+	1950 3075 2850 3075
+Connection ~ 1950 1775
+$Comp
+L Device:Fuse_Small F2
+U 1 1 5E46D729
+P 1475 1475
+F 0 "F2" H 1475 1625 50  0000 C CNN
+F 1 "2A" H 1475 1550 50  0000 C CNN
+F 2 "0251002.MRT1L:0251002.MRT1L" H 1475 1475 50  0001 C CNN
+F 3 "https://www.digikey.ca/product-detail/en/littelfuse-inc/0251002.MRT1L/F3171CT-ND/1984467" H 1475 1475 50  0001 C CNN
+	1    1475 1475
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1950 1475 1575 1475
+Connection ~ 1950 1475
+Wire Wire Line
+	1375 1475 1125 1475
+Wire Wire Line
+	1125 1775 1950 1775
+Text Notes 600  1050 0    50   ~ 0
+Revised Jan 2022:\nRemoved barrel jack and reverse-polarity protection diode\nfor 5V USB-B jack (should make it easier to find a PSU as well)
 $EndSCHEMATC
