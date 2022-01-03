@@ -59,6 +59,6 @@
 - [x] TI -5v regulator no longer available, use ICL7220?
 - [x] bracing hole near cartridge
 - [ ] use the footprint of the de9 connector that i have, so it can be bolted (AMPHENOL 617-A009P-AJ121)
-- [ ] change the BOM to use a better de9 connector, possibly the one the footprint is based on
+- [ ] change the BOM to use a better de9 connector, possibly the one the footprint is based on (maybe AE10968-ND?)
 - [x] convert power jack to USB
 - [x] finish "making visible" all the hidden cap/resistor values

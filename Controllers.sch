@@ -19,8 +19,9 @@ U 1 1 5E4296AD
 P 1975 2875
 F 0 "J5" H 2155 2921 50  0000 L CNN
 F 1 "Controller Port 2" H 2155 2830 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 1975 2875 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5747250-4/A32072-ND/808627" H 1975 2875 50  0001 C CNN
+F 2 "Jacks:A-DS 09 A-KG-T2S" H 1975 2875 50  0001 C CNN
+F 3 "http://www.assmann-wsw.com/fileadmin/datasheets/ASS_4888_CO.pdf" H 1975 2875 50  0001 C CNN
+F 4 "AE10968-ND" H 1975 2875 50  0001 C CNN "DigiKey"
 	1    1975 2875
 	-1   0    0    -1  
 $EndComp
@@ -30,8 +31,9 @@ U 1 1 5E429B8A
 P 1975 5225
 F 0 "J6" H 2155 5271 50  0000 L CNN
 F 1 "Controller Port 1" H 2155 5180 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 1975 5225 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5747250-4/A32072-ND/808627 ~" H 1975 5225 50  0001 C CNN
+F 2 "Jacks:A-DS 09 A-KG-T2S" H 1975 5225 50  0001 C CNN
+F 3 "http://www.assmann-wsw.com/fileadmin/datasheets/ASS_4888_CO.pdf" H 1975 5225 50  0001 C CNN
+F 4 "AE10968-ND" H 1975 5225 50  0001 C CNN "DigiKey"
 	1    1975 5225
 	-1   0    0    1   
 $EndComp
@@ -169,7 +171,7 @@ F 1 "22kΩ" H 4296 6045 50  0000 R CNN
 F 2 "Resistors_ThroughHole:R_Array_SIP8" V 5150 6000 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4675 6000 50  0001 C CNN
 	1    4675 6000
-	1    0    0    1   
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5900 3275 4375 3275
@@ -832,7 +834,7 @@ F 3 "" H 9425 3650 50  0001 C CNN
 	1    9425 3650
 	1    0    0    -1  
 $EndComp
-Text Label 4375 6200 3    50   ~ 0
+Text Label 4975 6200 3    50   ~ 0
 2v5
 Text Label 4375 4025 3    50   ~ 0
 2v5
