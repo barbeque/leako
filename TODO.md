@@ -62,3 +62,4 @@
 - [x] change the BOM to use a better de9 connector, possibly the one the footprint is based on (maybe AE10968-ND?)
 - [x] convert power jack to USB
 - [x] finish "making visible" all the hidden cap/resistor values
+- [x] nice rounded edge on PCB (safety first)

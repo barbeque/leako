@@ -5,6 +5,19 @@ def walk_map(m):
     for (start_offset, identifier) in sorted(m, key=lambda p: p[0]):
         print(to_bin(start_offset) + ' ' + identifier)
 
+        # identify set bits
+        set_bits = []
+
+        address = 0
+        while address <= 15:
+            if(start_offset) & 1 != 0:
+                set_bits.append(address)
+            address += 1 # increment address line
+            start_offset = start_offset >> 1 # shift out the lowest bit
+
+        formatted_addresses = map(lambda a: f'A{a}', set_bits)
+        print('bits set:', ', '.join(formatted_addresses))
+
 
 """
 memory_map = [
