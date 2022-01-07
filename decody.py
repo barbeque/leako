@@ -16,7 +16,7 @@ def walk_map(m):
             start_offset = start_offset >> 1 # shift out the lowest bit
 
         formatted_addresses = map(lambda a: f'A{a}', set_bits)
-        print('bits set:', ', '.join(formatted_addresses))
+        print(' bits set:', ', '.join(formatted_addresses))
 
 
 """
