@@ -21,7 +21,7 @@ F 0 "J5" H 2155 2921 50  0000 L CNN
 F 1 "Controller Port 2" H 2155 2830 50  0000 L CNN
 F 2 "Jacks:A-DS 09 A-KG-T2S" H 1975 2875 50  0001 C CNN
 F 3 "http://www.assmann-wsw.com/fileadmin/datasheets/ASS_4888_CO.pdf" H 1975 2875 50  0001 C CNN
-F 4 "AE10968-ND" H 1975 2875 50  0001 C CNN "DigiKey"
+F 4 "AE10968-ND" H 1975 2875 50  0001 C CNN "DigiKey"
 	1    1975 2875
 	-1   0    0    -1  
 $EndComp
@@ -33,7 +33,7 @@ F 0 "J6" H 2155 5271 50  0000 L CNN
 F 1 "Controller Port 1" H 2155 5180 50  0000 L CNN
 F 2 "Jacks:A-DS 09 A-KG-T2S" H 1975 5225 50  0001 C CNN
 F 3 "http://www.assmann-wsw.com/fileadmin/datasheets/ASS_4888_CO.pdf" H 1975 5225 50  0001 C CNN
-F 4 "AE10968-ND" H 1975 5225 50  0001 C CNN "DigiKey"
+F 4 "AE10968-ND" H 1975 5225 50  0001 C CNN "DigiKey"
 	1    1975 5225
 	-1   0    0    1   
 $EndComp

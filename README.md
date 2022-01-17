@@ -31,9 +31,9 @@ Namely, you will need to find:
 
 Please note the Leako has, so far, only been constructed and tested in NTSC regions. A PAL version would be a very interesting conversion, but would use a chip like a TMS9919 as well as probably some other board changes.
 
-You will also need a barrel-jack power supply capable of producing exactly +5V DC - no voltage regulator is present on the board, so please use a high-quality adapter for best results.
+You will also need a USB power supply and a USB-B cable. I recommend using a USB power supply capable of at least 2A - although I have only measured ~450mA in practice, it would not be a bad idea to have some additional headroom.
 
-Please also note that at the time of publication, a silicon and fabrication shortage has meant that many parts (for instance, the TI TPS60403 -5V voltage inverter) have become difficult and/or more expensive to locate than when the machine was originally designed.
+Please also note that at the time of publication, a silicon and fabrication shortage has meant that many parts (for instance, the TI TPS60403 -5V voltage inverter) have become difficult and/or more expensive to locate than when the machine was originally designed. Some have been substituted, but there are likely others.
 
 ## Tools
 The ColecoVision games and console rely on the presence of a BIOS ROM. In order to program the EPROM with the BIOS, you'll need a copy of the BIOS (it can be dumped from a real ColecoVision) and an EPROM programmer such as a TL866II+.
@@ -69,8 +69,20 @@ Please note:
  * The Leako board does not have a ColecoVision power connector, so the Roller Controller will need to be powered independently using a ColecoVision power supply such as the ColUSB, or wired for a +5V source such as a USB cable.
 
 # Version History
- * v0.6: First working version.
- * v0.7 (in progress:) Correct missing junction from D3/D4 to R35 (EXT_QUAD pulldown.) Thank you to Oliver Fiero for catching this.
+## v0.7
+Many small fixes, mostly around reliability.
+ * Correct missing junction from D3/D4 to R35 (EXT_QUAD pulldown.) Thank you to Oliver Fiero for catching this.
+ * Unused logic inputs grounded to reduce power consumption.
+ * Change controller ports from generic KiCad DE9 footprint to AE10968-ND
+ * Change -5V charge pump because of parts shortage. Now ICL7660.
+ * Controller port numbers on schematic now reflect actual logical controller ports.
+ * Barrel jack 5V replaced with USB-B to broaden availability of high-quality regulated power supplies.
+ * Additional mounting hole behind cartridge to reduce amount of board flex when cartridges are inserted and removed.
+ * Thicker power traces.
+ * Passives now labeled on board where possible, to speed assembly.
+
+## v0.6
+First working version.
 
 # Links
  - [Console5 schematics and parts list](https://console5.com/wiki/Colecovision)
