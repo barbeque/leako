@@ -175,6 +175,7 @@ F 2 "Jacks:CUI_RCJ-017" H 3925 2075 50  0001 L BNN
 F 3 "CUI Inc" H 3925 2075 50  0001 L BNN
 F 4 "B" H 3925 2075 50  0001 L BNN "Field4"
 F 5 "Manufacturer recommendations" H 3925 2075 50  0001 L BNN "Field5"
+F 6 "CP-1403-ND‎" H 3925 2075 50  0001 C CNN "DigiKey"
 	1    3925 2075
 	-1   0    0    1   
 $EndComp
@@ -1141,4 +1142,6 @@ Wire Bus Line
 	5200 3600 5200 4225
 Wire Bus Line
 	6700 3800 6700 4225
+Text Notes 3925 2275 0    50   ~ 0
+RCJ-014 (yellow)
 $EndSCHEMATC
