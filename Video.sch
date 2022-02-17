@@ -21,6 +21,7 @@ F 0 "U5" H 5900 4225 50  0000 C CNN
 F 1 "TMS9918A" H 5900 4134 50  0000 C CNN
 F 2 "Housings_DIP:DIP-40_W15.24mm_Socket_LongPads" H 5900 4200 50  0001 C CNN
 F 3 "https://ia803006.us.archive.org/33/items/Texas_Instruments_TMS9918A/Texas_Instruments_TMS9918A_text.pdf" H 5900 4200 50  0001 C CNN
+F 4 "ED3048-5-ND" H 5900 3050 50  0001 C CNN "DigiKey"
 	1    5900 3050
 	1    0    0    -1  
 $EndComp
@@ -163,6 +164,7 @@ F 0 "R5" H 2568 1821 50  0000 L CNN
 F 1 "470Ω" H 2568 1730 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 2500 1775 50  0001 C CNN
 F 3 "~" H 2500 1775 50  0001 C CNN
+F 4 "RMCF0805JT470RCT-ND" H 2500 1775 50  0001 C CNN "DigiKey"
 	1    2500 1775
 	1    0    0    -1  
 $EndComp
@@ -199,6 +201,7 @@ F 0 "R4" V 2195 1675 50  0000 C CNN
 F 1 "0Ω" V 2286 1675 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 2400 1675 50  0001 C CNN
 F 3 "~" H 2400 1675 50  0001 C CNN
+F 4 "RMCF0805ZT0R00CT-ND" H 2400 1675 50  0001 C CNN "DigiKey"
 	1    2400 1675
 	0    1    1    0   
 $EndComp
@@ -226,6 +229,7 @@ F 0 "R6" H 3093 2121 50  0000 L CNN
 F 1 "75Ω" H 3093 2030 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 3025 2075 50  0001 C CNN
 F 3 "~" H 3025 2075 50  0001 C CNN
+F 4 "RMCF0805JT75R0CT-ND" H 3025 2075 50  0001 C CNN "DigiKey"
 	1    3025 2075
 	1    0    0    -1  
 $EndComp
@@ -299,6 +303,7 @@ F 0 "FB1" V 3363 1275 50  0000 C CNN
 F 1 "Bead" V 3454 1275 50  0000 C CNN
 F 2 "Choke_SMD:Choke_SMD_1206_Handsoldering" V 3530 1275 50  0001 C CNN
 F 3 "~" H 3600 1275 50  0001 C CNN
+F 4 "283-MFBW1V3216-310-RCT-ND" H 3600 1275 50  0001 C CNN "DigiKey"
 	1    3600 1275
 	0    1    1    0   
 $EndComp
@@ -312,6 +317,7 @@ F 0 "U6" H 7975 2581 50  0000 C CNN
 F 1 "74HCT574" H 7975 2490 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm" H 7975 1600 50  0001 C CNN
 F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/74HCT574D653/1727-2856-1-ND/763412" H 7975 1600 50  0001 C CNN
+F 4 "1727-2856-1-ND" H 7975 1600 50  0001 C CNN "DigiKey"
 	1    7975 1600
 	1    0    0    -1  
 $EndComp
@@ -323,6 +329,7 @@ F 0 "U7" H 7700 4275 50  0000 C CNN
 F 1 "74HCT574" H 7700 4175 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm" H 7975 3475 50  0001 C CNN
 F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/74HCT574D653/1727-2856-1-ND/763412" H 7975 3475 50  0001 C CNN
+F 4 "1727-2856-1-ND" H 7975 3475 50  0001 C CNN "DigiKey"
 	1    7975 3475
 	1    0    0    -1  
 $EndComp
@@ -334,6 +341,7 @@ F 0 "U8" H 7700 6200 50  0000 C CNN
 F 1 "74HCT574" H 7700 6125 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm" H 7975 5400 50  0001 C CNN
 F 3 "https://www.digikey.ca/product-detail/en/nexperia-usa-inc/74HCT574D653/1727-2856-1-ND/763412" H 7975 5400 50  0001 C CNN
+F 4 "1727-2856-1-ND" H 7975 5400 50  0001 C CNN "DigiKey"
 	1    7975 5400
 	1    0    0    -1  
 $EndComp
@@ -663,6 +671,7 @@ F 0 "U4" H 3775 6167 50  0000 C CNN
 F 1 "74HCT04" H 3775 6076 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3775 5850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3775 5850 50  0001 C CNN
+F 4 "296-31832-1-ND" H 3775 5850 50  0001 C CNN "DigiKey"
 	1    3775 5850
 	1    0    0    -1  
 $EndComp
@@ -678,6 +687,7 @@ F 0 "U4" H 3775 6717 50  0000 C CNN
 F 1 "74HCT04" H 3775 6626 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3775 6400 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3775 6400 50  0001 C CNN
+F 4 "296-31832-1-ND" H 3775 6400 50  0001 C CNN "DigiKey"
 	6    3775 6400
 	1    0    0    -1  
 $EndComp
@@ -702,6 +712,7 @@ F 0 "U4" H 3775 7267 50  0000 C CNN
 F 1 "74HCT04" H 3775 7176 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3775 6950 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3775 6950 50  0001 C CNN
+F 4 "296-31832-1-ND" H 3775 6950 50  0001 C CNN "DigiKey"
 	2    3775 6950
 	1    0    0    -1  
 $EndComp
@@ -717,6 +728,7 @@ F 0 "U4" H 5775 6142 50  0000 C CNN
 F 1 "74HCT04" H 5775 6051 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 5775 5825 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5775 5825 50  0001 C CNN
+F 4 "296-31832-1-ND" H 5775 5825 50  0001 C CNN "DigiKey"
 	3    5775 5825
 	1    0    0    -1  
 $EndComp
@@ -730,6 +742,7 @@ F 0 "U4" H 5775 6717 50  0000 C CNN
 F 1 "74HCT04" H 5775 6626 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 5775 6400 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5775 6400 50  0001 C CNN
+F 4 "296-31832-1-ND" H 5775 6400 50  0001 C CNN "DigiKey"
 	4    5775 6400
 	1    0    0    -1  
 $EndComp
@@ -751,6 +764,7 @@ F 0 "U4" H 5775 7317 50  0000 C CNN
 F 1 "74HCT04" H 5775 7226 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 5775 7000 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5775 7000 50  0001 C CNN
+F 4 "296-31832-1-ND" H 5775 7000 50  0001 C CNN "DigiKey"
 	5    5775 7000
 	1    0    0    -1  
 $EndComp
@@ -774,6 +788,7 @@ F 0 "U4" V 4508 7500 50  0000 C CNN
 F 1 "74HCT04" V 4599 7500 50  0000 C CNN
 F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4875 7500 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4875 7500 50  0001 C CNN
+F 4 "296-31832-1-ND" H 4875 7500 50  0001 C CNN "DigiKey"
 	7    4875 7500
 	0    1    1    0   
 $EndComp
@@ -864,6 +879,7 @@ F 0 "R15" H 7043 2446 50  0000 L CNN
 F 1 "4.7kΩ" H 7043 2355 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 6975 2400 50  0001 C CNN
 F 3 "~" H 6975 2400 50  0001 C CNN
+F 4 "RMCF0805JT4K70CT-ND" H 6975 2400 50  0001 C CNN "DigiKey"
 	1    6975 2400
 	1    0    0    -1  
 $EndComp
@@ -971,6 +987,7 @@ F 0 "Q1" H 3116 1721 50  0000 L CNN
 F 1 "2n4401" H 3116 1630 50  0000 L CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 3125 1775 50  0001 C CNN
 F 3 "~" H 2925 1675 50  0001 C CNN
+F 4 "2N4401TFCT-ND" H 2925 1675 50  0001 C CNN "DigiKey"
 	1    2925 1675
 	1    0    0    -1  
 $EndComp
@@ -982,6 +999,7 @@ F 0 "C25" V 3753 1975 50  0000 C CNN
 F 1 "220µF" V 3662 1975 50  0000 C CNN
 F 2 "Capacitors_ThroughHole:CP_Radial_D6.3mm_P2.50mm" H 3525 1975 50  0001 C CNN
 F 3 "~" H 3525 1975 50  0001 C CNN
+F 4 "493-15121-ND" H 3525 1975 50  0001 C CNN "DigiKey"
 	1    3525 1975
 	0    -1   -1   0   
 $EndComp
