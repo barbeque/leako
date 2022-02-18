@@ -6,3 +6,4 @@ plot
 *.html
 *.xml
 *autosave*
+kicad_netlist_reader*
