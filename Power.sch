@@ -79,7 +79,7 @@ F 0 "Q2" H 3641 2421 50  0000 L CNN
 F 1 "Q_NJFET_GSD" H 3641 2330 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 3650 2475 50  0001 C CNN
 F 3 "https://www.digikey.ca/product-detail/en/diodes-incorporated/DMN6075S-7/DMN6075S-7DICT-ND/5149299" H 3450 2375 50  0001 C CNN
-F 4 "DMN6075S-7DICT-ND" H 3450 2375 50  0001 C CNN "DigiKey"
+F 4 "DMN2046U-7DICT-ND" H 3450 2375 50  0001 C CNN "DigiKey"
 	1    3450 2375
 	1    0    0    -1  
 $EndComp
