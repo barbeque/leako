@@ -32,6 +32,9 @@ import kicad_netlist_reader
 import csv
 import sys
 
+# This string will be put in front of the "customer description" if specified
+PROJECT_PREFIX = 'Leako'
+
 # Generate an instance of a generic netlist, and load the netlist tree from
 # the command line option. If the file doesn't exist, execution will stop
 net = kicad_netlist_reader.netlist(sys.argv[1])
@@ -80,6 +83,9 @@ for group in grouped:
     # to the component so that the other data can be filled in once per group
     refs = ', '.join([component.getRef() for component in group])
     c = group[-1]
+
+    if len(PROJECT_PREFIX) > 0:
+        refs = PROJECT_PREFIX + ": " + refs
 
     component_name = c.getPartName()
     value = c.getValue()
