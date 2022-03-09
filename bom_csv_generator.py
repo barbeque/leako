@@ -84,7 +84,7 @@ for group in grouped:
     refs = ', '.join([component.getRef() for component in group])
     c = group[-1]
 
-    if len(PROJECT_PREFIX) > 0:
+    if PROJECT_PREFIX != None and len(PROJECT_PREFIX) > 0:
         refs = PROJECT_PREFIX + ": " + refs
 
     component_name = c.getPartName()

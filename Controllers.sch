@@ -1204,4 +1204,52 @@ Wire Wire Line
 Wire Wire Line
 	8425 1300 8475 1300
 Connection ~ 9075 850 
+$Comp
+L Device:C_Small C39
+U 1 1 622A8D57
+P 7225 3100
+F 0 "C39" H 7317 3146 50  0000 L CNN
+F 1 "0.1µF" H 7317 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7225 3100 50  0001 C CNN
+F 3 "~" H 7225 3100 50  0001 C CNN
+F 4 "1276-1099-1-ND" H 7225 3100 50  0001 C CNN "DigiKey"
+	1    7225 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3875 6850 3875
+Wire Wire Line
+	6850 3875 6850 3375
+Wire Wire Line
+	6850 3375 7225 3375
+Wire Wire Line
+	7225 3375 7225 3200
+Connection ~ 6400 3875
+Wire Wire Line
+	7225 3000 7225 2275
+Wire Wire Line
+	7225 2275 6825 2275
+Connection ~ 6825 2275
+$Comp
+L Device:C_Small C40
+U 1 1 622C90EA
+P 7350 5400
+F 0 "C40" H 7442 5446 50  0000 L CNN
+F 1 "0.1µF" H 7442 5355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7350 5400 50  0001 C CNN
+F 3 "~" H 7350 5400 50  0001 C CNN
+F 4 "1276-1099-1-ND" H 7350 5400 50  0001 C CNN "DigiKey"
+	1    7350 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 5500 7350 6050
+Wire Wire Line
+	7350 6050 6775 6050
+Connection ~ 6775 6050
+Wire Wire Line
+	7350 5300 7350 4600
+Wire Wire Line
+	7350 4600 6825 4600
+Connection ~ 6825 4600
 $EndSCHEMATC
