@@ -7,3 +7,4 @@ plot
 *.xml
 *autosave*
 kicad_netlist_reader*
+bom_html_with_advanced_grouping.py
