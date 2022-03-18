@@ -63,3 +63,6 @@
 - [x] convert power jack to USB
 - [x] finish "making visible" all the hidden cap/resistor values
 - [x] nice rounded edge on PCB (safety first)
+# V0.8
+- [x] move the mounting hole so it doesn't interfere with the cart shell when cart is loaded and screw is installed
+- [ ] is the 10.7...mhz crystal making better video with 33pF or 56pF?
