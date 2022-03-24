@@ -66,3 +66,4 @@
 # V0.8
 - [x] move the mounting hole so it doesn't interfere with the cart shell when cart is loaded and screw is installed
 - [ ] is the 10.7...mhz crystal making better video with 33pF or 56pF?
+- [x] make 574s easier to place/solder with bigger pads

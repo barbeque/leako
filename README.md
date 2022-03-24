@@ -31,7 +31,7 @@ Namely, you will need to find:
 
 Please note the Leako has, so far, only been constructed and tested in NTSC regions. A PAL version would be a very interesting conversion, but would use a chip like a TMS9919 as well as probably some other board changes.
 
-You will also need a USB power supply and a USB-B cable. I recommend using a USB power supply capable of at least 2A - although I have only measured ~450mA in practice, it would not be a bad idea to have some additional headroom.
+You will also need a USB power supply and a USB-B cable. I recommend using a USB power supply capable of at least 2A - although I have only measured ~450mA max in practice, it would not be a bad idea to have some additional headroom. A lower-quality supply is also likely to introduce more noise. I have tested with two models of Anker PowerPort.
 
 Please also note that at the time of publication, a silicon and fabrication shortage has meant that many parts (for instance, the TI TPS60403 -5V voltage inverter) have become difficult and/or more expensive to locate than when the machine was originally designed. Some have been substituted, but there are likely others.
 
@@ -62,7 +62,7 @@ If you have built your own Leako and tested it with a game that's not listed her
 | Roller Controller | Partial | Tested with _Slither_ only; my controller is not working properly, even on a real ColecoVision |
 | Expansion Module #2 (steering controller) | Partial | Tested with _Turbo_ only; my controller is not working properly, even on a real ColecoVision |
 
-The latter two will be re-investigated as the controllers are tested, and hopefully this table will be updated with some better news.
+The latter two will be re-investigated as the controllers are tested, and hopefully this table will be updated with some better news in the future.
 
 Please note:
  * The Leako board does not have a ColecoVision expansion connector, so it cannot work with any Expansion Modules, including the ADAM.
