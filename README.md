@@ -69,6 +69,13 @@ Please note:
  * The Leako board does not have a ColecoVision power connector, so the Roller Controller will need to be powered independently using a ColecoVision power supply such as the ColUSB, or wired for a +5V source such as a USB cable.
 
 # Version History
+## v0.8
+More small fixes.
+ * Move U20/U11 to other side of board so cartridges with extra long skirts or loose PCBs won't interfere with them.
+ * Move mounting hole added in previous step to side of cartridge slot, so you don't have to use a low-profile screw head there anymore.
+ * Larger pads on the 74LS574s, to ease soldering.
+ * It is now much harder to hit the video filtering capacitor with the tip of a video cable.
+
 ## v0.7
 Many small fixes, mostly around reliability.
  * Correct missing junction from D3/D4 to R35 (EXT_QUAD pulldown.) Thank you to Oliver Fiero for catching this.
