@@ -20,8 +20,8 @@ P 9700 5250
 F 0 "J1" H 9750 6167 50  0000 C CNN
 F 1 "Cartridge Slot" H 9750 6076 50  0000 C CNN
 F 2 "LeakyChips:Sullins_Cart_Slot" H 9700 5250 50  0001 C CNN
-F 3 "https://www.digikey.ca/product-detail/en/sullins-connector-solutions/EBC15DCWN/S3305-ND/927257" H 9700 5250 50  0001 C CNN
-F 4 "S3305-ND" H 9700 5250 50  0001 C CNN "DigiKey"
+F 3 "https://www.digikey.ca/en/products/detail/te-connectivity-amp-connectors/5530843-2/770541" H 9700 5250 50  0001 C CNN
+F 4 "A31715-ND" H 9700 5250 50  0001 C CNN "DigiKey"
 	1    9700 5250
 	1    0    0    -1  
 $EndComp
