@@ -749,7 +749,7 @@ Wire Wire Line
 NoConn ~ 1975 4425
 Wire Wire Line
 	2150 1825 2950 1825
-Text GLabel 8500 1050 2    50   Input ~ 10
+Text GLabel 8600 1050 2    50   Input ~ 10
 -5V
 Wire Notes Line
 	5775 600  5775 2000
@@ -759,18 +759,18 @@ Wire Notes Line
 	8875 1650 8875 600 
 Wire Notes Line
 	8875 600  5775 600 
-Text Notes 8275 700  0    50   ~ 0
+Text Notes 5800 700  0    50   ~ 0
 -5V Generator
 $Comp
 L Connector:TestPoint TP10
 U 1 1 5E49426A
-P 8475 1050
-F 0 "TP10" H 8525 1175 50  0000 L CNN
-F 1 "-5V" H 8400 1275 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 8675 1050 50  0001 C CNN
-F 3 "~" H 8675 1050 50  0001 C CNN
-	1    8475 1050
-	1    0    0    -1  
+P 7750 1050
+F 0 "TP10" H 7800 1175 50  0000 L CNN
+F 1 "-5V" H 7675 1275 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7950 1050 50  0001 C CNN
+F 3 "~" H 7950 1050 50  0001 C CNN
+	1    7750 1050
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:VCC #PWR0147
@@ -1174,8 +1174,6 @@ Wire Notes Line
 	7600 1650 8875 1650
 Wire Notes Line
 	7600 2000 7600 1650
-Wire Wire Line
-	8500 1050 8475 1050
 $Comp
 L Device:C_Small C14
 U 1 1 61872628
@@ -1196,9 +1194,6 @@ Wire Wire Line
 	7250 1350 7250 1250
 Wire Wire Line
 	7250 1250 7075 1250
-Connection ~ 8475 1050
-Wire Wire Line
-	8475 1050 8075 1050
 $Comp
 L power:VCC #PWR01
 U 1 1 61892221
@@ -1237,9 +1232,6 @@ F 3 "" H 8075 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8075 1200 8075 1050
-Connection ~ 8075 1050
-Wire Wire Line
-	8075 1050 7075 1050
 $Comp
 L power:GND #PWR03
 U 1 1 6189FAC7
@@ -1481,4 +1473,58 @@ NoConn ~ 7050 5050
 NoConn ~ 7050 5450
 NoConn ~ 7050 5850
 NoConn ~ 7050 6250
+Text Label 7350 1050 1    50   ~ 0
+-5V_SRC
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 627C98EE
+P 8300 1050
+F 0 "JP2" H 8300 1163 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 8300 1164 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 8300 1050 50  0001 C CNN
+F 3 "~" H 8300 1050 50  0001 C CNN
+	1    8300 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7075 1050 7750 1050
+Connection ~ 8075 1050
+Wire Wire Line
+	8075 1050 8150 1050
+Wire Wire Line
+	8450 1050 8550 1050
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 627F0A03
+P 8300 800
+F 0 "JP1" H 8300 913 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 8300 914 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 8300 800 50  0001 C CNN
+F 3 "~" H 8300 800 50  0001 C CNN
+	1    8300 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 800  8550 800 
+Wire Wire Line
+	8550 800  8550 1050
+Connection ~ 8550 1050
+Wire Wire Line
+	8550 1050 8600 1050
+Connection ~ 7750 1050
+Wire Wire Line
+	7750 1050 8075 1050
+$Comp
+L power:GND #PWR05
+U 1 1 627F9AF9
+P 7650 800
+F 0 "#PWR05" H 7650 550 50  0001 C CNN
+F 1 "GND" H 7655 627 50  0000 C CNN
+F 2 "" H 7650 800 50  0001 C CNN
+F 3 "" H 7650 800 50  0001 C CNN
+	1    7650 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 800  8150 800 
 $EndSCHEMATC
