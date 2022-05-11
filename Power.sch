@@ -767,7 +767,7 @@ U 1 1 5E49426A
 P 7750 1050
 F 0 "TP10" H 7800 1175 50  0000 L CNN
 F 1 "-5V" H 7675 1275 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7950 1050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 7950 1050 50  0001 C CNN
 F 3 "~" H 7950 1050 50  0001 C CNN
 	1    7750 1050
 	-1   0    0    1   
