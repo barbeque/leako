@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 63)
+    (drawings 65)
     (tracks 4629)
     (zones 0)
     (modules 134)
@@ -4332,7 +4332,7 @@
     (tags "resistor 0805")
     (path /5E40FC69/5E4A2C2C)
     (attr smd)
-    (fp_text reference R33 (at -3.8265 0) (layer B.SilkS)
+    (fp_text reference R33 (at 3.984 0) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_text value 1.8kΩ (at 0 -1.75) (layer B.SilkS)
@@ -6580,6 +6580,12 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   )
 
+  (gr_text 8 (at 126.365 136.93) (layer B.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
+  (gr_text 5 (at 132.207 132.358) (layer B.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
   (gr_line (start 183.515 120.674) (end 189.611 120.674) (layer F.SilkS) (width 0.12) (tstamp 627B8724))
   (gr_line (start 183.515 121.69) (end 183.515 120.674) (layer F.SilkS) (width 0.12))
   (gr_line (start 185.547 117.626) (end 189.611 117.626) (layer F.SilkS) (width 0.12))
