@@ -48,8 +48,19 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        "silk_over_copper|163109000|41426000|00000000-0000-0000-0000-000061d40b0a|8d0286c3-0217-4900-b501-e756c44ded99",
+        "silk_over_copper|171409000|41426000|00000000-0000-0000-0000-000061d40b0a|c6f48361-b75a-4b94-9373-72cd319bb1dc",
+        "silk_over_copper|206035000|41426000|00000000-0000-0000-0000-000061d40b0a|236c4e82-c07f-4465-9051-57d2d81d68b0",
+        "silk_over_copper|214335000|41426000|00000000-0000-0000-0000-000061d40b0a|1996cdca-6d48-438e-a79e-20a8562fc17a"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -119,7 +130,12 @@
         1.0,
         2.0
       ],
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -346,7 +362,7 @@
     "classes": [
       {
         "bus_width": 12.0,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
