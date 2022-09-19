@@ -4304,18 +4304,6 @@
     )
   )
 
-  (sheet (at 106.68 172.085) (size 12.7 15.875) (fields_autoplaced)
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-00005e40230d)
-    (property "Sheet name" "Testpoints" (id 0) (at 106.68 171.3734 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Sheet file" "Testpoints.kicad_sch" (id 1) (at 106.68 188.5446 0)
-      (effects (font (size 1.27 1.27)) (justify left top))
-    )
-  )
-
   (sheet (at 86.36 172.085) (size 12.7 15.875) (fields_autoplaced)
     (stroke (width 0) (type solid) (color 0 0 0 0))
     (fill (color 0 0 0 0.0000))
@@ -4347,7 +4335,6 @@
     (path "/00000000-0000-0000-0000-00005e3bf976" (page "4"))
     (path "/00000000-0000-0000-0000-00005e3c7714" (page "5"))
     (path "/00000000-0000-0000-0000-00005e40fc69" (page "6"))
-    (path "/00000000-0000-0000-0000-00005e40230d" (page "7"))
   )
 
   (symbol_instances
