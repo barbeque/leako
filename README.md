@@ -75,6 +75,7 @@ More small fixes.
  * Move mounting hole added in previous step to side of cartridge slot, so you don't have to use a low-profile screw head there anymore.
  * Larger pads on the 74LS574s, to ease soldering.
  * It is now much harder to hit the video filtering capacitor with the tip of a video cable.
+ * Upgraded project files to KiCad 6
 
 ## v0.7
 Many small fixes, mostly around reliability.
