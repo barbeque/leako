@@ -18,12 +18,12 @@ If you enjoyed this project or if you're interested in contributing to future de
 # Building It Yourself
 Stay tuned for a more involved assembly guide, but early adopters are welcome to assemble and test a board.
 
-You'll want to consult the BOM PDF for the version of the Leako board you wish to assemble. The first truly "working" version was v0.6.
+You'll want to consult the BOM PDF for the version of the Leako board you wish to assemble. The first truly "working" version was v0.6. I recommend getting [the Gerber ZIPs and BOM from the Releases page](https://github.com/barbeque/leako/releases).
 
-Not all parts can be obtained new. Many components are salvaged and can be obtained from eBay or other Chinese-market surplus stores such as AliExpress. Because the sellers and availability are changing constantly, I unfortunately cannot recommend a specific vendor. I suggest ordering from multiple different sellers and building more Leakos :)
+Not all parts on the BOM (Bill of Materials) can be obtained new. Many components are salvaged and can be obtained from eBay or other Chinese-market surplus stores such as AliExpress. Because the sellers and availability are changing constantly, I unfortunately cannot recommend a specific vendor. I suggest ordering from multiple different sellers and building more Leakos with all the leftover parts :)
 
 Namely, you will need to find:
- - A TI TMS9918A/TMS9918ANL (_not_ TMS9118 or TMS9928) VDP;
+ - A TI TMS9918A/TMS9918ANL (_not_ TMS9118, TMS9119, TMS9929, or TMS9928) VDP;
  - A TI SN76489 sound chip;
  - A 27c512-compatible EPROM (a 27c256 may also work but has not been tested);
  - ColecoVision cartridge games;
