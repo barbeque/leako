@@ -64,6 +64,16 @@ memory_map = [ # PV7
 ]
 """
 
+pc6001_memory_map = [
+    ( 0x0000, 'basic rom' ),
+    ( 0x4000, 'ROM1 4kByte' ),
+    ( 0x5000, 'Prohibited' ),
+    ( 0x6000, 'ROM2 4kByte' ),
+    ( 0x7000, 'Prohibited 2' ),
+    ( 0x8000, 'ExRAM 16kByte' ),
+    ( 0xc000, 'Int RAM 16kByte' )
+]
+
 io_map = [ ( 0x40, 'video' ), ( 0x60, 'video' ), ( 0xc0, 'sound' ), ( 0xe0, 'controllers' ) ]
 
 print('Memory Map:')
