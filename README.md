@@ -22,6 +22,8 @@ You'll want to consult the BOM PDF for the version of the Leako board you wish t
 
 Not all parts on the BOM (Bill of Materials) can be obtained new. Many components are salvaged and can be obtained from eBay or other Chinese-market surplus stores such as AliExpress. Because the sellers and availability are changing constantly, I unfortunately cannot recommend a specific vendor. I suggest ordering from multiple different sellers and building more Leakos with all the leftover parts :)
 
+For a quicker checkout process, [I have constructed a Digi-Key "list"](https://www.digikey.ca/en/mylists/list/FZA1NMR795) which can help you add all of the "new" parts necessary quickly. 
+
 Namely, you will need to find:
  - A TI TMS9918A/TMS9918ANL (_not_ TMS9118, TMS9119, TMS9929, or TMS9928) VDP;
  - A TI SN76489 sound chip;
