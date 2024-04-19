@@ -9454,7 +9454,7 @@
   (gr_text "Front of Cartridge" (at 116.3955 77.6605) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005e436e9b)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "leadedsolder.com 2021-22" (at 76.75 123 270) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005e44a4ed)
+  (gr_text "leadedsolder.com 2021-24" (at 76.75 123 270) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005e44a4ed)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "v0.8" (at 82.6135 128.4605 270) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-00005e44a4f0)
