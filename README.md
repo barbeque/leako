@@ -16,7 +16,11 @@ I originally developed this board in order to play some ColecoVision games that 
 If you enjoyed this project or if you're interested in contributing to future development, I would greatly appreciate a subscription to [the Leaded Solder Patreon](https://www.patreon.com/leadedsolder). The Patreon not only helps me afford to develop expensive projects like this one, but also includes behind-the-scenes posts and previews of upcoming articles.
 
 # Building It Yourself
+First, use a PCB fabrication shop such as JLCPCB or PCBWay to order a Gerber file. You can get those from [the Releases page](https://github.com/barbeque/leako/releases).
+
 Stay tuned for a more involved assembly guide, but early adopters are welcome to assemble and test a board.
+
+For the easiest build, you can install [the Interactive BOM Plugin](https://github.com/openscopeproject/InteractiveHtmlBom) and use KiCad to export it. This will give you a click-through visual BOM that makes it really easy to assemble the board. Future versions of this board will come with one of these files in the Release.
 
 You'll want to consult the BOM PDF for the version of the Leako board you wish to assemble. The first truly "working" version was v0.6. I recommend getting [the Gerber ZIPs and BOM from the Releases page](https://github.com/barbeque/leako/releases).
 
