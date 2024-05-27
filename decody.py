@@ -65,13 +65,32 @@ memory_map = [ # PV7
 """
 
 pc6001_memory_map = [
+    # 16k, 1-page variant
     ( 0x0000, 'basic rom' ),
-    ( 0x4000, 'ROM1 4kByte' ),
-    ( 0x5000, 'Prohibited' ),
-    ( 0x6000, 'ROM2 4kByte' ),
-    ( 0x7000, 'Prohibited 2' ),
-    ( 0x8000, 'ExRAM 16kByte' ),
-    ( 0xc000, 'Int RAM 16kByte' )
+    ( 0x4000, 'user area 1 (32kByte)' ),
+    ( 0xc000, 'page 1 (1kByte)' ),
+    ( 0xc400, 'user area 2 (13824 byte)' ),
+    ( 0xfa00, 'work area' ),
+]
+
+pc6001_io_map = [
+    ( 0x00, 'user available' ),
+    ( 0x80, '8251 data' ),
+    ( 0x81, '8251 status/mode/command' ),
+    ( 0x90, '8255 port A'),
+    ( 0x91, '8255 port B'),
+    ( 0x92, '8255 port C'),
+    ( 0x93, '8255 mode setting'),
+    ( 0xa0, 'ay-3-8910 register address'),
+    ( 0xa1, 'ay-3-8910 output data'),
+    ( 0xa2, 'ay-3-8910 input data'),
+    ( 0xa3, 'ay-3-8910 inactive'),
+    ( 0xb0, 'timer switch, vram address switch, cassette motor switch'),
+    ( 0xc0, 'printer ready' ),
+    ( 0xd0, 'FDD 8255 port A'),
+    ( 0xd1, 'FDD 8255 port B'),
+    ( 0xd2, 'FDD 8255 port C'),
+    ( 0xd3, 'FDD 8255 mode setting'),
 ]
 
 io_map = [ ( 0x40, 'video' ), ( 0x60, 'video' ), ( 0xc0, 'sound' ), ( 0xe0, 'controllers' ) ]
