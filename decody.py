@@ -95,6 +95,23 @@ pc6001_io_map = [
 
 io_map = [ ( 0x40, 'video' ), ( 0x60, 'video' ), ( 0xc0, 'sound' ), ( 0xe0, 'controllers' ) ]
 
+adam_io_map = [
+    # from https://wiki.console5.com/tw/images/b/b5/Coleco_ADAM_Technical_Reference_Manual.pdf page 52
+    ( 0x00, 'reserved' ), 
+    ( 0x1e, 'optional auto-dialler' ), 
+    ( 0x1f, 'reserved' ), 
+    ( 0x20, 'reserved' ),
+    ( 0x3f, 'network reset; EOS enable' ),
+    ( 0x40, 'reserved' ),
+    ( 0x4f, 'expansion connector #2' ),
+    ( 0x50, 'reserved' ),
+    ( 0x5e, 'optional modem data i/o' ),
+    ( 0x5f, 'optional modem control/status' ),
+    ( 0x60, 'reserved' ),
+    ( 0x7f, 'memory mapper' ),
+    ( 0x80, 'reserved for colecovision' ) 
+]
+
 print('Memory Map:')
 walk_map(memory_map)
 
