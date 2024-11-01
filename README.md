@@ -76,7 +76,7 @@ Please note:
 
 # Known Issues
 ## "Always On" phenomenon
-If you power the Leako off a monitor or television set that is also being used to display the Leako, it can complete the "ground" circuit through the composite video jack and keep the Leako turned on, regardless of the power switch position.
+If you power the Leako off a monitor or television set that is also being used to display the Leako, it can complete the "ground" circuit from the USB jack through the composite video jack and keep the Leako turned on, bypassing the power switch entirely. In this scenario, the Leako will remain powered on, regardless of the power switch position.
 
 To work around this problem, try powering the Leako from a different USB power source, or use a television that isolates USB ground from video ground.
 
