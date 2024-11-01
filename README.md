@@ -74,6 +74,14 @@ Please note:
  * The Leako board does not have a ColecoVision expansion connector, so it cannot work with any Expansion Modules, including the ADAM.
  * The Leako board does not have a ColecoVision power connector, so the Roller Controller will need to be powered independently using a ColecoVision power supply such as the ColUSB, or wired for a +5V source such as a USB cable.
 
+# Known Issues
+## "Always On" phenomenon
+If you power the Leako off a monitor or television set that is also being used to display the Leako, it can complete the "ground" circuit through the composite video jack and keep the Leako turned on, regardless of the power switch position.
+
+To work around this problem, try powering the Leako from a different USB power source, or use a television that isolates USB ground from video ground.
+
+Thank you to Cheshire Noir and Tom Storey for figuring this one out.
+
 # Version History
 ## v0.8
 More small fixes.
