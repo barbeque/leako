@@ -31,6 +31,9 @@ CMDP: EQU $BF ; VDP Command port $99 works on all MSX models
 org $00
 	DI ; We don't know, how interrupts works in this system, so we disable them.
 
+    ld a, $9f
+    out ($ff), a ; mute psg
+
 	; Let's set VDP write address to $0000
 	XOR A
 	OUT (CMDP),A
