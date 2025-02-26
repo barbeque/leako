@@ -6,23 +6,7 @@
 
 #define PORT_PSG $e0
 
-.org $8000
-
-; TODO: Remove all this and make it a cartridge
-
-HEADER_TEST: .db $55, $aa
-
-SPRITE_TABLE: .dw $0000
-SPRITE_ORDER_TABLE: .dw $0000
-WORK_BUFFER_ADDRESS: .dw $0000
-CONTROLLER_MAP_ADDRESS: .dw $0000
-GAME_ENTRY_POINT_ADDRESS: .dw init
-RESET_TABLE: .dw $0000, $0000, $0000, $0000
-IRQ_INT_VECT: .dw $0000
-NMI_INT_VECT: .dw $0000
-
-.org $8024
-GAME_NAME: .ascii "LEADEDSOLDER.COM/PSG TESTER!/2025"
+.org $0000
 
 init:
     ; mute psg - set lowest volume

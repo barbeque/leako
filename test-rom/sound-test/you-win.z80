@@ -10,14 +10,14 @@
 	; sn76489 write
 	ld a, 0x19
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x96
 	out (PORT_PSG), a
-	; Wait for 0x27 cycles
-	ld bc, 0x27
+	; Wait for 0x3c cycles
+	ld bc, 0x3c
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xae
@@ -28,14 +28,14 @@
 	; sn76489 write
 	ld a, 0x9
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb7
 	out (PORT_PSG), a
-	; Wait for 0x22 cycles
-	ld bc, 0x22
+	; Wait for 0x34 cycles
+	ld bc, 0x34
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xc3
@@ -46,113 +46,113 @@
 	; sn76489 write
 	ld a, 0x32
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x2d3 cycles
-	ld bc, 0x2d3
+	; Wait for 0x463 cycles
+	ld bc, 0x463
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd6
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd7
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd8
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd9
 	out (PORT_PSG), a
-	; Wait for 0x5b8 cycles
-	ld bc, 0x5b8
+	; Wait for 0x8e2 cycles
+	ld bc, 0x8e2
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb8
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xda
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x97
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb9
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdb
 	out (PORT_PSG), a
-	; Wait for 0x5b4 cycles
-	ld bc, 0x5b4
+	; Wait for 0x8dc cycles
+	ld bc, 0x8dc
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xba
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdc
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x98
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xbb
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdd
 	out (PORT_PSG), a
-	; Wait for 0x2d6 cycles
-	ld bc, 0x2d6
+	; Wait for 0x467 cycles
+	ld bc, 0x467
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x85
@@ -163,14 +163,14 @@
 	; sn76489 write
 	ld a, 0x16
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x96
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xa6
@@ -181,14 +181,14 @@
 	; sn76489 write
 	ld a, 0x9
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb7
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xcb
@@ -199,80 +199,80 @@
 	; sn76489 write
 	ld a, 0x2c
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x2af cycles
-	ld bc, 0x2af
+	; Wait for 0x42b cycles
+	ld bc, 0x42b
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb8
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd6
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x97
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb9
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd7
 	out (PORT_PSG), a
-	; Wait for 0x5b4 cycles
-	ld bc, 0x5b4
+	; Wait for 0x8dc cycles
+	ld bc, 0x8dc
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xba
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd8
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x98
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xbb
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd9
 	out (PORT_PSG), a
-	; Wait for 0x2db cycles
-	ld bc, 0x2db
+	; Wait for 0x46f cycles
+	ld bc, 0x46f
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x8e
@@ -283,17 +283,17 @@
 	; sn76489 write
 	ld a, 0x13
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x96
 	out (PORT_PSG), a
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
+	call wait_cycles
 	; Wait for 0xf cycles (short form)
 	ld bc, 0xf
-	call wait_cycles
-	; Wait for 0xa cycles (short form)
-	ld bc, 0xa
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xa5
@@ -304,17 +304,17 @@
 	; sn76489 write
 	ld a, 0x8
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb6
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
-	; Wait for 0xb cycles (short form)
-	ld bc, 0xb
+	; Wait for 0x11 cycles (short form)
+	ld bc, 0x11
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xc1
@@ -325,20 +325,20 @@
 	; sn76489 write
 	ld a, 0x19
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x2ef cycles
-	ld bc, 0x2ef
+	; Wait for 0x48e cycles
+	ld bc, 0x48e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb7
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; Wait for 0x1 cycles (short form)
 	ld bc, 0x1
@@ -346,14 +346,14 @@
 	; sn76489 write
 	ld a, 0xb8
 	out (PORT_PSG), a
-	; Wait for 0x2dd cycles
-	ld bc, 0x2dd
+	; Wait for 0x472 cycles
+	ld bc, 0x472
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb9
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; Wait for 0x1 cycles (short form)
 	ld bc, 0x1
@@ -361,14 +361,14 @@
 	; sn76489 write
 	ld a, 0xba
 	out (PORT_PSG), a
-	; Wait for 0x2dd cycles
-	ld bc, 0x2dd
+	; Wait for 0x472 cycles
+	ld bc, 0x472
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xbb
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; Wait for 0x1 cycles (short form)
 	ld bc, 0x1
@@ -376,173 +376,173 @@
 	; sn76489 write
 	ld a, 0xbc
 	out (PORT_PSG), a
-	; Wait for 0x2de cycles
-	ld bc, 0x2de
+	; Wait for 0x474 cycles
+	ld bc, 0x474
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xbd
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0xe cycles (short form)
-	ld bc, 0xe
+	; Wait for 0x15 cycles (short form)
+	ld bc, 0x15
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xbe
+	out (PORT_PSG), a
+	; Wait for 0x14 cycles (short form)
+	ld bc, 0x14
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xb6
+	out (PORT_PSG), a
+	; Wait for 0x447 cycles
+	ld bc, 0x447
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xb7
+	out (PORT_PSG), a
+	; Wait for 0xf cycles (short form)
+	ld bc, 0xf
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xd6
+	out (PORT_PSG), a
+	; Wait for 0x467 cycles
+	ld bc, 0x467
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xb8
+	out (PORT_PSG), a
+	; Wait for 0x472 cycles
+	ld bc, 0x472
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xb9
+	out (PORT_PSG), a
+	; Wait for 0xf cycles (short form)
+	ld bc, 0xf
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xd7
+	out (PORT_PSG), a
+	; Wait for 0x467 cycles
+	ld bc, 0x467
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xba
+	out (PORT_PSG), a
+	; Wait for 0x12 cycles (short form)
+	ld bc, 0x12
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xb6
+	out (PORT_PSG), a
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xb7
+	out (PORT_PSG), a
+	; Wait for 0xf cycles (short form)
+	ld bc, 0xf
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xd8
+	out (PORT_PSG), a
+	; Wait for 0x467 cycles
+	ld bc, 0x467
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xb8
+	out (PORT_PSG), a
+	; Wait for 0x472 cycles
+	ld bc, 0x472
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xb9
+	out (PORT_PSG), a
+	; Wait for 0xf cycles (short form)
+	ld bc, 0xf
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xd9
+	out (PORT_PSG), a
+	; Wait for 0x467 cycles
+	ld bc, 0x467
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xba
+	out (PORT_PSG), a
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
+	call wait_cycles
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xb6
+	out (PORT_PSG), a
+	; Wait for 0x456 cycles
+	ld bc, 0x456
+	call wait_cycles
+	; sn76489 write
+	ld a, 0xb7
 	out (PORT_PSG), a
 	; Wait for 0xd cycles (short form)
 	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
-	ld a, 0xb6
-	out (PORT_PSG), a
-	; Wait for 0x2c1 cycles
-	ld bc, 0x2c1
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xb7
-	out (PORT_PSG), a
-	; Wait for 0xa cycles (short form)
-	ld bc, 0xa
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xd6
-	out (PORT_PSG), a
-	; Wait for 0x2d6 cycles
-	ld bc, 0x2d6
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xb8
-	out (PORT_PSG), a
-	; Wait for 0x2dd cycles
-	ld bc, 0x2dd
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xb9
-	out (PORT_PSG), a
-	; Wait for 0xa cycles (short form)
-	ld bc, 0xa
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xd7
-	out (PORT_PSG), a
-	; Wait for 0x2d6 cycles
-	ld bc, 0x2d6
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xba
-	out (PORT_PSG), a
-	; Wait for 0xc cycles (short form)
-	ld bc, 0xc
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xb6
-	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xb7
-	out (PORT_PSG), a
-	; Wait for 0xa cycles (short form)
-	ld bc, 0xa
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xd8
-	out (PORT_PSG), a
-	; Wait for 0x2d6 cycles
-	ld bc, 0x2d6
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xb8
-	out (PORT_PSG), a
-	; Wait for 0x2dd cycles
-	ld bc, 0x2dd
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xb9
-	out (PORT_PSG), a
-	; Wait for 0xa cycles (short form)
-	ld bc, 0xa
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xd9
-	out (PORT_PSG), a
-	; Wait for 0x2d6 cycles
-	ld bc, 0x2d6
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xba
-	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
-	call wait_cycles
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xb6
-	out (PORT_PSG), a
-	; Wait for 0x2cb cycles
-	ld bc, 0x2cb
-	call wait_cycles
-	; sn76489 write
-	ld a, 0xb7
-	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
-	call wait_cycles
-	; sn76489 write
 	ld a, 0xda
 	out (PORT_PSG), a
-	; Wait for 0x5b4 cycles
-	ld bc, 0x5b4
+	; Wait for 0x8dc cycles
+	ld bc, 0x8dc
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb8
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdb
 	out (PORT_PSG), a
-	; Wait for 0x5b4 cycles
-	ld bc, 0x5b4
+	; Wait for 0x8dc cycles
+	ld bc, 0x8dc
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb9
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdc
 	out (PORT_PSG), a
-	; Wait for 0x5b4 cycles
-	ld bc, 0x5b4
+	; Wait for 0x8dc cycles
+	ld bc, 0x8dc
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xba
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdd
 	out (PORT_PSG), a
-	; Wait for 0x2f9 cycles
-	ld bc, 0x2f9
+	; Wait for 0x49e cycles
+	ld bc, 0x49e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb7
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
-	; Wait for 0xc cycles (short form)
-	ld bc, 0xc
+	; Wait for 0x12 cycles (short form)
+	ld bc, 0x12
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xc9
@@ -553,134 +553,134 @@
 	; sn76489 write
 	ld a, 0x1a
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x29a cycles
-	ld bc, 0x29a
+	; Wait for 0x40a cycles
+	ld bc, 0x40a
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb8
 	out (PORT_PSG), a
-	; Wait for 0x2da cycles
-	ld bc, 0x2da
+	; Wait for 0x46e cycles
+	ld bc, 0x46e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x97
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb9
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xba
 	out (PORT_PSG), a
-	; Wait for 0x2da cycles
-	ld bc, 0x2da
+	; Wait for 0x46e cycles
+	ld bc, 0x46e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x98
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xbb
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0xc cycles (short form)
-	ld bc, 0xc
+	; Wait for 0x12 cycles (short form)
+	ld bc, 0x12
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb7
 	out (PORT_PSG), a
-	; Wait for 0x2d2 cycles
-	ld bc, 0x2d2
+	; Wait for 0x461 cycles
+	ld bc, 0x461
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb8
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd6
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x99
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb9
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd7
 	out (PORT_PSG), a
-	; Wait for 0x5b4 cycles
-	ld bc, 0x5b4
+	; Wait for 0x8dc cycles
+	ld bc, 0x8dc
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xba
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd8
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x9a
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xbb
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd9
 	out (PORT_PSG), a
-	; Wait for 0x2d6 cycles
-	ld bc, 0x2d6
+	; Wait for 0x467 cycles
+	ld bc, 0x467
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x8c
@@ -691,17 +691,17 @@
 	; sn76489 write
 	ld a, 0x12
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x96
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
-	; Wait for 0x6 cycles (short form)
-	ld bc, 0x6
+	; Wait for 0x9 cycles (short form)
+	ld bc, 0x9
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xa3
@@ -712,80 +712,80 @@
 	; sn76489 write
 	ld a, 0x6
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb7
 	out (PORT_PSG), a
-	; Wait for 0x2be cycles
-	ld bc, 0x2be
+	; Wait for 0x442 cycles
+	ld bc, 0x442
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb8
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xda
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x97
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb9
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdb
 	out (PORT_PSG), a
-	; Wait for 0x5b4 cycles
-	ld bc, 0x5b4
+	; Wait for 0x8dc cycles
+	ld bc, 0x8dc
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xba
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdc
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x98
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xbb
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdd
 	out (PORT_PSG), a
-	; Wait for 0x2db cycles
-	ld bc, 0x2db
+	; Wait for 0x46f cycles
+	ld bc, 0x46f
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x8e
@@ -796,17 +796,17 @@
 	; sn76489 write
 	ld a, 0x13
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x96
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
-	; Wait for 0xb cycles (short form)
-	ld bc, 0xb
+	; Wait for 0x11 cycles (short form)
+	ld bc, 0x11
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xa5
@@ -817,17 +817,17 @@
 	; sn76489 write
 	ld a, 0x8
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb7
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
-	; Wait for 0x5 cycles (short form)
-	ld bc, 0x5
+	; Wait for 0x7 cycles (short form)
+	ld bc, 0x7
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xcd
@@ -838,128 +838,128 @@
 	; sn76489 write
 	ld a, 0x1d
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x1997 cycles
-	ld bc, 0x1997
+	; Wait for 0x27c1 cycles
+	ld bc, 0x27c1
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd6
 	out (PORT_PSG), a
-	; Wait for 0x2d4 cycles
-	ld bc, 0x2d4
+	; Wait for 0x464 cycles
+	ld bc, 0x464
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x97
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0xa cycles (short form)
-	ld bc, 0xa
+	; Wait for 0xf cycles (short form)
+	ld bc, 0xf
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd7
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd8
 	out (PORT_PSG), a
-	; Wait for 0x2d4 cycles
-	ld bc, 0x2d4
+	; Wait for 0x464 cycles
+	ld bc, 0x464
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x98
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0xa cycles (short form)
-	ld bc, 0xa
+	; Wait for 0xf cycles (short form)
+	ld bc, 0xf
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd9
 	out (PORT_PSG), a
-	; Wait for 0x5b8 cycles
-	ld bc, 0x5b8
+	; Wait for 0x8e2 cycles
+	ld bc, 0x8e2
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb8
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xda
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x99
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb9
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdb
 	out (PORT_PSG), a
-	; Wait for 0x5b4 cycles
-	ld bc, 0x5b4
+	; Wait for 0x8dc cycles
+	ld bc, 0x8dc
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xba
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdc
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x9a
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xbb
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdd
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x83
@@ -970,17 +970,17 @@
 	; sn76489 write
 	ld a, 0x6
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x97
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
-	; Wait for 0xb cycles (short form)
-	ld bc, 0xb
+	; Wait for 0x11 cycles (short form)
+	ld bc, 0x11
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xae
@@ -991,14 +991,14 @@
 	; sn76489 write
 	ld a, 0xe
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb6
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xc7
@@ -1009,80 +1009,80 @@
 	; sn76489 write
 	ld a, 0x21
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x298 cycles
-	ld bc, 0x298
+	; Wait for 0x407 cycles
+	ld bc, 0x407
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb7
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd6
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x98
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb8
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd7
 	out (PORT_PSG), a
-	; Wait for 0x5b4 cycles
-	ld bc, 0x5b4
+	; Wait for 0x8dc cycles
+	ld bc, 0x8dc
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb9
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd8
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x99
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xba
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd9
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x89
@@ -1093,14 +1093,14 @@
 	; sn76489 write
 	ld a, 0x6
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x97
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xab
@@ -1111,89 +1111,89 @@
 	; sn76489 write
 	ld a, 0x10
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb6
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x2a9 cycles
-	ld bc, 0x2a9
+	; Wait for 0x422 cycles
+	ld bc, 0x422
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb7
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd6
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x98
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb8
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd7
 	out (PORT_PSG), a
-	; Wait for 0x5b4 cycles
-	ld bc, 0x5b4
+	; Wait for 0x8dc cycles
+	ld bc, 0x8dc
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb9
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd8
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x99
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xba
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd9
 	out (PORT_PSG), a
-	; Wait for 0x2d6 cycles
-	ld bc, 0x2d6
+	; Wait for 0x467 cycles
+	ld bc, 0x467
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x87
@@ -1204,14 +1204,14 @@
 	; sn76489 write
 	ld a, 0x7
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x97
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
 	; Wait for 0x0 cycles (short form)
 	ld bc, 0x0
@@ -1231,86 +1231,86 @@
 	; sn76489 write
 	ld a, 0xb6
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
-	; Wait for 0x5 cycles (short form)
-	ld bc, 0x5
+	; Wait for 0x7 cycles (short form)
+	ld bc, 0x7
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x2af cycles
-	ld bc, 0x2af
+	; Wait for 0x42b cycles
+	ld bc, 0x42b
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb7
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd6
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x98
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb8
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd7
 	out (PORT_PSG), a
-	; Wait for 0x5b4 cycles
-	ld bc, 0x5b4
+	; Wait for 0x8dc cycles
+	ld bc, 0x8dc
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb9
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd8
 	out (PORT_PSG), a
-	; Wait for 0x2d0 cycles
-	ld bc, 0x2d0
+	; Wait for 0x45e cycles
+	ld bc, 0x45e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x99
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xba
 	out (PORT_PSG), a
-	; Wait for 0x9 cycles (short form)
-	ld bc, 0x9
+	; Wait for 0xd cycles (short form)
+	ld bc, 0xd
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd9
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x7 cycles (short form)
-	ld bc, 0x7
+	; Wait for 0xa cycles (short form)
+	ld bc, 0xa
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x8f
@@ -1321,17 +1321,17 @@
 	; sn76489 write
 	ld a, 0x4
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x98
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
-	; Wait for 0xb cycles (short form)
-	ld bc, 0xb
+	; Wait for 0x11 cycles (short form)
+	ld bc, 0x11
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xa8
@@ -1342,17 +1342,17 @@
 	; sn76489 write
 	ld a, 0xc
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb6
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
-	; Wait for 0xb cycles (short form)
-	ld bc, 0xb
+	; Wait for 0x11 cycles (short form)
+	ld bc, 0x11
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xc1
@@ -1363,83 +1363,83 @@
 	; sn76489 write
 	ld a, 0x19
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x19e1 cycles
-	ld bc, 0x19e1
+	; Wait for 0x2834 cycles
+	ld bc, 0x2834
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd6
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd7
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd8
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd9
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xda
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdb
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdc
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdd
 	out (PORT_PSG), a
-	; Wait for 0x2f2 cycles
-	ld bc, 0x2f2
+	; Wait for 0x493 cycles
+	ld bc, 0x493
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xc7
@@ -1450,146 +1450,146 @@
 	; sn76489 write
 	ld a, 0x21
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x1718 cycles
-	ld bc, 0x1718
+	; Wait for 0x23e1 cycles
+	ld bc, 0x23e1
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd4
 	out (PORT_PSG), a
-	; Wait for 0x136 cycles
-	ld bc, 0x136
+	; Wait for 0x1e1 cycles
+	ld bc, 0x1e1
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x171 cycles
-	ld bc, 0x171
+	; Wait for 0x23d cycles
+	ld bc, 0x23d
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd6
 	out (PORT_PSG), a
-	; Wait for 0x16e cycles
-	ld bc, 0x16e
+	; Wait for 0x238 cycles
+	ld bc, 0x238
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd7
 	out (PORT_PSG), a
-	; Wait for 0x172 cycles
-	ld bc, 0x172
+	; Wait for 0x23e cycles
+	ld bc, 0x23e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd8
 	out (PORT_PSG), a
-	; Wait for 0x16d cycles
-	ld bc, 0x16d
+	; Wait for 0x237 cycles
+	ld bc, 0x237
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd9
 	out (PORT_PSG), a
-	; Wait for 0x171 cycles
-	ld bc, 0x171
+	; Wait for 0x23d cycles
+	ld bc, 0x23d
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xda
 	out (PORT_PSG), a
-	; Wait for 0x16e cycles
-	ld bc, 0x16e
+	; Wait for 0x238 cycles
+	ld bc, 0x238
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdb
 	out (PORT_PSG), a
-	; Wait for 0x172 cycles
-	ld bc, 0x172
+	; Wait for 0x23e cycles
+	ld bc, 0x23e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdc
 	out (PORT_PSG), a
-	; Wait for 0xd cycles (short form)
-	ld bc, 0xd
+	; Wait for 0x14 cycles (short form)
+	ld bc, 0x14
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd4
 	out (PORT_PSG), a
-	; Wait for 0x15f cycles
-	ld bc, 0x15f
+	; Wait for 0x221 cycles
+	ld bc, 0x221
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x171 cycles
-	ld bc, 0x171
+	; Wait for 0x23d cycles
+	ld bc, 0x23d
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd6
 	out (PORT_PSG), a
-	; Wait for 0x16e cycles
-	ld bc, 0x16e
+	; Wait for 0x238 cycles
+	ld bc, 0x238
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd7
 	out (PORT_PSG), a
-	; Wait for 0x172 cycles
-	ld bc, 0x172
+	; Wait for 0x23e cycles
+	ld bc, 0x23e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd8
 	out (PORT_PSG), a
-	; Wait for 0x16d cycles
-	ld bc, 0x16d
+	; Wait for 0x237 cycles
+	ld bc, 0x237
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd9
 	out (PORT_PSG), a
-	; Wait for 0x171 cycles
-	ld bc, 0x171
+	; Wait for 0x23d cycles
+	ld bc, 0x23d
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xda
 	out (PORT_PSG), a
-	; Wait for 0x16e cycles
-	ld bc, 0x16e
+	; Wait for 0x238 cycles
+	ld bc, 0x238
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdb
 	out (PORT_PSG), a
-	; Wait for 0x172 cycles
-	ld bc, 0x172
+	; Wait for 0x23e cycles
+	ld bc, 0x23e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdc
 	out (PORT_PSG), a
-	; Wait for 0xf cycles (short form)
-	ld bc, 0xf
+	; Wait for 0x17 cycles (short form)
+	ld bc, 0x17
 	call wait_cycles
-	; Wait for 0x7 cycles (short form)
-	ld bc, 0x7
+	; Wait for 0xa cycles (short form)
+	ld bc, 0xa
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd4
 	out (PORT_PSG), a
-	; Wait for 0xe42 cycles
-	ld bc, 0xe42
+	; Wait for 0x1626 cycles
+	ld bc, 0x1626
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd6
 	out (PORT_PSG), a
-	; Wait for 0x30e cycles
-	ld bc, 0x30e
+	; Wait for 0x4be cycles
+	ld bc, 0x4be
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xc1
@@ -1600,98 +1600,98 @@
 	; sn76489 write
 	ld a, 0x19
 	out (PORT_PSG), a
-	; Wait for 0x2 cycles (short form)
-	ld bc, 0x2
+	; Wait for 0x3 cycles (short form)
+	ld bc, 0x3
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd4
 	out (PORT_PSG), a
-	; Wait for 0x2ab cycles
-	ld bc, 0x2ab
+	; Wait for 0x425 cycles
+	ld bc, 0x425
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd5
 	out (PORT_PSG), a
-	; Wait for 0x2d4 cycles
-	ld bc, 0x2d4
+	; Wait for 0x464 cycles
+	ld bc, 0x464
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x99
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0xa cycles (short form)
-	ld bc, 0xa
+	; Wait for 0xf cycles (short form)
+	ld bc, 0xf
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd6
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd7
 	out (PORT_PSG), a
-	; Wait for 0x2d4 cycles
-	ld bc, 0x2d4
+	; Wait for 0x464 cycles
+	ld bc, 0x464
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x9a
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0xa cycles (short form)
-	ld bc, 0xa
+	; Wait for 0xf cycles (short form)
+	ld bc, 0xf
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xd8
 	out (PORT_PSG), a
-	; Wait for 0x390 cycles
-	ld bc, 0x390
+	; Wait for 0x588 cycles
+	ld bc, 0x588
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xdf
 	out (PORT_PSG), a
-	; Wait for 0x228 cycles
-	ld bc, 0x228
+	; Wait for 0x359 cycles
+	ld bc, 0x359
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb7
 	out (PORT_PSG), a
-	; Wait for 0x2da cycles
-	ld bc, 0x2da
+	; Wait for 0x46e cycles
+	ld bc, 0x46e
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x9b
 	out (PORT_PSG), a
-	; Wait for 0x2dc cycles (1/60th-sec)
-	ld bc, 0x2dc
+	; Wait for 0x471 cycles (1/60th-sec)
+	ld bc, 0x471
 	call wait_cycles
-	; Wait for 0x4 cycles (short form)
-	ld bc, 0x4
+	; Wait for 0x6 cycles (short form)
+	ld bc, 0x6
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xb8
 	out (PORT_PSG), a
-	; Wait for 0x391 cycles
-	ld bc, 0x391
+	; Wait for 0x58a cycles
+	ld bc, 0x58a
 	call wait_cycles
 	; sn76489 write
 	ld a, 0xbf
 	out (PORT_PSG), a
-	; Wait for 0x507 cycles
-	ld bc, 0x507
+	; Wait for 0x7cf cycles
+	ld bc, 0x7cf
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x9c
 	out (PORT_PSG), a
-	; Wait for 0x671 cycles
-	ld bc, 0x671
+	; Wait for 0xa01 cycles
+	ld bc, 0xa01
 	call wait_cycles
 	; sn76489 write
 	ld a, 0x9f
