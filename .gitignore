@@ -3,7 +3,6 @@
 bom
 *.lck
 *.swp
-*cache*
 *.zip
 plot
 *.html
